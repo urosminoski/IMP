@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../dpram_interface.srcs/sources_1/new/address_decoder.vhd" \
+"../../../../dpram_interface.srcs/sources_1/new/address_latch.vhd" \
+"../../../../dpram_interface.srcs/sources_1/new/control_signal_generator.vhd" \
+"../../../../dpram_interface.srcs/sources_1/new/dpram_interface_single.vhd" \
+"../../../../dpram_interface.srcs/sim_5/new/dpram_interface_single_tb.vhd" \
+
+# Do not sort compile order
+nosort

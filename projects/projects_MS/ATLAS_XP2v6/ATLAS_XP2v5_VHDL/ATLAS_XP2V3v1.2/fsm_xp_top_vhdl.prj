@@ -1,0 +1,5 @@
+vhdl work "D:\MILOS\Projects\ATLAS_XP2v5\ATLAS_XP2v5_VHDL\ATLAS_XP2V3v1.2\nvram_rtc.vhd"
+vhdl work "D:\MILOS\Projects\ATLAS_XP2v5\ATLAS_XP2v5_VHDL\ATLAS_XP2V3v1.2\fsm_xp.vhd"
+vhdl work "D:\MILOS\Projects\ATLAS_XP2v5\ATLAS_XP2v5_VHDL\ATLAS_XP2V3v1.2\data_latch.vhd"
+vhdl work "D:\MILOS\Projects\ATLAS_XP2v5\ATLAS_XP2v5_VHDL\ATLAS_XP2V3v1.2\adr_latch.vhd"
+vhdl work "D:\MILOS\Projects\ATLAS_XP2v5\ATLAS_XP2v5_VHDL\ATLAS_XP2V3v1.2\fsm_xp_top.vhd"

@@ -1,0 +1,15 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW1N-4D" pn="GW1N-LV4LQ144C5/I4">gw1n4d-035</Device>
+    <FileList>
+        <File path="src/addr_decoder.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/addr_latch.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/gowin_dpb/gowin_dpb.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/secure_gateway.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/semaphore.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/semaphore_controler.vhd" type="file.vhdl" enable="1"/>
+    </FileList>
+</Project>

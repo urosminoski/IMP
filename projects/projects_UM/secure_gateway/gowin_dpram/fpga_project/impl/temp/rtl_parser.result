@@ -1,0 +1,102 @@
+[
+ {
+  "InstFile" : "C:/Users/Korisnik/Desktop/IMP/projects/secure_gateway/gowin_dpram/fpga_project/src/gowin_dpb/gowin_dpb.vhd",
+  "InstLine" : 13,
+  "InstName" : "dp_ram",
+  "ModuleFile" : "C:/Users/Korisnik/Desktop/IMP/projects/secure_gateway/gowin_dpram/fpga_project/src/gowin_dpb/gowin_dpb.vhd",
+  "ModuleLine" : 13,
+  "ModuleName" : "dp_ram"
+ },
+ {
+  "InstFile" : "C:/Users/Korisnik/Desktop/IMP/projects/secure_gateway/gowin_dpram/fpga_project/src/secure_gateway.vhd",
+  "InstLine" : 25,
+  "InstName" : "secure_gateway",
+  "ModuleFile" : "C:/Users/Korisnik/Desktop/IMP/projects/secure_gateway/gowin_dpram/fpga_project/src/secure_gateway.vhd",
+  "ModuleLine" : 25,
+  "ModuleName" : "secure_gateway",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/Korisnik/Desktop/IMP/projects/secure_gateway/gowin_dpram/fpga_project/src/secure_gateway.vhd",
+    "InstLine" : 381,
+    "InstName" : "I4",
+    "ModuleFile" : "C:/Users/Korisnik/Desktop/IMP/projects/secure_gateway/gowin_dpram/fpga_project/src/secure_gateway.vhd",
+    "ModuleLine" : 155,
+    "ModuleName" : "Gowin_DPB"
+   },
+   {
+    "InstFile" : "C:/Users/Korisnik/Desktop/IMP/projects/secure_gateway/gowin_dpram/fpga_project/src/secure_gateway.vhd",
+    "InstLine" : 218,
+    "InstName" : "I1_A",
+    "ModuleFile" : "C:/Users/Korisnik/Desktop/IMP/projects/secure_gateway/gowin_dpram/fpga_project/src/addr_latch.vhd",
+    "ModuleLine" : 25,
+    "ModuleName" : "address_latch"
+   },
+   {
+    "InstFile" : "C:/Users/Korisnik/Desktop/IMP/projects/secure_gateway/gowin_dpram/fpga_project/src/secure_gateway.vhd",
+    "InstLine" : 229,
+    "InstName" : "I1_B",
+    "ModuleFile" : "C:/Users/Korisnik/Desktop/IMP/projects/secure_gateway/gowin_dpram/fpga_project/src/addr_latch.vhd",
+    "ModuleLine" : 25,
+    "ModuleName" : "address_latch"
+   },
+   {
+    "InstFile" : "C:/Users/Korisnik/Desktop/IMP/projects/secure_gateway/gowin_dpram/fpga_project/src/secure_gateway.vhd",
+    "InstLine" : 240,
+    "InstName" : "I2_A",
+    "ModuleFile" : "C:/Users/Korisnik/Desktop/IMP/projects/secure_gateway/gowin_dpram/fpga_project/src/addr_decoder.vhd",
+    "ModuleLine" : 25,
+    "ModuleName" : "addr_decoder"
+   },
+   {
+    "InstFile" : "C:/Users/Korisnik/Desktop/IMP/projects/secure_gateway/gowin_dpram/fpga_project/src/secure_gateway.vhd",
+    "InstLine" : 267,
+    "InstName" : "I2_B",
+    "ModuleFile" : "C:/Users/Korisnik/Desktop/IMP/projects/secure_gateway/gowin_dpram/fpga_project/src/addr_decoder.vhd",
+    "ModuleLine" : 25,
+    "ModuleName" : "addr_decoder"
+   },
+   {
+    "InstFile" : "C:/Users/Korisnik/Desktop/IMP/projects/secure_gateway/gowin_dpram/fpga_project/src/secure_gateway.vhd",
+    "InstLine" : 353,
+    "InstName" : "I3",
+    "ModuleFile" : "C:/Users/Korisnik/Desktop/IMP/projects/secure_gateway/gowin_dpram/fpga_project/src/semaphore_controler.vhd",
+    "ModuleLine" : 25,
+    "ModuleName" : "semaphore_controler",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Korisnik/Desktop/IMP/projects/secure_gateway/gowin_dpram/fpga_project/src/semaphore_controler.vhd",
+      "InstLine" : 281,
+      "InstName" : "S0",
+      "ModuleFile" : "C:/Users/Korisnik/Desktop/IMP/projects/secure_gateway/gowin_dpram/fpga_project/src/semaphore.vhd",
+      "ModuleLine" : 25,
+      "ModuleName" : "semaphore"
+     },
+     {
+      "InstFile" : "C:/Users/Korisnik/Desktop/IMP/projects/secure_gateway/gowin_dpram/fpga_project/src/semaphore_controler.vhd",
+      "InstLine" : 294,
+      "InstName" : "S1",
+      "ModuleFile" : "C:/Users/Korisnik/Desktop/IMP/projects/secure_gateway/gowin_dpram/fpga_project/src/semaphore.vhd",
+      "ModuleLine" : 25,
+      "ModuleName" : "semaphore"
+     },
+     {
+      "InstFile" : "C:/Users/Korisnik/Desktop/IMP/projects/secure_gateway/gowin_dpram/fpga_project/src/semaphore_controler.vhd",
+      "InstLine" : 307,
+      "InstName" : "S2",
+      "ModuleFile" : "C:/Users/Korisnik/Desktop/IMP/projects/secure_gateway/gowin_dpram/fpga_project/src/semaphore.vhd",
+      "ModuleLine" : 25,
+      "ModuleName" : "semaphore"
+     },
+     {
+      "InstFile" : "C:/Users/Korisnik/Desktop/IMP/projects/secure_gateway/gowin_dpram/fpga_project/src/semaphore_controler.vhd",
+      "InstLine" : 320,
+      "InstName" : "S3",
+      "ModuleFile" : "C:/Users/Korisnik/Desktop/IMP/projects/secure_gateway/gowin_dpram/fpga_project/src/semaphore.vhd",
+      "ModuleLine" : 25,
+      "ModuleName" : "semaphore"
+     }
+    ]
+   }
+  ]
+ }
+]

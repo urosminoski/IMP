@@ -1,0 +1,3371 @@
+MDF Database:  version 1.0
+MDF_INFO | fsm_xp_top | XCR3256XL-12-PQ208
+MACROCELL | 8 | 0 | address_max<0>_MC
+ATTRIBUTES | 209978114 | 2
+INPUTS | 1 | data_isa_latched<0>
+INPUTMC | 1 | 4 | 0
+LCT | 2 | 2 | Internal_Name | 5 | Internal_Name
+EQ | 3 | 
+   address_max<0> := data_isa_latched<0>;	// (1 pt, 1 inp)
+    address_max<0>.OE = !master_enable;	// LOE	(1 pt, 1 inp)
+    address_max<0>.CLK = I2/load_address;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 4 | 0 | data_isa_latched<0>_MC
+ATTRIBUTES | 3431203586 | 6
+OUTPUTMC | 4 | 8 | 0 | 6 | 9 | 6 | 0 | 6 | 10
+INPUTS | 1 | data_isa<0>_BUFR
+INPUTMC | 1 | 5 | 10
+LCT | 2 | 2 | Internal_Name | 5 | Internal_Name
+EQ | 5 | 
+   data_isa<0> =  data_isa<0>_BUFR;	// (1 pt, 1 inp)
+    data_isa<0>.OE = N_PZ_2896;	// LOE	(1 pt, 1 inp)
+// Direct Input Register
+data_isa_latched<0> := data_isa<0>.PIN;	// (0 pt, 0 inp)
+    data_isa_latched<0>.CLK = reg_wr;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 7 | 5 | reg_wr_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 4 | 1 | 6 | 0 | 9 | 1 | 7 | 0 | 10
+INPUTS | 3 | iowr  | aen  | cs
+INPUTMC | 1 | 9 | 11
+INPUTP | 2 | 5 | 8
+EQ | 2 | 
+   reg_wr := !iowr & !aen & cs;	// (1 pt, 3 inp)
+   reg_wr.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 9 | 11 | cs_MC
+ATTRIBUTES | 1610875650 | 0
+OUTPUTMC | 3 | 7 | 5 | 2 | 14 | 9 | 12
+INPUTS | 22 | ale  | cw6  | Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001  | adr_latched<5>  | adr_latched<6>  | adr_latched<8>
+INPUTMC | 20 | 0 | 2 | 0 | 11 | 0 | 13 | 0 | 14 | 0 | 15 | 2 | 0 | 2 | 1 | 2 | 2 | 2 | 3 | 1 | 15 | 1 | 14 | 1 | 13 | 1 | 12 | 1 | 11 | 1 | 4 | 1 | 3 | 1 | 2 | 0 | 3 | 0 | 4 | 0 | 12
+INPUTP | 2 | 51 | 9
+EQ | 20 | 
+   cs = !ale & cw6 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & !adr_latched<5> & !adr_latched<6> & adr_latched<8>
+	# !ale & !cw6 & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & !adr_latched<5> & !adr_latched<6> & adr_latched<8>;	// (2 pt, 22 inp)
+
+MACROCELL | 0 | 2 | Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000_MC
+ATTRIBUTES | 2155905024 | 4
+OUTPUTMC | 9 | 9 | 11 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 9 | 13 | 9 | 14
+INPUTS | 0 
+UCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 := address_isa<4>;	// (0 pt, 0 inp)
+    Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000.CLK = !(ale);	// UCLK	(1 pt, 1 inp)
+
+MACROCELL | 0 | 11 | Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001_MC
+ATTRIBUTES | 2155905024 | 4
+OUTPUTMC | 9 | 9 | 11 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 9 | 13 | 9 | 14
+INPUTS | 0 
+UCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 := address_isa<7>;	// (0 pt, 0 inp)
+    Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001.CLK = !(ale);	// UCLK	(1 pt, 1 inp)
+
+MACROCELL | 0 | 13 | Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001_MC
+ATTRIBUTES | 2155905024 | 4
+OUTPUTMC | 9 | 9 | 11 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 9 | 13 | 9 | 14
+INPUTS | 0 
+UCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 := address_isa<9>;	// (0 pt, 0 inp)
+    Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001.CLK = !(ale);	// UCLK	(1 pt, 1 inp)
+
+MACROCELL | 0 | 14 | Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000_MC
+ATTRIBUTES | 2155905024 | 4
+OUTPUTMC | 9 | 9 | 11 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 9 | 13 | 9 | 14
+INPUTS | 0 
+UCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 := address_isa<10>;	// (0 pt, 0 inp)
+    Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000.CLK = !(ale);	// UCLK	(1 pt, 1 inp)
+
+MACROCELL | 0 | 15 | Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001_MC
+ATTRIBUTES | 2155905024 | 4
+OUTPUTMC | 9 | 9 | 11 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 9 | 13 | 9 | 14
+INPUTS | 0 
+UCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 := address_isa<11>;	// (0 pt, 0 inp)
+    Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001.CLK = !(ale);	// UCLK	(1 pt, 1 inp)
+
+MACROCELL | 2 | 0 | Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000_MC
+ATTRIBUTES | 2155905024 | 4
+OUTPUTMC | 9 | 9 | 11 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 9 | 13 | 9 | 14
+INPUTS | 0 
+UCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 := address_isa<12>;	// (0 pt, 0 inp)
+    Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000.CLK = !(ale);	// UCLK	(1 pt, 1 inp)
+
+MACROCELL | 2 | 1 | Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001_MC
+ATTRIBUTES | 2155905024 | 4
+OUTPUTMC | 9 | 9 | 11 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 9 | 13 | 9 | 14
+INPUTS | 0 
+UCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 := address_isa<13>;	// (0 pt, 0 inp)
+    Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001.CLK = !(ale);	// UCLK	(1 pt, 1 inp)
+
+MACROCELL | 2 | 2 | Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000_MC
+ATTRIBUTES | 2155905024 | 4
+OUTPUTMC | 9 | 9 | 11 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 9 | 13 | 9 | 14
+INPUTS | 0 
+UCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 := address_isa<14>;	// (0 pt, 0 inp)
+    Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000.CLK = !(ale);	// UCLK	(1 pt, 1 inp)
+
+MACROCELL | 2 | 3 | Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001_MC
+ATTRIBUTES | 2155905024 | 4
+OUTPUTMC | 9 | 9 | 11 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 9 | 13 | 9 | 14
+INPUTS | 0 
+UCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 := address_isa<15>;	// (0 pt, 0 inp)
+    Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001.CLK = !(ale);	// UCLK	(1 pt, 1 inp)
+
+MACROCELL | 1 | 15 | Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000_MC
+ATTRIBUTES | 2155905024 | 4
+OUTPUTMC | 9 | 9 | 11 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 9 | 13 | 9 | 14
+INPUTS | 0 
+UCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 := address_isa<16>;	// (0 pt, 0 inp)
+    Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000.CLK = !(ale);	// UCLK	(1 pt, 1 inp)
+
+MACROCELL | 1 | 14 | Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001_MC
+ATTRIBUTES | 2155905024 | 4
+OUTPUTMC | 9 | 9 | 11 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 9 | 13 | 9 | 14
+INPUTS | 0 
+UCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 := address_isa<17>;	// (0 pt, 0 inp)
+    Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001.CLK = !(ale);	// UCLK	(1 pt, 1 inp)
+
+MACROCELL | 1 | 13 | Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000_MC
+ATTRIBUTES | 2155905024 | 4
+OUTPUTMC | 9 | 9 | 11 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 9 | 13 | 9 | 14
+INPUTS | 0 
+UCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 := address_isa<18>;	// (0 pt, 0 inp)
+    Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000.CLK = !(ale);	// UCLK	(1 pt, 1 inp)
+
+MACROCELL | 1 | 12 | Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001_MC
+ATTRIBUTES | 2155905024 | 4
+OUTPUTMC | 9 | 9 | 11 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 9 | 13 | 9 | 14
+INPUTS | 0 
+UCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 := address_isa<19>;	// (0 pt, 0 inp)
+    Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001.CLK = !(ale);	// UCLK	(1 pt, 1 inp)
+
+MACROCELL | 1 | 11 | Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000_MC
+ATTRIBUTES | 2155905024 | 4
+OUTPUTMC | 9 | 9 | 11 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 9 | 13 | 9 | 14
+INPUTS | 0 
+UCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 := address_isa<20>;	// (0 pt, 0 inp)
+    Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000.CLK = !(ale);	// UCLK	(1 pt, 1 inp)
+
+MACROCELL | 1 | 4 | Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001_MC
+ATTRIBUTES | 2155905024 | 4
+OUTPUTMC | 9 | 9 | 11 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 9 | 13 | 9 | 14
+INPUTS | 0 
+UCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 := address_isa<21>;	// (0 pt, 0 inp)
+    Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001.CLK = !(ale);	// UCLK	(1 pt, 1 inp)
+
+MACROCELL | 1 | 3 | Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000_MC
+ATTRIBUTES | 2155905024 | 4
+OUTPUTMC | 9 | 9 | 11 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 9 | 13 | 9 | 14
+INPUTS | 0 
+UCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 := address_isa<22>;	// (0 pt, 0 inp)
+    Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000.CLK = !(ale);	// UCLK	(1 pt, 1 inp)
+
+MACROCELL | 1 | 2 | Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001_MC
+ATTRIBUTES | 2155905024 | 4
+OUTPUTMC | 9 | 9 | 11 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 9 | 13 | 9 | 14
+INPUTS | 0 
+UCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 := address_isa<23>;	// (0 pt, 0 inp)
+    Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001.CLK = !(ale);	// UCLK	(1 pt, 1 inp)
+
+MACROCELL | 0 | 3 | adr_latched<5>_MC
+ATTRIBUTES | 2155905024 | 4
+OUTPUTMC | 9 | 9 | 11 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 9 | 13 | 9 | 14
+INPUTS | 0 
+UCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+adr_latched<5> := address_isa<5>;	// (0 pt, 0 inp)
+    adr_latched<5>.CLK = !(ale);	// UCLK	(1 pt, 1 inp)
+
+MACROCELL | 0 | 4 | adr_latched<6>_MC
+ATTRIBUTES | 2155905024 | 4
+OUTPUTMC | 9 | 9 | 11 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 9 | 13 | 9 | 14
+INPUTS | 0 
+UCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+adr_latched<6> := address_isa<6>;	// (0 pt, 0 inp)
+    adr_latched<6>.CLK = !(ale);	// UCLK	(1 pt, 1 inp)
+
+MACROCELL | 0 | 12 | adr_latched<8>_MC
+ATTRIBUTES | 2155905024 | 4
+OUTPUTMC | 9 | 9 | 11 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 9 | 13 | 9 | 14
+INPUTS | 0 
+UCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+adr_latched<8> := address_isa<8>;	// (0 pt, 0 inp)
+    adr_latched<8>.CLK = !(ale);	// UCLK	(1 pt, 1 inp)
+
+MACROCELL | 2 | 8 | N_PZ_2896_MC
+ATTRIBUTES | 536871680 | 0
+INPUTS | 17 | test2  | read_led_register  | read_id2_register  | read_jumper_register  | read_id1_register  | read_page_register  | read_mode_register  | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | reg_rd  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | iord  | nvram_ce  | nvram_cs  | N_PZ_1377  | smemr
+INPUTMC | 15 | 15 | 2 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 1 | 0 | 1 | 1 | 0 | 1 | 2 | 14 | 0 | 0 | 11 | 12 | 11 | 11 | 11 | 10
+INPUTP | 2 | 6 | 18
+EQ | 20 | 
+   N_PZ_2896 = test2
+	# read_led_register
+	# read_id2_register
+	# read_jumper_register
+	# read_id1_register
+	# read_page_register
+	# read_mode_register
+	# Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd
+	# Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!adr_latched<3> & reg_rd & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000
+	# 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000
+	# !iord & nvram_ce & !nvram_cs & N_PZ_1377
+	# !smemr & !nvram_ce & nvram_cs & N_PZ_1377
+	# !Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000;	// (13 pt, 17 inp)
+
+MACROCELL | 1 | 0 | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001_MC
+ATTRIBUTES | 2155905024 | 4
+OUTPUTMC | 34 | 15 | 2 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 9 | 13 | 2 | 8 | 1 | 6 | 0 | 9 | 1 | 8 | 1 | 7 | 0 | 10 | 2 | 10 | 2 | 9 | 9 | 12 | 5 | 10 | 5 | 11 | 5 | 4 | 5 | 3 | 5 | 2 | 5 | 1 | 5 | 0 | 2 | 5 | 9 | 14 | 4 | 3 | 2 | 7 | 10 | 5 | 4 | 12 | 5 | 9 | 2 | 6 | 4 | 15 | 5 | 12
+INPUTS | 0 
+UCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 := address_isa<1>;	// (0 pt, 0 inp)
+    Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001.CLK = !(ale);	// UCLK	(1 pt, 1 inp)
+
+MACROCELL | 1 | 1 | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000_MC
+ATTRIBUTES | 2155905024 | 4
+OUTPUTMC | 33 | 15 | 2 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 2 | 8 | 1 | 6 | 0 | 9 | 1 | 8 | 1 | 7 | 0 | 10 | 2 | 10 | 2 | 9 | 9 | 12 | 5 | 10 | 5 | 11 | 5 | 4 | 5 | 3 | 5 | 2 | 5 | 1 | 5 | 0 | 2 | 5 | 9 | 14 | 4 | 3 | 2 | 7 | 10 | 5 | 4 | 12 | 5 | 9 | 2 | 6 | 4 | 15 | 5 | 12
+INPUTS | 0 
+UCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 := address_isa<0>;	// (0 pt, 0 inp)
+    Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000.CLK = !(ale);	// UCLK	(1 pt, 1 inp)
+
+MACROCELL | 0 | 1 | adr_latched<3>_MC
+ATTRIBUTES | 2155905024 | 4
+OUTPUTMC | 34 | 15 | 2 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 9 | 13 | 2 | 8 | 1 | 6 | 0 | 9 | 1 | 8 | 1 | 7 | 0 | 10 | 2 | 10 | 2 | 9 | 9 | 12 | 5 | 10 | 5 | 11 | 5 | 4 | 5 | 3 | 5 | 2 | 5 | 1 | 5 | 0 | 2 | 5 | 9 | 14 | 4 | 3 | 2 | 7 | 10 | 5 | 4 | 12 | 5 | 9 | 2 | 6 | 4 | 15 | 5 | 12
+INPUTS | 0 
+UCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+adr_latched<3> := address_isa<3>;	// (0 pt, 0 inp)
+    adr_latched<3>.CLK = !(ale);	// UCLK	(1 pt, 1 inp)
+
+MACROCELL | 2 | 14 | reg_rd_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 24 | 15 | 2 | 2 | 8 | 1 | 6 | 1 | 8 | 1 | 7 | 0 | 10 | 2 | 10 | 2 | 9 | 5 | 10 | 5 | 11 | 5 | 4 | 5 | 3 | 5 | 2 | 5 | 1 | 5 | 0 | 2 | 5 | 4 | 3 | 2 | 7 | 10 | 5 | 4 | 12 | 5 | 9 | 2 | 6 | 4 | 15 | 5 | 12
+INPUTS | 3 | aen  | cs  | iord
+INPUTMC | 1 | 9 | 11
+INPUTP | 2 | 8 | 6
+EQ | 2 | 
+   reg_rd := !aen & cs & !iord;	// (1 pt, 3 inp)
+   reg_rd.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 0 | 0 | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000_MC
+ATTRIBUTES | 2155905024 | 4
+OUTPUTMC | 32 | 15 | 2 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 2 | 8 | 1 | 6 | 0 | 9 | 1 | 8 | 1 | 7 | 0 | 10 | 2 | 10 | 2 | 9 | 5 | 10 | 5 | 11 | 5 | 4 | 5 | 3 | 5 | 2 | 5 | 1 | 5 | 0 | 2 | 5 | 9 | 14 | 4 | 3 | 2 | 7 | 10 | 5 | 4 | 12 | 5 | 9 | 2 | 6 | 4 | 15 | 5 | 12
+INPUTS | 0 
+UCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 := address_isa<2>;	// (0 pt, 0 inp)
+    Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000.CLK = !(ale);	// UCLK	(1 pt, 1 inp)
+
+MACROCELL | 15 | 2 | test2_MC
+ATTRIBUTES | 1610875650 | 0
+OUTPUTMC | 10 | 2 | 8 | 5 | 10 | 2 | 5 | 4 | 3 | 2 | 7 | 10 | 5 | 4 | 12 | 5 | 9 | 2 | 6 | 4 | 15
+INPUTS | 5 | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | reg_rd  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000
+INPUTMC | 5 | 1 | 0 | 1 | 1 | 0 | 1 | 2 | 14 | 0 | 0
+EQ | 3 | 
+   test2 = !Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000;	// (1 pt, 5 inp)
+
+MACROCELL | 9 | 7 | read_led_register_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 8 | 2 | 8 | 5 | 10 | 4 | 3 | 2 | 7 | 10 | 5 | 4 | 12 | 5 | 9 | 2 | 6
+INPUTS | 29 | aen  | ale  | Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001  | adr_latched<5>  | adr_latched<6>  | adr_latched<8>  | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | iord  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | base_addr_jp<0>  | base_addr_jp<1>
+INPUTMC | 24 | 0 | 2 | 0 | 11 | 0 | 13 | 0 | 14 | 0 | 15 | 2 | 0 | 2 | 1 | 2 | 2 | 2 | 3 | 1 | 15 | 1 | 14 | 1 | 13 | 1 | 12 | 1 | 11 | 1 | 4 | 1 | 3 | 1 | 2 | 0 | 3 | 0 | 4 | 0 | 12 | 1 | 0 | 1 | 1 | 0 | 1 | 0 | 0
+INPUTP | 5 | 8 | 51 | 6 | 138 | 137
+EQ | 52 | 
+   read_led_register = !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & adr_latched<3> & !iord & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !base_addr_jp<0> & !base_addr_jp<1>
+	# !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & !iord & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & base_addr_jp<0> & !base_addr_jp<1>
+	# !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & !adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & adr_latched<3> & !iord & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !base_addr_jp<0> & base_addr_jp<1>
+	# !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & !adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & !iord & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & base_addr_jp<0> & base_addr_jp<1>;	// (4 pt, 29 inp)
+
+MACROCELL | 9 | 9 | read_id2_register_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 2 | 8 | 2 | 5 | 4 | 3 | 4 | 12
+INPUTS | 29 | aen  | ale  | Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001  | adr_latched<5>  | adr_latched<6>  | adr_latched<8>  | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | iord  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | base_addr_jp<0>  | base_addr_jp<1>
+INPUTMC | 24 | 0 | 2 | 0 | 11 | 0 | 13 | 0 | 14 | 0 | 15 | 2 | 0 | 2 | 1 | 2 | 2 | 2 | 3 | 1 | 15 | 1 | 14 | 1 | 13 | 1 | 12 | 1 | 11 | 1 | 4 | 1 | 3 | 1 | 2 | 0 | 3 | 0 | 4 | 0 | 12 | 1 | 0 | 1 | 1 | 0 | 1 | 0 | 0
+INPUTP | 5 | 8 | 51 | 6 | 138 | 137
+EQ | 52 | 
+   read_id2_register = !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & adr_latched<3> & !iord & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !base_addr_jp<0> & !base_addr_jp<1>
+	# !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & !iord & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & base_addr_jp<0> & !base_addr_jp<1>
+	# !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & !adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & adr_latched<3> & !iord & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !base_addr_jp<0> & base_addr_jp<1>
+	# !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & !adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & !iord & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & base_addr_jp<0> & base_addr_jp<1>;	// (4 pt, 29 inp)
+
+MACROCELL | 9 | 8 | read_jumper_register_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 8 | 2 | 8 | 5 | 10 | 2 | 5 | 4 | 3 | 2 | 7 | 4 | 12 | 5 | 9 | 2 | 6
+INPUTS | 29 | aen  | ale  | Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001  | adr_latched<5>  | adr_latched<6>  | adr_latched<8>  | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | iord  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | base_addr_jp<0>  | base_addr_jp<1>
+INPUTMC | 24 | 0 | 2 | 0 | 11 | 0 | 13 | 0 | 14 | 0 | 15 | 2 | 0 | 2 | 1 | 2 | 2 | 2 | 3 | 1 | 15 | 1 | 14 | 1 | 13 | 1 | 12 | 1 | 11 | 1 | 4 | 1 | 3 | 1 | 2 | 0 | 3 | 0 | 4 | 0 | 12 | 1 | 0 | 1 | 1 | 0 | 1 | 0 | 0
+INPUTP | 5 | 8 | 51 | 6 | 138 | 137
+EQ | 52 | 
+   read_jumper_register = !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & adr_latched<3> & !iord & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !base_addr_jp<0> & !base_addr_jp<1>
+	# !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & !iord & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & base_addr_jp<0> & !base_addr_jp<1>
+	# !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & !adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & adr_latched<3> & !iord & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !base_addr_jp<0> & base_addr_jp<1>
+	# !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & !adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & !iord & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & base_addr_jp<0> & base_addr_jp<1>;	// (4 pt, 29 inp)
+
+MACROCELL | 9 | 10 | read_id1_register_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 2 | 8 | 2 | 7 | 2 | 6
+INPUTS | 29 | aen  | ale  | Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001  | adr_latched<5>  | adr_latched<6>  | adr_latched<8>  | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | iord  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | base_addr_jp<0>  | base_addr_jp<1>
+INPUTMC | 24 | 0 | 2 | 0 | 11 | 0 | 13 | 0 | 14 | 0 | 15 | 2 | 0 | 2 | 1 | 2 | 2 | 2 | 3 | 1 | 15 | 1 | 14 | 1 | 13 | 1 | 12 | 1 | 11 | 1 | 4 | 1 | 3 | 1 | 2 | 0 | 3 | 0 | 4 | 0 | 12 | 1 | 0 | 1 | 1 | 0 | 1 | 0 | 0
+INPUTP | 5 | 8 | 51 | 6 | 138 | 137
+EQ | 52 | 
+   read_id1_register = !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & adr_latched<3> & !iord & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !base_addr_jp<0> & !base_addr_jp<1>
+	# !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & !iord & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & base_addr_jp<0> & !base_addr_jp<1>
+	# !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & !adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & adr_latched<3> & !iord & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !base_addr_jp<0> & base_addr_jp<1>
+	# !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & !adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & !iord & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & base_addr_jp<0> & base_addr_jp<1>;	// (4 pt, 29 inp)
+
+MACROCELL | 9 | 5 | read_page_register_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 9 | 2 | 8 | 5 | 10 | 2 | 5 | 4 | 3 | 2 | 7 | 10 | 5 | 4 | 12 | 5 | 9 | 2 | 6
+INPUTS | 29 | aen  | ale  | Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001  | adr_latched<5>  | adr_latched<6>  | adr_latched<8>  | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | iord  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | base_addr_jp<0>  | base_addr_jp<1>
+INPUTMC | 24 | 0 | 2 | 0 | 11 | 0 | 13 | 0 | 14 | 0 | 15 | 2 | 0 | 2 | 1 | 2 | 2 | 2 | 3 | 1 | 15 | 1 | 14 | 1 | 13 | 1 | 12 | 1 | 11 | 1 | 4 | 1 | 3 | 1 | 2 | 0 | 3 | 0 | 4 | 0 | 12 | 1 | 0 | 1 | 1 | 0 | 1 | 0 | 0
+INPUTP | 5 | 8 | 51 | 6 | 138 | 137
+EQ | 52 | 
+   read_page_register = !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & adr_latched<3> & !iord & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !base_addr_jp<0> & !base_addr_jp<1>
+	# !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & !iord & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & base_addr_jp<0> & !base_addr_jp<1>
+	# !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & !adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & adr_latched<3> & !iord & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !base_addr_jp<0> & base_addr_jp<1>
+	# !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & !adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & !iord & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & base_addr_jp<0> & base_addr_jp<1>;	// (4 pt, 29 inp)
+
+MACROCELL | 9 | 6 | read_mode_register_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 8 | 2 | 8 | 5 | 10 | 2 | 5 | 2 | 7 | 10 | 5 | 4 | 12 | 5 | 9 | 2 | 6
+INPUTS | 29 | aen  | ale  | Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001  | adr_latched<5>  | adr_latched<6>  | adr_latched<8>  | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | iord  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | base_addr_jp<0>  | base_addr_jp<1>
+INPUTMC | 24 | 0 | 2 | 0 | 11 | 0 | 13 | 0 | 14 | 0 | 15 | 2 | 0 | 2 | 1 | 2 | 2 | 2 | 3 | 1 | 15 | 1 | 14 | 1 | 13 | 1 | 12 | 1 | 11 | 1 | 4 | 1 | 3 | 1 | 2 | 0 | 3 | 0 | 4 | 0 | 12 | 1 | 0 | 1 | 1 | 0 | 1 | 0 | 0
+INPUTP | 5 | 8 | 51 | 6 | 138 | 137
+EQ | 52 | 
+   read_mode_register = !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & adr_latched<3> & !iord & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !base_addr_jp<0> & !base_addr_jp<1>
+	# !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & !iord & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & base_addr_jp<0> & !base_addr_jp<1>
+	# !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & !adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & adr_latched<3> & !iord & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !base_addr_jp<0> & base_addr_jp<1>
+	# !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & !adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & !iord & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & base_addr_jp<0> & base_addr_jp<1>;	// (4 pt, 29 inp)
+
+MACROCELL | 11 | 12 | nvram_ce_MC
+ATTRIBUTES | 1610875650 | 0
+OUTPUTMC | 12 | 2 | 8 | 12 | 14 | 7 | 14 | 2 | 15 | 5 | 10 | 2 | 5 | 4 | 3 | 2 | 7 | 10 | 5 | 4 | 12 | 5 | 9 | 2 | 6
+INPUTS | 17 | aen  | reset  | address_isa<19>  | address_isa<23>  | address_isa<22>  | address_isa<20>  | address_isa<21>  | address_isa<18>  | address_isa<16>  | address_isa<17>  | address_isa<15>  | mode_register<3>  | mode_register<4>  | N_PZ_2834  | mode_register<2>  | mode_register<0>  | mode_register<1>
+INPUTMC | 6 | 3 | 8 | 3 | 7 | 8 | 14 | 3 | 9 | 3 | 13 | 3 | 10
+INPUTP | 11 | 8 | 12 | 163 | 159 | 160 | 162 | 161 | 164 | 167 | 166 | 139
+EQ | 52 | 
+   !nvram_ce = !aen & !reset & address_isa<19> & address_isa<23> & 
+	address_isa<22> & address_isa<20> & address_isa<21> & 
+	address_isa<18> & address_isa<16> & address_isa<17> & 
+	address_isa<15> & mode_register<3>
+	# !aen & !reset & address_isa<19> & address_isa<23> & 
+	address_isa<22> & address_isa<20> & address_isa<21> & 
+	address_isa<18> & address_isa<16> & address_isa<17> & 
+	address_isa<15> & mode_register<4>
+	# !aen & !reset & address_isa<19> & address_isa<23> & 
+	address_isa<22> & address_isa<20> & address_isa<21> & 
+	address_isa<18> & address_isa<16> & address_isa<17> & 
+	address_isa<15> & !N_PZ_2834
+	# !aen & !reset & address_isa<19> & !address_isa<23> & 
+	!address_isa<22> & !address_isa<20> & !address_isa<21> & 
+	address_isa<18> & address_isa<16> & !address_isa<17> & 
+	address_isa<15> & !mode_register<3> & !mode_register<4> & 
+	mode_register<2> & mode_register<0> & mode_register<1> & N_PZ_2834
+	# !aen & !reset & address_isa<19> & !address_isa<23> & 
+	!address_isa<22> & !address_isa<20> & !address_isa<21> & 
+	address_isa<18> & address_isa<16> & !address_isa<17> & 
+	!address_isa<15> & !mode_register<3> & !mode_register<4> & 
+	mode_register<2> & !mode_register<0> & mode_register<1> & N_PZ_2834
+	# !aen & !reset & address_isa<19> & !address_isa<23> & 
+	!address_isa<22> & !address_isa<20> & !address_isa<21> & 
+	address_isa<18> & !address_isa<16> & !address_isa<17> & 
+	address_isa<15> & !mode_register<3> & !mode_register<4> & 
+	mode_register<2> & mode_register<0> & !mode_register<1> & N_PZ_2834
+	# !aen & !reset & address_isa<19> & !address_isa<23> & 
+	!address_isa<22> & !address_isa<20> & !address_isa<21> & 
+	address_isa<18> & !address_isa<16> & !address_isa<17> & 
+	!address_isa<15> & !mode_register<3> & !mode_register<4> & 
+	mode_register<2> & !mode_register<0> & !mode_register<1> & N_PZ_2834
+	# !aen & !reset & address_isa<19> & !address_isa<23> & 
+	!address_isa<22> & !address_isa<20> & !address_isa<21> & 
+	!address_isa<18> & address_isa<16> & address_isa<17> & 
+	address_isa<15> & !mode_register<3> & !mode_register<4> & 
+	!mode_register<2> & mode_register<0> & mode_register<1> & N_PZ_2834
+	# !aen & !reset & address_isa<19> & !address_isa<23> & 
+	!address_isa<22> & !address_isa<20> & !address_isa<21> & 
+	!address_isa<18> & address_isa<16> & address_isa<17> & 
+	!address_isa<15> & !mode_register<3> & !mode_register<4> & 
+	!mode_register<2> & !mode_register<0> & mode_register<1> & N_PZ_2834
+	# !aen & !reset & address_isa<19> & !address_isa<23> & 
+	!address_isa<22> & !address_isa<20> & !address_isa<21> & 
+	!address_isa<18> & !address_isa<16> & address_isa<17> & 
+	address_isa<15> & !mode_register<3> & !mode_register<4> & 
+	!mode_register<2> & mode_register<0> & !mode_register<1> & N_PZ_2834
+	# !aen & !reset & address_isa<19> & !address_isa<23> & 
+	!address_isa<22> & !address_isa<20> & !address_isa<21> & 
+	!address_isa<18> & !address_isa<16> & address_isa<17> & 
+	!address_isa<15> & !mode_register<3> & !mode_register<4> & 
+	!mode_register<2> & !mode_register<0> & !mode_register<1> & N_PZ_2834;	// (11 pt, 17 inp)
+
+MACROCELL | 3 | 8 | mode_register<3>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 3 | 11 | 12 | 11 | 10 | 2 | 7
+INPUTS | 1 | data_isa<3>.PIN
+INPUTP | 1 | 126
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   mode_register<3>.D = data_isa<3>.PIN;	// (1 pt, 1 inp)
+    mode_register<3>.LH = 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & 
+	N_PZ_2876;	// LCLK	(1 pt, 3 inp)
+
+MACROCELL | 9 | 13 | N_PZ_2876_MC
+ATTRIBUTES | 536871680 | 0
+INPUTS | 27 | iowr  | aen  | ale  | Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001  | adr_latched<5>  | adr_latched<6>  | adr_latched<8>  | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | adr_latched<3>  | base_addr_jp<0>  | base_addr_jp<1>
+INPUTMC | 22 | 0 | 2 | 0 | 11 | 0 | 13 | 0 | 14 | 0 | 15 | 2 | 0 | 2 | 1 | 2 | 2 | 2 | 3 | 1 | 15 | 1 | 14 | 1 | 13 | 1 | 12 | 1 | 11 | 1 | 4 | 1 | 3 | 1 | 2 | 0 | 3 | 0 | 4 | 0 | 12 | 1 | 0 | 0 | 1
+INPUTP | 5 | 5 | 8 | 51 | 138 | 137
+EQ | 48 | 
+   N_PZ_2876 = !iowr & !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & adr_latched<3> & !base_addr_jp<0> & 
+	!base_addr_jp<1>
+	# !iowr & !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & !adr_latched<3> & base_addr_jp<0> & 
+	!base_addr_jp<1>
+	# !iowr & !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & !adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & adr_latched<3> & !base_addr_jp<0> & 
+	base_addr_jp<1>
+	# !iowr & !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & !adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & !adr_latched<3> & base_addr_jp<0> & 
+	base_addr_jp<1>;	// (4 pt, 27 inp)
+
+MACROCELL | 3 | 7 | mode_register<4>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 3 | 11 | 12 | 11 | 10 | 10 | 5
+INPUTS | 1 | data_isa<4>.PIN
+INPUTP | 1 | 124
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   mode_register<4>.D = data_isa<4>.PIN;	// (1 pt, 1 inp)
+    mode_register<4>.LH = 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & 
+	N_PZ_2876;	// LCLK	(1 pt, 3 inp)
+
+MACROCELL | 3 | 9 | mode_register<2>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 3 | 11 | 12 | 11 | 10 | 9 | 14
+INPUTS | 1 | data_isa<2>.PIN
+INPUTP | 1 | 128
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   mode_register<2>.D = data_isa<2>.PIN;	// (1 pt, 1 inp)
+    mode_register<2>.LH = 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & 
+	N_PZ_2876;	// LCLK	(1 pt, 3 inp)
+
+MACROCELL | 3 | 13 | mode_register<0>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 3 | 11 | 12 | 11 | 10 | 5 | 10
+INPUTS | 1 | data_isa<0>.PIN
+INPUTP | 1 | 131
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   mode_register<0>.D = data_isa<0>.PIN;	// (1 pt, 1 inp)
+    mode_register<0>.LH = 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & 
+	N_PZ_2876;	// LCLK	(1 pt, 3 inp)
+
+MACROCELL | 3 | 10 | mode_register<1>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 3 | 11 | 12 | 11 | 10 | 2 | 5
+INPUTS | 1 | data_isa<1>.PIN
+INPUTP | 1 | 130
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   mode_register<1>.D = data_isa<1>.PIN;	// (1 pt, 1 inp)
+    mode_register<1>.LH = 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & 
+	N_PZ_2876;	// LCLK	(1 pt, 3 inp)
+
+MACROCELL | 8 | 14 | N_PZ_2834_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 11 | 12 | 11 | 10
+INPUTS | 3 | mode_register<5>  | mode_register<6>  | mode_register<7>
+INPUTMC | 3 | 3 | 6 | 3 | 5 | 3 | 15
+EQ | 2 | 
+   N_PZ_2834 = !mode_register<5> & mode_register<6> & 
+	!mode_register<7>;	// (1 pt, 3 inp)
+
+MACROCELL | 3 | 6 | mode_register<5>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 2 | 8 | 14 | 4 | 12
+INPUTS | 1 | data_isa<5>.PIN
+INPUTP | 1 | 123
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   mode_register<5>.D = data_isa<5>.PIN;	// (1 pt, 1 inp)
+    mode_register<5>.LH = 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & 
+	N_PZ_2876;	// LCLK	(1 pt, 3 inp)
+
+MACROCELL | 3 | 5 | mode_register<6>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 2 | 8 | 14 | 5 | 9
+INPUTS | 1 | data_isa<6>.PIN
+INPUTP | 1 | 122
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   mode_register<6>.D = data_isa<6>.PIN;	// (1 pt, 1 inp)
+    mode_register<6>.LH = 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & 
+	N_PZ_2876;	// LCLK	(1 pt, 3 inp)
+
+MACROCELL | 3 | 15 | mode_register<7>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 2 | 8 | 14 | 2 | 6
+INPUTS | 1 | data_isa<7>.PIN
+INPUTP | 1 | 121
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   mode_register<7>.D = data_isa<7>.PIN;	// (1 pt, 1 inp)
+    mode_register<7>.LH = 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & 
+	N_PZ_2876;	// LCLK	(1 pt, 3 inp)
+
+MACROCELL | 11 | 11 | nvram_cs_MC
+ATTRIBUTES | 1610875650 | 0
+OUTPUTMC | 12 | 2 | 8 | 12 | 14 | 7 | 14 | 2 | 15 | 5 | 10 | 2 | 5 | 4 | 3 | 2 | 7 | 10 | 5 | 4 | 12 | 5 | 9 | 2 | 6
+INPUTS | 23 | aen  | base_addr_jp<1>  | reset  | address_isa<19>  | address_isa<23>  | address_isa<22>  | address_isa<20>  | address_isa<21>  | address_isa<18>  | address_isa<16>  | address_isa<17>  | address_isa<15>  | address_isa<8>  | address_isa<11>  | address_isa<7>  | address_isa<6>  | address_isa<14>  | address_isa<13>  | address_isa<10>  | address_isa<9>  | address_isa<4>  | address_isa<12>  | address_isa<5>
+INPUTP | 23 | 8 | 137 | 12 | 163 | 159 | 160 | 162 | 161 | 164 | 167 | 166 | 139 | 148 | 144 | 149 | 150 | 141 | 142 | 145 | 147 | 152 | 143 | 151
+EQ | 16 | 
+   !nvram_cs = !aen & base_addr_jp<1> & !reset & !address_isa<19> & 
+	!address_isa<23> & !address_isa<22> & !address_isa<20> & 
+	!address_isa<21> & !address_isa<18> & !address_isa<16> & 
+	!address_isa<17> & !address_isa<15> & address_isa<8> & 
+	!address_isa<11> & !address_isa<7> & address_isa<6> & 
+	!address_isa<14> & !address_isa<13> & !address_isa<10> & 
+	!address_isa<9> & address_isa<4> & !address_isa<12> & 
+	!address_isa<5>
+	# !aen & !base_addr_jp<1> & !reset & !address_isa<19> & 
+	!address_isa<23> & !address_isa<22> & !address_isa<20> & 
+	!address_isa<21> & !address_isa<18> & !address_isa<16> & 
+	!address_isa<17> & !address_isa<15> & address_isa<8> & 
+	!address_isa<11> & !address_isa<7> & address_isa<6> & 
+	!address_isa<14> & !address_isa<13> & !address_isa<10> & 
+	!address_isa<9> & address_isa<4> & !address_isa<12> & 
+	address_isa<5>;	// (2 pt, 23 inp)
+
+MACROCELL | 11 | 10 | N_PZ_1377_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 12 | 2 | 8 | 7 | 12 | 7 | 14 | 7 | 13 | 5 | 10 | 2 | 5 | 4 | 3 | 2 | 7 | 10 | 5 | 4 | 12 | 5 | 9 | 2 | 6
+INPUTS | 29 | aen  | reset  | address_isa<19>  | address_isa<23>  | address_isa<22>  | address_isa<20>  | address_isa<21>  | address_isa<18>  | address_isa<16>  | address_isa<17>  | address_isa<15>  | mode_register<3>  | mode_register<4>  | N_PZ_2834  | mode_register<2>  | mode_register<0>  | mode_register<1>  | base_addr_jp<1>  | address_isa<8>  | address_isa<11>  | address_isa<7>  | address_isa<6>  | address_isa<14>  | address_isa<13>  | address_isa<10>  | address_isa<9>  | address_isa<4>  | address_isa<12>  | address_isa<5>
+INPUTMC | 6 | 3 | 8 | 3 | 7 | 8 | 14 | 3 | 9 | 3 | 13 | 3 | 10
+INPUTP | 23 | 8 | 12 | 163 | 159 | 160 | 162 | 161 | 164 | 167 | 166 | 139 | 137 | 148 | 144 | 149 | 150 | 141 | 142 | 145 | 147 | 152 | 143 | 151
+EQ | 68 | 
+   N_PZ_1377 = !aen & !reset & address_isa<19> & address_isa<23> & 
+	address_isa<22> & address_isa<20> & address_isa<21> & 
+	address_isa<18> & address_isa<16> & address_isa<17> & 
+	address_isa<15> & mode_register<3>
+	# !aen & !reset & address_isa<19> & address_isa<23> & 
+	address_isa<22> & address_isa<20> & address_isa<21> & 
+	address_isa<18> & address_isa<16> & address_isa<17> & 
+	address_isa<15> & mode_register<4>
+	# !aen & !reset & address_isa<19> & address_isa<23> & 
+	address_isa<22> & address_isa<20> & address_isa<21> & 
+	address_isa<18> & address_isa<16> & address_isa<17> & 
+	address_isa<15> & !N_PZ_2834
+	# !aen & !reset & address_isa<19> & !address_isa<23> & 
+	!address_isa<22> & !address_isa<20> & !address_isa<21> & 
+	address_isa<18> & address_isa<16> & !address_isa<17> & 
+	address_isa<15> & !mode_register<3> & !mode_register<4> & 
+	mode_register<2> & mode_register<0> & mode_register<1> & N_PZ_2834
+	# !aen & !reset & address_isa<19> & !address_isa<23> & 
+	!address_isa<22> & !address_isa<20> & !address_isa<21> & 
+	address_isa<18> & address_isa<16> & !address_isa<17> & 
+	!address_isa<15> & !mode_register<3> & !mode_register<4> & 
+	mode_register<2> & !mode_register<0> & mode_register<1> & N_PZ_2834
+	# !aen & !reset & address_isa<19> & !address_isa<23> & 
+	!address_isa<22> & !address_isa<20> & !address_isa<21> & 
+	address_isa<18> & !address_isa<16> & !address_isa<17> & 
+	address_isa<15> & !mode_register<3> & !mode_register<4> & 
+	mode_register<2> & mode_register<0> & !mode_register<1> & N_PZ_2834
+	# !aen & !reset & address_isa<19> & !address_isa<23> & 
+	!address_isa<22> & !address_isa<20> & !address_isa<21> & 
+	address_isa<18> & !address_isa<16> & !address_isa<17> & 
+	!address_isa<15> & !mode_register<3> & !mode_register<4> & 
+	mode_register<2> & !mode_register<0> & !mode_register<1> & N_PZ_2834
+	# !aen & !reset & address_isa<19> & !address_isa<23> & 
+	!address_isa<22> & !address_isa<20> & !address_isa<21> & 
+	!address_isa<18> & address_isa<16> & address_isa<17> & 
+	address_isa<15> & !mode_register<3> & !mode_register<4> & 
+	!mode_register<2> & mode_register<0> & mode_register<1> & N_PZ_2834
+	# !aen & !reset & address_isa<19> & !address_isa<23> & 
+	!address_isa<22> & !address_isa<20> & !address_isa<21> & 
+	!address_isa<18> & address_isa<16> & address_isa<17> & 
+	!address_isa<15> & !mode_register<3> & !mode_register<4> & 
+	!mode_register<2> & !mode_register<0> & mode_register<1> & N_PZ_2834
+	# !aen & !reset & address_isa<19> & !address_isa<23> & 
+	!address_isa<22> & !address_isa<20> & !address_isa<21> & 
+	!address_isa<18> & !address_isa<16> & address_isa<17> & 
+	address_isa<15> & !mode_register<3> & !mode_register<4> & 
+	!mode_register<2> & mode_register<0> & !mode_register<1> & N_PZ_2834
+	# !aen & !reset & address_isa<19> & !address_isa<23> & 
+	!address_isa<22> & !address_isa<20> & !address_isa<21> & 
+	!address_isa<18> & !address_isa<16> & address_isa<17> & 
+	!address_isa<15> & !mode_register<3> & !mode_register<4> & 
+	!mode_register<2> & !mode_register<0> & !mode_register<1> & N_PZ_2834
+	# !aen & base_addr_jp<1> & !reset & !address_isa<19> & 
+	!address_isa<23> & !address_isa<22> & !address_isa<20> & 
+	!address_isa<21> & !address_isa<18> & !address_isa<16> & 
+	!address_isa<17> & !address_isa<15> & address_isa<8> & 
+	!address_isa<11> & !address_isa<7> & address_isa<6> & 
+	!address_isa<14> & !address_isa<13> & !address_isa<10> & 
+	!address_isa<9> & address_isa<4> & !address_isa<12> & 
+	!address_isa<5>
+	# !aen & !base_addr_jp<1> & !reset & !address_isa<19> & 
+	!address_isa<23> & !address_isa<22> & !address_isa<20> & 
+	!address_isa<21> & !address_isa<18> & !address_isa<16> & 
+	!address_isa<17> & !address_isa<15> & address_isa<8> & 
+	!address_isa<11> & !address_isa<7> & address_isa<6> & 
+	!address_isa<14> & !address_isa<13> & !address_isa<10> & 
+	!address_isa<9> & address_isa<4> & !address_isa<12> & 
+	address_isa<5>;	// (13 pt, 29 inp)
+
+MACROCELL | 7 | 10 | I2/load_address_MC
+ATTRIBUTES | 2155905792 | 0
+INPUTS | 5 | I2/curstate_FSM_FFd1  | I2/curstate_FSM_FFd2  | I2/curstate_FSM_FFd4  | I2/curstate_FSM_FFd6  | I2/curstate_FSM_FFd5
+INPUTMC | 5 | 0 | 10 | 1 | 5 | 1 | 9 | 0 | 9 | 0 | 8
+EQ | 3 | 
+   I2/load_address := I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	I2/curstate_FSM_FFd4 & !I2/curstate_FSM_FFd6 & I2/curstate_FSM_FFd5;	// (1 pt, 5 inp)
+   I2/load_address.CLK  =  !clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 0 | 10 | I2/curstate_FSM_FFd1_MC
+ATTRIBUTES | 2155918084 | 0
+OUTPUTMC | 20 | 1 | 6 | 7 | 8 | 7 | 6 | 0 | 8 | 0 | 9 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 5 | 0 | 10 | 7 | 10 | 10 | 0 | 10 | 1 | 10 | 2 | 0 | 6 | 0 | 7 | 7 | 9 | 10 | 12 | 10 | 3 | 7 | 15
+INPUTS | 24 | I2/curstate_FSM_FFd6  | I2/curstate_FSM_FFd5  | N_PZ_1473  | N_PZ_1310  | N_PZ_1309  | N_PZ_1472  | I2/curstate_FSM_FFd1  | I2/curstate_FSM_FFd2  | I2/curstate_FSM_FFd3  | I2/curstate_FSM_FFd4  | reg_wr  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | reg_rd  | adr_latched<3>  | address_max_fsm<0>  | address_max_fsm<1>  | address_max_fsm<2>  | address_max_fsm<3>  | address_max_fsm<4>  | address_max_fsm<5>  | address_max_fsm<6>  | address_max_fsm<7>
+INPUTMC | 24 | 0 | 9 | 0 | 8 | 1 | 6 | 7 | 8 | 7 | 7 | 7 | 6 | 0 | 10 | 1 | 5 | 1 | 8 | 1 | 9 | 7 | 5 | 0 | 0 | 1 | 0 | 1 | 1 | 2 | 14 | 0 | 1 | 6 | 9 | 6 | 8 | 6 | 7 | 6 | 6 | 6 | 5 | 8 | 10 | 8 | 9 | 8 | 8
+UCT | 2 | 1 | Internal_Name | 4 | Internal_Name
+EQ | 65 | 
+   I2/curstate_FSM_FFd1 := !I2/curstate_FSM_FFd6 & I2/curstate_FSM_FFd5
+	# N_PZ_1473 & N_PZ_1310
+	# N_PZ_1473 & N_PZ_1309
+	# N_PZ_1310 & N_PZ_1472
+	# N_PZ_1472 & N_PZ_1309
+	# !I2/curstate_FSM_FFd1 & I2/curstate_FSM_FFd2 & 
+	I2/curstate_FSM_FFd3
+	# I2/curstate_FSM_FFd4 & I2/curstate_FSM_FFd6 & 
+	!I2/curstate_FSM_FFd5
+	# I2/curstate_FSM_FFd1 & I2/curstate_FSM_FFd2 & 
+	!I2/curstate_FSM_FFd4 & I2/curstate_FSM_FFd5
+	# !I2/curstate_FSM_FFd1 & I2/curstate_FSM_FFd3 & 
+	I2/curstate_FSM_FFd4 & I2/curstate_FSM_FFd6
+	# !I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd3 & 
+	I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5
+	# reg_wr & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !I2/curstate_FSM_FFd2 & !I2/curstate_FSM_FFd3 & 
+	N_PZ_1473
+	# reg_wr & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !I2/curstate_FSM_FFd2 & !I2/curstate_FSM_FFd3 & 
+	N_PZ_1472
+	# !Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !I2/curstate_FSM_FFd2 & !I2/curstate_FSM_FFd3 & 
+	N_PZ_1473
+	# !Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !I2/curstate_FSM_FFd2 & !I2/curstate_FSM_FFd3 & 
+	N_PZ_1472
+	# 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & 
+	!I2/curstate_FSM_FFd2 & !I2/curstate_FSM_FFd3 & N_PZ_1473
+	# 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & 
+	!I2/curstate_FSM_FFd2 & !I2/curstate_FSM_FFd3 & N_PZ_1472
+	# I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	I2/curstate_FSM_FFd3 & !I2/curstate_FSM_FFd4 & I2/curstate_FSM_FFd6
+	# !I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	!I2/curstate_FSM_FFd3 & !I2/curstate_FSM_FFd4 & I2/curstate_FSM_FFd5
+	# reg_wr & I2/curstate_FSM_FFd1 & 
+	!I2/curstate_FSM_FFd2 & !I2/curstate_FSM_FFd3 & !I2/curstate_FSM_FFd4 & 
+	!I2/curstate_FSM_FFd6
+	# reg_rd & I2/curstate_FSM_FFd1 & 
+	!I2/curstate_FSM_FFd2 & !I2/curstate_FSM_FFd3 & !I2/curstate_FSM_FFd4 & 
+	!I2/curstate_FSM_FFd6
+	# reg_wr & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !I2/curstate_FSM_FFd2 & !I2/curstate_FSM_FFd3 & 
+	!I2/curstate_FSM_FFd4 & !I2/curstate_FSM_FFd6
+	# reg_wr & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !I2/curstate_FSM_FFd2 & !I2/curstate_FSM_FFd3 & 
+	!I2/curstate_FSM_FFd4 & !I2/curstate_FSM_FFd6
+	# I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5 & address_max_fsm<0> & 
+	address_max_fsm<1> & address_max_fsm<2> & address_max_fsm<3> & 
+	!address_max_fsm<4> & !address_max_fsm<5> & !address_max_fsm<6> & 
+	!address_max_fsm<7>
+	# I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5 & !address_max_fsm<0> & 
+	!address_max_fsm<1> & !address_max_fsm<2> & !address_max_fsm<3> & 
+	!address_max_fsm<4> & !address_max_fsm<5> & !address_max_fsm<6> & 
+	!address_max_fsm<7>;	// (24 pt, 24 inp)
+   I2/curstate_FSM_FFd1.CLK  =  clk;	// GCK	(0 pt, 0 inp)	// UPST	(1 pt, 0 inp)
+    I2/curstate_FSM_FFd1.AR = reset;	// URST	(1 pt, 1 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 5 | I2/curstate_FSM_FFd2_MC
+ATTRIBUTES | 2155913984 | 0
+OUTPUTMC | 21 | 1 | 6 | 7 | 8 | 7 | 6 | 0 | 8 | 0 | 9 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 5 | 7 | 7 | 0 | 10 | 7 | 10 | 10 | 0 | 10 | 1 | 10 | 2 | 0 | 6 | 0 | 7 | 7 | 9 | 10 | 12 | 10 | 3 | 7 | 15
+INPUTS | 17 | I2/curstate_FSM_FFd1  | I2/curstate_FSM_FFd2  | N_PZ_1574  | I2/curstate_FSM_FFd3  | I2/curstate_FSM_FFd5  | I2/curstate_FSM_FFd6  | I2/curstate_FSM_FFd4  | N_PZ_1309  | N_PZ_1310  | address_max_fsm<0>  | address_max_fsm<1>  | address_max_fsm<2>  | address_max_fsm<3>  | address_max_fsm<4>  | address_max_fsm<5>  | address_max_fsm<6>  | address_max_fsm<7>
+INPUTMC | 17 | 0 | 10 | 1 | 5 | 1 | 7 | 1 | 8 | 0 | 8 | 0 | 9 | 1 | 9 | 7 | 7 | 7 | 8 | 6 | 9 | 6 | 8 | 6 | 7 | 6 | 6 | 6 | 5 | 8 | 10 | 8 | 9 | 8 | 8
+UCT | 1 | 4 | Internal_Name
+EQ | 32 | 
+   !I2/curstate_FSM_FFd2 := !I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	!N_PZ_1574
+	$ I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	!N_PZ_1574 & I2/curstate_FSM_FFd3 & !I2/curstate_FSM_FFd5
+	# I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	!N_PZ_1574 & !I2/curstate_FSM_FFd3 & !I2/curstate_FSM_FFd6
+	# I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	!N_PZ_1574 & !I2/curstate_FSM_FFd3 & I2/curstate_FSM_FFd5
+	# I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	!N_PZ_1574 & !I2/curstate_FSM_FFd4 & !I2/curstate_FSM_FFd6
+	# I2/curstate_FSM_FFd2 & !N_PZ_1574 & 
+	!I2/curstate_FSM_FFd3 & !I2/curstate_FSM_FFd4 & I2/curstate_FSM_FFd5
+	# I2/curstate_FSM_FFd2 & !N_PZ_1574 & 
+	!I2/curstate_FSM_FFd3 & !I2/curstate_FSM_FFd6 & !N_PZ_1309
+	# !I2/curstate_FSM_FFd1 & !N_PZ_1574 & 
+	!I2/curstate_FSM_FFd3 & !I2/curstate_FSM_FFd4 & I2/curstate_FSM_FFd6 & 
+	!I2/curstate_FSM_FFd5
+	# I2/curstate_FSM_FFd1 & I2/curstate_FSM_FFd2 & 
+	!N_PZ_1574 & I2/curstate_FSM_FFd4 & I2/curstate_FSM_FFd6 & 
+	!I2/curstate_FSM_FFd5 & N_PZ_1310
+	# I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	!N_PZ_1574 & !I2/curstate_FSM_FFd4 & !I2/curstate_FSM_FFd5 & 
+	address_max_fsm<0> & address_max_fsm<1> & address_max_fsm<2> & 
+	address_max_fsm<3> & !address_max_fsm<4> & !address_max_fsm<5> & 
+	!address_max_fsm<6> & !address_max_fsm<7>
+	# I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	!N_PZ_1574 & !I2/curstate_FSM_FFd4 & !I2/curstate_FSM_FFd5 & 
+	!address_max_fsm<0> & !address_max_fsm<1> & !address_max_fsm<2> & 
+	!address_max_fsm<3> & !address_max_fsm<4> & !address_max_fsm<5> & 
+	!address_max_fsm<6> & !address_max_fsm<7>;	// (11 pt, 17 inp)
+   I2/curstate_FSM_FFd2.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+    I2/curstate_FSM_FFd2.AR = reset;	// URST	(1 pt, 1 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 7 | N_PZ_1574_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 1 | 1 | 5
+INPUTS | 11 | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | reg_rd  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | I2/curstate_FSM_FFd1  | I2/curstate_FSM_FFd2  | I2/curstate_FSM_FFd3  | I2/curstate_FSM_FFd4  | I2/curstate_FSM_FFd5  | reg_wr  | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001
+INPUTMC | 11 | 1 | 1 | 0 | 1 | 2 | 14 | 0 | 0 | 0 | 10 | 1 | 5 | 1 | 8 | 1 | 9 | 0 | 8 | 7 | 5 | 1 | 0
+EQ | 18 | 
+   N_PZ_1574 = 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	!I2/curstate_FSM_FFd3 & !I2/curstate_FSM_FFd4 & !I2/curstate_FSM_FFd5
+	# reg_wr & 
+	Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	!I2/curstate_FSM_FFd3 & !I2/curstate_FSM_FFd4 & !I2/curstate_FSM_FFd5
+	# reg_wr & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	!I2/curstate_FSM_FFd3 & !I2/curstate_FSM_FFd4 & !I2/curstate_FSM_FFd5
+	# !Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & adr_latched<3> & reg_rd & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	!I2/curstate_FSM_FFd3 & !I2/curstate_FSM_FFd4 & !I2/curstate_FSM_FFd5;	// (4 pt, 11 inp)
+
+MACROCELL | 1 | 8 | I2/curstate_FSM_FFd3_MC
+ATTRIBUTES | 2155913984 | 0
+OUTPUTMC | 17 | 7 | 8 | 7 | 6 | 0 | 8 | 0 | 9 | 1 | 9 | 1 | 8 | 1 | 7 | 7 | 7 | 1 | 5 | 0 | 10 | 10 | 0 | 10 | 1 | 10 | 2 | 0 | 6 | 0 | 7 | 10 | 12 | 7 | 15
+INPUTS | 11 | I2/curstate_FSM_FFd3  | I2/curstate_FSM_FFd4  | I2/curstate_FSM_FFd1  | I2/curstate_FSM_FFd2  | I2/curstate_FSM_FFd6  | I2/curstate_FSM_FFd5  | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | reg_rd  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000
+INPUTMC | 11 | 1 | 8 | 1 | 9 | 0 | 10 | 1 | 5 | 0 | 9 | 0 | 8 | 1 | 0 | 1 | 1 | 0 | 1 | 2 | 14 | 0 | 0
+UCT | 1 | 4 | Internal_Name
+EQ | 23 | 
+   I2/curstate_FSM_FFd3 := I2/curstate_FSM_FFd3 & I2/curstate_FSM_FFd4
+	# !I2/curstate_FSM_FFd1 & I2/curstate_FSM_FFd2 & 
+	I2/curstate_FSM_FFd3
+	# I2/curstate_FSM_FFd1 & I2/curstate_FSM_FFd3 & 
+	!I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5
+	# I2/curstate_FSM_FFd2 & !I2/curstate_FSM_FFd4 & 
+	!I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5
+	# I2/curstate_FSM_FFd1 & I2/curstate_FSM_FFd2 & 
+	I2/curstate_FSM_FFd4 & I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5
+	# I2/curstate_FSM_FFd1 & I2/curstate_FSM_FFd2 & 
+	!I2/curstate_FSM_FFd4 & I2/curstate_FSM_FFd6 & I2/curstate_FSM_FFd5
+	# !I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	!I2/curstate_FSM_FFd4 & I2/curstate_FSM_FFd6 & I2/curstate_FSM_FFd5
+	# Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd3 & 
+	!I2/curstate_FSM_FFd4 & !I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5
+	# !Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & adr_latched<3> & reg_rd & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd3 & 
+	!I2/curstate_FSM_FFd4 & !I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5;	// (9 pt, 11 inp)
+   I2/curstate_FSM_FFd3.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+    I2/curstate_FSM_FFd3.AR = reset;	// URST	(1 pt, 1 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 9 | I2/curstate_FSM_FFd4_MC
+ATTRIBUTES | 2151719680 | 0
+OUTPUTMC | 21 | 1 | 6 | 7 | 8 | 7 | 6 | 0 | 8 | 0 | 9 | 1 | 9 | 1 | 8 | 1 | 7 | 7 | 7 | 1 | 5 | 0 | 10 | 7 | 10 | 10 | 0 | 10 | 1 | 10 | 2 | 0 | 6 | 0 | 7 | 7 | 9 | 10 | 12 | 10 | 3 | 7 | 15
+INPUTS | 6 | I2/curstate_FSM_FFd3  | I2/curstate_FSM_FFd4  | I2/curstate_FSM_FFd6  | I2/curstate_FSM_FFd5  | I2/curstate_FSM_FFd1  | I2/curstate_FSM_FFd2
+INPUTMC | 6 | 1 | 8 | 1 | 9 | 0 | 9 | 0 | 8 | 0 | 10 | 1 | 5
+UCT | 1 | 4 | Internal_Name
+EQ | 16 | 
+   I2/curstate_FSM_FFd4.T := I2/curstate_FSM_FFd3 & !I2/curstate_FSM_FFd4 & 
+	I2/curstate_FSM_FFd6
+	$ !I2/curstate_FSM_FFd3 & I2/curstate_FSM_FFd4 & 
+	!I2/curstate_FSM_FFd6 & I2/curstate_FSM_FFd5
+	# I2/curstate_FSM_FFd1 & I2/curstate_FSM_FFd2 & 
+	I2/curstate_FSM_FFd3 & !I2/curstate_FSM_FFd4 & !I2/curstate_FSM_FFd6
+	# !I2/curstate_FSM_FFd1 & I2/curstate_FSM_FFd2 & 
+	!I2/curstate_FSM_FFd4 & I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5
+	# I2/curstate_FSM_FFd1 & I2/curstate_FSM_FFd2 & 
+	!I2/curstate_FSM_FFd3 & I2/curstate_FSM_FFd4 & I2/curstate_FSM_FFd6 & 
+	!I2/curstate_FSM_FFd5
+	# I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	I2/curstate_FSM_FFd3 & I2/curstate_FSM_FFd4 & I2/curstate_FSM_FFd6 & 
+	I2/curstate_FSM_FFd5;	// (6 pt, 6 inp)
+   I2/curstate_FSM_FFd4.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+    I2/curstate_FSM_FFd4.AR = reset;	// URST	(1 pt, 1 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 0 | 9 | I2/curstate_FSM_FFd6_MC
+ATTRIBUTES | 2151719680 | 0
+OUTPUTMC | 19 | 1 | 6 | 7 | 8 | 0 | 8 | 0 | 9 | 1 | 9 | 1 | 8 | 7 | 7 | 1 | 5 | 0 | 10 | 7 | 10 | 10 | 0 | 10 | 1 | 10 | 2 | 0 | 6 | 0 | 7 | 7 | 9 | 10 | 12 | 10 | 3 | 7 | 15
+INPUTS | 19 | I2/curstate_FSM_FFd1  | I2/curstate_FSM_FFd3  | I2/curstate_FSM_FFd6  | I2/curstate_FSM_FFd5  | I2/curstate_FSM_FFd4  | I2/curstate_FSM_FFd2  | reg_wr  | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | adr_latched<3>  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | address_max_fsm<0>  | address_max_fsm<1>  | address_max_fsm<2>  | address_max_fsm<3>  | address_max_fsm<4>  | address_max_fsm<5>  | address_max_fsm<6>  | address_max_fsm<7>
+INPUTMC | 19 | 0 | 10 | 1 | 8 | 0 | 9 | 0 | 8 | 1 | 9 | 1 | 5 | 7 | 5 | 1 | 0 | 0 | 1 | 0 | 0 | 1 | 1 | 6 | 9 | 6 | 8 | 6 | 7 | 6 | 6 | 6 | 5 | 8 | 10 | 8 | 9 | 8 | 8
+UCT | 1 | 4 | Internal_Name
+EQ | 41 | 
+   I2/curstate_FSM_FFd6.T := I2/curstate_FSM_FFd1 & I2/curstate_FSM_FFd3 & 
+	I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5
+	# I2/curstate_FSM_FFd1 & I2/curstate_FSM_FFd4 & 
+	I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5
+	# !I2/curstate_FSM_FFd1 & I2/curstate_FSM_FFd2 & 
+	I2/curstate_FSM_FFd3 & !I2/curstate_FSM_FFd6
+	# !I2/curstate_FSM_FFd1 & I2/curstate_FSM_FFd3 & 
+	!I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5
+	# !I2/curstate_FSM_FFd1 & I2/curstate_FSM_FFd4 & 
+	!I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5
+	# I2/curstate_FSM_FFd2 & !I2/curstate_FSM_FFd4 & 
+	!I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5
+	# I2/curstate_FSM_FFd3 & I2/curstate_FSM_FFd4 & 
+	!I2/curstate_FSM_FFd6 & I2/curstate_FSM_FFd5
+	# I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	!I2/curstate_FSM_FFd4 & I2/curstate_FSM_FFd6 & I2/curstate_FSM_FFd5
+	# !I2/curstate_FSM_FFd1 & I2/curstate_FSM_FFd2 & 
+	!I2/curstate_FSM_FFd3 & !I2/curstate_FSM_FFd4 & !I2/curstate_FSM_FFd5
+	# !I2/curstate_FSM_FFd2 & I2/curstate_FSM_FFd3 & 
+	!I2/curstate_FSM_FFd4 & I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5
+	# reg_wr & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & !adr_latched<3> & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd6 & 
+	!I2/curstate_FSM_FFd5
+	# reg_wr & 
+	Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd6 & 
+	!I2/curstate_FSM_FFd5
+	# I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5 & address_max_fsm<0> & 
+	address_max_fsm<1> & address_max_fsm<2> & address_max_fsm<3> & 
+	!address_max_fsm<4> & !address_max_fsm<5> & !address_max_fsm<6> & 
+	!address_max_fsm<7>
+	# I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5 & !address_max_fsm<0> & 
+	!address_max_fsm<1> & !address_max_fsm<2> & !address_max_fsm<3> & 
+	!address_max_fsm<4> & !address_max_fsm<5> & !address_max_fsm<6> & 
+	!address_max_fsm<7>;	// (14 pt, 19 inp)
+   I2/curstate_FSM_FFd6.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+    I2/curstate_FSM_FFd6.AR = reset;	// URST	(1 pt, 1 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 0 | 8 | I2/curstate_FSM_FFd5_MC
+ATTRIBUTES | 2155913984 | 0
+OUTPUTMC | 21 | 1 | 6 | 7 | 8 | 7 | 6 | 0 | 8 | 0 | 9 | 1 | 9 | 1 | 8 | 1 | 7 | 7 | 7 | 1 | 5 | 0 | 10 | 7 | 10 | 10 | 0 | 10 | 1 | 10 | 2 | 0 | 6 | 0 | 7 | 7 | 9 | 10 | 12 | 10 | 3 | 7 | 15
+INPUTS | 17 | I2/curstate_FSM_FFd1  | N_PZ_1473  | N_PZ_1472  | I2/curstate_FSM_FFd3  | I2/curstate_FSM_FFd6  | I2/curstate_FSM_FFd4  | N_PZ_1310  | I2/curstate_FSM_FFd2  | I2/curstate_FSM_FFd5  | address_max_fsm<0>  | address_max_fsm<1>  | address_max_fsm<2>  | address_max_fsm<3>  | address_max_fsm<4>  | address_max_fsm<5>  | address_max_fsm<6>  | address_max_fsm<7>
+INPUTMC | 17 | 0 | 10 | 1 | 6 | 7 | 6 | 1 | 8 | 0 | 9 | 1 | 9 | 7 | 8 | 1 | 5 | 0 | 8 | 6 | 9 | 6 | 8 | 6 | 7 | 6 | 6 | 6 | 5 | 8 | 10 | 8 | 9 | 8 | 8
+UCT | 1 | 4 | Internal_Name
+EQ | 24 | 
+   !I2/curstate_FSM_FFd5 := !I2/curstate_FSM_FFd1 & !N_PZ_1473 & !N_PZ_1472
+	# !I2/curstate_FSM_FFd3 & !I2/curstate_FSM_FFd6 & 
+	!N_PZ_1473
+	# !I2/curstate_FSM_FFd4 & !N_PZ_1473 & N_PZ_1310
+	# I2/curstate_FSM_FFd2 & !I2/curstate_FSM_FFd3 & 
+	!I2/curstate_FSM_FFd5 & !N_PZ_1473
+	# !I2/curstate_FSM_FFd2 & !I2/curstate_FSM_FFd6 & 
+	!N_PZ_1473 & !N_PZ_1472
+	# !I2/curstate_FSM_FFd2 & I2/curstate_FSM_FFd4 & 
+	!N_PZ_1473 & !N_PZ_1310 & !N_PZ_1472
+	# !I2/curstate_FSM_FFd3 & I2/curstate_FSM_FFd4 & 
+	I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5 & !N_PZ_1473
+	# I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	!I2/curstate_FSM_FFd3 & I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5 & 
+	!N_PZ_1473 & address_max_fsm<0> & address_max_fsm<1> & 
+	address_max_fsm<2> & address_max_fsm<3> & !address_max_fsm<4> & 
+	!address_max_fsm<5> & !address_max_fsm<6> & !address_max_fsm<7>
+	# I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	!I2/curstate_FSM_FFd3 & I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5 & 
+	!N_PZ_1473 & !address_max_fsm<0> & !address_max_fsm<1> & 
+	!address_max_fsm<2> & !address_max_fsm<3> & !address_max_fsm<4> & 
+	!address_max_fsm<5> & !address_max_fsm<6> & !address_max_fsm<7>;	// (9 pt, 17 inp)
+   I2/curstate_FSM_FFd5.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+    I2/curstate_FSM_FFd5.AR = reset;	// URST	(1 pt, 1 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 6 | N_PZ_1473_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 0 | 8 | 0 | 10
+INPUTS | 11 | I2/curstate_FSM_FFd1  | I2/curstate_FSM_FFd2  | I2/curstate_FSM_FFd6  | I2/curstate_FSM_FFd5  | I2/curstate_FSM_FFd4  | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | reg_rd  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | reg_wr
+INPUTMC | 11 | 0 | 10 | 1 | 5 | 0 | 9 | 0 | 8 | 1 | 9 | 1 | 0 | 1 | 1 | 0 | 1 | 2 | 14 | 0 | 0 | 7 | 5
+EQ | 29 | 
+   N_PZ_1473 = !I2/curstate_FSM_FFd1 & I2/curstate_FSM_FFd2 & 
+	!I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5
+	# !I2/curstate_FSM_FFd1 & I2/curstate_FSM_FFd4 & 
+	!I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5
+	# Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & !I2/curstate_FSM_FFd1 & 
+	!I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5
+	# 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd6 & 
+	!I2/curstate_FSM_FFd5
+	# reg_wr & 
+	Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd6 & 
+	!I2/curstate_FSM_FFd5
+	# reg_wr & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd6 & 
+	!I2/curstate_FSM_FFd5
+	# !reg_wr & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & !I2/curstate_FSM_FFd1 & 
+	!I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5
+	# !Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & adr_latched<3> & reg_rd & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd6 & 
+	!I2/curstate_FSM_FFd5;	// (8 pt, 11 inp)
+
+MACROCELL | 6 | 9 | address_max_fsm<0>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 5 | 0 | 8 | 0 | 9 | 1 | 5 | 0 | 10 | 0 | 7
+INPUTS | 1 | data_isa_latched<0>
+INPUTMC | 1 | 4 | 0
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   address_max_fsm<0>.D = data_isa_latched<0>;	// (1 pt, 1 inp)
+    address_max_fsm<0>.LH = I2/load_address;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 6 | 8 | address_max_fsm<1>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 5 | 0 | 8 | 0 | 9 | 1 | 5 | 0 | 10 | 0 | 7
+INPUTS | 1 | data_isa_latched<1>
+INPUTMC | 1 | 4 | 1
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   address_max_fsm<1>.D = data_isa_latched<1>;	// (1 pt, 1 inp)
+    address_max_fsm<1>.LH = I2/load_address;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 4 | 1 | data_isa_latched<1>_MC
+ATTRIBUTES | 3431203586 | 6
+OUTPUTMC | 3 | 6 | 8 | 8 | 1 | 6 | 1
+INPUTS | 1 | data_isa<1>_BUFR
+INPUTMC | 1 | 2 | 5
+LCT | 2 | 2 | Internal_Name | 5 | Internal_Name
+EQ | 5 | 
+   data_isa<1> =  data_isa<1>_BUFR;	// (1 pt, 1 inp)
+    data_isa<1>.OE = N_PZ_2896;	// LOE	(1 pt, 1 inp)
+// Direct Input Register
+data_isa_latched<1> := data_isa<1>.PIN;	// (0 pt, 0 inp)
+    data_isa_latched<1>.CLK = reg_wr;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 6 | 7 | address_max_fsm<2>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 5 | 0 | 8 | 0 | 9 | 1 | 5 | 0 | 10 | 0 | 7
+INPUTS | 1 | data_isa_latched<2>
+INPUTMC | 1 | 4 | 3
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   address_max_fsm<2>.D = data_isa_latched<2>;	// (1 pt, 1 inp)
+    address_max_fsm<2>.LH = I2/load_address;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 4 | 3 | data_isa_latched<2>_MC
+ATTRIBUTES | 3431203586 | 6
+OUTPUTMC | 3 | 6 | 7 | 8 | 2 | 6 | 2
+INPUTS | 22 | read_led_register  | read_id2_register  | N_PZ_1066  | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | N89  | test2  | xp_address<2>  | base_addr_jp<1>  | read_jumper_register  | read_page_register  | page_register<2>  | data_max_reg_in<2>  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | reg_rd  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | iord  | nvram_ce  | nvram_cs  | N_PZ_1377  | nvram_data<2>.PIN  | smemr
+INPUTMC | 17 | 9 | 7 | 9 | 9 | 9 | 14 | 1 | 0 | 2 | 9 | 15 | 2 | 9 | 8 | 9 | 5 | 10 | 13 | 12 | 3 | 1 | 1 | 0 | 1 | 2 | 14 | 0 | 0 | 11 | 12 | 11 | 11 | 11 | 10
+INPUTP | 5 | 75 | 137 | 6 | 174 | 18
+LCT | 2 | 2 | Internal_Name | 5 | Internal_Name
+EQ | 20 | 
+   !data_isa<2> =  read_led_register
+	# read_id2_register
+	# N_PZ_1066
+	# Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	N89
+	# test2 & !xp_address<2>
+	# base_addr_jp<1> & read_jumper_register
+	# read_page_register & !page_register<2>
+	# N89 & !data_max_reg_in<2>
+	# 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000
+	# !iord & nvram_ce & !nvram_cs & N_PZ_1377 & 
+	!nvram_data<2>.PIN
+	# !smemr & !nvram_ce & nvram_cs & N_PZ_1377 & 
+	!nvram_data<2>.PIN;	// (11 pt, 22 inp)
+    data_isa<2>.OE = N_PZ_2896;	// LOE	(1 pt, 1 inp)
+// Direct Input Register
+data_isa_latched<2> := data_isa<2>.PIN;	// (0 pt, 0 inp)
+    data_isa_latched<2>.CLK = reg_wr;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 6 | 6 | address_max_fsm<3>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 5 | 0 | 8 | 0 | 9 | 1 | 5 | 0 | 10 | 0 | 7
+INPUTS | 1 | data_isa_latched<3>
+INPUTMC | 1 | 4 | 4
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   address_max_fsm<3>.D = data_isa_latched<3>;	// (1 pt, 1 inp)
+    address_max_fsm<3>.LH = I2/load_address;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 4 | 4 | data_isa_latched<3>_MC
+ATTRIBUTES | 3431203586 | 6
+OUTPUTMC | 4 | 6 | 6 | 8 | 3 | 6 | 3 | 11 | 13
+INPUTS | 1 | data_isa<3>_BUFR
+INPUTMC | 1 | 2 | 7
+LCT | 2 | 2 | Internal_Name | 5 | Internal_Name
+EQ | 5 | 
+   data_isa<3> =  data_isa<3>_BUFR;	// (1 pt, 1 inp)
+    data_isa<3>.OE = N_PZ_2896;	// LOE	(1 pt, 1 inp)
+// Direct Input Register
+data_isa_latched<3> := data_isa<3>.PIN;	// (0 pt, 0 inp)
+    data_isa_latched<3>.CLK = reg_wr;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 6 | 5 | address_max_fsm<4>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 5 | 0 | 8 | 0 | 9 | 1 | 5 | 0 | 10 | 0 | 7
+INPUTS | 1 | data_isa_latched<4>
+INPUTMC | 1 | 4 | 11
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   address_max_fsm<4>.D = data_isa_latched<4>;	// (1 pt, 1 inp)
+    address_max_fsm<4>.LH = I2/load_address;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 4 | 11 | data_isa_latched<4>_MC
+ATTRIBUTES | 3431203586 | 6
+OUTPUTMC | 3 | 6 | 5 | 8 | 4 | 6 | 4
+INPUTS | 1 | data_isa<4>_BUFR
+INPUTMC | 1 | 10 | 5
+LCT | 2 | 2 | Internal_Name | 5 | Internal_Name
+EQ | 5 | 
+   data_isa<4> =  data_isa<4>_BUFR;	// (1 pt, 1 inp)
+    data_isa<4>.OE = N_PZ_2896;	// LOE	(1 pt, 1 inp)
+// Direct Input Register
+data_isa_latched<4> := data_isa<4>.PIN;	// (0 pt, 0 inp)
+    data_isa_latched<4>.CLK = reg_wr;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 8 | 10 | address_max_fsm<5>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 5 | 0 | 8 | 0 | 9 | 1 | 5 | 0 | 10 | 0 | 7
+INPUTS | 1 | data_isa_latched<5>
+INPUTMC | 1 | 4 | 12
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   address_max_fsm<5>.D = data_isa_latched<5>;	// (1 pt, 1 inp)
+    address_max_fsm<5>.LH = I2/load_address;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 4 | 12 | data_isa_latched<5>_MC
+ATTRIBUTES | 3431203586 | 6
+OUTPUTMC | 3 | 8 | 10 | 8 | 11 | 6 | 11
+INPUTS | 22 | read_led_register  | read_id2_register  | read_jumper_register  | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | N89  | test2  | xp_address<5>  | read_page_register  | page_register<5>  | read_mode_register  | mode_register<5>  | data_max_reg_in<5>  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | reg_rd  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | iord  | nvram_ce  | nvram_cs  | N_PZ_1377  | nvram_data<5>.PIN  | smemr
+INPUTMC | 18 | 9 | 7 | 9 | 9 | 9 | 8 | 1 | 0 | 2 | 9 | 15 | 2 | 9 | 5 | 10 | 8 | 9 | 6 | 3 | 6 | 12 | 0 | 1 | 1 | 0 | 1 | 2 | 14 | 0 | 0 | 11 | 12 | 11 | 11 | 11 | 10
+INPUTP | 4 | 69 | 6 | 171 | 18
+LCT | 2 | 2 | Internal_Name | 5 | Internal_Name
+EQ | 20 | 
+   !data_isa<5> =  read_led_register
+	# read_id2_register
+	# read_jumper_register
+	# Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	N89
+	# test2 & !xp_address<5>
+	# read_page_register & !page_register<5>
+	# read_mode_register & !mode_register<5>
+	# N89 & !data_max_reg_in<5>
+	# 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000
+	# !iord & nvram_ce & !nvram_cs & N_PZ_1377 & 
+	!nvram_data<5>.PIN
+	# !smemr & !nvram_ce & nvram_cs & N_PZ_1377 & 
+	!nvram_data<5>.PIN;	// (11 pt, 22 inp)
+    data_isa<5>.OE = N_PZ_2896;	// LOE	(1 pt, 1 inp)
+// Direct Input Register
+data_isa_latched<5> := data_isa<5>.PIN;	// (0 pt, 0 inp)
+    data_isa_latched<5>.CLK = reg_wr;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 8 | 9 | address_max_fsm<6>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 5 | 0 | 8 | 0 | 9 | 1 | 5 | 0 | 10 | 0 | 7
+INPUTS | 1 | data_isa_latched<6>
+INPUTMC | 1 | 4 | 13
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   address_max_fsm<6>.D = data_isa_latched<6>;	// (1 pt, 1 inp)
+    address_max_fsm<6>.LH = I2/load_address;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 4 | 13 | data_isa_latched<6>_MC
+ATTRIBUTES | 3431203586 | 6
+OUTPUTMC | 3 | 8 | 9 | 8 | 12 | 6 | 12
+INPUTS | 1 | data_isa<6>_BUFR
+INPUTMC | 1 | 5 | 9
+LCT | 2 | 2 | Internal_Name | 5 | Internal_Name
+EQ | 5 | 
+   data_isa<6> =  data_isa<6>_BUFR;	// (1 pt, 1 inp)
+    data_isa<6>.OE = N_PZ_2896;	// LOE	(1 pt, 1 inp)
+// Direct Input Register
+data_isa_latched<6> := data_isa<6>.PIN;	// (0 pt, 0 inp)
+    data_isa_latched<6>.CLK = reg_wr;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 8 | 8 | address_max_fsm<7>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 5 | 0 | 8 | 0 | 9 | 1 | 5 | 0 | 10 | 0 | 7
+INPUTS | 1 | data_isa_latched<7>
+INPUTMC | 1 | 4 | 14
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   address_max_fsm<7>.D = data_isa_latched<7>;	// (1 pt, 1 inp)
+    address_max_fsm<7>.LH = I2/load_address;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 4 | 14 | data_isa_latched<7>_MC
+ATTRIBUTES | 3431203586 | 6
+OUTPUTMC | 3 | 8 | 8 | 8 | 13 | 6 | 13
+INPUTS | 1 | data_isa<7>_BUFR
+INPUTMC | 1 | 2 | 6
+LCT | 2 | 2 | Internal_Name | 5 | Internal_Name
+EQ | 5 | 
+   data_isa<7> =  data_isa<7>_BUFR;	// (1 pt, 1 inp)
+    data_isa<7>.OE = N_PZ_2896;	// LOE	(1 pt, 1 inp)
+// Direct Input Register
+data_isa_latched<7> := data_isa<7>.PIN;	// (0 pt, 0 inp)
+    data_isa_latched<7>.CLK = reg_wr;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 7 | 8 | N_PZ_1310_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 6 | 0 | 8 | 1 | 5 | 0 | 10 | 10 | 0 | 10 | 4 | 8 | 15
+INPUTS | 6 | I2/curstate_FSM_FFd3  | I2/curstate_FSM_FFd4  | I2/curstate_FSM_FFd6  | I2/curstate_FSM_FFd1  | I2/curstate_FSM_FFd2  | I2/curstate_FSM_FFd5
+INPUTMC | 6 | 1 | 8 | 1 | 9 | 0 | 9 | 0 | 10 | 1 | 5 | 0 | 8
+EQ | 4 | 
+   N_PZ_1310 = !I2/curstate_FSM_FFd3 & I2/curstate_FSM_FFd4 & 
+	I2/curstate_FSM_FFd6
+	# I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	!I2/curstate_FSM_FFd3 & I2/curstate_FSM_FFd6 & I2/curstate_FSM_FFd5;	// (2 pt, 6 inp)
+
+MACROCELL | 7 | 6 | N_PZ_1472_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 0 | 8 | 0 | 10
+INPUTS | 5 | I2/curstate_FSM_FFd1  | I2/curstate_FSM_FFd3  | I2/curstate_FSM_FFd4  | I2/curstate_FSM_FFd5  | I2/curstate_FSM_FFd2
+INPUTMC | 5 | 0 | 10 | 1 | 8 | 1 | 9 | 0 | 8 | 1 | 5
+EQ | 4 | 
+   N_PZ_1472 = !I2/curstate_FSM_FFd1 & I2/curstate_FSM_FFd3 & 
+	I2/curstate_FSM_FFd4 & I2/curstate_FSM_FFd5
+	# !I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	I2/curstate_FSM_FFd3 & !I2/curstate_FSM_FFd4 & !I2/curstate_FSM_FFd5;	// (2 pt, 5 inp)
+
+MACROCELL | 7 | 7 | N_PZ_1309_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 5 | 1 | 5 | 0 | 10 | 10 | 0 | 10 | 4 | 8 | 15
+INPUTS | 5 | I2/curstate_FSM_FFd3  | I2/curstate_FSM_FFd4  | I2/curstate_FSM_FFd5  | I2/curstate_FSM_FFd2  | I2/curstate_FSM_FFd6
+INPUTMC | 5 | 1 | 8 | 1 | 9 | 0 | 8 | 1 | 5 | 0 | 9
+EQ | 4 | 
+   N_PZ_1309 = !I2/curstate_FSM_FFd3 & I2/curstate_FSM_FFd4 & 
+	!I2/curstate_FSM_FFd5
+	# !I2/curstate_FSM_FFd2 & I2/curstate_FSM_FFd3 & 
+	!I2/curstate_FSM_FFd4 & !I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5;	// (2 pt, 5 inp)
+
+MACROCELL | 15 | 4 | master_enable_MC
+ATTRIBUTES | 1610875650 | 0
+OUTPUTMC | 1 | 11 | 15
+INPUTS | 2 | master_enable2  | master_enable1
+INPUTMC | 2 | 2 | 10 | 8 | 7
+EQ | 1 | 
+   master_enable = master_enable2 & master_enable1;	// (1 pt, 2 inp)
+
+MACROCELL | 2 | 10 | master_enable2_MC
+ATTRIBUTES | 2155909892 | 0
+OUTPUTMC | 4 | 1 | 10 | 15 | 4 | 5 | 14 | 15 | 14
+INPUTS | 7 | ms_in  | master_enable2_previous  | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | reg_rd  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000
+INPUTMC | 7 | 12 | 12 | 1 | 10 | 1 | 0 | 1 | 1 | 0 | 1 | 2 | 14 | 0 | 0
+UCT | 1 | 1 | Internal_Name
+EQ | 5 | 
+   !master_enable2 := !ms_in & !master_enable2_previous
+	# Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & adr_latched<3> & reg_rd & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !ms_in;	// (2 pt, 7 inp)
+   master_enable2.CLK  =  clk;	// GCK	(0 pt, 0 inp)	// UPST	(1 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 12 | 12 | ms_in_MC
+ATTRIBUTES | 2155905024 | 4
+OUTPUTMC | 2 | 2 | 10 | 8 | 7
+INPUTS | 0 
+EQ | 4 | 
+   
+// Direct Input Register
+ms_in := xp_address<6>;	// (0 pt, 0 inp)
+   ms_in.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 10 | master_enable2_previous_MC
+ATTRIBUTES | 2155909892 | 0
+OUTPUTMC | 1 | 2 | 10
+INPUTS | 1 | master_enable2
+INPUTMC | 1 | 2 | 10
+UCT | 1 | 1 | Internal_Name
+EQ | 2 | 
+   master_enable2_previous := master_enable2;	// (1 pt, 1 inp)
+   master_enable2_previous.CLK  =  clk;	// GCK	(0 pt, 0 inp)	// UPST	(1 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 8 | 7 | master_enable1_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 2 | 15 | 4 | 15 | 14
+INPUTS | 4 | xp_present_in  | reset  | ms_in  | wdt_out_stari
+INPUTMC | 2 | 12 | 13 | 12 | 12
+INPUTP | 2 | 12 | 104
+EQ | 3 | 
+   !master_enable1 := xp_present_in
+	# !reset & ms_in & !wdt_out_stari;	// (2 pt, 4 inp)
+   master_enable1.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 12 | 13 | xp_present_in_MC
+ATTRIBUTES | 2155905024 | 4
+OUTPUTMC | 1 | 8 | 7
+INPUTS | 0 
+EQ | 4 | 
+   
+// Direct Input Register
+xp_present_in := xp_address<7>;	// (0 pt, 0 inp)
+   xp_present_in.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 8 | 1 | address_max<1>_MC
+ATTRIBUTES | 209978114 | 2
+INPUTS | 1 | data_isa_latched<1>
+INPUTMC | 1 | 4 | 1
+LCT | 2 | 2 | Internal_Name | 5 | Internal_Name
+EQ | 3 | 
+   address_max<1> := data_isa_latched<1>;	// (1 pt, 1 inp)
+    address_max<1>.OE = !master_enable;	// LOE	(1 pt, 1 inp)
+    address_max<1>.CLK = I2/load_address;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 8 | 2 | address_max<2>_MC
+ATTRIBUTES | 209978114 | 2
+INPUTS | 1 | data_isa_latched<2>
+INPUTMC | 1 | 4 | 3
+LCT | 2 | 2 | Internal_Name | 5 | Internal_Name
+EQ | 3 | 
+   address_max<2> := data_isa_latched<2>;	// (1 pt, 1 inp)
+    address_max<2>.OE = !master_enable;	// LOE	(1 pt, 1 inp)
+    address_max<2>.CLK = I2/load_address;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 8 | 3 | address_max<3>_MC
+ATTRIBUTES | 209978114 | 2
+INPUTS | 1 | data_isa_latched<3>
+INPUTMC | 1 | 4 | 4
+LCT | 2 | 2 | Internal_Name | 5 | Internal_Name
+EQ | 3 | 
+   address_max<3> := data_isa_latched<3>;	// (1 pt, 1 inp)
+    address_max<3>.OE = !master_enable;	// LOE	(1 pt, 1 inp)
+    address_max<3>.CLK = I2/load_address;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 8 | 4 | address_max<4>_MC
+ATTRIBUTES | 209978114 | 2
+INPUTS | 1 | data_isa_latched<4>
+INPUTMC | 1 | 4 | 11
+LCT | 2 | 2 | Internal_Name | 5 | Internal_Name
+EQ | 3 | 
+   address_max<4> := data_isa_latched<4>;	// (1 pt, 1 inp)
+    address_max<4>.OE = !master_enable;	// LOE	(1 pt, 1 inp)
+    address_max<4>.CLK = I2/load_address;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 8 | 11 | address_max<5>_MC
+ATTRIBUTES | 209978114 | 2
+INPUTS | 1 | data_isa_latched<5>
+INPUTMC | 1 | 4 | 12
+LCT | 2 | 2 | Internal_Name | 5 | Internal_Name
+EQ | 3 | 
+   address_max<5> := data_isa_latched<5>;	// (1 pt, 1 inp)
+    address_max<5>.OE = !master_enable;	// LOE	(1 pt, 1 inp)
+    address_max<5>.CLK = I2/load_address;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 8 | 12 | address_max<6>_MC
+ATTRIBUTES | 209978114 | 2
+INPUTS | 1 | data_isa_latched<6>
+INPUTMC | 1 | 4 | 13
+LCT | 2 | 2 | Internal_Name | 5 | Internal_Name
+EQ | 3 | 
+   address_max<6> := data_isa_latched<6>;	// (1 pt, 1 inp)
+    address_max<6>.OE = !master_enable;	// LOE	(1 pt, 1 inp)
+    address_max<6>.CLK = I2/load_address;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 8 | 13 | address_max<7>_MC
+ATTRIBUTES | 209978114 | 2
+INPUTS | 1 | data_isa_latched<7>
+INPUTMC | 1 | 4 | 14
+LCT | 2 | 2 | Internal_Name | 5 | Internal_Name
+EQ | 3 | 
+   address_max<7> := data_isa_latched<7>;	// (1 pt, 1 inp)
+    address_max<7>.OE = !master_enable;	// LOE	(1 pt, 1 inp)
+    address_max<7>.CLK = I2/load_address;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 10 | 0 | bale_MC
+ATTRIBUTES | 2223276802 | 0
+INPUTS | 8 | I2/curstate_FSM_FFd6  | I2/curstate_FSM_FFd5  | N_PZ_1310  | N_PZ_1309  | I2/curstate_FSM_FFd1  | I2/curstate_FSM_FFd4  | I2/curstate_FSM_FFd2  | I2/curstate_FSM_FFd3
+INPUTMC | 8 | 0 | 9 | 0 | 8 | 7 | 8 | 7 | 7 | 0 | 10 | 1 | 9 | 1 | 5 | 1 | 8
+LCT | 1 | 5 | Internal_Name
+EQ | 14 | 
+   bale := !I2/curstate_FSM_FFd6 & I2/curstate_FSM_FFd5 & 
+	!N_PZ_1310 & !N_PZ_1309
+	# I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd4 & 
+	!I2/curstate_FSM_FFd6 & !N_PZ_1310 & !N_PZ_1309
+	# I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd4 & 
+	I2/curstate_FSM_FFd5 & !N_PZ_1310 & !N_PZ_1309
+	# I2/curstate_FSM_FFd2 & !I2/curstate_FSM_FFd4 & 
+	I2/curstate_FSM_FFd5 & !N_PZ_1310 & !N_PZ_1309
+	# !I2/curstate_FSM_FFd2 & !I2/curstate_FSM_FFd4 & 
+	!I2/curstate_FSM_FFd5 & !N_PZ_1310 & !N_PZ_1309
+	# !I2/curstate_FSM_FFd3 & !I2/curstate_FSM_FFd4 & 
+	I2/curstate_FSM_FFd6 & !N_PZ_1310 & !N_PZ_1309;	// (6 pt, 8 inp)
+    bale.OE = !master_enable;	// LOE	(1 pt, 1 inp)
+   bale.CLK  =  !clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 10 | 1 | brd_MC
+ATTRIBUTES | 75793154 | 0
+INPUTS | 6 | I2/curstate_FSM_FFd2  | I2/curstate_FSM_FFd3  | I2/curstate_FSM_FFd4  | I2/curstate_FSM_FFd6  | I2/curstate_FSM_FFd5  | I2/curstate_FSM_FFd1
+INPUTMC | 6 | 1 | 5 | 1 | 8 | 1 | 9 | 0 | 9 | 0 | 8 | 0 | 10
+LCT | 1 | 5 | Internal_Name
+EQ | 10 | 
+   !brd := !I2/curstate_FSM_FFd2 & I2/curstate_FSM_FFd3 & 
+	I2/curstate_FSM_FFd4 & I2/curstate_FSM_FFd6
+	# !I2/curstate_FSM_FFd2 & I2/curstate_FSM_FFd3 & 
+	I2/curstate_FSM_FFd4 & !I2/curstate_FSM_FFd5
+	# !I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	I2/curstate_FSM_FFd3 & I2/curstate_FSM_FFd6 & I2/curstate_FSM_FFd5
+	# I2/curstate_FSM_FFd2 & I2/curstate_FSM_FFd3 & 
+	!I2/curstate_FSM_FFd4 & I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5;	// (4 pt, 6 inp)
+    brd.OE = !master_enable;	// LOE	(1 pt, 1 inp)
+   brd.CLK  =  !clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 10 | 2 | bwr_MC
+ATTRIBUTES | 75793154 | 0
+INPUTS | 6 | I2/curstate_FSM_FFd3  | I2/curstate_FSM_FFd4  | I2/curstate_FSM_FFd6  | I2/curstate_FSM_FFd1  | I2/curstate_FSM_FFd5  | I2/curstate_FSM_FFd2
+INPUTMC | 6 | 1 | 8 | 1 | 9 | 0 | 9 | 0 | 10 | 0 | 8 | 1 | 5
+LCT | 1 | 5 | Internal_Name
+EQ | 12 | 
+   !bwr := !I2/curstate_FSM_FFd3 & I2/curstate_FSM_FFd4 & 
+	I2/curstate_FSM_FFd6
+	# !I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd3 & 
+	I2/curstate_FSM_FFd4 & !I2/curstate_FSM_FFd5
+	# I2/curstate_FSM_FFd2 & !I2/curstate_FSM_FFd3 & 
+	I2/curstate_FSM_FFd4 & !I2/curstate_FSM_FFd5
+	# I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	!I2/curstate_FSM_FFd3 & I2/curstate_FSM_FFd6 & I2/curstate_FSM_FFd5
+	# !I2/curstate_FSM_FFd2 & I2/curstate_FSM_FFd3 & 
+	!I2/curstate_FSM_FFd4 & !I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5;	// (5 pt, 6 inp)
+    bwr.OE = !master_enable;	// LOE	(1 pt, 1 inp)
+   bwr.CLK  =  !clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 6 | 0 | data_max<0>_MC
+ATTRIBUTES | 478413570 | 2
+INPUTS | 1 | data_isa_latched<0>
+INPUTMC | 1 | 4 | 0
+LCT | 3 | 2 | Internal_Name | 3 | Internal_Name | 5 | Internal_Name
+EQ | 4 | 
+   data_max<0> := data_isa_latched<0>;	// (1 pt, 1 inp)
+    data_max<0>.OE = !master_enable & !data_out_enable;	// LOE	(1 pt, 2 inp)
+    data_max<0>.CLK = I2/load_data;	// LCLK	(1 pt, 1 inp)
+    data_max<0>.CE = !master_enable;	// (1 pt, 1 inp)
+
+MACROCELL | 0 | 6 | I2/load_data_MC
+ATTRIBUTES | 2155905792 | 0
+INPUTS | 6 | I2/curstate_FSM_FFd1  | I2/curstate_FSM_FFd2  | I2/curstate_FSM_FFd3  | I2/curstate_FSM_FFd4  | I2/curstate_FSM_FFd6  | I2/curstate_FSM_FFd5
+INPUTMC | 6 | 0 | 10 | 1 | 5 | 1 | 8 | 1 | 9 | 0 | 9 | 0 | 8
+EQ | 4 | 
+   I2/load_data := !I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	!I2/curstate_FSM_FFd3 & !I2/curstate_FSM_FFd4 & I2/curstate_FSM_FFd6 & 
+	!I2/curstate_FSM_FFd5;	// (1 pt, 6 inp)
+   I2/load_data.CLK  =  !clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 10 | 4 | data_out_enable_MC
+ATTRIBUTES | 2156167938 | 0
+INPUTS | 2 | N_PZ_1310  | N_PZ_1309
+INPUTMC | 2 | 7 | 8 | 7 | 7
+EQ | 2 | 
+   data_out_enable := !N_PZ_1310 & !N_PZ_1309;	// (1 pt, 2 inp)
+   data_out_enable.CLK  =  !clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 7 | 11 | data_max<10>_MC
+ATTRIBUTES | 478413570 | 2
+INPUTS | 1 | data_isa_latched<10>
+INPUTMC | 1 | 5 | 11
+LCT | 3 | 2 | Internal_Name | 3 | Internal_Name | 5 | Internal_Name
+EQ | 4 | 
+   data_max<10> := data_isa_latched<10>;	// (1 pt, 1 inp)
+    data_max<10>.OE = !master_enable & !data_out_enable;	// LOE	(1 pt, 2 inp)
+    data_max<10>.CLK = I2/load_data;	// LCLK	(1 pt, 1 inp)
+    data_max<10>.CE = !master_enable;	// (1 pt, 1 inp)
+
+MACROCELL | 5 | 11 | data_isa_latched<10>_MC
+ATTRIBUTES | 3431203586 | 6
+OUTPUTMC | 1 | 7 | 11
+INPUTS | 6 | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | reg_rd  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | data_max_reg_in<10>
+INPUTMC | 6 | 1 | 0 | 1 | 1 | 0 | 1 | 2 | 14 | 0 | 0 | 12 | 9
+LCT | 2 | 2 | Internal_Name | 5 | Internal_Name
+EQ | 7 | 
+   !data_isa<10> =  !Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !data_max_reg_in<10>;	// (1 pt, 6 inp)
+    data_isa<10>.OE = N89;	// LOE	(1 pt, 1 inp)
+// Direct Input Register
+data_isa_latched<10> := data_isa<10>.PIN;	// (0 pt, 0 inp)
+    data_isa_latched<10>.CLK = reg_wr;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 2 | 9 | N89_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 5 | 10 | 4 | 3 | 4 | 12
+INPUTS | 5 | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | adr_latched<3>  | reg_rd  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000
+INPUTMC | 5 | 1 | 0 | 0 | 1 | 2 | 14 | 1 | 1 | 0 | 0
+EQ | 5 | 
+   N89 = Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!adr_latched<3> & reg_rd
+	$ 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000;	// (2 pt, 5 inp)
+
+MACROCELL | 7 | 4 | data_max<11>_MC
+ATTRIBUTES | 478413570 | 2
+INPUTS | 1 | data_isa_latched<11>
+INPUTMC | 1 | 5 | 4
+LCT | 3 | 2 | Internal_Name | 3 | Internal_Name | 5 | Internal_Name
+EQ | 4 | 
+   data_max<11> := data_isa_latched<11>;	// (1 pt, 1 inp)
+    data_max<11>.OE = !master_enable & !data_out_enable;	// LOE	(1 pt, 2 inp)
+    data_max<11>.CLK = I2/load_data;	// LCLK	(1 pt, 1 inp)
+    data_max<11>.CE = !master_enable;	// (1 pt, 1 inp)
+
+MACROCELL | 5 | 4 | data_isa_latched<11>_MC
+ATTRIBUTES | 3431203586 | 6
+OUTPUTMC | 1 | 7 | 4
+INPUTS | 6 | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | reg_rd  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | data_max_reg_in<11>
+INPUTMC | 6 | 1 | 0 | 1 | 1 | 0 | 1 | 2 | 14 | 0 | 0 | 12 | 8
+LCT | 2 | 2 | Internal_Name | 5 | Internal_Name
+EQ | 7 | 
+   !data_isa<11> =  !Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !data_max_reg_in<11>;	// (1 pt, 6 inp)
+    data_isa<11>.OE = N89;	// LOE	(1 pt, 1 inp)
+// Direct Input Register
+data_isa_latched<11> := data_isa<11>.PIN;	// (0 pt, 0 inp)
+    data_isa_latched<11>.CLK = reg_wr;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 7 | 3 | data_max<12>_MC
+ATTRIBUTES | 478413570 | 2
+INPUTS | 1 | data_isa_latched<12>
+INPUTMC | 1 | 5 | 3
+LCT | 3 | 2 | Internal_Name | 3 | Internal_Name | 5 | Internal_Name
+EQ | 4 | 
+   data_max<12> := data_isa_latched<12>;	// (1 pt, 1 inp)
+    data_max<12>.OE = !master_enable & !data_out_enable;	// LOE	(1 pt, 2 inp)
+    data_max<12>.CLK = I2/load_data;	// LCLK	(1 pt, 1 inp)
+    data_max<12>.CE = !master_enable;	// (1 pt, 1 inp)
+
+MACROCELL | 5 | 3 | data_isa_latched<12>_MC
+ATTRIBUTES | 3431203586 | 6
+OUTPUTMC | 1 | 7 | 3
+INPUTS | 6 | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | reg_rd  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | data_max_reg_in<12>
+INPUTMC | 6 | 1 | 0 | 1 | 1 | 0 | 1 | 2 | 14 | 0 | 0 | 12 | 7
+LCT | 2 | 2 | Internal_Name | 5 | Internal_Name
+EQ | 7 | 
+   !data_isa<12> =  !Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !data_max_reg_in<12>;	// (1 pt, 6 inp)
+    data_isa<12>.OE = N89;	// LOE	(1 pt, 1 inp)
+// Direct Input Register
+data_isa_latched<12> := data_isa<12>.PIN;	// (0 pt, 0 inp)
+    data_isa_latched<12>.CLK = reg_wr;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 7 | 2 | data_max<13>_MC
+ATTRIBUTES | 478413570 | 2
+INPUTS | 1 | data_isa_latched<13>
+INPUTMC | 1 | 5 | 2
+LCT | 3 | 2 | Internal_Name | 3 | Internal_Name | 5 | Internal_Name
+EQ | 4 | 
+   data_max<13> := data_isa_latched<13>;	// (1 pt, 1 inp)
+    data_max<13>.OE = !master_enable & !data_out_enable;	// LOE	(1 pt, 2 inp)
+    data_max<13>.CLK = I2/load_data;	// LCLK	(1 pt, 1 inp)
+    data_max<13>.CE = !master_enable;	// (1 pt, 1 inp)
+
+MACROCELL | 5 | 2 | data_isa_latched<13>_MC
+ATTRIBUTES | 3431203586 | 6
+OUTPUTMC | 1 | 7 | 2
+INPUTS | 6 | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | reg_rd  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | data_max_reg_in<13>
+INPUTMC | 6 | 1 | 0 | 1 | 1 | 0 | 1 | 2 | 14 | 0 | 0 | 12 | 6
+LCT | 2 | 2 | Internal_Name | 5 | Internal_Name
+EQ | 7 | 
+   !data_isa<13> =  !Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !data_max_reg_in<13>;	// (1 pt, 6 inp)
+    data_isa<13>.OE = N89;	// LOE	(1 pt, 1 inp)
+// Direct Input Register
+data_isa_latched<13> := data_isa<13>.PIN;	// (0 pt, 0 inp)
+    data_isa_latched<13>.CLK = reg_wr;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 7 | 1 | data_max<14>_MC
+ATTRIBUTES | 478413570 | 2
+INPUTS | 1 | data_isa_latched<14>
+INPUTMC | 1 | 5 | 1
+LCT | 3 | 2 | Internal_Name | 3 | Internal_Name | 5 | Internal_Name
+EQ | 4 | 
+   data_max<14> := data_isa_latched<14>;	// (1 pt, 1 inp)
+    data_max<14>.OE = !master_enable & !data_out_enable;	// LOE	(1 pt, 2 inp)
+    data_max<14>.CLK = I2/load_data;	// LCLK	(1 pt, 1 inp)
+    data_max<14>.CE = !master_enable;	// (1 pt, 1 inp)
+
+MACROCELL | 5 | 1 | data_isa_latched<14>_MC
+ATTRIBUTES | 3431203586 | 6
+OUTPUTMC | 1 | 7 | 1
+INPUTS | 6 | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | reg_rd  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | data_max_reg_in<14>
+INPUTMC | 6 | 1 | 0 | 1 | 1 | 0 | 1 | 2 | 14 | 0 | 0 | 12 | 5
+LCT | 2 | 2 | Internal_Name | 5 | Internal_Name
+EQ | 7 | 
+   !data_isa<14> =  !Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !data_max_reg_in<14>;	// (1 pt, 6 inp)
+    data_isa<14>.OE = N89;	// LOE	(1 pt, 1 inp)
+// Direct Input Register
+data_isa_latched<14> := data_isa<14>.PIN;	// (0 pt, 0 inp)
+    data_isa_latched<14>.CLK = reg_wr;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 7 | 0 | data_max<15>_MC
+ATTRIBUTES | 478413570 | 2
+INPUTS | 1 | data_isa_latched<15>
+INPUTMC | 1 | 5 | 0
+LCT | 3 | 2 | Internal_Name | 3 | Internal_Name | 5 | Internal_Name
+EQ | 4 | 
+   data_max<15> := data_isa_latched<15>;	// (1 pt, 1 inp)
+    data_max<15>.OE = !master_enable & !data_out_enable;	// LOE	(1 pt, 2 inp)
+    data_max<15>.CLK = I2/load_data;	// LCLK	(1 pt, 1 inp)
+    data_max<15>.CE = !master_enable;	// (1 pt, 1 inp)
+
+MACROCELL | 5 | 0 | data_isa_latched<15>_MC
+ATTRIBUTES | 3431203586 | 6
+OUTPUTMC | 1 | 7 | 0
+INPUTS | 6 | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | reg_rd  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | data_max_reg_in<15>
+INPUTMC | 6 | 1 | 0 | 1 | 1 | 0 | 1 | 2 | 14 | 0 | 0 | 12 | 11
+LCT | 2 | 2 | Internal_Name | 5 | Internal_Name
+EQ | 7 | 
+   !data_isa<15> =  !Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !data_max_reg_in<15>;	// (1 pt, 6 inp)
+    data_isa<15>.OE = N89;	// LOE	(1 pt, 1 inp)
+// Direct Input Register
+data_isa_latched<15> := data_isa<15>.PIN;	// (0 pt, 0 inp)
+    data_isa_latched<15>.CLK = reg_wr;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 6 | 1 | data_max<1>_MC
+ATTRIBUTES | 478413570 | 2
+INPUTS | 1 | data_isa_latched<1>
+INPUTMC | 1 | 4 | 1
+LCT | 3 | 2 | Internal_Name | 3 | Internal_Name | 5 | Internal_Name
+EQ | 4 | 
+   data_max<1> := data_isa_latched<1>;	// (1 pt, 1 inp)
+    data_max<1>.OE = !master_enable & !data_out_enable;	// LOE	(1 pt, 2 inp)
+    data_max<1>.CLK = I2/load_data;	// LCLK	(1 pt, 1 inp)
+    data_max<1>.CE = !master_enable;	// (1 pt, 1 inp)
+
+MACROCELL | 6 | 2 | data_max<2>_MC
+ATTRIBUTES | 478413570 | 2
+INPUTS | 1 | data_isa_latched<2>
+INPUTMC | 1 | 4 | 3
+LCT | 3 | 2 | Internal_Name | 3 | Internal_Name | 5 | Internal_Name
+EQ | 4 | 
+   data_max<2> := data_isa_latched<2>;	// (1 pt, 1 inp)
+    data_max<2>.OE = !master_enable & !data_out_enable;	// LOE	(1 pt, 2 inp)
+    data_max<2>.CLK = I2/load_data;	// LCLK	(1 pt, 1 inp)
+    data_max<2>.CE = !master_enable;	// (1 pt, 1 inp)
+
+MACROCELL | 6 | 3 | data_max<3>_MC
+ATTRIBUTES | 478413570 | 2
+INPUTS | 1 | data_isa_latched<3>
+INPUTMC | 1 | 4 | 4
+LCT | 3 | 2 | Internal_Name | 3 | Internal_Name | 5 | Internal_Name
+EQ | 4 | 
+   data_max<3> := data_isa_latched<3>;	// (1 pt, 1 inp)
+    data_max<3>.OE = !master_enable & !data_out_enable;	// LOE	(1 pt, 2 inp)
+    data_max<3>.CLK = I2/load_data;	// LCLK	(1 pt, 1 inp)
+    data_max<3>.CE = !master_enable;	// (1 pt, 1 inp)
+
+MACROCELL | 6 | 4 | data_max<4>_MC
+ATTRIBUTES | 478413570 | 2
+INPUTS | 1 | data_isa_latched<4>
+INPUTMC | 1 | 4 | 11
+LCT | 3 | 2 | Internal_Name | 3 | Internal_Name | 5 | Internal_Name
+EQ | 4 | 
+   data_max<4> := data_isa_latched<4>;	// (1 pt, 1 inp)
+    data_max<4>.OE = !master_enable & !data_out_enable;	// LOE	(1 pt, 2 inp)
+    data_max<4>.CLK = I2/load_data;	// LCLK	(1 pt, 1 inp)
+    data_max<4>.CE = !master_enable;	// (1 pt, 1 inp)
+
+MACROCELL | 6 | 11 | data_max<5>_MC
+ATTRIBUTES | 478413570 | 2
+INPUTS | 1 | data_isa_latched<5>
+INPUTMC | 1 | 4 | 12
+LCT | 3 | 2 | Internal_Name | 3 | Internal_Name | 5 | Internal_Name
+EQ | 4 | 
+   data_max<5> := data_isa_latched<5>;	// (1 pt, 1 inp)
+    data_max<5>.OE = !master_enable & !data_out_enable;	// LOE	(1 pt, 2 inp)
+    data_max<5>.CLK = I2/load_data;	// LCLK	(1 pt, 1 inp)
+    data_max<5>.CE = !master_enable;	// (1 pt, 1 inp)
+
+MACROCELL | 6 | 12 | data_max<6>_MC
+ATTRIBUTES | 478413570 | 2
+INPUTS | 1 | data_isa_latched<6>
+INPUTMC | 1 | 4 | 13
+LCT | 3 | 2 | Internal_Name | 3 | Internal_Name | 5 | Internal_Name
+EQ | 4 | 
+   data_max<6> := data_isa_latched<6>;	// (1 pt, 1 inp)
+    data_max<6>.OE = !master_enable & !data_out_enable;	// LOE	(1 pt, 2 inp)
+    data_max<6>.CLK = I2/load_data;	// LCLK	(1 pt, 1 inp)
+    data_max<6>.CE = !master_enable;	// (1 pt, 1 inp)
+
+MACROCELL | 6 | 13 | data_max<7>_MC
+ATTRIBUTES | 478413570 | 2
+INPUTS | 1 | data_isa_latched<7>
+INPUTMC | 1 | 4 | 14
+LCT | 3 | 2 | Internal_Name | 3 | Internal_Name | 5 | Internal_Name
+EQ | 4 | 
+   data_max<7> := data_isa_latched<7>;	// (1 pt, 1 inp)
+    data_max<7>.OE = !master_enable & !data_out_enable;	// LOE	(1 pt, 2 inp)
+    data_max<7>.CLK = I2/load_data;	// LCLK	(1 pt, 1 inp)
+    data_max<7>.CE = !master_enable;	// (1 pt, 1 inp)
+
+MACROCELL | 6 | 14 | data_max<8>_MC
+ATTRIBUTES | 478413570 | 2
+INPUTS | 1 | data_isa_latched<8>
+INPUTMC | 1 | 4 | 15
+LCT | 3 | 2 | Internal_Name | 3 | Internal_Name | 5 | Internal_Name
+EQ | 4 | 
+   data_max<8> := data_isa_latched<8>;	// (1 pt, 1 inp)
+    data_max<8>.OE = !master_enable & !data_out_enable;	// LOE	(1 pt, 2 inp)
+    data_max<8>.CLK = I2/load_data;	// LCLK	(1 pt, 1 inp)
+    data_max<8>.CE = !master_enable;	// (1 pt, 1 inp)
+
+MACROCELL | 4 | 15 | data_isa_latched<8>_MC
+ATTRIBUTES | 3431203586 | 6
+OUTPUTMC | 1 | 6 | 14
+INPUTS | 8 | test2  | power_supply_24V  | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | reg_rd  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | data_max_reg_in<8>
+INPUTMC | 7 | 15 | 2 | 1 | 0 | 1 | 1 | 0 | 1 | 2 | 14 | 0 | 0 | 13 | 9
+INPUTP | 1 | 191
+LCT | 2 | 2 | Internal_Name | 5 | Internal_Name
+EQ | 8 | 
+   !data_isa<8> =  test2 & !power_supply_24V
+	# !Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !data_max_reg_in<8>;	// (2 pt, 8 inp)
+   !data_isa<8>.OE = !test2 & !N89;	// LOE	(1 pt, 2 inp)
+// Direct Input Register
+data_isa_latched<8> := data_isa<8>.PIN;	// (0 pt, 0 inp)
+    data_isa_latched<8>.CLK = reg_wr;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 6 | 15 | data_max<9>_MC
+ATTRIBUTES | 478413570 | 2
+INPUTS | 1 | data_isa_latched<9>
+INPUTMC | 1 | 5 | 12
+LCT | 3 | 2 | Internal_Name | 3 | Internal_Name | 5 | Internal_Name
+EQ | 4 | 
+   data_max<9> := data_isa_latched<9>;	// (1 pt, 1 inp)
+    data_max<9>.OE = !master_enable & !data_out_enable;	// LOE	(1 pt, 2 inp)
+    data_max<9>.CLK = I2/load_data;	// LCLK	(1 pt, 1 inp)
+    data_max<9>.CE = !master_enable;	// (1 pt, 1 inp)
+
+MACROCELL | 5 | 12 | data_isa_latched<9>_MC
+ATTRIBUTES | 3431203586 | 6
+OUTPUTMC | 1 | 6 | 15
+INPUTS | 6 | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | reg_rd  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | data_max_reg_in<9>
+INPUTMC | 6 | 1 | 0 | 1 | 1 | 0 | 1 | 2 | 14 | 0 | 0 | 13 | 8
+LCT | 2 | 2 | Internal_Name | 5 | Internal_Name
+EQ | 7 | 
+   !data_isa<9> =  !Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !data_max_reg_in<9>;	// (1 pt, 6 inp)
+    data_isa<9>.OE = N89;	// LOE	(1 pt, 1 inp)
+// Direct Input Register
+data_isa_latched<9> := data_isa<9>.PIN;	// (0 pt, 0 inp)
+    data_isa_latched<9>.CLK = reg_wr;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 8 | 15 | direction_245_MC
+ATTRIBUTES | 8688390 | 0
+INPUTS | 2 | N_PZ_1310  | N_PZ_1309
+INPUTMC | 2 | 7 | 8 | 7 | 7
+UCT | 1 | 1 | Internal_Name
+EQ | 2 | 
+   !direction_245 := !N_PZ_1310 & !N_PZ_1309;	// (1 pt, 2 inp)
+   direction_245.CLK  =  !clk;	// GCK	(0 pt, 0 inp)	// UPST	(1 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 9 | 12 | iocs16_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 6 | iowr  | cs  | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | iord
+INPUTMC | 4 | 9 | 11 | 1 | 0 | 1 | 1 | 0 | 1
+INPUTP | 2 | 5 | 6
+EQ | 6 | 
+   !iocs16 = !iowr & cs & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3>
+	# cs & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & !iord;	// (2 pt, 6 inp)
+
+MACROCELL | 5 | 14 | iq_o_syn_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | master_enable2  | iq_i_syn
+INPUTMC | 1 | 2 | 10
+INPUTP | 1 | 94
+EQ | 1 | 
+   iq_o_syn = master_enable2 & !iq_i_syn;	// (1 pt, 2 inp)
+
+MACROCELL | 11 | 14 | led_kvr_MC
+ATTRIBUTES | 8684290 | 0
+INPUTS | 1 | I2/led_kvr
+INPUTMC | 1 | 0 | 7
+EQ | 2 | 
+   led_kvr := !I2/led_kvr;	// (1 pt, 1 inp)
+   led_kvr.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 0 | 7 | I2/led_kvr_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 2 | 0 | 7 | 11 | 14
+INPUTS | 15 | I2/curstate_FSM_FFd1  | I2/curstate_FSM_FFd2  | I2/curstate_FSM_FFd4  | I2/curstate_FSM_FFd6  | I2/curstate_FSM_FFd5  | address_max_fsm<0>  | address_max_fsm<1>  | address_max_fsm<2>  | address_max_fsm<3>  | address_max_fsm<4>  | address_max_fsm<5>  | address_max_fsm<6>  | address_max_fsm<7>  | I2/led_kvr  | I2/curstate_FSM_FFd3
+INPUTMC | 15 | 0 | 10 | 1 | 5 | 1 | 9 | 0 | 9 | 0 | 8 | 6 | 9 | 6 | 8 | 6 | 7 | 6 | 6 | 6 | 5 | 8 | 10 | 8 | 9 | 8 | 8 | 0 | 7 | 1 | 8
+EQ | 12 | 
+   I2/led_kvr.T := !I2/curstate_FSM_FFd1 & I2/curstate_FSM_FFd2 & 
+	!I2/curstate_FSM_FFd4 & !I2/curstate_FSM_FFd6 & !I2/curstate_FSM_FFd5 & 
+	address_max_fsm<0> & address_max_fsm<1> & address_max_fsm<2> & 
+	address_max_fsm<3> & !address_max_fsm<4> & !address_max_fsm<5> & 
+	!address_max_fsm<6> & !address_max_fsm<7> & I2/led_kvr
+	# I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	!I2/curstate_FSM_FFd3 & !I2/curstate_FSM_FFd4 & I2/curstate_FSM_FFd6 & 
+	!I2/curstate_FSM_FFd5 & address_max_fsm<0> & address_max_fsm<1> & 
+	address_max_fsm<2> & address_max_fsm<3> & !address_max_fsm<4> & 
+	!address_max_fsm<5> & !address_max_fsm<6> & !address_max_fsm<7> & 
+	!I2/led_kvr;	// (2 pt, 15 inp)
+   I2/led_kvr.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 11 | 13 | led_lpt_MC
+ATTRIBUTES | 142873350 | 0
+INPUTS | 1 | data_isa_latched<3>
+INPUTMC | 1 | 4 | 4
+LCT | 1 | 2 | Internal_Name
+UCT | 1 | 1 | Internal_Name
+EQ | 2 | 
+   led_lpt := !data_isa_latched<3>;	// (1 pt, 1 inp)
+    led_lpt.CLK = I2/write_lpt_en;	// LCLK	(1 pt, 1 inp)	// UPST	(1 pt, 0 inp)
+
+MACROCELL | 7 | 9 | I2/write_lpt_en_MC
+ATTRIBUTES | 2155905792 | 0
+INPUTS | 5 | I2/curstate_FSM_FFd1  | I2/curstate_FSM_FFd2  | I2/curstate_FSM_FFd4  | I2/curstate_FSM_FFd6  | I2/curstate_FSM_FFd5
+INPUTMC | 5 | 0 | 10 | 1 | 5 | 1 | 9 | 0 | 9 | 0 | 8
+EQ | 3 | 
+   I2/write_lpt_en := I2/curstate_FSM_FFd1 & I2/curstate_FSM_FFd2 & 
+	I2/curstate_FSM_FFd4 & !I2/curstate_FSM_FFd6 & I2/curstate_FSM_FFd5;	// (1 pt, 5 inp)
+   I2/write_lpt_en.CLK  =  !clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 15 | 14 | led_master_enable_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | master_enable2  | master_enable1
+INPUTMC | 2 | 2 | 10 | 8 | 7
+EQ | 1 | 
+   led_master_enable = master_enable2 & master_enable1;	// (1 pt, 2 inp)
+
+MACROCELL | 15 | 0 | led_pwr_good_tps_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 1 | pwr_good_tps
+INPUTP | 1 | 7
+EQ | 1 | 
+   led_pwr_good_tps = pwr_good_tps;	// (1 pt, 1 inp)
+
+MACROCELL | 11 | 15 | led_rad_MC
+ATTRIBUTES | 8684290 | 0
+INPUTS | 2 | master_enable  | led_rad_sig
+INPUTMC | 2 | 15 | 4 | 8 | 5
+EQ | 2 | 
+   !led_rad := !master_enable & led_rad_sig;	// (1 pt, 2 inp)
+   led_rad.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 8 | 5 | led_rad_sig_MC
+ATTRIBUTES | 2285896448 | 0
+OUTPUTMC | 1 | 11 | 15
+INPUTS | 0
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   led_rad_sig.T := Vcc;	// (0 pt, 0 inp)
+    led_rad_sig.CLK = !(bale);	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 15 | 1 | led_wdt_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 1 | wdt_sig_stari
+INPUTP | 1 | 91
+EQ | 1 | 
+   led_wdt = wdt_sig_stari;	// (1 pt, 1 inp)
+
+MACROCELL | 10 | 12 | load_buffer_MC
+ATTRIBUTES | 2156167938 | 0
+INPUTS | 6 | I2/curstate_FSM_FFd1  | I2/curstate_FSM_FFd2  | I2/curstate_FSM_FFd3  | I2/curstate_FSM_FFd4  | I2/curstate_FSM_FFd6  | I2/curstate_FSM_FFd5
+INPUTMC | 6 | 0 | 10 | 1 | 5 | 1 | 8 | 1 | 9 | 0 | 9 | 0 | 8
+EQ | 5 | 
+   load_buffer := I2/curstate_FSM_FFd1 & I2/curstate_FSM_FFd2 & 
+	I2/curstate_FSM_FFd3
+	# !I2/curstate_FSM_FFd1 & I2/curstate_FSM_FFd2 & 
+	I2/curstate_FSM_FFd4 & !I2/curstate_FSM_FFd6 & I2/curstate_FSM_FFd5;	// (2 pt, 6 inp)
+   load_buffer.CLK  =  !clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 9 | 15 | mrst_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | rst_dof_dsbl  | reset_CPU.PIN
+INPUTP | 2 | 195 | 48
+EQ | 1 | 
+   !mrst = rst_dof_dsbl & !reset_CPU.PIN;	// (1 pt, 2 inp)
+
+MACROCELL | 13 | 0 | nvram_address<0>_MC
+ATTRIBUTES | 1074021122 | 0
+INPUTS | 1 | address_isa<0>
+INPUTP | 1 | 158
+UCT | 1 | 5 | Internal_Name
+EQ | 2 | 
+   nvram_address<0> = address_isa<0>;	// (1 pt, 1 inp)
+    nvram_address<0>.OE = N_PZ_1377;	// UOE	(1 pt, 1 inp)
+
+MACROCELL | 14 | 14 | nvram_address<10>_MC
+ATTRIBUTES | 1074021122 | 0
+INPUTS | 1 | address_isa<10>
+INPUTP | 1 | 145
+UCT | 1 | 5 | Internal_Name
+EQ | 2 | 
+   nvram_address<10> = address_isa<10>;	// (1 pt, 1 inp)
+    nvram_address<10>.OE = N_PZ_1377;	// UOE	(1 pt, 1 inp)
+
+MACROCELL | 14 | 13 | nvram_address<11>_MC
+ATTRIBUTES | 1074021122 | 0
+INPUTS | 1 | address_isa<11>
+INPUTP | 1 | 144
+UCT | 1 | 5 | Internal_Name
+EQ | 2 | 
+   nvram_address<11> = address_isa<11>;	// (1 pt, 1 inp)
+    nvram_address<11>.OE = N_PZ_1377;	// UOE	(1 pt, 1 inp)
+
+MACROCELL | 14 | 12 | nvram_address<12>_MC
+ATTRIBUTES | 1074021122 | 0
+INPUTS | 1 | address_isa<12>
+INPUTP | 1 | 143
+UCT | 1 | 5 | Internal_Name
+EQ | 2 | 
+   nvram_address<12> = address_isa<12>;	// (1 pt, 1 inp)
+    nvram_address<12>.OE = N_PZ_1377;	// UOE	(1 pt, 1 inp)
+
+MACROCELL | 14 | 11 | nvram_address<13>_MC
+ATTRIBUTES | 1074021122 | 0
+INPUTS | 1 | address_isa<13>
+INPUTP | 1 | 142
+UCT | 1 | 5 | Internal_Name
+EQ | 2 | 
+   nvram_address<13> = address_isa<13>;	// (1 pt, 1 inp)
+    nvram_address<13>.OE = N_PZ_1377;	// UOE	(1 pt, 1 inp)
+
+MACROCELL | 14 | 4 | nvram_address<14>_MC
+ATTRIBUTES | 1074021122 | 0
+INPUTS | 1 | address_isa<14>
+INPUTP | 1 | 141
+UCT | 1 | 5 | Internal_Name
+EQ | 2 | 
+   nvram_address<14> = address_isa<14>;	// (1 pt, 1 inp)
+    nvram_address<14>.OE = N_PZ_1377;	// UOE	(1 pt, 1 inp)
+
+MACROCELL | 14 | 3 | nvram_address<15>_MC
+ATTRIBUTES | 1074021122 | 0
+INPUTS | 3 | address_isa<15>  | N_PZ_877  | page_register<0>
+INPUTMC | 2 | 11 | 9 | 9 | 4
+INPUTP | 1 | 139
+UCT | 1 | 5 | Internal_Name
+EQ | 3 | 
+   !nvram_address<15> = !address_isa<15> & N_PZ_877
+	# !N_PZ_877 & !page_register<0>;	// (2 pt, 3 inp)
+    nvram_address<15>.OE = N_PZ_1377;	// UOE	(1 pt, 1 inp)
+
+MACROCELL | 11 | 9 | N_PZ_877_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 7 | 14 | 3 | 14 | 2 | 14 | 1 | 14 | 0 | 12 | 15 | 7 | 14 | 7 | 13
+INPUTS | 23 | aen  | base_addr_jp<1>  | reset  | address_isa<19>  | address_isa<23>  | address_isa<22>  | address_isa<20>  | address_isa<21>  | address_isa<18>  | address_isa<16>  | address_isa<17>  | address_isa<15>  | address_isa<8>  | address_isa<11>  | address_isa<7>  | address_isa<6>  | address_isa<14>  | address_isa<13>  | address_isa<10>  | address_isa<9>  | address_isa<4>  | address_isa<12>  | address_isa<5>
+INPUTP | 23 | 8 | 137 | 12 | 163 | 159 | 160 | 162 | 161 | 164 | 167 | 166 | 139 | 148 | 144 | 149 | 150 | 141 | 142 | 145 | 147 | 152 | 143 | 151
+EQ | 16 | 
+   N_PZ_877 = !aen & base_addr_jp<1> & !reset & !address_isa<19> & 
+	!address_isa<23> & !address_isa<22> & !address_isa<20> & 
+	!address_isa<21> & !address_isa<18> & !address_isa<16> & 
+	!address_isa<17> & !address_isa<15> & address_isa<8> & 
+	!address_isa<11> & !address_isa<7> & address_isa<6> & 
+	!address_isa<14> & !address_isa<13> & !address_isa<10> & 
+	!address_isa<9> & address_isa<4> & !address_isa<12> & 
+	!address_isa<5>
+	# !aen & !base_addr_jp<1> & !reset & !address_isa<19> & 
+	!address_isa<23> & !address_isa<22> & !address_isa<20> & 
+	!address_isa<21> & !address_isa<18> & !address_isa<16> & 
+	!address_isa<17> & !address_isa<15> & address_isa<8> & 
+	!address_isa<11> & !address_isa<7> & address_isa<6> & 
+	!address_isa<14> & !address_isa<13> & !address_isa<10> & 
+	!address_isa<9> & address_isa<4> & !address_isa<12> & 
+	address_isa<5>;	// (2 pt, 23 inp)
+
+MACROCELL | 9 | 4 | page_register<0>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 2 | 14 | 3 | 5 | 10
+INPUTS | 1 | data_isa<0>.PIN
+INPUTP | 1 | 131
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   page_register<0>.D = data_isa<0>.PIN;	// (1 pt, 1 inp)
+    page_register<0>.LH = 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & 
+	N_PZ_2876;	// LCLK	(1 pt, 3 inp)
+
+MACROCELL | 14 | 2 | nvram_address<16>_MC
+ATTRIBUTES | 1074021122 | 0
+INPUTS | 3 | address_isa<16>  | N_PZ_877  | page_register<1>
+INPUTMC | 2 | 11 | 9 | 9 | 3
+INPUTP | 1 | 167
+UCT | 1 | 5 | Internal_Name
+EQ | 3 | 
+   !nvram_address<16> = !address_isa<16> & N_PZ_877
+	# !N_PZ_877 & !page_register<1>;	// (2 pt, 3 inp)
+    nvram_address<16>.OE = N_PZ_1377;	// UOE	(1 pt, 1 inp)
+
+MACROCELL | 9 | 3 | page_register<1>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 2 | 14 | 2 | 2 | 5
+INPUTS | 1 | data_isa<1>.PIN
+INPUTP | 1 | 130
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   page_register<1>.D = data_isa<1>.PIN;	// (1 pt, 1 inp)
+    page_register<1>.LH = 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & 
+	N_PZ_2876;	// LCLK	(1 pt, 3 inp)
+
+MACROCELL | 14 | 1 | nvram_address<17>_MC
+ATTRIBUTES | 1074021122 | 0
+INPUTS | 3 | address_isa<17>  | N_PZ_877  | page_register<2>
+INPUTMC | 2 | 11 | 9 | 10 | 13
+INPUTP | 1 | 166
+UCT | 1 | 5 | Internal_Name
+EQ | 3 | 
+   !nvram_address<17> = !address_isa<17> & N_PZ_877
+	# !N_PZ_877 & !page_register<2>;	// (2 pt, 3 inp)
+    nvram_address<17>.OE = N_PZ_1377;	// UOE	(1 pt, 1 inp)
+
+MACROCELL | 10 | 13 | page_register<2>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 2 | 14 | 1 | 4 | 3
+INPUTS | 1 | data_isa<2>.PIN
+INPUTP | 1 | 128
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   page_register<2>.D = data_isa<2>.PIN;	// (1 pt, 1 inp)
+    page_register<2>.LH = 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & 
+	N_PZ_2876;	// LCLK	(1 pt, 3 inp)
+
+MACROCELL | 14 | 0 | nvram_address<18>_MC
+ATTRIBUTES | 1074021122 | 0
+INPUTS | 3 | address_isa<18>  | N_PZ_877  | page_register<3>
+INPUTMC | 2 | 11 | 9 | 10 | 10
+INPUTP | 1 | 164
+UCT | 1 | 5 | Internal_Name
+EQ | 3 | 
+   !nvram_address<18> = !address_isa<18> & N_PZ_877
+	# !N_PZ_877 & !page_register<3>;	// (2 pt, 3 inp)
+    nvram_address<18>.OE = N_PZ_1377;	// UOE	(1 pt, 1 inp)
+
+MACROCELL | 10 | 10 | page_register<3>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 2 | 14 | 0 | 2 | 7
+INPUTS | 1 | data_isa<3>.PIN
+INPUTP | 1 | 126
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   page_register<3>.D = data_isa<3>.PIN;	// (1 pt, 1 inp)
+    page_register<3>.LH = 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & 
+	N_PZ_2876;	// LCLK	(1 pt, 3 inp)
+
+MACROCELL | 12 | 15 | nvram_address<19>_MC
+ATTRIBUTES | 1074021122 | 0
+INPUTS | 3 | address_isa<19>  | N_PZ_877  | page_register<4>
+INPUTMC | 2 | 11 | 9 | 10 | 9
+INPUTP | 1 | 163
+UCT | 1 | 5 | Internal_Name
+EQ | 3 | 
+   !nvram_address<19> = !address_isa<19> & N_PZ_877
+	# !N_PZ_877 & !page_register<4>;	// (2 pt, 3 inp)
+    nvram_address<19>.OE = N_PZ_1377;	// UOE	(1 pt, 1 inp)
+
+MACROCELL | 10 | 9 | page_register<4>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 2 | 12 | 15 | 10 | 5
+INPUTS | 1 | data_isa<4>.PIN
+INPUTP | 1 | 124
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   page_register<4>.D = data_isa<4>.PIN;	// (1 pt, 1 inp)
+    page_register<4>.LH = 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & 
+	N_PZ_2876;	// LCLK	(1 pt, 3 inp)
+
+MACROCELL | 13 | 1 | nvram_address<1>_MC
+ATTRIBUTES | 1074021122 | 0
+INPUTS | 1 | address_isa<1>
+INPUTP | 1 | 157
+UCT | 1 | 5 | Internal_Name
+EQ | 2 | 
+   nvram_address<1> = address_isa<1>;	// (1 pt, 1 inp)
+    nvram_address<1>.OE = N_PZ_1377;	// UOE	(1 pt, 1 inp)
+
+MACROCELL | 12 | 14 | nvram_address<20>_MC
+ATTRIBUTES | 202113794 | 0
+INPUTS | 3 | nvram_ce  | nvram_cs  | page_register<5>
+INPUTMC | 3 | 11 | 12 | 11 | 11 | 10 | 8
+LCT | 2 | 2 | Internal_Name | 5 | Internal_Name
+EQ | 3 | 
+   nvram_address<20>.D = !nvram_ce & nvram_cs & page_register<5>;	// (1 pt, 3 inp)
+    nvram_address<20>.OE = !I6/Mtrien_nvram_address<20>;	// LOE	(1 pt, 1 inp)
+    nvram_address<20>.LH = !(N_PZ_877);	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 10 | 8 | page_register<5>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 2 | 12 | 14 | 4 | 12
+INPUTS | 1 | data_isa<5>.PIN
+INPUTP | 1 | 123
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   page_register<5>.D = data_isa<5>.PIN;	// (1 pt, 1 inp)
+    page_register<5>.LH = 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & 
+	N_PZ_2876;	// LCLK	(1 pt, 3 inp)
+
+MACROCELL | 7 | 12 | I6/Mtrien_nvram_address<20>_MC
+ATTRIBUTES | 2282226432 | 0
+INPUTS | 1 | N_PZ_1377
+INPUTMC | 1 | 11 | 10
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   I6/Mtrien_nvram_address<20>.D = !N_PZ_1377;	// (1 pt, 1 inp)
+    I6/Mtrien_nvram_address<20>.LH = !(N_PZ_877);	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 13 | 3 | nvram_address<2>_MC
+ATTRIBUTES | 1074021122 | 0
+INPUTS | 1 | address_isa<2>
+INPUTP | 1 | 155
+UCT | 1 | 5 | Internal_Name
+EQ | 2 | 
+   nvram_address<2> = address_isa<2>;	// (1 pt, 1 inp)
+    nvram_address<2>.OE = N_PZ_1377;	// UOE	(1 pt, 1 inp)
+
+MACROCELL | 13 | 4 | nvram_address<3>_MC
+ATTRIBUTES | 1074021122 | 0
+INPUTS | 1 | address_isa<3>
+INPUTP | 1 | 153
+UCT | 1 | 5 | Internal_Name
+EQ | 2 | 
+   nvram_address<3> = address_isa<3>;	// (1 pt, 1 inp)
+    nvram_address<3>.OE = N_PZ_1377;	// UOE	(1 pt, 1 inp)
+
+MACROCELL | 13 | 11 | nvram_address<4>_MC
+ATTRIBUTES | 1074021122 | 0
+INPUTS | 1 | address_isa<4>
+INPUTP | 1 | 152
+UCT | 1 | 5 | Internal_Name
+EQ | 2 | 
+   nvram_address<4> = address_isa<4>;	// (1 pt, 1 inp)
+    nvram_address<4>.OE = N_PZ_1377;	// UOE	(1 pt, 1 inp)
+
+MACROCELL | 13 | 12 | nvram_address<5>_MC
+ATTRIBUTES | 1074021122 | 0
+INPUTS | 1 | address_isa<5>
+INPUTP | 1 | 151
+UCT | 1 | 5 | Internal_Name
+EQ | 2 | 
+   nvram_address<5> = address_isa<5>;	// (1 pt, 1 inp)
+    nvram_address<5>.OE = N_PZ_1377;	// UOE	(1 pt, 1 inp)
+
+MACROCELL | 13 | 13 | nvram_address<6>_MC
+ATTRIBUTES | 1074021122 | 0
+INPUTS | 1 | address_isa<6>
+INPUTP | 1 | 150
+UCT | 1 | 5 | Internal_Name
+EQ | 2 | 
+   nvram_address<6> = address_isa<6>;	// (1 pt, 1 inp)
+    nvram_address<6>.OE = N_PZ_1377;	// UOE	(1 pt, 1 inp)
+
+MACROCELL | 13 | 14 | nvram_address<7>_MC
+ATTRIBUTES | 1074021122 | 0
+INPUTS | 1 | address_isa<7>
+INPUTP | 1 | 149
+UCT | 1 | 5 | Internal_Name
+EQ | 2 | 
+   nvram_address<7> = address_isa<7>;	// (1 pt, 1 inp)
+    nvram_address<7>.OE = N_PZ_1377;	// UOE	(1 pt, 1 inp)
+
+MACROCELL | 13 | 15 | nvram_address<8>_MC
+ATTRIBUTES | 1074021122 | 0
+INPUTS | 1 | address_isa<8>
+INPUTP | 1 | 148
+UCT | 1 | 5 | Internal_Name
+EQ | 2 | 
+   nvram_address<8> = address_isa<8>;	// (1 pt, 1 inp)
+    nvram_address<8>.OE = N_PZ_1377;	// UOE	(1 pt, 1 inp)
+
+MACROCELL | 14 | 15 | nvram_address<9>_MC
+ATTRIBUTES | 1074021122 | 0
+INPUTS | 1 | address_isa<9>
+INPUTP | 1 | 147
+UCT | 1 | 5 | Internal_Name
+EQ | 2 | 
+   nvram_address<9> = address_isa<9>;	// (1 pt, 1 inp)
+    nvram_address<9>.OE = N_PZ_1377;	// UOE	(1 pt, 1 inp)
+
+MACROCELL | 3 | 14 | nvram_data<0>_MC
+ATTRIBUTES | 75793154 | 2
+INPUTS | 1 | data_isa<0>.PIN
+INPUTP | 1 | 131
+LCT | 1 | 5 | Internal_Name
+EQ | 3 | 
+   nvram_data<0> := data_isa<0>.PIN;	// (1 pt, 1 inp)
+    nvram_data<0>.OE = !I6/Mtrien_nvram_data;	// LOE	(1 pt, 1 inp)
+   nvram_data<0>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 7 | 14 | I6/Mtrien_nvram_data_MC
+ATTRIBUTES | 2155905792 | 0
+INPUTS | 6 | iowr  | N_PZ_1377  | N_PZ_877  | nvram_ce  | nvram_cs  | smemw
+INPUTMC | 4 | 11 | 10 | 11 | 9 | 11 | 12 | 11 | 11
+INPUTP | 2 | 5 | 17
+EQ | 3 | 
+   !I6/Mtrien_nvram_data := !iowr & N_PZ_1377 & N_PZ_877
+	# !nvram_ce & nvram_cs & N_PZ_1377 & !smemw;	// (2 pt, 6 inp)
+   I6/Mtrien_nvram_data.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 3 | 12 | nvram_data<1>_MC
+ATTRIBUTES | 75793154 | 2
+INPUTS | 1 | data_isa<1>.PIN
+INPUTP | 1 | 130
+LCT | 1 | 5 | Internal_Name
+EQ | 3 | 
+   nvram_data<1> := data_isa<1>.PIN;	// (1 pt, 1 inp)
+    nvram_data<1>.OE = !I6/Mtrien_nvram_data;	// LOE	(1 pt, 1 inp)
+   nvram_data<1>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 3 | 11 | nvram_data<2>_MC
+ATTRIBUTES | 75793154 | 2
+INPUTS | 1 | data_isa<2>.PIN
+INPUTP | 1 | 128
+LCT | 1 | 5 | Internal_Name
+EQ | 3 | 
+   nvram_data<2> := data_isa<2>.PIN;	// (1 pt, 1 inp)
+    nvram_data<2>.OE = !I6/Mtrien_nvram_data;	// LOE	(1 pt, 1 inp)
+   nvram_data<2>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 3 | 4 | nvram_data<3>_MC
+ATTRIBUTES | 75793154 | 2
+INPUTS | 1 | data_isa<3>.PIN
+INPUTP | 1 | 126
+LCT | 1 | 5 | Internal_Name
+EQ | 3 | 
+   nvram_data<3> := data_isa<3>.PIN;	// (1 pt, 1 inp)
+    nvram_data<3>.OE = !I6/Mtrien_nvram_data;	// LOE	(1 pt, 1 inp)
+   nvram_data<3>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 3 | 3 | nvram_data<4>_MC
+ATTRIBUTES | 75793154 | 2
+INPUTS | 1 | data_isa<4>.PIN
+INPUTP | 1 | 124
+LCT | 1 | 5 | Internal_Name
+EQ | 3 | 
+   nvram_data<4> := data_isa<4>.PIN;	// (1 pt, 1 inp)
+    nvram_data<4>.OE = !I6/Mtrien_nvram_data;	// LOE	(1 pt, 1 inp)
+   nvram_data<4>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 3 | 2 | nvram_data<5>_MC
+ATTRIBUTES | 75793154 | 2
+INPUTS | 1 | data_isa<5>.PIN
+INPUTP | 1 | 123
+LCT | 1 | 5 | Internal_Name
+EQ | 3 | 
+   nvram_data<5> := data_isa<5>.PIN;	// (1 pt, 1 inp)
+    nvram_data<5>.OE = !I6/Mtrien_nvram_data;	// LOE	(1 pt, 1 inp)
+   nvram_data<5>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 3 | 1 | nvram_data<6>_MC
+ATTRIBUTES | 75793154 | 2
+INPUTS | 1 | data_isa<6>.PIN
+INPUTP | 1 | 122
+LCT | 1 | 5 | Internal_Name
+EQ | 3 | 
+   nvram_data<6> := data_isa<6>.PIN;	// (1 pt, 1 inp)
+    nvram_data<6>.OE = !I6/Mtrien_nvram_data;	// LOE	(1 pt, 1 inp)
+   nvram_data<6>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 3 | 0 | nvram_data<7>_MC
+ATTRIBUTES | 75793154 | 2
+INPUTS | 1 | data_isa<7>.PIN
+INPUTP | 1 | 121
+LCT | 1 | 5 | Internal_Name
+EQ | 3 | 
+   nvram_data<7> := data_isa<7>.PIN;	// (1 pt, 1 inp)
+    nvram_data<7>.OE = !I6/Mtrien_nvram_data;	// LOE	(1 pt, 1 inp)
+   nvram_data<7>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 11 | 4 | nvram_oe_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 1 | nvram_oe_BUFR
+INPUTMC | 1 | 2 | 15
+EQ | 1 | 
+   nvram_oe = nvram_oe_BUFR;	// (1 pt, 1 inp)
+
+MACROCELL | 2 | 15 | nvram_oe_BUFR_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 1 | 11 | 4
+INPUTS | 4 | iord  | nvram_ce  | nvram_cs  | smemr
+INPUTMC | 2 | 11 | 12 | 11 | 11
+INPUTP | 2 | 6 | 18
+EQ | 2 | 
+   !nvram_oe_BUFR = !iord & nvram_ce & !nvram_cs
+	# !smemr & !nvram_ce & nvram_cs;	// (2 pt, 4 inp)
+
+MACROCELL | 11 | 3 | nvram_we_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 1 | nvram_we_BUFR
+INPUTMC | 1 | 7 | 13
+EQ | 1 | 
+   nvram_we = nvram_we_BUFR;	// (1 pt, 1 inp)
+
+MACROCELL | 7 | 13 | nvram_we_BUFR_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 1 | 11 | 3
+INPUTS | 4 | iowr  | N_PZ_1377  | N_PZ_877  | smemw
+INPUTMC | 2 | 11 | 10 | 11 | 9
+INPUTP | 2 | 5 | 17
+EQ | 2 | 
+   !nvram_we_BUFR = !iowr & N_PZ_1377 & N_PZ_877
+	# N_PZ_1377 & !N_PZ_877 & !smemw;	// (2 pt, 4 inp)
+
+MACROCELL | 15 | 12 | reset_CPU_MC
+ATTRIBUTES | 1141113602 | 2
+INPUTS | 0
+LCT | 1 | 5 | Internal_Name
+EQ | 2 | 
+   reset_CPU = Gnd;	// (0 pt, 0 inp)
+    reset_CPU.OE = !reset_CPU_not0001;	// LOE	(1 pt, 1 inp)
+
+MACROCELL | 8 | 6 | reset_CPU_not0001_MC
+ATTRIBUTES | 536871680 | 0
+INPUTS | 4 | wdt_out_stari  | rst_taster  | nvram_rst  | wdt_enable
+INPUTMC | 1 | 6 | 10
+INPUTP | 3 | 104 | 44 | 16
+EQ | 2 | 
+   reset_CPU_not0001 = !wdt_out_stari & rst_taster & nvram_rst
+	# rst_taster & nvram_rst & !wdt_enable;	// (2 pt, 4 inp)
+
+MACROCELL | 6 | 10 | wdt_enable_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 3 | 6 | 10 | 8 | 6 | 5 | 10
+INPUTS | 3 | data_isa_latched<0>  | write_wdt_en  | wdt_enable
+INPUTMC | 3 | 4 | 0 | 10 | 3 | 6 | 10
+EQ | 3 | 
+   wdt_enable := data_isa_latched<0> & write_wdt_en
+	# wdt_enable & !write_wdt_en;	// (2 pt, 3 inp)
+   wdt_enable.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 10 | 3 | write_wdt_en_MC
+ATTRIBUTES | 2156167938 | 0
+OUTPUTMC | 1 | 6 | 10
+INPUTS | 5 | I2/curstate_FSM_FFd1  | I2/curstate_FSM_FFd2  | I2/curstate_FSM_FFd4  | I2/curstate_FSM_FFd6  | I2/curstate_FSM_FFd5
+INPUTMC | 5 | 0 | 10 | 1 | 5 | 1 | 9 | 0 | 9 | 0 | 8
+EQ | 3 | 
+   write_wdt_en := !I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	I2/curstate_FSM_FFd4 & !I2/curstate_FSM_FFd6 & I2/curstate_FSM_FFd5;	// (1 pt, 5 inp)
+   write_wdt_en.CLK  =  !clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 7 | 15 | wdt_trg_MC
+ATTRIBUTES | 8684290 | 0
+INPUTS | 6 | I2/curstate_FSM_FFd1  | I2/curstate_FSM_FFd2  | I2/curstate_FSM_FFd3  | I2/curstate_FSM_FFd4  | I2/curstate_FSM_FFd6  | I2/curstate_FSM_FFd5
+INPUTMC | 6 | 0 | 10 | 1 | 5 | 1 | 8 | 1 | 9 | 0 | 9 | 0 | 8
+EQ | 4 | 
+   !wdt_trg := !I2/curstate_FSM_FFd1 & !I2/curstate_FSM_FFd2 & 
+	I2/curstate_FSM_FFd3 & !I2/curstate_FSM_FFd4 & !I2/curstate_FSM_FFd6 & 
+	I2/curstate_FSM_FFd5;	// (1 pt, 6 inp)
+   wdt_trg.CLK  =  !clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 5 | 10 | data_isa<0>_BUFR_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 1 | 4 | 0
+INPUTS | 22 | read_led_register  | read_jumper_register  | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | N89  | test2  | xp_address<0>  | read_page_register  | page_register<0>  | read_mode_register  | mode_register<0>  | data_max_reg_in<0>  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | reg_rd  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | wdt_enable  | iord  | nvram_ce  | nvram_cs  | N_PZ_1377  | nvram_data<0>.PIN  | smemr
+INPUTMC | 18 | 9 | 7 | 9 | 8 | 1 | 0 | 2 | 9 | 15 | 2 | 9 | 5 | 9 | 4 | 9 | 6 | 3 | 13 | 12 | 10 | 1 | 1 | 0 | 1 | 2 | 14 | 0 | 0 | 6 | 10 | 11 | 12 | 11 | 11 | 11 | 10
+INPUTP | 4 | 77 | 6 | 178 | 18
+EQ | 15 | 
+   !data_isa<0>_BUFR = read_led_register
+	# read_jumper_register
+	# Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	N89
+	# test2 & !xp_address<0>
+	# read_page_register & !page_register<0>
+	# read_mode_register & !mode_register<0>
+	# N89 & !data_max_reg_in<0>
+	# 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !wdt_enable
+	# !iord & nvram_ce & !nvram_cs & N_PZ_1377 & 
+	!nvram_data<0>.PIN
+	# !smemr & !nvram_ce & nvram_cs & N_PZ_1377 & 
+	!nvram_data<0>.PIN;	// (10 pt, 22 inp)
+
+MACROCELL | 12 | 10 | data_max_reg_in<0>_MC
+ATTRIBUTES | 2290090752 | 0
+OUTPUTMC | 1 | 5 | 10
+INPUTS | 9 | data_max<0>.PIN  | address_max<2>.PIN  | address_max<1>.PIN  | address_max<0>.PIN  | address_max<7>.PIN  | address_max<6>.PIN  | address_max<5>.PIN  | address_max<4>.PIN  | address_max<3>.PIN
+INPUTP | 9 | 119 | 210 | 1 | 2 | 204 | 205 | 206 | 207 | 209
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !data_max_reg_in<0> := !data_max<0>.PIN
+	# !address_max<2>.PIN & !address_max<1>.PIN & 
+	!address_max<0>.PIN & !address_max<7>.PIN & !address_max<6>.PIN & 
+	!address_max<5>.PIN & !address_max<4>.PIN & !address_max<3>.PIN;	// (2 pt, 9 inp)
+    data_max_reg_in<0>.CLK = load_buffer;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 12 | 9 | data_max_reg_in<10>_MC
+ATTRIBUTES | 2290090752 | 0
+OUTPUTMC | 1 | 5 | 11
+INPUTS | 9 | data_max<10>.PIN  | address_max<2>.PIN  | address_max<1>.PIN  | address_max<0>.PIN  | address_max<7>.PIN  | address_max<6>.PIN  | address_max<5>.PIN  | address_max<4>.PIN  | address_max<3>.PIN
+INPUTP | 9 | 101 | 210 | 1 | 2 | 204 | 205 | 206 | 207 | 209
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   data_max_reg_in<10> := data_max<10>.PIN
+	# !address_max<2>.PIN & !address_max<1>.PIN & 
+	!address_max<0>.PIN & !address_max<7>.PIN & !address_max<6>.PIN & 
+	!address_max<5>.PIN & !address_max<4>.PIN & !address_max<3>.PIN;	// (2 pt, 9 inp)
+    data_max_reg_in<10>.CLK = load_buffer;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 12 | 8 | data_max_reg_in<11>_MC
+ATTRIBUTES | 2290090752 | 0
+OUTPUTMC | 1 | 5 | 4
+INPUTS | 9 | data_max<11>.PIN  | address_max<2>.PIN  | address_max<1>.PIN  | address_max<0>.PIN  | address_max<7>.PIN  | address_max<6>.PIN  | address_max<5>.PIN  | address_max<4>.PIN  | address_max<3>.PIN
+INPUTP | 9 | 100 | 210 | 1 | 2 | 204 | 205 | 206 | 207 | 209
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   data_max_reg_in<11> := data_max<11>.PIN
+	# !address_max<2>.PIN & !address_max<1>.PIN & 
+	!address_max<0>.PIN & !address_max<7>.PIN & !address_max<6>.PIN & 
+	!address_max<5>.PIN & !address_max<4>.PIN & !address_max<3>.PIN;	// (2 pt, 9 inp)
+    data_max_reg_in<11>.CLK = load_buffer;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 12 | 7 | data_max_reg_in<12>_MC
+ATTRIBUTES | 2290090752 | 0
+OUTPUTMC | 1 | 5 | 3
+INPUTS | 9 | data_max<12>.PIN  | address_max<2>.PIN  | address_max<1>.PIN  | address_max<0>.PIN  | address_max<7>.PIN  | address_max<6>.PIN  | address_max<5>.PIN  | address_max<4>.PIN  | address_max<3>.PIN
+INPUTP | 9 | 99 | 210 | 1 | 2 | 204 | 205 | 206 | 207 | 209
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   data_max_reg_in<12> := data_max<12>.PIN
+	# !address_max<2>.PIN & !address_max<1>.PIN & 
+	!address_max<0>.PIN & !address_max<7>.PIN & !address_max<6>.PIN & 
+	!address_max<5>.PIN & !address_max<4>.PIN & !address_max<3>.PIN;	// (2 pt, 9 inp)
+    data_max_reg_in<12>.CLK = load_buffer;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 12 | 6 | data_max_reg_in<13>_MC
+ATTRIBUTES | 2290090752 | 0
+OUTPUTMC | 1 | 5 | 2
+INPUTS | 9 | data_max<13>.PIN  | address_max<2>.PIN  | address_max<1>.PIN  | address_max<0>.PIN  | address_max<7>.PIN  | address_max<6>.PIN  | address_max<5>.PIN  | address_max<4>.PIN  | address_max<3>.PIN
+INPUTP | 9 | 98 | 210 | 1 | 2 | 204 | 205 | 206 | 207 | 209
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   data_max_reg_in<13> := data_max<13>.PIN
+	# !address_max<2>.PIN & !address_max<1>.PIN & 
+	!address_max<0>.PIN & !address_max<7>.PIN & !address_max<6>.PIN & 
+	!address_max<5>.PIN & !address_max<4>.PIN & !address_max<3>.PIN;	// (2 pt, 9 inp)
+    data_max_reg_in<13>.CLK = load_buffer;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 12 | 5 | data_max_reg_in<14>_MC
+ATTRIBUTES | 2290090752 | 0
+OUTPUTMC | 1 | 5 | 1
+INPUTS | 9 | data_max<14>.PIN  | address_max<2>.PIN  | address_max<1>.PIN  | address_max<0>.PIN  | address_max<7>.PIN  | address_max<6>.PIN  | address_max<5>.PIN  | address_max<4>.PIN  | address_max<3>.PIN
+INPUTP | 9 | 96 | 210 | 1 | 2 | 204 | 205 | 206 | 207 | 209
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   data_max_reg_in<14> := data_max<14>.PIN
+	# !address_max<2>.PIN & !address_max<1>.PIN & 
+	!address_max<0>.PIN & !address_max<7>.PIN & !address_max<6>.PIN & 
+	!address_max<5>.PIN & !address_max<4>.PIN & !address_max<3>.PIN;	// (2 pt, 9 inp)
+    data_max_reg_in<14>.CLK = load_buffer;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 12 | 11 | data_max_reg_in<15>_MC
+ATTRIBUTES | 2290090752 | 0
+OUTPUTMC | 1 | 5 | 0
+INPUTS | 9 | data_max<15>.PIN  | address_max<2>.PIN  | address_max<1>.PIN  | address_max<0>.PIN  | address_max<7>.PIN  | address_max<6>.PIN  | address_max<5>.PIN  | address_max<4>.PIN  | address_max<3>.PIN
+INPUTP | 9 | 95 | 210 | 1 | 2 | 204 | 205 | 206 | 207 | 209
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   data_max_reg_in<15> := data_max<15>.PIN
+	# !address_max<2>.PIN & !address_max<1>.PIN & 
+	!address_max<0>.PIN & !address_max<7>.PIN & !address_max<6>.PIN & 
+	!address_max<5>.PIN & !address_max<4>.PIN & !address_max<3>.PIN;	// (2 pt, 9 inp)
+    data_max_reg_in<15>.CLK = load_buffer;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 2 | 5 | data_isa<1>_BUFR_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 1 | 4 | 1
+INPUTS | 21 | read_id2_register  | test2  | xp_address<1>  | base_addr_jp<0>  | read_jumper_register  | read_page_register  | page_register<1>  | read_mode_register  | mode_register<1>  | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | reg_rd  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | iord  | nvram_ce  | nvram_cs  | N_PZ_1377  | nvram_data<1>.PIN  | smemr  | data_max_reg_in<1>
+INPUTMC | 16 | 9 | 9 | 15 | 2 | 9 | 8 | 9 | 5 | 9 | 3 | 9 | 6 | 3 | 10 | 1 | 0 | 1 | 1 | 0 | 1 | 2 | 14 | 0 | 0 | 11 | 12 | 11 | 11 | 11 | 10 | 12 | 4
+INPUTP | 5 | 76 | 138 | 6 | 176 | 18
+EQ | 17 | 
+   !data_isa<1>_BUFR = read_id2_register
+	# test2 & !xp_address<1>
+	# base_addr_jp<0> & read_jumper_register
+	# read_page_register & !page_register<1>
+	# read_mode_register & !mode_register<1>
+	# Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd
+	# 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000
+	# !iord & nvram_ce & !nvram_cs & N_PZ_1377 & 
+	!nvram_data<1>.PIN
+	# !smemr & !nvram_ce & nvram_cs & N_PZ_1377 & 
+	!nvram_data<1>.PIN
+	# !Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !data_max_reg_in<1>;	// (10 pt, 21 inp)
+
+MACROCELL | 12 | 4 | data_max_reg_in<1>_MC
+ATTRIBUTES | 2290090752 | 0
+OUTPUTMC | 1 | 2 | 5
+INPUTS | 9 | data_max<1>.PIN  | address_max<2>.PIN  | address_max<1>.PIN  | address_max<0>.PIN  | address_max<7>.PIN  | address_max<6>.PIN  | address_max<5>.PIN  | address_max<4>.PIN  | address_max<3>.PIN
+INPUTP | 9 | 118 | 210 | 1 | 2 | 204 | 205 | 206 | 207 | 209
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   data_max_reg_in<1> := data_max<1>.PIN
+	# !address_max<2>.PIN & !address_max<1>.PIN & 
+	!address_max<0>.PIN & !address_max<7>.PIN & !address_max<6>.PIN & 
+	!address_max<5>.PIN & !address_max<4>.PIN & !address_max<3>.PIN;	// (2 pt, 9 inp)
+    data_max_reg_in<1>.CLK = load_buffer;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 12 | 3 | data_max_reg_in<2>_MC
+ATTRIBUTES | 2290090752 | 0
+OUTPUTMC | 1 | 4 | 3
+INPUTS | 9 | data_max<2>.PIN  | address_max<2>.PIN  | address_max<1>.PIN  | address_max<0>.PIN  | address_max<7>.PIN  | address_max<6>.PIN  | address_max<5>.PIN  | address_max<4>.PIN  | address_max<3>.PIN
+INPUTP | 9 | 116 | 210 | 1 | 2 | 204 | 205 | 206 | 207 | 209
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   data_max_reg_in<2> := data_max<2>.PIN
+	# !address_max<2>.PIN & !address_max<1>.PIN & 
+	!address_max<0>.PIN & !address_max<7>.PIN & !address_max<6>.PIN & 
+	!address_max<5>.PIN & !address_max<4>.PIN & !address_max<3>.PIN;	// (2 pt, 9 inp)
+    data_max_reg_in<2>.CLK = load_buffer;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 9 | 14 | N_PZ_1066_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 1 | 4 | 3
+INPUTS | 30 | aen  | ale  | Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001  | Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000  | Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001  | adr_latched<5>  | adr_latched<6>  | adr_latched<8>  | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | iord  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | base_addr_jp<0>  | base_addr_jp<1>  | mode_register<2>
+INPUTMC | 25 | 0 | 2 | 0 | 11 | 0 | 13 | 0 | 14 | 0 | 15 | 2 | 0 | 2 | 1 | 2 | 2 | 2 | 3 | 1 | 15 | 1 | 14 | 1 | 13 | 1 | 12 | 1 | 11 | 1 | 4 | 1 | 3 | 1 | 2 | 0 | 3 | 0 | 4 | 0 | 12 | 1 | 0 | 1 | 1 | 0 | 1 | 0 | 0 | 3 | 9
+INPUTP | 5 | 8 | 51 | 6 | 138 | 137
+EQ | 56 | 
+   N_PZ_1066 = !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & adr_latched<3> & !iord & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !base_addr_jp<0> & !base_addr_jp<1> & 
+	!mode_register<2>
+	# !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & !iord & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & base_addr_jp<0> & !base_addr_jp<1> & 
+	!mode_register<2>
+	# !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & !adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & adr_latched<3> & !iord & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !base_addr_jp<0> & base_addr_jp<1> & 
+	!mode_register<2>
+	# !aen & !ale & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 & !Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 & !Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 & !adr_latched<5> & adr_latched<6> & adr_latched<8> & 
+	!Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & !iord & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & base_addr_jp<0> & base_addr_jp<1> & 
+	!mode_register<2>;	// (4 pt, 30 inp)
+
+MACROCELL | 2 | 7 | data_isa<3>_BUFR_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 1 | 4 | 4
+INPUTS | 21 | read_led_register  | read_jumper_register  | read_id1_register  | test2  | xp_address<3>  | read_page_register  | page_register<3>  | read_mode_register  | mode_register<3>  | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | reg_rd  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | iord  | nvram_ce  | nvram_cs  | N_PZ_1377  | nvram_data<3>.PIN  | smemr  | data_max_reg_in<3>
+INPUTMC | 17 | 9 | 7 | 9 | 8 | 9 | 10 | 15 | 2 | 9 | 5 | 10 | 10 | 9 | 6 | 3 | 8 | 1 | 0 | 1 | 1 | 0 | 1 | 2 | 14 | 0 | 0 | 11 | 12 | 11 | 11 | 11 | 10 | 12 | 2
+INPUTP | 4 | 72 | 6 | 173 | 18
+EQ | 22 | 
+   !data_isa<3>_BUFR = read_led_register
+	# read_jumper_register
+	# read_id1_register
+	# test2 & !xp_address<3>
+	# read_page_register & !page_register<3>
+	# read_mode_register & !mode_register<3>
+	# Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000
+	# Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000
+	# !Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000
+	# !iord & nvram_ce & !nvram_cs & N_PZ_1377 & 
+	!nvram_data<3>.PIN
+	# !smemr & !nvram_ce & nvram_cs & N_PZ_1377 & 
+	!nvram_data<3>.PIN
+	# !Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !data_max_reg_in<3>;	// (12 pt, 21 inp)
+
+MACROCELL | 12 | 2 | data_max_reg_in<3>_MC
+ATTRIBUTES | 2290090752 | 0
+OUTPUTMC | 1 | 2 | 7
+INPUTS | 9 | data_max<3>.PIN  | address_max<2>.PIN  | address_max<1>.PIN  | address_max<0>.PIN  | address_max<7>.PIN  | address_max<6>.PIN  | address_max<5>.PIN  | address_max<4>.PIN  | address_max<3>.PIN
+INPUTP | 9 | 115 | 210 | 1 | 2 | 204 | 205 | 206 | 207 | 209
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   data_max_reg_in<3> := data_max<3>.PIN
+	# !address_max<2>.PIN & !address_max<1>.PIN & 
+	!address_max<0>.PIN & !address_max<7>.PIN & !address_max<6>.PIN & 
+	!address_max<5>.PIN & !address_max<4>.PIN & !address_max<3>.PIN;	// (2 pt, 9 inp)
+    data_max_reg_in<3>.CLK = load_buffer;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 10 | 5 | data_isa<4>_BUFR_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 1 | 4 | 11
+INPUTS | 19 | read_led_register  | test2  | xp_address<4>  | read_page_register  | page_register<4>  | read_mode_register  | mode_register<4>  | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | reg_rd  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | iord  | nvram_ce  | nvram_cs  | N_PZ_1377  | nvram_data<4>.PIN  | smemr  | data_max_reg_in<4>
+INPUTMC | 15 | 9 | 7 | 15 | 2 | 9 | 5 | 10 | 9 | 9 | 6 | 3 | 7 | 1 | 0 | 1 | 1 | 0 | 1 | 2 | 14 | 0 | 0 | 11 | 12 | 11 | 11 | 11 | 10 | 12 | 1
+INPUTP | 4 | 70 | 6 | 172 | 18
+EQ | 20 | 
+   !data_isa<4>_BUFR = read_led_register
+	# test2 & !xp_address<4>
+	# read_page_register & !page_register<4>
+	# read_mode_register & !mode_register<4>
+	# Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000
+	# Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000
+	# !Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000
+	# !iord & nvram_ce & !nvram_cs & N_PZ_1377 & 
+	!nvram_data<4>.PIN
+	# !smemr & !nvram_ce & nvram_cs & N_PZ_1377 & 
+	!nvram_data<4>.PIN
+	# !Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !data_max_reg_in<4>;	// (10 pt, 19 inp)
+
+MACROCELL | 12 | 1 | data_max_reg_in<4>_MC
+ATTRIBUTES | 2290090752 | 0
+OUTPUTMC | 1 | 10 | 5
+INPUTS | 9 | data_max<4>.PIN  | address_max<2>.PIN  | address_max<1>.PIN  | address_max<0>.PIN  | address_max<7>.PIN  | address_max<6>.PIN  | address_max<5>.PIN  | address_max<4>.PIN  | address_max<3>.PIN
+INPUTP | 9 | 114 | 210 | 1 | 2 | 204 | 205 | 206 | 207 | 209
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   data_max_reg_in<4> := data_max<4>.PIN
+	# !address_max<2>.PIN & !address_max<1>.PIN & 
+	!address_max<0>.PIN & !address_max<7>.PIN & !address_max<6>.PIN & 
+	!address_max<5>.PIN & !address_max<4>.PIN & !address_max<3>.PIN;	// (2 pt, 9 inp)
+    data_max_reg_in<4>.CLK = load_buffer;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 12 | 0 | data_max_reg_in<5>_MC
+ATTRIBUTES | 2290090752 | 0
+OUTPUTMC | 1 | 4 | 12
+INPUTS | 9 | data_max<5>.PIN  | address_max<2>.PIN  | address_max<1>.PIN  | address_max<0>.PIN  | address_max<7>.PIN  | address_max<6>.PIN  | address_max<5>.PIN  | address_max<4>.PIN  | address_max<3>.PIN
+INPUTP | 9 | 113 | 210 | 1 | 2 | 204 | 205 | 206 | 207 | 209
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   data_max_reg_in<5> := data_max<5>.PIN
+	# !address_max<2>.PIN & !address_max<1>.PIN & 
+	!address_max<0>.PIN & !address_max<7>.PIN & !address_max<6>.PIN & 
+	!address_max<5>.PIN & !address_max<4>.PIN & !address_max<3>.PIN;	// (2 pt, 9 inp)
+    data_max_reg_in<5>.CLK = load_buffer;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 5 | 9 | data_isa<6>_BUFR_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 1 | 4 | 13
+INPUTS | 21 | read_led_register  | read_jumper_register  | test2  | xp_address<6>  | read_page_register  | page_register<6>  | read_mode_register  | mode_register<6>  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | reg_rd  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | cw6  | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | iord  | nvram_ce  | nvram_cs  | N_PZ_1377  | nvram_data<6>.PIN  | smemr  | data_max_reg_in<6>
+INPUTMC | 16 | 9 | 7 | 9 | 8 | 15 | 2 | 9 | 5 | 10 | 7 | 9 | 6 | 3 | 5 | 1 | 1 | 0 | 1 | 2 | 14 | 0 | 0 | 1 | 0 | 11 | 12 | 11 | 11 | 11 | 10 | 13 | 2
+INPUTP | 5 | 68 | 9 | 6 | 170 | 18
+EQ | 18 | 
+   !data_isa<6>_BUFR = read_led_register
+	# read_jumper_register
+	# test2 & !xp_address<6>
+	# read_page_register & !page_register<6>
+	# read_mode_register & !mode_register<6>
+	# 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000
+	# !cw6 & 
+	Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & !adr_latched<3> & reg_rd & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000
+	# !iord & nvram_ce & !nvram_cs & N_PZ_1377 & 
+	!nvram_data<6>.PIN
+	# !smemr & !nvram_ce & nvram_cs & N_PZ_1377 & 
+	!nvram_data<6>.PIN
+	# !Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !data_max_reg_in<6>;	// (10 pt, 21 inp)
+
+MACROCELL | 13 | 2 | data_max_reg_in<6>_MC
+ATTRIBUTES | 2290090752 | 0
+OUTPUTMC | 1 | 5 | 9
+INPUTS | 9 | data_max<6>.PIN  | address_max<2>.PIN  | address_max<1>.PIN  | address_max<0>.PIN  | address_max<7>.PIN  | address_max<6>.PIN  | address_max<5>.PIN  | address_max<4>.PIN  | address_max<3>.PIN
+INPUTP | 9 | 112 | 210 | 1 | 2 | 204 | 205 | 206 | 207 | 209
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   data_max_reg_in<6> := data_max<6>.PIN
+	# !address_max<2>.PIN & !address_max<1>.PIN & 
+	!address_max<0>.PIN & !address_max<7>.PIN & !address_max<6>.PIN & 
+	!address_max<5>.PIN & !address_max<4>.PIN & !address_max<3>.PIN;	// (2 pt, 9 inp)
+    data_max_reg_in<6>.CLK = load_buffer;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 10 | 7 | page_register<6>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 1 | 5 | 9
+INPUTS | 1 | data_isa<6>.PIN
+INPUTP | 1 | 122
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   page_register<6>.D = data_isa<6>.PIN;	// (1 pt, 1 inp)
+    page_register<6>.LH = 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & 
+	N_PZ_2876;	// LCLK	(1 pt, 3 inp)
+
+MACROCELL | 2 | 6 | data_isa<7>_BUFR_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 1 | 4 | 14
+INPUTS | 22 | read_led_register  | read_jumper_register  | read_id1_register  | test2  | xp_address<7>  | read_page_register  | page_register<7>  | read_mode_register  | mode_register<7>  | Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001  | Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000  | adr_latched<3>  | reg_rd  | Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000  | iord  | nvram_ce  | nvram_cs  | N_PZ_1377  | nvram_data<7>.PIN  | smemr  | cw7  | data_max_reg_in<7>
+INPUTMC | 17 | 9 | 7 | 9 | 8 | 9 | 10 | 15 | 2 | 9 | 5 | 10 | 6 | 9 | 6 | 3 | 15 | 1 | 0 | 1 | 1 | 0 | 1 | 2 | 14 | 0 | 0 | 11 | 12 | 11 | 11 | 11 | 10 | 13 | 10
+INPUTP | 5 | 67 | 6 | 168 | 18 | 14
+EQ | 19 | 
+   !data_isa<7>_BUFR = read_led_register
+	# read_jumper_register
+	# read_id1_register
+	# test2 & !xp_address<7>
+	# read_page_register & !page_register<7>
+	# read_mode_register & !mode_register<7>
+	# !Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000
+	# !iord & nvram_ce & !nvram_cs & N_PZ_1377 & 
+	!nvram_data<7>.PIN
+	# !smemr & !nvram_ce & nvram_cs & N_PZ_1377 & 
+	!nvram_data<7>.PIN
+	# Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !cw7
+	# !Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 & 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & !adr_latched<3> & reg_rd & 
+	!Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & !data_max_reg_in<7>;	// (11 pt, 22 inp)
+
+MACROCELL | 13 | 10 | data_max_reg_in<7>_MC
+ATTRIBUTES | 2290090752 | 0
+OUTPUTMC | 1 | 2 | 6
+INPUTS | 9 | data_max<7>.PIN  | address_max<2>.PIN  | address_max<1>.PIN  | address_max<0>.PIN  | address_max<7>.PIN  | address_max<6>.PIN  | address_max<5>.PIN  | address_max<4>.PIN  | address_max<3>.PIN
+INPUTP | 9 | 110 | 210 | 1 | 2 | 204 | 205 | 206 | 207 | 209
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   data_max_reg_in<7> := data_max<7>.PIN
+	# !address_max<2>.PIN & !address_max<1>.PIN & 
+	!address_max<0>.PIN & !address_max<7>.PIN & !address_max<6>.PIN & 
+	!address_max<5>.PIN & !address_max<4>.PIN & !address_max<3>.PIN;	// (2 pt, 9 inp)
+    data_max_reg_in<7>.CLK = load_buffer;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 10 | 6 | page_register<7>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 1 | 2 | 6
+INPUTS | 1 | data_isa<7>.PIN
+INPUTP | 1 | 121
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   page_register<7>.D = data_isa<7>.PIN;	// (1 pt, 1 inp)
+    page_register<7>.LH = 
+	!Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 & Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 & 
+	N_PZ_2876;	// LCLK	(1 pt, 3 inp)
+
+MACROCELL | 13 | 9 | data_max_reg_in<8>_MC
+ATTRIBUTES | 2290090752 | 0
+OUTPUTMC | 1 | 4 | 15
+INPUTS | 9 | data_max<8>.PIN  | address_max<2>.PIN  | address_max<1>.PIN  | address_max<0>.PIN  | address_max<7>.PIN  | address_max<6>.PIN  | address_max<5>.PIN  | address_max<4>.PIN  | address_max<3>.PIN
+INPUTP | 9 | 109 | 210 | 1 | 2 | 204 | 205 | 206 | 207 | 209
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   data_max_reg_in<8> := data_max<8>.PIN
+	# !address_max<2>.PIN & !address_max<1>.PIN & 
+	!address_max<0>.PIN & !address_max<7>.PIN & !address_max<6>.PIN & 
+	!address_max<5>.PIN & !address_max<4>.PIN & !address_max<3>.PIN;	// (2 pt, 9 inp)
+    data_max_reg_in<8>.CLK = load_buffer;	// LCLK	(1 pt, 1 inp)
+
+MACROCELL | 13 | 8 | data_max_reg_in<9>_MC
+ATTRIBUTES | 2290090752 | 0
+OUTPUTMC | 1 | 5 | 12
+INPUTS | 9 | data_max<9>.PIN  | address_max<2>.PIN  | address_max<1>.PIN  | address_max<0>.PIN  | address_max<7>.PIN  | address_max<6>.PIN  | address_max<5>.PIN  | address_max<4>.PIN  | address_max<3>.PIN
+INPUTP | 9 | 108 | 210 | 1 | 2 | 204 | 205 | 206 | 207 | 209
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   data_max_reg_in<9> := data_max<9>.PIN
+	# !address_max<2>.PIN & !address_max<1>.PIN & 
+	!address_max<0>.PIN & !address_max<7>.PIN & !address_max<6>.PIN & 
+	!address_max<5>.PIN & !address_max<4>.PIN & !address_max<3>.PIN;	// (2 pt, 9 inp)
+    data_max_reg_in<9>.CLK = load_buffer;	// LCLK	(1 pt, 1 inp)
+
+PIN | iowr | 64 | 0 | N/A | 5 | 5 | 7 | 5 | 9 | 13 | 9 | 12 | 7 | 14 | 7 | 13
+PIN | aen | 64 | 0 | N/A | 8 | 14 | 7 | 5 | 2 | 14 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 9 | 13 | 11 | 12 | 11 | 11 | 11 | 10 | 11 | 9 | 9 | 14
+PIN | ale | 64 | 0 | N/A | 51 | 9 | 9 | 11 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 9 | 13 | 9 | 14
+PIN | cw6 | 64 | 0 | N/A | 9 | 2 | 9 | 11 | 5 | 9
+PIN | clk | 4096 | 0 | N/A | 187 | 37 | 7 | 5 | 2 | 14 | 0 | 8 | 0 | 9 | 1 | 9 | 1 | 8 | 1 | 5 | 0 | 10 | 7 | 10 | 12 | 12 | 1 | 10 | 2 | 10 | 12 | 13 | 8 | 7 | 10 | 0 | 10 | 1 | 10 | 2 | 0 | 6 | 10 | 4 | 8 | 15 | 0 | 7 | 11 | 14 | 7 | 9 | 11 | 15 | 10 | 12 | 3 | 14 | 7 | 14 | 3 | 12 | 3 | 11 | 3 | 4 | 3 | 3 | 3 | 2 | 3 | 1 | 3 | 0 | 10 | 3 | 6 | 10 | 7 | 15
+PIN | iord | 64 | 0 | N/A | 6 | 19 | 2 | 14 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 2 | 8 | 9 | 12 | 2 | 15 | 5 | 10 | 2 | 5 | 9 | 14 | 4 | 3 | 2 | 7 | 10 | 5 | 4 | 12 | 5 | 9 | 2 | 6
+PIN | base_addr_jp<0> | 64 | 0 | N/A | 138 | 9 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 9 | 13 | 2 | 5 | 9 | 14
+PIN | base_addr_jp<1> | 64 | 0 | N/A | 137 | 12 | 9 | 7 | 9 | 9 | 9 | 8 | 9 | 10 | 9 | 5 | 9 | 6 | 9 | 13 | 11 | 11 | 11 | 10 | 11 | 9 | 9 | 14 | 4 | 3
+PIN | smemr | 64 | 0 | N/A | 18 | 10 | 2 | 8 | 2 | 15 | 5 | 10 | 2 | 5 | 4 | 3 | 2 | 7 | 10 | 5 | 4 | 12 | 5 | 9 | 2 | 6
+PIN | reset | 64 | 0 | N/A | 12 | 5 | 11 | 12 | 11 | 11 | 11 | 10 | 8 | 7 | 11 | 9
+PIN | address_isa<19> | 64 | 0 | N/A | 163 | 6 | 11 | 12 | 11 | 11 | 11 | 10 | 11 | 9 | 12 | 15 | 1 | 12
+PIN | address_isa<23> | 64 | 0 | N/A | 159 | 5 | 11 | 12 | 11 | 11 | 11 | 10 | 11 | 9 | 1 | 2
+PIN | address_isa<22> | 64 | 0 | N/A | 160 | 5 | 11 | 12 | 11 | 11 | 11 | 10 | 11 | 9 | 1 | 3
+PIN | address_isa<20> | 64 | 0 | N/A | 162 | 5 | 11 | 12 | 11 | 11 | 11 | 10 | 11 | 9 | 1 | 11
+PIN | address_isa<21> | 64 | 0 | N/A | 161 | 5 | 11 | 12 | 11 | 11 | 11 | 10 | 11 | 9 | 1 | 4
+PIN | address_isa<18> | 64 | 0 | N/A | 164 | 6 | 11 | 12 | 11 | 11 | 11 | 10 | 11 | 9 | 14 | 0 | 1 | 13
+PIN | address_isa<16> | 64 | 0 | N/A | 167 | 6 | 11 | 12 | 11 | 11 | 11 | 10 | 11 | 9 | 14 | 2 | 1 | 15
+PIN | address_isa<17> | 64 | 0 | N/A | 166 | 6 | 11 | 12 | 11 | 11 | 11 | 10 | 11 | 9 | 14 | 1 | 1 | 14
+PIN | address_isa<15> | 64 | 0 | N/A | 139 | 6 | 11 | 12 | 11 | 11 | 11 | 10 | 11 | 9 | 14 | 3 | 2 | 3
+PIN | address_isa<8> | 64 | 0 | N/A | 148 | 5 | 11 | 11 | 11 | 10 | 11 | 9 | 13 | 15 | 0 | 12
+PIN | address_isa<11> | 64 | 0 | N/A | 144 | 5 | 11 | 11 | 11 | 10 | 14 | 13 | 11 | 9 | 0 | 15
+PIN | address_isa<7> | 64 | 0 | N/A | 149 | 5 | 11 | 11 | 11 | 10 | 11 | 9 | 13 | 14 | 0 | 11
+PIN | address_isa<6> | 64 | 0 | N/A | 150 | 5 | 11 | 11 | 11 | 10 | 11 | 9 | 13 | 13 | 0 | 4
+PIN | address_isa<14> | 64 | 0 | N/A | 141 | 5 | 11 | 11 | 11 | 10 | 14 | 4 | 11 | 9 | 2 | 2
+PIN | address_isa<13> | 64 | 0 | N/A | 142 | 5 | 11 | 11 | 11 | 10 | 14 | 11 | 11 | 9 | 2 | 1
+PIN | address_isa<10> | 64 | 0 | N/A | 145 | 5 | 11 | 11 | 11 | 10 | 14 | 14 | 11 | 9 | 0 | 14
+PIN | address_isa<9> | 64 | 0 | N/A | 147 | 5 | 11 | 11 | 11 | 10 | 11 | 9 | 14 | 15 | 0 | 13
+PIN | address_isa<4> | 64 | 0 | N/A | 152 | 5 | 11 | 11 | 11 | 10 | 11 | 9 | 13 | 11 | 0 | 2
+PIN | address_isa<12> | 64 | 0 | N/A | 143 | 5 | 11 | 11 | 11 | 10 | 14 | 12 | 11 | 9 | 2 | 0
+PIN | address_isa<5> | 64 | 0 | N/A | 151 | 5 | 11 | 11 | 11 | 10 | 11 | 9 | 13 | 12 | 0 | 3
+PIN | xPUP_0 | 64 | 0 | N/A | 211 | 0
+PIN | wdt_out_stari | 64 | 0 | N/A | 104 | 2 | 8 | 7 | 8 | 6
+PIN | cw7 | 64 | 0 | N/A | 14 | 1 | 2 | 6
+PIN | iq_i_syn | 64 | 0 | N/A | 94 | 1 | 5 | 14
+PIN | pwr_good_tps | 64 | 0 | N/A | 7 | 1 | 15 | 0
+PIN | wdt_sig_stari | 64 | 0 | N/A | 91 | 1 | 15 | 1
+PIN | rst_dof_dsbl | 64 | 0 | N/A | 195 | 1 | 9 | 15
+PIN | address_isa<0> | 64 | 0 | N/A | 158 | 2 | 13 | 0 | 1 | 1
+PIN | address_isa<1> | 64 | 0 | N/A | 157 | 2 | 13 | 1 | 1 | 0
+PIN | address_isa<2> | 64 | 0 | N/A | 155 | 2 | 13 | 3 | 0 | 0
+PIN | address_isa<3> | 64 | 0 | N/A | 153 | 2 | 13 | 4 | 0 | 1
+PIN | smemw | 64 | 0 | N/A | 17 | 2 | 7 | 14 | 7 | 13
+PIN | nvram_rst | 64 | 0 | N/A | 16 | 1 | 8 | 6
+PIN | power_supply_24V | 64 | 0 | N/A | 191 | 1 | 4 | 15
+PIN | rst_taster | 64 | 0 | N/A | 44 | 1 | 8 | 6
+PIN | xp_address<0> | 64 | 0 | N/A | 77 | 1 | 5 | 10
+PIN | xp_address<1> | 64 | 0 | N/A | 76 | 1 | 2 | 5
+PIN | xp_address<2> | 64 | 0 | N/A | 75 | 1 | 4 | 3
+PIN | xp_address<3> | 64 | 0 | N/A | 72 | 1 | 2 | 7
+PIN | xp_address<4> | 64 | 0 | N/A | 70 | 1 | 10 | 5
+PIN | xp_address<5> | 64 | 0 | N/A | 69 | 1 | 4 | 12
+PIN | xp_address<6> | 64 | 0 | N/A | 68 | 2 | 5 | 9 | 12 | 12
+PIN | xp_address<7> | 64 | 0 | N/A | 67 | 2 | 2 | 6 | 12 | 13
+PIN | bale | 536871040 | 0 | N/A | 200
+PIN | brd | 536871040 | 0 | N/A | 199
+PIN | bwr | 536871040 | 0 | N/A | 198
+PIN | cs | 536871040 | 0 | N/A | 10
+PIN | data_out_enable | 536871040 | 0 | N/A | 196
+PIN | direction_245 | 536871040 | 0 | N/A | 201
+PIN | iocs16 | 536871040 | 0 | N/A | 11
+PIN | iq_o_syn | 536871040 | 0 | N/A | 93
+PIN | led_kvr | 536871040 | 0 | N/A | 26
+PIN | led_lpt | 536871040 | 0 | N/A | 25
+PIN | led_master_enable | 536871040 | 0 | N/A | 50
+PIN | led_pwr_good_tps | 536871040 | 0 | N/A | 40
+PIN | led_rad | 536871040 | 0 | N/A | 27
+PIN | led_wdt | 536871040 | 0 | N/A | 41
+PIN | load_buffer | 536871040 | 0 | N/A | 193
+PIN | master_enable | 536871040 | 0 | N/A | 45
+PIN | mrst | 536871040 | 0 | N/A | 15
+PIN | nvram_address<0> | 536871040 | 0 | N/A | 28
+PIN | nvram_address<10> | 536871040 | 0 | N/A | 55
+PIN | nvram_address<11> | 536871040 | 0 | N/A | 56
+PIN | nvram_address<12> | 536871040 | 0 | N/A | 57
+PIN | nvram_address<13> | 536871040 | 0 | N/A | 58
+PIN | nvram_address<14> | 536871040 | 0 | N/A | 59
+PIN | nvram_address<15> | 536871040 | 0 | N/A | 60
+PIN | nvram_address<16> | 536871040 | 0 | N/A | 61
+PIN | nvram_address<17> | 536871040 | 0 | N/A | 63
+PIN | nvram_address<18> | 536871040 | 0 | N/A | 64
+PIN | nvram_address<19> | 536871040 | 0 | N/A | 65
+PIN | nvram_address<1> | 536871040 | 0 | N/A | 29
+PIN | nvram_address<20> | 536871040 | 0 | N/A | 66
+PIN | nvram_address<2> | 536871040 | 0 | N/A | 31
+PIN | nvram_address<3> | 536871040 | 0 | N/A | 33
+PIN | nvram_address<4> | 536871040 | 0 | N/A | 35
+PIN | nvram_address<5> | 536871040 | 0 | N/A | 36
+PIN | nvram_address<6> | 536871040 | 0 | N/A | 37
+PIN | nvram_address<7> | 536871040 | 0 | N/A | 38
+PIN | nvram_address<8> | 536871040 | 0 | N/A | 39
+PIN | nvram_address<9> | 536871040 | 0 | N/A | 54
+PIN | nvram_ce | 536871040 | 0 | N/A | 24
+PIN | nvram_cs | 536871040 | 0 | N/A | 22
+PIN | nvram_oe | 536871040 | 0 | N/A | 21
+PIN | nvram_we | 536871040 | 0 | N/A | 20
+PIN | test2 | 536871040 | 0 | N/A | 43
+PIN | wdt_trg | 536871040 | 0 | N/A | 105
+PIN | write_wdt_en | 536871040 | 0 | N/A | 197
+PIN | address_max<0> | 536870976 | 0 | N/A | 2 | 16 | 12 | 10 | 12 | 9 | 12 | 8 | 12 | 7 | 12 | 6 | 12 | 5 | 12 | 11 | 12 | 4 | 12 | 3 | 12 | 2 | 12 | 1 | 12 | 0 | 13 | 2 | 13 | 10 | 13 | 9 | 13 | 8
+PIN | address_max<1> | 536870976 | 0 | N/A | 1 | 16 | 12 | 10 | 12 | 9 | 12 | 8 | 12 | 7 | 12 | 6 | 12 | 5 | 12 | 11 | 12 | 4 | 12 | 3 | 12 | 2 | 12 | 1 | 12 | 0 | 13 | 2 | 13 | 10 | 13 | 9 | 13 | 8
+PIN | address_max<2> | 536870976 | 0 | N/A | 210 | 16 | 12 | 10 | 12 | 9 | 12 | 8 | 12 | 7 | 12 | 6 | 12 | 5 | 12 | 11 | 12 | 4 | 12 | 3 | 12 | 2 | 12 | 1 | 12 | 0 | 13 | 2 | 13 | 10 | 13 | 9 | 13 | 8
+PIN | address_max<3> | 536870976 | 0 | N/A | 209 | 16 | 12 | 10 | 12 | 9 | 12 | 8 | 12 | 7 | 12 | 6 | 12 | 5 | 12 | 11 | 12 | 4 | 12 | 3 | 12 | 2 | 12 | 1 | 12 | 0 | 13 | 2 | 13 | 10 | 13 | 9 | 13 | 8
+PIN | address_max<4> | 536870976 | 0 | N/A | 207 | 16 | 12 | 10 | 12 | 9 | 12 | 8 | 12 | 7 | 12 | 6 | 12 | 5 | 12 | 11 | 12 | 4 | 12 | 3 | 12 | 2 | 12 | 1 | 12 | 0 | 13 | 2 | 13 | 10 | 13 | 9 | 13 | 8
+PIN | address_max<5> | 536870976 | 0 | N/A | 206 | 16 | 12 | 10 | 12 | 9 | 12 | 8 | 12 | 7 | 12 | 6 | 12 | 5 | 12 | 11 | 12 | 4 | 12 | 3 | 12 | 2 | 12 | 1 | 12 | 0 | 13 | 2 | 13 | 10 | 13 | 9 | 13 | 8
+PIN | address_max<6> | 536870976 | 0 | N/A | 205 | 16 | 12 | 10 | 12 | 9 | 12 | 8 | 12 | 7 | 12 | 6 | 12 | 5 | 12 | 11 | 12 | 4 | 12 | 3 | 12 | 2 | 12 | 1 | 12 | 0 | 13 | 2 | 13 | 10 | 13 | 9 | 13 | 8
+PIN | address_max<7> | 536870976 | 0 | N/A | 204 | 16 | 12 | 10 | 12 | 9 | 12 | 8 | 12 | 7 | 12 | 6 | 12 | 5 | 12 | 11 | 12 | 4 | 12 | 3 | 12 | 2 | 12 | 1 | 12 | 0 | 13 | 2 | 13 | 10 | 13 | 9 | 13 | 8
+PIN | data_max<0> | 536870976 | 0 | N/A | 119 | 1 | 12 | 10
+PIN | data_max<10> | 536870976 | 0 | N/A | 101 | 1 | 12 | 9
+PIN | data_max<11> | 536870976 | 0 | N/A | 100 | 1 | 12 | 8
+PIN | data_max<12> | 536870976 | 0 | N/A | 99 | 1 | 12 | 7
+PIN | data_max<13> | 536870976 | 0 | N/A | 98 | 1 | 12 | 6
+PIN | data_max<14> | 536870976 | 0 | N/A | 96 | 1 | 12 | 5
+PIN | data_max<15> | 536870976 | 0 | N/A | 95 | 1 | 12 | 11
+PIN | data_max<1> | 536870976 | 0 | N/A | 118 | 1 | 12 | 4
+PIN | data_max<2> | 536870976 | 0 | N/A | 116 | 1 | 12 | 3
+PIN | data_max<3> | 536870976 | 0 | N/A | 115 | 1 | 12 | 2
+PIN | data_max<4> | 536870976 | 0 | N/A | 114 | 1 | 12 | 1
+PIN | data_max<5> | 536870976 | 0 | N/A | 113 | 1 | 12 | 0
+PIN | data_max<6> | 536870976 | 0 | N/A | 112 | 1 | 13 | 2
+PIN | data_max<7> | 536870976 | 0 | N/A | 110 | 1 | 13 | 10
+PIN | data_max<8> | 536870976 | 0 | N/A | 109 | 1 | 13 | 9
+PIN | data_max<9> | 536870976 | 0 | N/A | 108 | 1 | 13 | 8
+PIN | nvram_data<0> | 536870976 | 0 | N/A | 178 | 1 | 5 | 10
+PIN | nvram_data<1> | 536870976 | 0 | N/A | 176 | 1 | 2 | 5
+PIN | nvram_data<2> | 536870976 | 0 | N/A | 174 | 1 | 4 | 3
+PIN | nvram_data<3> | 536870976 | 0 | N/A | 173 | 1 | 2 | 7
+PIN | nvram_data<4> | 536870976 | 0 | N/A | 172 | 1 | 10 | 5
+PIN | nvram_data<5> | 536870976 | 0 | N/A | 171 | 1 | 4 | 12
+PIN | nvram_data<6> | 536870976 | 0 | N/A | 170 | 1 | 5 | 9
+PIN | nvram_data<7> | 536870976 | 0 | N/A | 168 | 1 | 2 | 6
+PIN | reset_CPU | 536870976 | 0 | N/A | 48 | 1 | 9 | 15
+PIN | data_isa<0> | 536870976 | 0 | N/A | 131 | 4 | 3 | 13 | 9 | 4 | 3 | 14 | 4 | 0
+PIN | data_isa<10> | 536870976 | 0 | N/A | 88 | 1 | 5 | 11
+PIN | data_isa<11> | 536870976 | 0 | N/A | 87 | 1 | 5 | 4
+PIN | data_isa<12> | 536870976 | 0 | N/A | 85 | 1 | 5 | 3
+PIN | data_isa<13> | 536870976 | 0 | N/A | 80 | 1 | 5 | 2
+PIN | data_isa<14> | 536870976 | 0 | N/A | 79 | 1 | 5 | 1
+PIN | data_isa<15> | 536870976 | 0 | N/A | 78 | 1 | 5 | 0
+PIN | data_isa<1> | 536870976 | 0 | N/A | 130 | 4 | 3 | 10 | 9 | 3 | 3 | 12 | 4 | 1
+PIN | data_isa<2> | 536870976 | 0 | N/A | 128 | 4 | 3 | 9 | 10 | 13 | 3 | 11 | 4 | 3
+PIN | data_isa<3> | 536870976 | 0 | N/A | 126 | 4 | 3 | 8 | 10 | 10 | 3 | 4 | 4 | 4
+PIN | data_isa<4> | 536870976 | 0 | N/A | 124 | 4 | 3 | 7 | 10 | 9 | 3 | 3 | 4 | 11
+PIN | data_isa<5> | 536870976 | 0 | N/A | 123 | 4 | 3 | 6 | 10 | 8 | 3 | 2 | 4 | 12
+PIN | data_isa<6> | 536870976 | 0 | N/A | 122 | 4 | 3 | 5 | 3 | 1 | 10 | 7 | 4 | 13
+PIN | data_isa<7> | 536870976 | 0 | N/A | 121 | 4 | 3 | 15 | 3 | 0 | 10 | 6 | 4 | 14
+PIN | data_isa<8> | 536870976 | 0 | N/A | 120 | 1 | 4 | 15
+PIN | data_isa<9> | 536870976 | 0 | N/A | 89 | 1 | 5 | 12

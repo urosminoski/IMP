@@ -1,0 +1,24 @@
+-series GW1N
+-device GW1N-4
+-device_version D
+-package LQFP144
+-part_number GW1N-LV4LQ144C5/I4
+
+
+-mod_name dp_ram
+-file_name gowin_dpb
+-path C:/Users/Korisnik/Desktop/IMP/projects/secure_gateway/gowin_dpram/fpga_project/src/gowin_dpb/
+-type RAM_DP
+-file_type vhdl
+-bram_b true
+-dev_type GW1N-4D
+-depth_0 8192
+-depth_1 8192
+-width_0 16
+-width_1 16
+-read_mode_0 bypass
+-read_mode_1 bypass
+-write_mode_0 normal
+-write_mode_1 normal
+-speed false
+-reset_mode async

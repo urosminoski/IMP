@@ -1,0 +1,606 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -uc atlas_xp_top.ucf -p xcr3256xl-PQ208-12 fsm_xp_top.ngc
+fsm_xp_top.ngd
+
+Reading NGO file
+"D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/Atlas_XP2V5/fsm_xp_top.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "atlas_xp_top.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem - The Offset constraint <OFFSET = IN 20 ns BEFORE "clk"
+    ;> [atlas_xp_top.ucf(3)], is specified without a duration.  This will result
+   in a lack of hold time checks in timing reports.  If hold time checks are
+   desired a duration value should be specified following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_isa<0>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(6)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_isa<1>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(7)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_isa<2>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(8)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_isa<3>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(9)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_isa<4>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(10)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_isa<5>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(11)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_isa<6>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(12)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_isa<7>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(13)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_isa<8>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(14)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_isa<9>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(15)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "iord" OFFSET = IN 20 ns
+   BEFORE "clk"  ;> [atlas_xp_top.ucf(68)], is specified without a duration. 
+   This will result in a lack of hold time checks in timing reports.  If hold
+   time checks are desired a duration value should be specified following the
+   'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "iowr" OFFSET = IN 20 ns
+   BEFORE "clk"  ;> [atlas_xp_top.ucf(69)], is specified without a duration. 
+   This will result in a lack of hold time checks in timing reports.  If hold
+   time checks are desired a duration value should be specified following the
+   'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "aen" OFFSET = IN 20 ns
+   BEFORE "clk"  ;> [atlas_xp_top.ucf(71)], is specified without a duration. 
+   This will result in a lack of hold time checks in timing reports.  If hold
+   time checks are desired a duration value should be specified following the
+   'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "cw6" OFFSET = IN 20 ns
+   BEFORE "clk"  ;> [atlas_xp_top.ucf(72)], is specified without a duration. 
+   This will result in a lack of hold time checks in timing reports.  If hold
+   time checks are desired a duration value should be specified following the
+   'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "cw7" OFFSET = IN 20 ns
+   BEFORE "clk"  ;> [atlas_xp_top.ucf(73)], is specified without a duration. 
+   This will result in a lack of hold time checks in timing reports.  If hold
+   time checks are desired a duration value should be specified following the
+   'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "reset" OFFSET = IN 20 ns
+   BEFORE "clk"  ;> [atlas_xp_top.ucf(74)], is specified without a duration. 
+   This will result in a lack of hold time checks in timing reports.  If hold
+   time checks are desired a duration value should be specified following the
+   'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_isa<0>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(81)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_isa<1>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(82)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_isa<10>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(83)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_isa<11>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(84)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_isa<12>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(85)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_isa<13>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(86)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_isa<14>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(87)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_isa<15>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(88)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_isa<2>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(89)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_isa<3>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(90)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_isa<4>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(91)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_isa<5>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(92)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_isa<6>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(93)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_isa<7>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(94)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_isa<8>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(95)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_isa<9>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(96)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_isa<10>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(99)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_isa<11>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(100)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_isa<12>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(101)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_isa<13>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(102)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_isa<14>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(103)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_isa<15>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(104)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_isa<16>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(105)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_isa<17>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(106)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_isa<18>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(107)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_isa<19>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(108)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_isa<20>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(109)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_isa<21>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(110)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_isa<23>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(111)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_isa<22>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(112)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_max<0>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(113)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_max<1>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(114)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_max<2>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(115)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_max<3>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(116)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_max<4>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(117)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_max<5>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(118)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_max<6>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(119)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "address_max<7>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(120)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_max<0>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(136)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_max<1>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(137)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_max<10>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(138)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_max<11>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(139)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_max<12>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(140)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_max<13>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(141)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_max<14>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(142)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_max<2>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(143)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_max<15>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(144)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_max<3>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(145)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_max<4>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(146)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_max<5>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(147)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_max<6>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(148)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_max<7>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(149)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_max<8>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(150)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "data_max<9>" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(151)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "xp_address<0>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(153)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "xp_address<1>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(154)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "xp_address<2>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(155)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "xp_address<3>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(156)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "xp_address<4>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(157)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "xp_address<5>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(158)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "xp_address<6>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(159)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "xp_address<7>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(160)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "nvram_data<0>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(362)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "nvram_data<1>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(363)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "nvram_data<2>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(364)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "nvram_data<3>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(365)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "nvram_data<4>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(366)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "nvram_data<5>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(367)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "nvram_data<6>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(368)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "nvram_data<7>" OFFSET =
+   IN 20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(369)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "nvram_rst" OFFSET = IN 20
+   ns BEFORE "clk"  ;> [atlas_xp_top.ucf(397)], is specified without a duration.
+    This will result in a lack of hold time checks in timing reports.  If hold
+   time checks are desired a duration value should be specified following the
+   'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "smemr" OFFSET = IN 20 ns
+   BEFORE "clk"  ;> [atlas_xp_top.ucf(399)], is specified without a duration. 
+   This will result in a lack of hold time checks in timing reports.  If hold
+   time checks are desired a duration value should be specified following the
+   'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "smemw" OFFSET = IN 20 ns
+   BEFORE "clk"  ;> [atlas_xp_top.ucf(400)], is specified without a duration. 
+   This will result in a lack of hold time checks in timing reports.  If hold
+   time checks are desired a duration value should be specified following the
+   'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "pwr_good_tps" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(415)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "rst_taster" OFFSET = IN
+   20 ns BEFORE "clk"  ;> [atlas_xp_top.ucf(419)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "reset_CPU" OFFSET = IN 20
+   ns BEFORE "clk"  ;> [atlas_xp_top.ucf(431)], is specified without a duration.
+    This will result in a lack of hold time checks in timing reports.  If hold
+   time checks are desired a duration value should be specified following the
+   'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "iq_i_syn"  OFFSET = IN 20
+   ns BEFORE "clk"  ;> [atlas_xp_top.ucf(437)], is specified without a duration.
+    This will result in a lack of hold time checks in timing reports.  If hold
+   time checks are desired a duration value should be specified following the
+   'VALID' keyword.
+
+WARNING:NgdBuild:1345 - The constraint <NET "iocs16" OFFSET = OUT 20 ns AFTER
+   "clk"  ;> [atlas_xp_top.ucf(76)] is overridden by the constraint <NET
+   "iocs16" OFFSET = OUT 20 ns AFTER "clk"  ;> [atlas_xp_top.ucf(80)]. The
+   overriden constraint usually comes from the input netlist or ncf files.
+   Please set XIL_NGDBUILD_CONSTR_OVERRIDE_ERROR to promote this message to an
+   error.
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  95
+
+Total memory usage is 161684 kilobytes
+
+Writing NGD file "fsm_xp_top.ngd" ...
+Total REAL time to NGDBUILD completion:  5 sec
+Total CPU time to NGDBUILD completion:   4 sec
+
+Writing NGDBUILD log file "fsm_xp_top.bld"...

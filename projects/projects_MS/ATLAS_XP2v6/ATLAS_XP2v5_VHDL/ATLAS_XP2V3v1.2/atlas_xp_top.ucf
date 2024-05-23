@@ -1,0 +1,440 @@
+NET "clk" TNM_NET = "clk";
+TIMESPEC "TS_clk" = PERIOD "clk" 50 ns HIGH 50 %;
+OFFSET = IN 20 ns BEFORE "clk"  ;
+OFFSET = OUT 20 ns AFTER "clk"  ;
+TIMESPEC "TS_P2P" = FROM "PADS" TO "PADS" 30 ns;
+NET "address_isa<0>" OFFSET = IN 20 ns BEFORE "clk"  ; #LOW ;
+NET "address_isa<1>" OFFSET = IN 20 ns BEFORE "clk"  ; #LOW ;
+NET "address_isa<2>" OFFSET = IN 20 ns BEFORE "clk"  ; #LOW ;
+NET "address_isa<3>" OFFSET = IN 20 ns BEFORE "clk"  ; #LOW ;
+NET "address_isa<4>" OFFSET = IN 20 ns BEFORE "clk"  ; #LOW ;
+NET "address_isa<5>" OFFSET = IN 20 ns BEFORE "clk"  ; #LOW ;
+NET "address_isa<6>" OFFSET = IN 20 ns BEFORE "clk"  ; #LOW ;
+NET "address_isa<7>" OFFSET = IN 20 ns BEFORE "clk"  ; #LOW ;
+NET "address_isa<8>" OFFSET = IN 20 ns BEFORE "clk"  ; #LOW ;
+NET "address_isa<9>" OFFSET = IN 20 ns BEFORE "clk"  ; #LOW ;
+#NET "adr_latched<0>" OFFSET = OUT 20 ns AFTER "clk"  ; #LOW ;
+#NET "adr_latched<1>" OFFSET = OUT 20 ns AFTER "clk"  ; #LOW ;
+#NET "adr_latched<2>" OFFSET = OUT 20 ns AFTER "clk"  ; #LOW ;
+#NET "adr_latched<3>" OFFSET = OUT 20 ns AFTER "clk"  ; #LOW ;
+#NET "adr_latched<4>" OFFSET = OUT 20 ns AFTER "clk"  ; #LOW ;
+#NET "adr_latched<5>" OFFSET = OUT 20 ns AFTER "clk"  ; #LOW ;
+#NET "adr_latched<6>" OFFSET = OUT 20 ns AFTER "clk"  ; #LOW ;
+#NET "adr_latched<7>" OFFSET = OUT 20 ns AFTER "clk"  ; #LOW ;
+#NET "adr_latched<8>" OFFSET = OUT 20 ns AFTER "clk"  ; #LOW ;
+#NET "adr_latched<9>" OFFSET = OUT 20 ns AFTER "clk"  ; #LOW ;
+NET "data_isa<0>" OFFSET = OUT 27 ns AFTER "clk"  ;
+NET "data_isa<1>" OFFSET = OUT 27 ns AFTER "clk"  ;
+NET "data_isa<2>" OFFSET = OUT 27 ns AFTER "clk"  ;
+NET "data_isa<3>" OFFSET = OUT 27 ns AFTER "clk"  ;
+NET "data_isa<4>" OFFSET = OUT 27 ns AFTER "clk"  ;
+NET "data_isa<5>" OFFSET = OUT 27 ns AFTER "clk"  ;
+NET "data_isa<6>" OFFSET = OUT 27 ns AFTER "clk"  ;
+NET "data_isa<7>" OFFSET = OUT 27 ns AFTER "clk"  ;
+NET "data_isa<8>" OFFSET = OUT 27 ns AFTER "clk"  ;
+NET "data_isa<9>" OFFSET = OUT 27 ns AFTER "clk"  ;
+NET "data_isa<10>" OFFSET = OUT 27 ns AFTER "clk"  ;
+NET "data_isa<11>" OFFSET = OUT 27 ns AFTER "clk"  ;
+NET "data_isa<12>" OFFSET = OUT 27 ns AFTER "clk"  ;
+NET "data_isa<13>" OFFSET = OUT 27 ns AFTER "clk"  ;
+NET "data_isa<14>" OFFSET = OUT 27 ns AFTER "clk"  ;
+NET "data_isa<15>" OFFSET = OUT 27 ns AFTER "clk"  ;
+NET "data_max<0>" OFFSET = OUT 25 ns AFTER "clk"  ;
+NET "data_max<1>" OFFSET = OUT 25 ns AFTER "clk"  ;
+NET "data_max<2>" OFFSET = OUT 25 ns AFTER "clk"  ;
+NET "data_max<3>" OFFSET = OUT 25 ns AFTER "clk"  ;
+NET "data_max<4>" OFFSET = OUT 25 ns AFTER "clk"  ;
+NET "data_max<5>" OFFSET = OUT 25 ns AFTER "clk"  ;
+NET "data_max<6>" OFFSET = OUT 25 ns AFTER "clk"  ;
+NET "data_max<7>" OFFSET = OUT 25 ns AFTER "clk"  ;
+NET "data_max<8>" OFFSET = OUT 25 ns AFTER "clk"  ;
+NET "data_max<9>" OFFSET = OUT 25 ns AFTER "clk"  ;
+NET "data_max<10>" OFFSET = OUT 25 ns AFTER "clk"  ;
+NET "data_max<11>" OFFSET = OUT 25 ns AFTER "clk"  ;
+NET "data_max<12>" OFFSET = OUT 25 ns AFTER "clk"  ;
+NET "data_max<13>" OFFSET = OUT 25 ns AFTER "clk"  ;
+NET "data_max<14>" OFFSET = OUT 25 ns AFTER "clk"  ;
+NET "data_max<15>" OFFSET = OUT 25 ns AFTER "clk"  ;
+NET "address_max<0>" OFFSET = OUT 20 ns AFTER "clk"  ;
+NET "address_max<1>" OFFSET = OUT 20 ns AFTER "clk"  ;
+NET "address_max<2>" OFFSET = OUT 20 ns AFTER "clk"  ;
+NET "address_max<3>" OFFSET = OUT 20 ns AFTER "clk"  ;
+NET "address_max<4>" OFFSET = OUT 20 ns AFTER "clk"  ;
+NET "address_max<5>" OFFSET = OUT 20 ns AFTER "clk"  ;
+NET "address_max<6>" OFFSET = OUT 20 ns AFTER "clk"  ;
+NET "address_max<7>" OFFSET = OUT 20 ns AFTER "clk"  ;
+#NET "brd" OFFSET = IN 20 ns AFTER "clk"
+#NET "bwr" OFFSET = OUT 20 ns AFTER "clk"
+NET "iord" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "iowr" OFFSET = IN 20 ns BEFORE "clk"  ;
+#NET "ale" OFFSET = IN 50 ns BEFORE "clk"  ;
+NET "aen" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "cw6" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "cw7" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "reset" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "cs" OFFSET = OUT 20 ns AFTER "clk"  ; #####
+NET "iocs16" OFFSET = OUT 20 ns AFTER "clk"  ;
+NET "mrst" OFFSET = OUT 20 ns AFTER "clk"  ;
+#test_poc
+#test_kraj
+NET "iocs16" OFFSET = OUT 20 ns AFTER "clk"  ;
+NET "data_isa<0>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_isa<1>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_isa<10>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_isa<11>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_isa<12>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_isa<13>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_isa<14>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_isa<15>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_isa<2>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_isa<3>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_isa<4>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_isa<5>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_isa<6>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_isa<7>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_isa<8>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_isa<9>" OFFSET = IN 20 ns BEFORE "clk"  ;
+#NET "brd" OFFSET = OUT 20 ns AFTER "clk"
+#NET "bwr" OFFSET = OUT 20 ns AFTER "clk"
+NET "address_isa<10>" OFFSET = IN 20 ns BEFORE "clk"  ; #bilo ale
+NET "address_isa<11>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "address_isa<12>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "address_isa<13>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "address_isa<14>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "address_isa<15>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "address_isa<16>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "address_isa<17>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "address_isa<18>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "address_isa<19>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "address_isa<20>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "address_isa<21>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "address_isa<23>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "address_isa<22>" OFFSET = IN 20 ns BEFORE "clk"  ; #bilo ale
+NET "address_max<0>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "address_max<1>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "address_max<2>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "address_max<3>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "address_max<4>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "address_max<5>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "address_max<6>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "address_max<7>" OFFSET = IN 20 ns BEFORE "clk"  ;
+#NET "adr_latched<10>" OFFSET = OUT 20 ns AFTER "clk"  ; #ale
+#NET "adr_latched<11>" OFFSET = OUT 20 ns AFTER "clk"  ;
+#NET "adr_latched<12>" OFFSET = OUT 20 ns AFTER "clk"  ;
+#NET "adr_latched<13>" OFFSET = OUT 20 ns AFTER "clk"  ;
+#NET "adr_latched<14>" OFFSET = OUT 20 ns AFTER "clk"  ;
+#NET "adr_latched<15>" OFFSET = OUT 20 ns AFTER "clk"  ;
+#NET "adr_latched<16>" OFFSET = OUT 20 ns AFTER "clk"  ;
+#NET "adr_latched<17>" OFFSET = OUT 20 ns AFTER "clk"  ;
+#NET "adr_latched<18>" OFFSET = OUT 20 ns AFTER "clk"  ;
+#NET "adr_latched<19>" OFFSET = OUT 20 ns AFTER "clk"  ;
+#NET "adr_latched<20>" OFFSET = OUT 20 ns AFTER "clk"  ;
+#NET "adr_latched<21>" OFFSET = OUT 20 ns AFTER "clk"  ;
+#NET "adr_latched<22>" OFFSET = OUT 20 ns AFTER "clk"  ;
+#NET "adr_latched<23>" OFFSET = OUT 20 ns AFTER "clk"  ; #ale
+#NET "bale" OFFSET = OUT 20 ns AFTER "clk"  ;
+NET "data_max<0>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_max<1>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_max<10>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_max<11>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_max<12>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_max<13>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_max<14>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_max<2>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_max<15>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_max<3>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_max<4>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_max<5>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_max<6>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_max<7>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_max<8>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "data_max<9>" OFFSET = IN 20 ns BEFORE "clk"  ;
+
+NET "xp_address<0>" OFFSET = IN 20 ns BEFORE "clk"  ; 
+NET "xp_address<1>" OFFSET = IN 20 ns BEFORE "clk"  ; 
+NET "xp_address<2>" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "xp_address<3>" OFFSET = IN 20 ns BEFORE "clk"  ; 
+NET "xp_address<4>" OFFSET = IN 20 ns BEFORE "clk"  ; 
+NET "xp_address<5>" OFFSET = IN 20 ns BEFORE "clk"  ; 
+NET "xp_address<6>" OFFSET = IN 20 ns BEFORE "clk"  ; 
+NET "xp_address<7>" OFFSET = IN 20 ns BEFORE "clk"  ; 
+
+NET "data_out_enable" OFFSET = OUT 20 ns AFTER "clk"  ;
+#NET "load_address" OFFSET = OUT 20 ns AFTER "clk"  ;
+NET "load_buffer" OFFSET = OUT 20 ns AFTER "clk"  ;
+#NET "load_data" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "write_wdt_en" OFFSET = OUT 25 ns AFTER "clk"  ;
+#NET "ale" TNM_NET = "ale"
+#TIMESPEC "TS_ale" = PERIOD "ale" 1 us HIGH 5 %
+#OFFSET = IN 20 ns BEFORE "ale"
+#OFFSET = OUT 20 ns AFTER "ale"
+#PACE: Start of Constraints generated by PACE
+#PACE: Start of PACE I/O Pin Assignments
+NET "address_isa<0>"  LOC = "P3"  | FLOAT ;		#SA0
+NET "address_isa<10>"  LOC = "P15"  | FLOAT ;	#SA10
+NET "address_isa<11>"  LOC = "P16"  | FLOAT ;	#SA11
+NET "address_isa<12>"  LOC = "P17"  | FLOAT ;	#SA12
+NET "address_isa<13>"  LOC = "P18"  | FLOAT ;	#SA13
+NET "address_isa<14>"  LOC = "P19"  | FLOAT ;	#SA14
+NET "address_isa<15>"  LOC = "P20"  | FLOAT ;	#SA15
+NET "address_isa<16>"  LOC = "P198" | FLOAT ;	#SA16
+NET "address_isa<17>"  LOC = "P199" | FLOAT ;	#SA17
+NET "address_isa<18>"  LOC = "P201" | FLOAT ;	#SA18
+NET "address_isa<19>"  LOC = "P202" | FLOAT ;	#SA19
+NET "address_isa<1>"  LOC = "P4" | FLOAT ;			#SA1
+NET "address_isa<20>"  LOC = "P203" | FLOAT ;		#LA20
+NET "address_isa<21>"  LOC = "P204"  | FLOAT ;		#LA21
+NET "address_isa<22>"  LOC = "P205"  | FLOAT ;		#LA22
+NET "address_isa<23>"  LOC = "P206"  | FLOAT ;		#LA23
+NET "address_isa<2>"  LOC = "P6" | FLOAT ;		#SA2
+NET "address_isa<3>"  LOC = "P7" | FLOAT ;		#SA3
+NET "address_isa<4>"  LOC = "P8" | FLOAT ;		#SA4
+NET "address_isa<5>"  LOC = "P9" | FLOAT ;		#SA5
+NET "address_isa<6>"  LOC = "P10" | FLOAT ;		#SA6
+NET "address_isa<7>"  LOC = "P11" | FLOAT ;		#SA7
+NET "address_isa<8>"  LOC = "P12" | FLOAT ;		#SA8
+NET "address_isa<9>"  LOC = "P13" | FLOAT ;		#SA9
+NET "address_max<0>"  LOC = "P153" | SLEW = FAST  | FLOAT ;
+NET "address_max<1>"  LOC = "P154" | SLEW = FAST  | FLOAT ;
+NET "address_max<2>"  LOC = "P159" | SLEW = FAST  | FLOAT ;
+NET "address_max<3>"  LOC = "P160" | SLEW = FAST  | FLOAT ;
+NET "address_max<4>"  LOC = "P161" | SLEW = FAST  | FLOAT ;
+NET "address_max<5>"  LOC = "P162" | SLEW = FAST  | FLOAT ;
+NET "address_max<6>"  LOC = "P163" | SLEW = FAST  | FLOAT ;
+NET "address_max<7>"  LOC = "P164" | SLEW = FAST  | FLOAT ;
+#NET "NVRAM_reset"  LOC = "P140" |  FLOAT ;
+
+NET "xp_address<0>"  LOC = "P79"   | FLOAT ;
+NET "xp_address<1>"  LOC = "P80"   | FLOAT ;
+NET "xp_address<2>"  LOC = "P81"   | FLOAT ;
+NET "xp_address<3>"  LOC = "P84"   | FLOAT ;
+NET "xp_address<4>"  LOC = "P86"   | FLOAT ;
+NET "xp_address<5>"  LOC = "P87"   | FLOAT ;
+NET "xp_address<6>"  LOC = "P88"   | FLOAT ;
+NET "xp_address<7>"  LOC = "P89"   | FLOAT ;
+
+#NET "adr_latched<18>"  LOC = "P90" | SLEW = FAST  | FLOAT ;
+#NET "adr_latched<19>"  LOC = "P91" | SLEW = FAST  | FLOAT ;
+#NET "adr_latched<1>"  LOC = "P139" | SLEW = FAST  | FLOAT ;
+#NET "adr_latched<20>"  LOC = "P129" | SLEW = FAST  | FLOAT ;
+#NET "adr_latched<21>"  LOC = "P128" | SLEW = FAST  | FLOAT ;
+#NET "adr_latched<22>"  LOC = "P126" | SLEW = FAST  | FLOAT ;
+#NET "adr_latched<23>"  LOC = "P124" | SLEW = FAST  | FLOAT ;
+#NET "adr_latched<2>"  LOC = "P138" | SLEW = FAST  | FLOAT ;
+#NET "adr_latched<3>"  LOC = "P137" | SLEW = FAST  | FLOAT ;
+#NET "adr_latched<4>"  LOC = "P136" | SLEW = FAST  | FLOAT ;
+#NET "adr_latched<5>"  LOC = "P135" | SLEW = FAST  | FLOAT ;
+#NET "adr_latched<6>"  LOC = "P133" | SLEW = FAST  | FLOAT ;
+#NET "adr_latched<7>"  LOC = "P132" | SLEW = FAST  | FLOAT ;
+NET "led_kvr"  LOC = "P131" | SLEW = FAST  | FLOAT ;
+NET "led_rad"  LOC = "P130" | SLEW = FAST  | FLOAT ;
+NET "led_lpt"  LOC = "P132" | SLEW = FAST  | FLOAT ;
+
+NET "aen"  LOC = "P148" | FLOAT ;
+NET "ale"  LOC = "P108" | FLOAT ;#| BUFG = CLK ;#bilo 108
+NET "bale"  LOC = "P168" | SLEW = FAST |FLOAT ;
+NET "brd"  LOC = "P169" | SLEW = FAST |FLOAT;
+NET "bwr"  LOC = "P170" | SLEW = FAST |FLOAT;
+NET "clk"  LOC = "P181" | FLOAT  | BUFG = CLK ;
+NET "cs"  LOC = "P146" | SLEW = FAST  | FLOAT ;
+NET "cw6"  LOC = "P147" | FLOAT ;
+NET "cw7"  LOC = "P142" | FLOAT ;
+NET "data_isa<0>"  LOC = "P28" | SLEW = FAST  | FLOAT ;
+NET "data_isa<10>"  LOC = "P70" | SLEW = FAST  | FLOAT ;
+NET "data_isa<11>"  LOC = "P71" | SLEW = FAST  | FLOAT ;
+NET "data_isa<12>"  LOC = "P73" | SLEW = FAST  | FLOAT ;
+NET "data_isa<13>"  LOC = "P76" | SLEW = FAST  | FLOAT ;
+NET "data_isa<14>"  LOC = "P77" | SLEW = FAST  | FLOAT ;
+NET "data_isa<15>"  LOC = "P78" | SLEW = FAST  | FLOAT ;
+NET "data_isa<1>"  LOC = "P29" | SLEW = FAST  | FLOAT ;
+NET "data_isa<2>"  LOC = "P31" | SLEW = FAST  | FLOAT ;
+NET "data_isa<3>"  LOC = "P33" | SLEW = FAST  | FLOAT ;
+NET "data_isa<4>"  LOC = "P34" | SLEW = FAST  | FLOAT ;
+NET "data_isa<5>"  LOC = "P35" | SLEW = FAST  | FLOAT ;
+NET "data_isa<6>"  LOC = "P36" | SLEW = FAST  | FLOAT ;
+NET "data_isa<7>"  LOC = "P37" | SLEW = FAST  | FLOAT ;
+NET "data_isa<8>"  LOC = "P38" | SLEW = FAST  | FLOAT ;
+NET "data_isa<9>"  LOC = "P69" | SLEW = FAST  | FLOAT ;
+NET "data_max<0>"  LOC = "P39" | SLEW = FAST  | FLOAT ;
+NET "data_max<10>"  LOC = "P59" | SLEW = FAST  | FLOAT ;
+NET "data_max<11>"  LOC = "P60" | SLEW = FAST  | FLOAT ;
+NET "data_max<12>"  LOC = "P61" | SLEW = FAST  | FLOAT ;
+NET "data_max<13>"  LOC = "P62" | SLEW = FAST  | FLOAT ;
+NET "data_max<14>"  LOC = "P64" | SLEW = FAST  | FLOAT ;
+NET "data_max<15>"  LOC = "P65" | SLEW = FAST  | FLOAT ;
+NET "data_max<1>"  LOC = "P40" | SLEW = FAST  | FLOAT ;
+NET "data_max<2>"  LOC = "P42" | SLEW = FAST  | FLOAT ;
+NET "data_max<3>"  LOC = "P43" | SLEW = FAST  | FLOAT ;
+NET "data_max<4>"  LOC = "P44" | SLEW = FAST  | FLOAT ;
+NET "data_max<5>"  LOC = "P45" | SLEW = FAST  | FLOAT ;
+NET "data_max<6>"  LOC = "P46" | SLEW = FAST  | FLOAT ;
+NET "data_max<7>"  LOC = "P47" | SLEW = FAST  | FLOAT ;
+NET "data_max<8>"  LOC = "P48" | SLEW = FAST  | FLOAT ;
+NET "data_max<9>"  LOC = "P49" | SLEW = FAST  | FLOAT ;
+NET "data_out_enable"  LOC = "P172" | SLEW = FAST ;
+NET "iocs16"  LOC = "P145" | SLEW = FAST  | FLOAT ;
+NET "mrst"  LOC = "P141" | SLEW = FAST  | FLOAT ;
+NET "iord"  LOC = "P150" | FLOAT ;
+NET "iowr"  LOC = "P151" | FLOAT ;
+#NET "load_address"  LOC = "P177" | SLEW = FAST ;
+NET "load_buffer"  LOC = "P175" | SLEW = FAST ;
+#NET "load_data"  LOC = "P173" | SLEW = FAST ;
+NET "reset"  LOC = "P144" | FLOAT ;					#RESET SA CPU-a
+NET "write_wdt_en"  LOC = "P171" | SLEW = FAST ;
+#NET "test1"  LOC = "P114" | SLEW = FAST ;
+NET "rst_taster"  LOC = "P114" | FLOAT ;
+NET "test2"  LOC = "P115" | SLEW = FAST ;
+NET "master_enable"  LOC = "P113" | FLOAT | SLEW = FAST;
+#NET "wdt_out"  LOC = "P112" | FLOAT | SLEW = FAST ;
+NET "reset_CPU"  LOC = "P111" | SLEW = FAST | FLOAT ;
+NET "led_master_enable"  LOC = "P109" | FLOAT | SLEW = FAST;
+NET "led_wdt"  LOC = "P117" | FLOAT | SLEW = FAST;
+NET "led_pwr_good_tps"  LOC = "P118" | FLOAT | SLEW = FAST;
+NET "pwr_good_tps"  LOC = "P149" | FLOAT ;
+NET "direction_245"  LOC = "P167" | SLEW = FAST;
+NET "wdt_trg"  LOC = "P55" | SLEW = FAST;
+NET "wdt_out_stari"  LOC = "P56" | FLOAT;     #otkomentarisati u slucaju da se koristi 123-ka
+#NET "ppm_novi"  LOC = "P57" | FLOAT;		     #otkomentarisati u slucaju da se koristi 123-ka
+NET "iq_i_syn"  LOC = "P66" | FLOAT;          #otkomentarisati u slucaju da se koristi 123-ka
+NET "iq_o_syn"  LOC = "P67" | SLEW = FAST;	  #otkomentarisati u slucaju da se koristi 123-ka
+NET "wdt_sig_stari"  LOC = "P68" | FLOAT;  	  #otkomentarisati u slucaju da se koristi 123-ka
+#NET "iq_o_atp"  LOC = "P26" | SLEW = FAST;	  #otkomentarisati u slucaju da se koristi biq1,biq2
+
+
+#######################################################################
+##NVRAM+RTC
+#######################################################################
+NET "nvram_address<0>" LOC = "P129" | SLEW = FAST;
+NET "nvram_address<1>" LOC = "P128" | SLEW = FAST;
+NET "nvram_address<2>" LOC = "P126" | SLEW = FAST;
+NET "nvram_address<3>" LOC = "P124" | SLEW = FAST;
+NET "nvram_address<4>" LOC = "P123" | SLEW = FAST;
+NET "nvram_address<5>" LOC = "P122" | SLEW = FAST;
+NET "nvram_address<6>" LOC = "P121" | SLEW = FAST;
+NET "nvram_address<7>" LOC = "P120" | SLEW = FAST;
+NET "nvram_address<8>" LOC = "P119" | SLEW = FAST;
+NET "nvram_address<9>" LOC = "P102" | SLEW = FAST;
+NET "nvram_address<10>" LOC = "P101" | SLEW = FAST;
+NET "nvram_address<11>" LOC = "P100" | SLEW = FAST;
+NET "nvram_address<12>" LOC = "P99" | SLEW = FAST;
+NET "nvram_address<13>" LOC = "P98" | SLEW = FAST;
+NET "nvram_address<14>" LOC = "P97" | SLEW = FAST;
+NET "nvram_address<15>" LOC = "P96" | SLEW = FAST;
+NET "nvram_address<16>" LOC = "P95" | SLEW = FAST;
+NET "nvram_address<17>" LOC = "P93" | SLEW = FAST;
+NET "nvram_address<18>" LOC = "P92" | SLEW = FAST;
+NET "nvram_address<19>" LOC = "P91" | SLEW = FAST;
+NET "nvram_address<20>" LOC = "P90" | SLEW = FAST;
+
+
+
+NET "nvram_address<0>" OFFSET = OUT 20 ns AFTER "clk" ;
+NET "nvram_address<1>" OFFSET = OUT 20 ns AFTER "clk" ;
+NET "nvram_address<2>" OFFSET = OUT 20 ns AFTER "clk" ;
+NET "nvram_address<3>" OFFSET = OUT 20 ns AFTER "clk" ;
+NET "nvram_address<4>" OFFSET = OUT 20 ns AFTER "clk" ;
+NET "nvram_address<5>" OFFSET = OUT 20 ns AFTER "clk" ;
+NET "nvram_address<6>" OFFSET = OUT 20 ns AFTER "clk" ;
+NET "nvram_address<7>" OFFSET = OUT 20 ns AFTER "clk" ;
+NET "nvram_address<8>" OFFSET = OUT 20 ns AFTER "clk" ;
+NET "nvram_address<9>" OFFSET = OUT 20 ns AFTER "clk" ;
+NET "nvram_address<10>" OFFSET = OUT 20 ns AFTER "clk" ;
+NET "nvram_address<11>" OFFSET = OUT 20 ns AFTER "clk" ;
+NET "nvram_address<12>" OFFSET = OUT 20 ns AFTER "clk" ;
+NET "nvram_address<13>" OFFSET = OUT 20 ns AFTER "clk" ;
+NET "nvram_address<14>" OFFSET = OUT 20 ns AFTER "clk" ;
+NET "nvram_address<15>" OFFSET = OUT 20 ns AFTER "clk" ;
+NET "nvram_address<16>" OFFSET = OUT 20 ns AFTER "clk" ;
+NET "nvram_address<17>" OFFSET = OUT 20 ns AFTER "clk" ;
+NET "nvram_address<18>" OFFSET = OUT 20 ns AFTER "clk" ;
+NET "nvram_address<19>" OFFSET = OUT 20 ns AFTER "clk" ;
+NET "nvram_address<20>" OFFSET = OUT 20 ns AFTER "clk" ;
+
+NET "nvram_data<0>" LOC = "P188" | SLEW = FAST | FLOAT;
+NET "nvram_data<1>" LOC = "P190" | SLEW = FAST | FLOAT;
+NET "nvram_data<2>" LOC = "P192" | SLEW = FAST | FLOAT;
+NET "nvram_data<3>" LOC = "P193" | SLEW = FAST | FLOAT;
+NET "nvram_data<4>" LOC = "P194" | SLEW = FAST | FLOAT;
+NET "nvram_data<5>" LOC = "P195" | SLEW = FAST | FLOAT;
+NET "nvram_data<6>" LOC = "P196" | SLEW = FAST | FLOAT;
+NET "nvram_data<7>" LOC = "P197" | SLEW = FAST | FLOAT;
+
+NET "nvram_data<0>" OFFSET = IN 20 ns BEFORE "clk"  ; 
+NET "nvram_data<1>" OFFSET = IN 20 ns BEFORE "clk"  ; 
+NET "nvram_data<2>" OFFSET = IN 20 ns BEFORE "clk"  ; 
+NET "nvram_data<3>" OFFSET = IN 20 ns BEFORE "clk"  ; 
+NET "nvram_data<4>" OFFSET = IN 20 ns BEFORE "clk"  ; 
+NET "nvram_data<5>" OFFSET = IN 20 ns BEFORE "clk"  ; 
+NET "nvram_data<6>" OFFSET = IN 20 ns BEFORE "clk"  ; 
+NET "nvram_data<7>" OFFSET = IN 20 ns BEFORE "clk"  ; 
+
+#############kontrolni signali - izlazi
+NET "nvram_ce" LOC = "P133" | SLEW = FAST ;
+NET "nvram_cs" LOC = "P135" | SLEW = FAST ;
+NET "nvram_oe" LOC = "P136" | SLEW = FAST ;
+NET "nvram_we" LOC = "P137" | SLEW = FAST ;
+
+NET "nvram_ce" OFFSET = OUT 20 ns AFTER "clk" ;
+NET "nvram_cs" OFFSET = OUT 20 ns AFTER "clk" ;
+NET "nvram_oe" OFFSET = OUT 20 ns AFTER "clk" ;
+NET "nvram_we" OFFSET = OUT 20 ns AFTER "clk" ;
+
+
+###############ulazi od NVRAM/RTC i CPU
+NET "nvram_rst" LOC = "P140" | FLOAT ;
+NET "power_supply_24V" LOC = "P177" | FLOAT ;
+#NET "nvram_irq" LOC = "P166" | FLOAT ;   #zakomentarisano u verziji sa DS1265W
+#NET "nvram_irq_cpu" LOC = "P178" | FLOAT ; #zakomentarisano u verziji sa DS1265W
+NET "smemr" LOC = "P138" | FLOAT ;
+NET "smemw" LOC = "P139" | FLOAT ;
+NET "base_addr_jp<0>" LOC = "P21" | FLOAT;
+NET "base_addr_jp<1>" LOC = "P22" | FLOAT;
+
+#######################################################################
+
+NET "rst_dof_dsbl" LOC = "P173" | FLOAT;
+
+NET "nvram_rst" OFFSET = IN 20 ns BEFORE "clk"  ; 
+#NET "nvram_irq" OFFSET = IN 20 ns BEFORE "clk"  ; 
+NET "smemr" OFFSET = IN 20 ns BEFORE "clk"  ; 
+NET "smemw" OFFSET = IN 20 ns BEFORE "clk"  ; 
+
+
+#######################################################################
+
+
+#NET "xp_present_in"  LOC = "P110" | FLOAT;
+#PACE: Start of PACE Area Constraints
+#PACE: Start of PACE Prohibit Constraints
+#PACE: End of Constraints generated by PACE
+#NET "address_latched_low<0>" OFFSET = IN 20 ns BEFORE "clk"
+#NET "address_latched_low<1>" OFFSET = IN 20 ns BEFORE "clk"
+#NET "address_latched_low<2>" OFFSET = IN 20 ns BEFORE "clk"
+#NET "address_latched_low<3>" OFFSET = IN 20 ns BEFORE "clk"
+#NET "wdt_out" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "pwr_good_tps" OFFSET = IN 20 ns BEFORE "clk"  ;
+#NET "NVRAM_reset" OFFSET = IN 20 ns BEFORE "clk"  ;
+#NET "ms_in" OFFSET = IN 20 ns BEFORE "clk"  ;
+#NET "xp_present_in" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "rst_taster" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "test2" OFFSET = OUT 20 ns AFTER "clk"  ;
+NET "bale" OFFSET = OUT 20 ns AFTER "clk"  ;
+NET "brd" OFFSET = OUT 20 ns AFTER "clk"  ;
+NET "bwr" OFFSET = OUT 20 ns AFTER "clk"  ;
+#NET "load_data" OFFSET = OUT 20 ns AFTER "clk"  ;
+NET "master_enable" OFFSET = OUT 20 ns AFTER "clk"  ;
+NET "led_rad" OFFSET = OUT 20 ns AFTER "clk"  ;
+NET "led_kvr" OFFSET = OUT 20 ns AFTER "clk"  ;
+NET "led_lpt" OFFSET = OUT 20 ns AFTER "clk"  ;
+NET "led_master_enable" OFFSET = OUT 20 ns AFTER "clk"  ;
+NET "led_wdt" OFFSET = OUT 20 ns AFTER "clk"  ;
+NET "reset_CPU" OFFSET = IN 20 ns BEFORE "clk"  ;
+NET "led_pwr_good_tps" OFFSET = OUT 20 ns AFTER "clk"  ;
+NET "direction_245"  OFFSET = OUT 20 ns AFTER "clk"  ;
+NET "wdt_trg"  OFFSET = OUT 20 ns AFTER "clk"  ;
+#NET "wdt_out_stari"  OFFSET = IN 20 ns BEFORE "clk"  ;  #otkomentarisati u slucaju da se koristi 123-ka
+#NET "ppm_novi"  OFFSET = IN 20 ns BEFORE "clk"  ;  #otkomentarisati u slucaju da se koristi 123-ka
+NET "iq_i_syn"  OFFSET = IN 20 ns BEFORE "clk"  ;  #otkomentarisati u slucaju da se koristi 123-ka
+NET "iq_o_syn"  OFFSET = OUT 20 ns AFTER "clk"  ;  #otkomentarisati u slucaju da se koristi 123-ka
+#NET "iq_o_atp"  OFFSET = OUT 20 ns AFTER "clk"  ;  #otkomentarisati u slucaju da se koristi biq1,biq2
+

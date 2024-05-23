@@ -1,0 +1,5 @@
+vhdl work "nvram_rtc.vhd"
+vhdl work "fsm_xp.vhd"
+vhdl work "data_latch.vhd"
+vhdl work "adr_latch.vhd"
+vhdl work "fsm_xp_top.vhd"

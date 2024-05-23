@@ -1,0 +1,29 @@
+Command line:
+   test1_isim_fit.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52204
+
+Fri May 26 18:59:35 2017
+
+
+ Elaboration Time: 0.421202 sec
+
+ Current Memory Usage: 773.337 Meg
+
+ Total Signals          : 32971
+ Total Nets             : 11732
+ Total Signal Drivers   : 11781
+ Total Blocks           : 8557
+ Total Primitive Blocks : 8410
+ Total Processes        : 13510
+ Total Traceable Variables  : 9452
+ Total Scalar Nets and Variables : 560229
+Total Line Count : 3177
+
+ Total Simulation Time: 2.87042 sec
+
+ Current Memory Usage: 789.918 Meg
+
+Fri May 26 19:02:12 2017
+

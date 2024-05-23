@@ -1,0 +1,11 @@
+AR nvram_rtc behavioral D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/ATLAS_XP2V3v1.2/nvram_rtc.vhd sub00/vhpl07 1495817807
+EN data_latch NULL D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/ATLAS_XP2V3v1.2/data_latch.vhd sub00/vhpl04 1495817804
+EN nvram_rtc NULL D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/ATLAS_XP2V3v1.2/nvram_rtc.vhd sub00/vhpl06 1495817806
+AR fsm_xp behavioral D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/ATLAS_XP2V3v1.2/fsm_xp.vhd sub00/vhpl03 1495817803
+EN fsm_xp_top NULL D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/ATLAS_XP2V3v1.2/fsm_xp_top.vhd sub00/vhpl08 1495817808
+EN fsm_xp NULL D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/ATLAS_XP2V3v1.2/fsm_xp.vhd sub00/vhpl02 1495817802
+AR fsm_xp_top behavioral D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/ATLAS_XP2V3v1.2/fsm_xp_top.vhd sub00/vhpl09 1495817809
+AR data_latch behavioral D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/ATLAS_XP2V3v1.2/data_latch.vhd sub00/vhpl05 1495817805
+EN bbram_test1_vhd NULL F:/MILOS/Projects/ATLAS_XP2V3v1.2/bbram_test1.vhd sub00/vhpl10 1350382237
+EN adr_latch NULL D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/ATLAS_XP2V3v1.2/adr_latch.vhd sub00/vhpl00 1495817800
+AR adr_latch behavioral D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/ATLAS_XP2V3v1.2/adr_latch.vhd sub00/vhpl01 1495817801

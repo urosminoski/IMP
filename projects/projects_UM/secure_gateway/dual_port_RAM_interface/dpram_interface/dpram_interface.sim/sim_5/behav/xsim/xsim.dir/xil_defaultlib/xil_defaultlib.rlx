@@ -1,0 +1,10 @@
+0.7
+2020.2
+Feb  9 2024
+00:36:40
+C:/Users/Korisnik/IMP/projects/secure_gateway/dual_port_RAM_interface/dpram_interface/dpram_interface.srcs/sim_5/new/dpram_interface_single_tb.vhd,1714026971,vhdl,,,,dpram_interface_single_tb,,,,,,,,
+C:/Users/Korisnik/IMP/projects/secure_gateway/dual_port_RAM_interface/dpram_interface/dpram_interface.srcs/sources_1/new/address_decoder.vhd,1714021996,vhdl,,,,address_decoder,,,,,,,,
+C:/Users/Korisnik/IMP/projects/secure_gateway/dual_port_RAM_interface/dpram_interface/dpram_interface.srcs/sources_1/new/address_latch.vhd,1713940622,vhdl,,,,address_latch,,,,,,,,
+C:/Users/Korisnik/IMP/projects/secure_gateway/dual_port_RAM_interface/dpram_interface/dpram_interface.srcs/sources_1/new/control_signal_generator.vhd,1713948589,vhdl,,,,control_signal_generator,,,,,,,,
+C:/Users/Korisnik/IMP/projects/secure_gateway/dual_port_RAM_interface/dpram_interface/dpram_interface.srcs/sources_1/new/data_transfer.vhd,1713949189,vhdl,,,,data_transfer,,,,,,,,
+C:/Users/Korisnik/IMP/projects/secure_gateway/dual_port_RAM_interface/dpram_interface/dpram_interface.srcs/sources_1/new/dpram_interface_single.vhd,1714050410,vhdl,,,,dpram_interface_single,,,,,,,,

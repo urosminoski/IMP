@@ -1,0 +1,1849 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+FDCPE_I2/curstate_FSM_FFd1: FDCPE port map (I2/curstate_FSM_FFd1,I2/curstate_FSM_FFd1_D,clk,reset,NOT ,'1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I2/curstate_FSM_FFd1_D <= ((NOT I2/curstate_FSM_FFd6 AND I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_1473 AND N_PZ_1310)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_1473 AND N_PZ_1309)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_1310 AND N_PZ_1472)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_1472 AND N_PZ_1309)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd1 AND I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd3)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd4 AND I2/curstate_FSM_FFd6 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd1 AND I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd4 AND I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd1 AND I2/curstate_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd4 AND I2/curstate_FSM_FFd6)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reg_wr AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT I2/curstate_FSM_FFd2 AND NOT I2/curstate_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_1473)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reg_wr AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT I2/curstate_FSM_FFd2 AND NOT I2/curstate_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_1472)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT I2/curstate_FSM_FFd2 AND NOT I2/curstate_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_1473)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT I2/curstate_FSM_FFd2 AND NOT I2/curstate_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_1472)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd2 AND NOT I2/curstate_FSM_FFd3 AND N_PZ_1473)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd2 AND NOT I2/curstate_FSM_FFd3 AND N_PZ_1472)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd3 AND NOT I2/curstate_FSM_FFd4 AND I2/curstate_FSM_FFd6)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd3 AND NOT I2/curstate_FSM_FFd4 AND I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reg_wr AND I2/curstate_FSM_FFd1 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd2 AND NOT I2/curstate_FSM_FFd3 AND NOT I2/curstate_FSM_FFd4 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd6)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reg_rd AND I2/curstate_FSM_FFd1 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd2 AND NOT I2/curstate_FSM_FFd3 AND NOT I2/curstate_FSM_FFd4 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd6)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reg_wr AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT I2/curstate_FSM_FFd2 AND NOT I2/curstate_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd4 AND NOT I2/curstate_FSM_FFd6)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reg_wr AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT I2/curstate_FSM_FFd2 AND NOT I2/curstate_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd4 AND NOT I2/curstate_FSM_FFd6)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5 AND address_max_fsm(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_max_fsm(1) AND address_max_fsm(2) AND address_max_fsm(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max_fsm(4) AND NOT address_max_fsm(5) AND NOT address_max_fsm(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max_fsm(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5 AND NOT address_max_fsm(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max_fsm(1) AND NOT address_max_fsm(2) AND NOT address_max_fsm(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max_fsm(4) AND NOT address_max_fsm(5) AND NOT address_max_fsm(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max_fsm(7)));
+</td></tr><tr><td>
+FDCPE_I2/curstate_FSM_FFd2: FDCPE port map (I2/curstate_FSM_FFd2,I2/curstate_FSM_FFd2_D,clk,reset,'0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I2/curstate_FSM_FFd2_D <= NOT ((NOT I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_1574)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_1574 AND I2/curstate_FSM_FFd3 AND NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_1574 AND NOT I2/curstate_FSM_FFd3 AND NOT I2/curstate_FSM_FFd6)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_1574 AND NOT I2/curstate_FSM_FFd3 AND I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_1574 AND NOT I2/curstate_FSM_FFd4 AND NOT I2/curstate_FSM_FFd6)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd2 AND NOT N_PZ_1574 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd3 AND NOT I2/curstate_FSM_FFd4 AND I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd2 AND NOT N_PZ_1574 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd3 AND NOT I2/curstate_FSM_FFd6 AND NOT N_PZ_1309)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd1 AND NOT N_PZ_1574 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd3 AND NOT I2/curstate_FSM_FFd4 AND I2/curstate_FSM_FFd6 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd1 AND I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_1574 AND I2/curstate_FSM_FFd4 AND I2/curstate_FSM_FFd6 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd5 AND N_PZ_1310)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_1574 AND NOT I2/curstate_FSM_FFd4 AND NOT I2/curstate_FSM_FFd5 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_max_fsm(0) AND address_max_fsm(1) AND address_max_fsm(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_max_fsm(3) AND NOT address_max_fsm(4) AND NOT address_max_fsm(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max_fsm(6) AND NOT address_max_fsm(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_1574 AND NOT I2/curstate_FSM_FFd4 AND NOT I2/curstate_FSM_FFd5 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max_fsm(0) AND NOT address_max_fsm(1) AND NOT address_max_fsm(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max_fsm(3) AND NOT address_max_fsm(4) AND NOT address_max_fsm(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max_fsm(6) AND NOT address_max_fsm(7))));
+</td></tr><tr><td>
+FDCPE_I2/curstate_FSM_FFd3: FDCPE port map (I2/curstate_FSM_FFd3,I2/curstate_FSM_FFd3_D,clk,reset,'0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I2/curstate_FSM_FFd3_D <= ((I2/curstate_FSM_FFd3 AND I2/curstate_FSM_FFd4)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd1 AND I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd3)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd1 AND I2/curstate_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd2 AND NOT I2/curstate_FSM_FFd4 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd1 AND I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd4 AND I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd1 AND I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd4 AND I2/curstate_FSM_FFd6 AND I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd4 AND I2/curstate_FSM_FFd6 AND I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd4 AND NOT I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd4 AND NOT I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5));
+</td></tr><tr><td>
+FTCPE_I2/curstate_FSM_FFd4: FTCPE port map (I2/curstate_FSM_FFd4,I2/curstate_FSM_FFd4_T,clk,reset,'0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I2/curstate_FSM_FFd4_T <= (I2/curstate_FSM_FFd3 AND NOT I2/curstate_FSM_FFd4 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd6)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((NOT I2/curstate_FSM_FFd3 AND I2/curstate_FSM_FFd4 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd6 AND I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd1 AND I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd3 AND NOT I2/curstate_FSM_FFd4 AND NOT I2/curstate_FSM_FFd6)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd1 AND I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd4 AND I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd1 AND I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd3 AND I2/curstate_FSM_FFd4 AND I2/curstate_FSM_FFd6 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd3 AND I2/curstate_FSM_FFd4 AND I2/curstate_FSM_FFd6 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd5));
+</td></tr><tr><td>
+FDCPE_I2/curstate_FSM_FFd5: FDCPE port map (I2/curstate_FSM_FFd5,I2/curstate_FSM_FFd5_D,clk,reset,'0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I2/curstate_FSM_FFd5_D <= NOT (((NOT I2/curstate_FSM_FFd1 AND NOT N_PZ_1473 AND NOT N_PZ_1472)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd3 AND NOT I2/curstate_FSM_FFd6 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_1473)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd4 AND NOT N_PZ_1473 AND N_PZ_1310)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd2 AND NOT I2/curstate_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd5 AND NOT N_PZ_1473)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd2 AND NOT I2/curstate_FSM_FFd6 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_1473 AND NOT N_PZ_1472)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd2 AND I2/curstate_FSM_FFd4 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_1473 AND NOT N_PZ_1310 AND NOT N_PZ_1472)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd3 AND I2/curstate_FSM_FFd4 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5 AND NOT N_PZ_1473)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd3 AND I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_1473 AND address_max_fsm(0) AND address_max_fsm(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_max_fsm(2) AND address_max_fsm(3) AND NOT address_max_fsm(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max_fsm(5) AND NOT address_max_fsm(6) AND NOT address_max_fsm(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd3 AND I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_1473 AND NOT address_max_fsm(0) AND NOT address_max_fsm(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max_fsm(2) AND NOT address_max_fsm(3) AND NOT address_max_fsm(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max_fsm(5) AND NOT address_max_fsm(6) AND NOT address_max_fsm(7))));
+</td></tr><tr><td>
+FTCPE_I2/curstate_FSM_FFd6: FTCPE port map (I2/curstate_FSM_FFd6,I2/curstate_FSM_FFd6_T,clk,reset,'0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I2/curstate_FSM_FFd6_T <= ((I2/curstate_FSM_FFd1 AND I2/curstate_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd1 AND I2/curstate_FSM_FFd4 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd1 AND I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd3 AND NOT I2/curstate_FSM_FFd6)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd1 AND I2/curstate_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd1 AND I2/curstate_FSM_FFd4 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd2 AND NOT I2/curstate_FSM_FFd4 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd3 AND I2/curstate_FSM_FFd4 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd6 AND I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd4 AND I2/curstate_FSM_FFd6 AND I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd1 AND I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd3 AND NOT I2/curstate_FSM_FFd4 AND NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd2 AND I2/curstate_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd4 AND I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reg_wr AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND NOT adr_latched(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd6 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reg_wr AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd6 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5 AND address_max_fsm(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_max_fsm(1) AND address_max_fsm(2) AND address_max_fsm(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max_fsm(4) AND NOT address_max_fsm(5) AND NOT address_max_fsm(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max_fsm(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5 AND NOT address_max_fsm(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max_fsm(1) AND NOT address_max_fsm(2) AND NOT address_max_fsm(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max_fsm(4) AND NOT address_max_fsm(5) AND NOT address_max_fsm(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max_fsm(7)));
+</td></tr><tr><td>
+FTCPE_I2/led_kvr: FTCPE port map (I2/led_kvr,I2/led_kvr_T,clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I2/led_kvr_T <= ((NOT I2/curstate_FSM_FFd1 AND I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd4 AND NOT I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_max_fsm(0) AND address_max_fsm(1) AND address_max_fsm(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_max_fsm(3) AND NOT address_max_fsm(4) AND NOT address_max_fsm(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max_fsm(6) AND NOT address_max_fsm(7) AND I2/led_kvr)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd3 AND NOT I2/curstate_FSM_FFd4 AND I2/curstate_FSM_FFd6 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd5 AND address_max_fsm(0) AND address_max_fsm(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_max_fsm(2) AND address_max_fsm(3) AND NOT address_max_fsm(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max_fsm(5) AND NOT address_max_fsm(6) AND NOT address_max_fsm(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/led_kvr));
+</td></tr><tr><td>
+FDCPE_I2/load_address: FDCPE port map (I2/load_address,I2/load_address_D,NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I2/load_address_D <= (I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd4 AND NOT I2/curstate_FSM_FFd6 AND I2/curstate_FSM_FFd5);
+</td></tr><tr><td>
+FDCPE_I2/load_data: FDCPE port map (I2/load_data,I2/load_data_D,NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I2/load_data_D <= (NOT I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd3 AND NOT I2/curstate_FSM_FFd4 AND I2/curstate_FSM_FFd6 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd5);
+</td></tr><tr><td>
+FDCPE_I2/write_lpt_en: FDCPE port map (I2/write_lpt_en,I2/write_lpt_en_D,NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I2/write_lpt_en_D <= (I2/curstate_FSM_FFd1 AND I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd4 AND NOT I2/curstate_FSM_FFd6 AND I2/curstate_FSM_FFd5);
+</td></tr><tr><td>
+LDCP_I6/Mtrien_nvram_address20: LDCP port map (I6/Mtrien_nvram_address(20),NOT N_PZ_1377,NOT N_PZ_877,'0','0');
+</td></tr><tr><td>
+FDCPE_I6/Mtrien_nvram_data: FDCPE port map (I6/Mtrien_nvram_data,I6/Mtrien_nvram_data_D,clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I6/Mtrien_nvram_data_D <= NOT (((NOT iowr AND N_PZ_1377 AND N_PZ_877)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT nvram_ce AND nvram_cs AND N_PZ_1377 AND NOT smemw)));
+</td></tr><tr><td>
+FDCPE_Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000: FDCPE port map (Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000,address_isa(2),ale,'0','0','1');
+</td></tr><tr><td>
+FDCPE_Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000: FDCPE port map (Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000,address_isa(4),ale,'0','0','1');
+</td></tr><tr><td>
+FDCPE_Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001: FDCPE port map (Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001,address_isa(7),ale,'0','0','1');
+</td></tr><tr><td>
+FDCPE_Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001: FDCPE port map (Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001,address_isa(9),ale,'0','0','1');
+</td></tr><tr><td>
+FDCPE_Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000: FDCPE port map (Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000,address_isa(10),ale,'0','0','1');
+</td></tr><tr><td>
+FDCPE_Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001: FDCPE port map (Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001,address_isa(11),ale,'0','0','1');
+</td></tr><tr><td>
+FDCPE_Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000: FDCPE port map (Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000,address_isa(12),ale,'0','0','1');
+</td></tr><tr><td>
+FDCPE_Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001: FDCPE port map (Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001,address_isa(13),ale,'0','0','1');
+</td></tr><tr><td>
+FDCPE_Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000: FDCPE port map (Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000,address_isa(14),ale,'0','0','1');
+</td></tr><tr><td>
+FDCPE_Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001: FDCPE port map (Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001,address_isa(15),ale,'0','0','1');
+</td></tr><tr><td>
+FDCPE_Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000: FDCPE port map (Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000,address_isa(16),ale,'0','0','1');
+</td></tr><tr><td>
+FDCPE_Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001: FDCPE port map (Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001,address_isa(17),ale,'0','0','1');
+</td></tr><tr><td>
+FDCPE_Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000: FDCPE port map (Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000,address_isa(18),ale,'0','0','1');
+</td></tr><tr><td>
+FDCPE_Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001: FDCPE port map (Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001,address_isa(19),ale,'0','0','1');
+</td></tr><tr><td>
+FDCPE_Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000: FDCPE port map (Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000,address_isa(20),ale,'0','0','1');
+</td></tr><tr><td>
+FDCPE_Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001: FDCPE port map (Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001,address_isa(21),ale,'0','0','1');
+</td></tr><tr><td>
+FDCPE_Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000: FDCPE port map (Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000,address_isa(22),ale,'0','0','1');
+</td></tr><tr><td>
+FDCPE_Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001: FDCPE port map (Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001,address_isa(23),ale,'0','0','1');
+</td></tr><tr><td>
+FDCPE_Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001: FDCPE port map (Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001,address_isa(1),ale,'0','0','1');
+</td></tr><tr><td>
+FDCPE_Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000: FDCPE port map (Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000,address_isa(0),ale,'0','0','1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+N89 <= (Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT adr_latched(3) AND reg_rd)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000);
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_1066 <= ((NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT base_addr_jp(0) AND NOT base_addr_jp(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT mode_register(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND base_addr_jp(0) AND NOT base_addr_jp(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT mode_register(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND NOT adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT base_addr_jp(0) AND base_addr_jp(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT mode_register(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND NOT adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND base_addr_jp(0) AND base_addr_jp(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT mode_register(2)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_1309 <= ((NOT I2/curstate_FSM_FFd3 AND I2/curstate_FSM_FFd4 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd2 AND I2/curstate_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd4 AND NOT I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_1310 <= ((NOT I2/curstate_FSM_FFd3 AND I2/curstate_FSM_FFd4 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd6)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd3 AND I2/curstate_FSM_FFd6 AND I2/curstate_FSM_FFd5));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_1377 <= ((NOT aen AND NOT reset AND address_isa(19) AND address_isa(23) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(22) AND address_isa(20) AND address_isa(21) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(18) AND address_isa(16) AND address_isa(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(15) AND mode_register(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT reset AND address_isa(19) AND address_isa(23) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(22) AND address_isa(20) AND address_isa(21) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(18) AND address_isa(16) AND address_isa(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(15) AND mode_register(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT reset AND address_isa(19) AND address_isa(23) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(22) AND address_isa(20) AND address_isa(21) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(18) AND address_isa(16) AND address_isa(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(15) AND NOT N_PZ_2834)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT reset AND address_isa(19) AND NOT address_isa(23) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(22) AND NOT address_isa(20) AND NOT address_isa(21) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(18) AND address_isa(16) AND NOT address_isa(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(15) AND NOT mode_register(3) AND NOT mode_register(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	mode_register(2) AND mode_register(0) AND mode_register(1) AND N_PZ_2834)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT reset AND address_isa(19) AND NOT address_isa(23) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(22) AND NOT address_isa(20) AND NOT address_isa(21) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(18) AND address_isa(16) AND NOT address_isa(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(15) AND NOT mode_register(3) AND NOT mode_register(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	mode_register(2) AND NOT mode_register(0) AND mode_register(1) AND N_PZ_2834)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT reset AND address_isa(19) AND NOT address_isa(23) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(22) AND NOT address_isa(20) AND NOT address_isa(21) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(18) AND NOT address_isa(16) AND NOT address_isa(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(15) AND NOT mode_register(3) AND NOT mode_register(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	mode_register(2) AND mode_register(0) AND NOT mode_register(1) AND N_PZ_2834)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT reset AND address_isa(19) AND NOT address_isa(23) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(22) AND NOT address_isa(20) AND NOT address_isa(21) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(18) AND NOT address_isa(16) AND NOT address_isa(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(15) AND NOT mode_register(3) AND NOT mode_register(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	mode_register(2) AND NOT mode_register(0) AND NOT mode_register(1) AND N_PZ_2834)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT reset AND address_isa(19) AND NOT address_isa(23) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(22) AND NOT address_isa(20) AND NOT address_isa(21) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(18) AND address_isa(16) AND address_isa(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(15) AND NOT mode_register(3) AND NOT mode_register(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT mode_register(2) AND mode_register(0) AND mode_register(1) AND N_PZ_2834)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT reset AND address_isa(19) AND NOT address_isa(23) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(22) AND NOT address_isa(20) AND NOT address_isa(21) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(18) AND address_isa(16) AND address_isa(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(15) AND NOT mode_register(3) AND NOT mode_register(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT mode_register(2) AND NOT mode_register(0) AND mode_register(1) AND N_PZ_2834)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT reset AND address_isa(19) AND NOT address_isa(23) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(22) AND NOT address_isa(20) AND NOT address_isa(21) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(18) AND NOT address_isa(16) AND address_isa(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(15) AND NOT mode_register(3) AND NOT mode_register(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT mode_register(2) AND mode_register(0) AND NOT mode_register(1) AND N_PZ_2834)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT reset AND address_isa(19) AND NOT address_isa(23) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(22) AND NOT address_isa(20) AND NOT address_isa(21) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(18) AND NOT address_isa(16) AND address_isa(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(15) AND NOT mode_register(3) AND NOT mode_register(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT mode_register(2) AND NOT mode_register(0) AND NOT mode_register(1) AND N_PZ_2834)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND base_addr_jp(1) AND NOT reset AND NOT address_isa(19) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(23) AND NOT address_isa(22) AND NOT address_isa(20) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(21) AND NOT address_isa(18) AND NOT address_isa(16) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(17) AND NOT address_isa(15) AND address_isa(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(11) AND NOT address_isa(7) AND address_isa(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(14) AND NOT address_isa(13) AND NOT address_isa(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(9) AND address_isa(4) AND NOT address_isa(12) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT base_addr_jp(1) AND NOT reset AND NOT address_isa(19) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(23) AND NOT address_isa(22) AND NOT address_isa(20) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(21) AND NOT address_isa(18) AND NOT address_isa(16) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(17) AND NOT address_isa(15) AND address_isa(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(11) AND NOT address_isa(7) AND address_isa(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(14) AND NOT address_isa(13) AND NOT address_isa(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(9) AND address_isa(4) AND NOT address_isa(12) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(5)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_1472 <= ((NOT I2/curstate_FSM_FFd1 AND I2/curstate_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd4 AND I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd3 AND NOT I2/curstate_FSM_FFd4 AND NOT I2/curstate_FSM_FFd5));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_1473 <= ((NOT I2/curstate_FSM_FFd1 AND I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd1 AND I2/curstate_FSM_FFd4 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND NOT I2/curstate_FSM_FFd1 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd6 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reg_wr AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd6 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reg_wr AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd6 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reg_wr AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND NOT I2/curstate_FSM_FFd1 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd6 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd5));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_1574 <= ((
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd3 AND NOT I2/curstate_FSM_FFd4 AND NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reg_wr AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd3 AND NOT I2/curstate_FSM_FFd4 AND NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reg_wr AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd3 AND NOT I2/curstate_FSM_FFd4 AND NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd3 AND NOT I2/curstate_FSM_FFd4 AND NOT I2/curstate_FSM_FFd5));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_2834 <= (NOT mode_register(5) AND mode_register(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT mode_register(7));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_2876 <= ((NOT iowr AND NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND adr_latched(3) AND NOT base_addr_jp(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT base_addr_jp(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT iowr AND NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND NOT adr_latched(3) AND base_addr_jp(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT base_addr_jp(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT iowr AND NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND NOT adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND adr_latched(3) AND NOT base_addr_jp(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	base_addr_jp(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT iowr AND NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND NOT adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND NOT adr_latched(3) AND base_addr_jp(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	base_addr_jp(1)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_2896 <= ((test2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_led_register)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_id2_register)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_jumper_register)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_id1_register)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_page_register)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_mode_register)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT iord AND nvram_ce AND NOT nvram_cs AND N_PZ_1377)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT smemr AND NOT nvram_ce AND nvram_cs AND N_PZ_1377)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_877 <= ((NOT aen AND base_addr_jp(1) AND NOT reset AND NOT address_isa(19) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(23) AND NOT address_isa(22) AND NOT address_isa(20) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(21) AND NOT address_isa(18) AND NOT address_isa(16) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(17) AND NOT address_isa(15) AND address_isa(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(11) AND NOT address_isa(7) AND address_isa(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(14) AND NOT address_isa(13) AND NOT address_isa(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(9) AND address_isa(4) AND NOT address_isa(12) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT base_addr_jp(1) AND NOT reset AND NOT address_isa(19) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(23) AND NOT address_isa(22) AND NOT address_isa(20) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(21) AND NOT address_isa(18) AND NOT address_isa(16) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(17) AND NOT address_isa(15) AND address_isa(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(11) AND NOT address_isa(7) AND address_isa(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(14) AND NOT address_isa(13) AND NOT address_isa(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(9) AND address_isa(4) AND NOT address_isa(12) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(5)));
+</td></tr><tr><td>
+FDCPE_address_max0: FDCPE port map (address_max_I(0),data_isa_latched(0),I2/load_address,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;address_max(0) <= address_max_I(0) when address_max_OE(0) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;address_max_OE(0) <= NOT master_enable;
+</td></tr><tr><td>
+FDCPE_address_max1: FDCPE port map (address_max_I(1),data_isa_latched(1),I2/load_address,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;address_max(1) <= address_max_I(1) when address_max_OE(1) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;address_max_OE(1) <= NOT master_enable;
+</td></tr><tr><td>
+FDCPE_address_max2: FDCPE port map (address_max_I(2),data_isa_latched(2),I2/load_address,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;address_max(2) <= address_max_I(2) when address_max_OE(2) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;address_max_OE(2) <= NOT master_enable;
+</td></tr><tr><td>
+FDCPE_address_max3: FDCPE port map (address_max_I(3),data_isa_latched(3),I2/load_address,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;address_max(3) <= address_max_I(3) when address_max_OE(3) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;address_max_OE(3) <= NOT master_enable;
+</td></tr><tr><td>
+FDCPE_address_max4: FDCPE port map (address_max_I(4),data_isa_latched(4),I2/load_address,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;address_max(4) <= address_max_I(4) when address_max_OE(4) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;address_max_OE(4) <= NOT master_enable;
+</td></tr><tr><td>
+FDCPE_address_max5: FDCPE port map (address_max_I(5),data_isa_latched(5),I2/load_address,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;address_max(5) <= address_max_I(5) when address_max_OE(5) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;address_max_OE(5) <= NOT master_enable;
+</td></tr><tr><td>
+FDCPE_address_max6: FDCPE port map (address_max_I(6),data_isa_latched(6),I2/load_address,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;address_max(6) <= address_max_I(6) when address_max_OE(6) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;address_max_OE(6) <= NOT master_enable;
+</td></tr><tr><td>
+FDCPE_address_max7: FDCPE port map (address_max_I(7),data_isa_latched(7),I2/load_address,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;address_max(7) <= address_max_I(7) when address_max_OE(7) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;address_max_OE(7) <= NOT master_enable;
+</td></tr><tr><td>
+LDCP_address_max_fsm0: LDCP port map (address_max_fsm(0),data_isa_latched(0),I2/load_address,'0','0');
+</td></tr><tr><td>
+LDCP_address_max_fsm1: LDCP port map (address_max_fsm(1),data_isa_latched(1),I2/load_address,'0','0');
+</td></tr><tr><td>
+LDCP_address_max_fsm2: LDCP port map (address_max_fsm(2),data_isa_latched(2),I2/load_address,'0','0');
+</td></tr><tr><td>
+LDCP_address_max_fsm3: LDCP port map (address_max_fsm(3),data_isa_latched(3),I2/load_address,'0','0');
+</td></tr><tr><td>
+LDCP_address_max_fsm4: LDCP port map (address_max_fsm(4),data_isa_latched(4),I2/load_address,'0','0');
+</td></tr><tr><td>
+LDCP_address_max_fsm5: LDCP port map (address_max_fsm(5),data_isa_latched(5),I2/load_address,'0','0');
+</td></tr><tr><td>
+LDCP_address_max_fsm6: LDCP port map (address_max_fsm(6),data_isa_latched(6),I2/load_address,'0','0');
+</td></tr><tr><td>
+LDCP_address_max_fsm7: LDCP port map (address_max_fsm(7),data_isa_latched(7),I2/load_address,'0','0');
+</td></tr><tr><td>
+FDCPE_adr_latched3: FDCPE port map (adr_latched(3),address_isa(3),ale,'0','0','1');
+</td></tr><tr><td>
+FDCPE_adr_latched5: FDCPE port map (adr_latched(5),address_isa(5),ale,'0','0','1');
+</td></tr><tr><td>
+FDCPE_adr_latched6: FDCPE port map (adr_latched(6),address_isa(6),ale,'0','0','1');
+</td></tr><tr><td>
+FDCPE_adr_latched8: FDCPE port map (adr_latched(8),address_isa(8),ale,'0','0','1');
+</td></tr><tr><td>
+FDCPE_bale: FDCPE port map (bale_I,bale,NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bale <= ((NOT I2/curstate_FSM_FFd6 AND I2/curstate_FSM_FFd5 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_1310 AND NOT N_PZ_1309)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd4 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd6 AND NOT N_PZ_1310 AND NOT N_PZ_1309)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd4 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd5 AND NOT N_PZ_1310 AND NOT N_PZ_1309)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd2 AND NOT I2/curstate_FSM_FFd4 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd5 AND NOT N_PZ_1310 AND NOT N_PZ_1309)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd2 AND NOT I2/curstate_FSM_FFd4 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd5 AND NOT N_PZ_1310 AND NOT N_PZ_1309)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd3 AND NOT I2/curstate_FSM_FFd4 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd6 AND NOT N_PZ_1310 AND NOT N_PZ_1309));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bale <= bale_I when bale_OE = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bale_OE <= NOT master_enable;
+</td></tr><tr><td>
+FDCPE_brd: FDCPE port map (brd_I,brd,NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;brd <= NOT (((NOT I2/curstate_FSM_FFd2 AND I2/curstate_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd4 AND I2/curstate_FSM_FFd6)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd2 AND I2/curstate_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd4 AND NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd3 AND I2/curstate_FSM_FFd6 AND I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd2 AND I2/curstate_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd4 AND I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;brd <= brd_I when brd_OE = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;brd_OE <= NOT master_enable;
+</td></tr><tr><td>
+FDCPE_bwr: FDCPE port map (bwr_I,bwr,NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bwr <= NOT (((NOT I2/curstate_FSM_FFd3 AND I2/curstate_FSM_FFd4 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd6)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd4 AND NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd2 AND NOT I2/curstate_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd4 AND NOT I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd3 AND I2/curstate_FSM_FFd6 AND I2/curstate_FSM_FFd5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd2 AND I2/curstate_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT I2/curstate_FSM_FFd4 AND NOT I2/curstate_FSM_FFd6 AND NOT I2/curstate_FSM_FFd5)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bwr <= bwr_I when bwr_OE = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bwr_OE <= NOT master_enable;
+</td></tr><tr><td>
+</td></tr><tr><td>
+cs <= ((NOT ale AND cw6 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND NOT adr_latched(5) AND NOT adr_latched(6) AND adr_latched(8))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT ale AND NOT cw6 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND NOT adr_latched(5) AND NOT adr_latched(6) AND adr_latched(8)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+data_isa(0)_BUFR <= NOT (((read_led_register)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_jumper_register)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N89)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (test2 AND NOT xp_address(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_page_register AND NOT page_register(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_mode_register AND NOT mode_register(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N89 AND NOT data_max_reg_in(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT wdt_enable)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT iord AND nvram_ce AND NOT nvram_cs AND N_PZ_1377 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT nvram_data(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT smemr AND NOT nvram_ce AND nvram_cs AND N_PZ_1377 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT nvram_data(0).PIN)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+data_isa(1)_BUFR <= NOT (((read_id2_register)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (test2 AND NOT xp_address(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (base_addr_jp(0) AND read_jumper_register)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_page_register AND NOT page_register(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_mode_register AND NOT mode_register(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT iord AND nvram_ce AND NOT nvram_cs AND N_PZ_1377 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT nvram_data(1).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT smemr AND NOT nvram_ce AND nvram_cs AND N_PZ_1377 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT nvram_data(1).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT data_max_reg_in(1))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+data_isa(3)_BUFR <= NOT (((read_led_register)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_jumper_register)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_id1_register)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (test2 AND NOT xp_address(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_page_register AND NOT page_register(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_mode_register AND NOT mode_register(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT iord AND nvram_ce AND NOT nvram_cs AND N_PZ_1377 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT nvram_data(3).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT smemr AND NOT nvram_ce AND nvram_cs AND N_PZ_1377 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT nvram_data(3).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT data_max_reg_in(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+data_isa(4)_BUFR <= NOT (((read_led_register)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (test2 AND NOT xp_address(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_page_register AND NOT page_register(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_mode_register AND NOT mode_register(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT iord AND nvram_ce AND NOT nvram_cs AND N_PZ_1377 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT nvram_data(4).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT smemr AND NOT nvram_ce AND nvram_cs AND N_PZ_1377 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT nvram_data(4).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT data_max_reg_in(4))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+data_isa(6)_BUFR <= NOT (((read_led_register)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_jumper_register)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (test2 AND NOT xp_address(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_page_register AND NOT page_register(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_mode_register AND NOT mode_register(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT cw6 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT iord AND nvram_ce AND NOT nvram_cs AND N_PZ_1377 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT nvram_data(6).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT smemr AND NOT nvram_ce AND nvram_cs AND N_PZ_1377 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT nvram_data(6).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT data_max_reg_in(6))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+data_isa(7)_BUFR <= NOT (((read_led_register)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_jumper_register)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_id1_register)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (test2 AND NOT xp_address(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_page_register AND NOT page_register(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_mode_register AND NOT mode_register(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT iord AND nvram_ce AND NOT nvram_cs AND N_PZ_1377 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT nvram_data(7).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT smemr AND NOT nvram_ce AND nvram_cs AND N_PZ_1377 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT nvram_data(7).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT cw7)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT data_max_reg_in(7))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+data_isa(0) <= data_isa(0)_BUFR;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa(0) <= data_isa_I(0) when data_isa_OE(0) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa_OE(0) <= N_PZ_2896;FDCPE_data_isa_latched0: FDCPE port map (data_isa_latched(0),data_isa(0).PIN,reg_wr,'0','0','1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+data_isa(1) <= data_isa(1)_BUFR;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa(1) <= data_isa_I(1) when data_isa_OE(1) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa_OE(1) <= N_PZ_2896;FDCPE_data_isa_latched1: FDCPE port map (data_isa_latched(1),data_isa(1).PIN,reg_wr,'0','0','1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+data_isa(2) <= NOT (((read_led_register)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_id2_register)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_1066)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N89)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (test2 AND NOT xp_address(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (base_addr_jp(1) AND read_jumper_register)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_page_register AND NOT page_register(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N89 AND NOT data_max_reg_in(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT iord AND nvram_ce AND NOT nvram_cs AND N_PZ_1377 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT nvram_data(2).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT smemr AND NOT nvram_ce AND nvram_cs AND N_PZ_1377 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT nvram_data(2).PIN)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa(2) <= data_isa_I(2) when data_isa_OE(2) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa_OE(2) <= N_PZ_2896;FDCPE_data_isa_latched2: FDCPE port map (data_isa_latched(2),data_isa(2).PIN,reg_wr,'0','0','1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+data_isa(3) <= data_isa(3)_BUFR;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa(3) <= data_isa_I(3) when data_isa_OE(3) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa_OE(3) <= N_PZ_2896;FDCPE_data_isa_latched3: FDCPE port map (data_isa_latched(3),data_isa(3).PIN,reg_wr,'0','0','1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+data_isa(4) <= data_isa(4)_BUFR;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa(4) <= data_isa_I(4) when data_isa_OE(4) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa_OE(4) <= N_PZ_2896;FDCPE_data_isa_latched4: FDCPE port map (data_isa_latched(4),data_isa(4).PIN,reg_wr,'0','0','1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+data_isa(5) <= NOT (((read_led_register)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_id2_register)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_jumper_register)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N89)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (test2 AND NOT xp_address(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_page_register AND NOT page_register(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (read_mode_register AND NOT mode_register(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N89 AND NOT data_max_reg_in(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT iord AND nvram_ce AND NOT nvram_cs AND N_PZ_1377 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT nvram_data(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT smemr AND NOT nvram_ce AND nvram_cs AND N_PZ_1377 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT nvram_data(5).PIN)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa(5) <= data_isa_I(5) when data_isa_OE(5) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa_OE(5) <= N_PZ_2896;FDCPE_data_isa_latched5: FDCPE port map (data_isa_latched(5),data_isa(5).PIN,reg_wr,'0','0','1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+data_isa(6) <= data_isa(6)_BUFR;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa(6) <= data_isa_I(6) when data_isa_OE(6) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa_OE(6) <= N_PZ_2896;FDCPE_data_isa_latched6: FDCPE port map (data_isa_latched(6),data_isa(6).PIN,reg_wr,'0','0','1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+data_isa(7) <= data_isa(7)_BUFR;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa(7) <= data_isa_I(7) when data_isa_OE(7) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa_OE(7) <= N_PZ_2896;FDCPE_data_isa_latched7: FDCPE port map (data_isa_latched(7),data_isa(7).PIN,reg_wr,'0','0','1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+data_isa(8) <= NOT (((test2 AND NOT power_supply_24V)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT data_max_reg_in(8))));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa(8) <= data_isa_I(8) when data_isa_OE(8) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa_OE(8) <= NOT ((NOT test2 AND NOT N89));FDCPE_data_isa_latched8: FDCPE port map (data_isa_latched(8),data_isa(8).PIN,reg_wr,'0','0','1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+data_isa(9) <= NOT ((NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT data_max_reg_in(9)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa(9) <= data_isa_I(9) when data_isa_OE(9) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa_OE(9) <= N89;FDCPE_data_isa_latched9: FDCPE port map (data_isa_latched(9),data_isa(9).PIN,reg_wr,'0','0','1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+data_isa(10) <= NOT ((NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT data_max_reg_in(10)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa(10) <= data_isa_I(10) when data_isa_OE(10) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa_OE(10) <= N89;FDCPE_data_isa_latched10: FDCPE port map (data_isa_latched(10),data_isa(10).PIN,reg_wr,'0','0','1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+data_isa(11) <= NOT ((NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT data_max_reg_in(11)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa(11) <= data_isa_I(11) when data_isa_OE(11) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa_OE(11) <= N89;FDCPE_data_isa_latched11: FDCPE port map (data_isa_latched(11),data_isa(11).PIN,reg_wr,'0','0','1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+data_isa(12) <= NOT ((NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT data_max_reg_in(12)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa(12) <= data_isa_I(12) when data_isa_OE(12) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa_OE(12) <= N89;FDCPE_data_isa_latched12: FDCPE port map (data_isa_latched(12),data_isa(12).PIN,reg_wr,'0','0','1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+data_isa(13) <= NOT ((NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT data_max_reg_in(13)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa(13) <= data_isa_I(13) when data_isa_OE(13) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa_OE(13) <= N89;FDCPE_data_isa_latched13: FDCPE port map (data_isa_latched(13),data_isa(13).PIN,reg_wr,'0','0','1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+data_isa(14) <= NOT ((NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT data_max_reg_in(14)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa(14) <= data_isa_I(14) when data_isa_OE(14) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa_OE(14) <= N89;FDCPE_data_isa_latched14: FDCPE port map (data_isa_latched(14),data_isa(14).PIN,reg_wr,'0','0','1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+data_isa(15) <= NOT ((NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT data_max_reg_in(15)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa(15) <= data_isa_I(15) when data_isa_OE(15) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_isa_OE(15) <= N89;FDCPE_data_isa_latched15: FDCPE port map (data_isa_latched(15),data_isa(15).PIN,reg_wr,'0','0','1');
+</td></tr><tr><td>
+FDCPE_data_max0: FDCPE port map (data_max_I(0),data_isa_latched(0),I2/load_data,'0','0',NOT master_enable);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max(0) <= data_max_I(0) when data_max_OE(0) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_OE(0) <= (NOT master_enable AND NOT data_out_enable);
+</td></tr><tr><td>
+FDCPE_data_max1: FDCPE port map (data_max_I(1),data_isa_latched(1),I2/load_data,'0','0',NOT master_enable);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max(1) <= data_max_I(1) when data_max_OE(1) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_OE(1) <= (NOT master_enable AND NOT data_out_enable);
+</td></tr><tr><td>
+FDCPE_data_max2: FDCPE port map (data_max_I(2),data_isa_latched(2),I2/load_data,'0','0',NOT master_enable);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max(2) <= data_max_I(2) when data_max_OE(2) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_OE(2) <= (NOT master_enable AND NOT data_out_enable);
+</td></tr><tr><td>
+FDCPE_data_max3: FDCPE port map (data_max_I(3),data_isa_latched(3),I2/load_data,'0','0',NOT master_enable);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max(3) <= data_max_I(3) when data_max_OE(3) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_OE(3) <= (NOT master_enable AND NOT data_out_enable);
+</td></tr><tr><td>
+FDCPE_data_max4: FDCPE port map (data_max_I(4),data_isa_latched(4),I2/load_data,'0','0',NOT master_enable);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max(4) <= data_max_I(4) when data_max_OE(4) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_OE(4) <= (NOT master_enable AND NOT data_out_enable);
+</td></tr><tr><td>
+FDCPE_data_max5: FDCPE port map (data_max_I(5),data_isa_latched(5),I2/load_data,'0','0',NOT master_enable);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max(5) <= data_max_I(5) when data_max_OE(5) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_OE(5) <= (NOT master_enable AND NOT data_out_enable);
+</td></tr><tr><td>
+FDCPE_data_max6: FDCPE port map (data_max_I(6),data_isa_latched(6),I2/load_data,'0','0',NOT master_enable);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max(6) <= data_max_I(6) when data_max_OE(6) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_OE(6) <= (NOT master_enable AND NOT data_out_enable);
+</td></tr><tr><td>
+FDCPE_data_max7: FDCPE port map (data_max_I(7),data_isa_latched(7),I2/load_data,'0','0',NOT master_enable);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max(7) <= data_max_I(7) when data_max_OE(7) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_OE(7) <= (NOT master_enable AND NOT data_out_enable);
+</td></tr><tr><td>
+FDCPE_data_max8: FDCPE port map (data_max_I(8),data_isa_latched(8),I2/load_data,'0','0',NOT master_enable);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max(8) <= data_max_I(8) when data_max_OE(8) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_OE(8) <= (NOT master_enable AND NOT data_out_enable);
+</td></tr><tr><td>
+FDCPE_data_max9: FDCPE port map (data_max_I(9),data_isa_latched(9),I2/load_data,'0','0',NOT master_enable);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max(9) <= data_max_I(9) when data_max_OE(9) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_OE(9) <= (NOT master_enable AND NOT data_out_enable);
+</td></tr><tr><td>
+FDCPE_data_max10: FDCPE port map (data_max_I(10),data_isa_latched(10),I2/load_data,'0','0',NOT master_enable);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max(10) <= data_max_I(10) when data_max_OE(10) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_OE(10) <= (NOT master_enable AND NOT data_out_enable);
+</td></tr><tr><td>
+FDCPE_data_max11: FDCPE port map (data_max_I(11),data_isa_latched(11),I2/load_data,'0','0',NOT master_enable);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max(11) <= data_max_I(11) when data_max_OE(11) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_OE(11) <= (NOT master_enable AND NOT data_out_enable);
+</td></tr><tr><td>
+FDCPE_data_max12: FDCPE port map (data_max_I(12),data_isa_latched(12),I2/load_data,'0','0',NOT master_enable);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max(12) <= data_max_I(12) when data_max_OE(12) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_OE(12) <= (NOT master_enable AND NOT data_out_enable);
+</td></tr><tr><td>
+FDCPE_data_max13: FDCPE port map (data_max_I(13),data_isa_latched(13),I2/load_data,'0','0',NOT master_enable);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max(13) <= data_max_I(13) when data_max_OE(13) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_OE(13) <= (NOT master_enable AND NOT data_out_enable);
+</td></tr><tr><td>
+FDCPE_data_max14: FDCPE port map (data_max_I(14),data_isa_latched(14),I2/load_data,'0','0',NOT master_enable);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max(14) <= data_max_I(14) when data_max_OE(14) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_OE(14) <= (NOT master_enable AND NOT data_out_enable);
+</td></tr><tr><td>
+FDCPE_data_max15: FDCPE port map (data_max_I(15),data_isa_latched(15),I2/load_data,'0','0',NOT master_enable);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max(15) <= data_max_I(15) when data_max_OE(15) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_OE(15) <= (NOT master_enable AND NOT data_out_enable);
+</td></tr><tr><td>
+FDCPE_data_max_reg_in0: FDCPE port map (data_max_reg_in(0),data_max_reg_in_D(0),load_buffer,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_reg_in_D(0) <= NOT (((NOT data_max(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT address_max(2).PIN AND NOT address_max(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(0).PIN AND NOT address_max(7).PIN AND NOT address_max(6).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(5).PIN AND NOT address_max(4).PIN AND NOT address_max(3).PIN)));
+</td></tr><tr><td>
+FDCPE_data_max_reg_in1: FDCPE port map (data_max_reg_in(1),data_max_reg_in_D(1),load_buffer,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_reg_in_D(1) <= ((data_max(1).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT address_max(2).PIN AND NOT address_max(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(0).PIN AND NOT address_max(7).PIN AND NOT address_max(6).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(5).PIN AND NOT address_max(4).PIN AND NOT address_max(3).PIN));
+</td></tr><tr><td>
+FDCPE_data_max_reg_in2: FDCPE port map (data_max_reg_in(2),data_max_reg_in_D(2),load_buffer,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_reg_in_D(2) <= ((data_max(2).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT address_max(2).PIN AND NOT address_max(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(0).PIN AND NOT address_max(7).PIN AND NOT address_max(6).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(5).PIN AND NOT address_max(4).PIN AND NOT address_max(3).PIN));
+</td></tr><tr><td>
+FDCPE_data_max_reg_in3: FDCPE port map (data_max_reg_in(3),data_max_reg_in_D(3),load_buffer,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_reg_in_D(3) <= ((data_max(3).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT address_max(2).PIN AND NOT address_max(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(0).PIN AND NOT address_max(7).PIN AND NOT address_max(6).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(5).PIN AND NOT address_max(4).PIN AND NOT address_max(3).PIN));
+</td></tr><tr><td>
+FDCPE_data_max_reg_in4: FDCPE port map (data_max_reg_in(4),data_max_reg_in_D(4),load_buffer,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_reg_in_D(4) <= ((data_max(4).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT address_max(2).PIN AND NOT address_max(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(0).PIN AND NOT address_max(7).PIN AND NOT address_max(6).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(5).PIN AND NOT address_max(4).PIN AND NOT address_max(3).PIN));
+</td></tr><tr><td>
+FDCPE_data_max_reg_in5: FDCPE port map (data_max_reg_in(5),data_max_reg_in_D(5),load_buffer,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_reg_in_D(5) <= ((data_max(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT address_max(2).PIN AND NOT address_max(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(0).PIN AND NOT address_max(7).PIN AND NOT address_max(6).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(5).PIN AND NOT address_max(4).PIN AND NOT address_max(3).PIN));
+</td></tr><tr><td>
+FDCPE_data_max_reg_in6: FDCPE port map (data_max_reg_in(6),data_max_reg_in_D(6),load_buffer,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_reg_in_D(6) <= ((data_max(6).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT address_max(2).PIN AND NOT address_max(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(0).PIN AND NOT address_max(7).PIN AND NOT address_max(6).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(5).PIN AND NOT address_max(4).PIN AND NOT address_max(3).PIN));
+</td></tr><tr><td>
+FDCPE_data_max_reg_in7: FDCPE port map (data_max_reg_in(7),data_max_reg_in_D(7),load_buffer,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_reg_in_D(7) <= ((data_max(7).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT address_max(2).PIN AND NOT address_max(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(0).PIN AND NOT address_max(7).PIN AND NOT address_max(6).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(5).PIN AND NOT address_max(4).PIN AND NOT address_max(3).PIN));
+</td></tr><tr><td>
+FDCPE_data_max_reg_in8: FDCPE port map (data_max_reg_in(8),data_max_reg_in_D(8),load_buffer,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_reg_in_D(8) <= ((data_max(8).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT address_max(2).PIN AND NOT address_max(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(0).PIN AND NOT address_max(7).PIN AND NOT address_max(6).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(5).PIN AND NOT address_max(4).PIN AND NOT address_max(3).PIN));
+</td></tr><tr><td>
+FDCPE_data_max_reg_in9: FDCPE port map (data_max_reg_in(9),data_max_reg_in_D(9),load_buffer,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_reg_in_D(9) <= ((data_max(9).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT address_max(2).PIN AND NOT address_max(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(0).PIN AND NOT address_max(7).PIN AND NOT address_max(6).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(5).PIN AND NOT address_max(4).PIN AND NOT address_max(3).PIN));
+</td></tr><tr><td>
+FDCPE_data_max_reg_in10: FDCPE port map (data_max_reg_in(10),data_max_reg_in_D(10),load_buffer,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_reg_in_D(10) <= ((data_max(10).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT address_max(2).PIN AND NOT address_max(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(0).PIN AND NOT address_max(7).PIN AND NOT address_max(6).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(5).PIN AND NOT address_max(4).PIN AND NOT address_max(3).PIN));
+</td></tr><tr><td>
+FDCPE_data_max_reg_in11: FDCPE port map (data_max_reg_in(11),data_max_reg_in_D(11),load_buffer,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_reg_in_D(11) <= ((data_max(11).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT address_max(2).PIN AND NOT address_max(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(0).PIN AND NOT address_max(7).PIN AND NOT address_max(6).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(5).PIN AND NOT address_max(4).PIN AND NOT address_max(3).PIN));
+</td></tr><tr><td>
+FDCPE_data_max_reg_in12: FDCPE port map (data_max_reg_in(12),data_max_reg_in_D(12),load_buffer,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_reg_in_D(12) <= ((data_max(12).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT address_max(2).PIN AND NOT address_max(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(0).PIN AND NOT address_max(7).PIN AND NOT address_max(6).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(5).PIN AND NOT address_max(4).PIN AND NOT address_max(3).PIN));
+</td></tr><tr><td>
+FDCPE_data_max_reg_in13: FDCPE port map (data_max_reg_in(13),data_max_reg_in_D(13),load_buffer,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_reg_in_D(13) <= ((data_max(13).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT address_max(2).PIN AND NOT address_max(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(0).PIN AND NOT address_max(7).PIN AND NOT address_max(6).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(5).PIN AND NOT address_max(4).PIN AND NOT address_max(3).PIN));
+</td></tr><tr><td>
+FDCPE_data_max_reg_in14: FDCPE port map (data_max_reg_in(14),data_max_reg_in_D(14),load_buffer,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_reg_in_D(14) <= ((data_max(14).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT address_max(2).PIN AND NOT address_max(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(0).PIN AND NOT address_max(7).PIN AND NOT address_max(6).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(5).PIN AND NOT address_max(4).PIN AND NOT address_max(3).PIN));
+</td></tr><tr><td>
+FDCPE_data_max_reg_in15: FDCPE port map (data_max_reg_in(15),data_max_reg_in_D(15),load_buffer,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_max_reg_in_D(15) <= ((data_max(15).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT address_max(2).PIN AND NOT address_max(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(0).PIN AND NOT address_max(7).PIN AND NOT address_max(6).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_max(5).PIN AND NOT address_max(4).PIN AND NOT address_max(3).PIN));
+</td></tr><tr><td>
+FDCPE_data_out_enable: FDCPE port map (data_out_enable,data_out_enable_D,NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_out_enable_D <= (NOT N_PZ_1310 AND NOT N_PZ_1309);
+</td></tr><tr><td>
+FDCPE_direction_245: FDCPE port map (direction_245,direction_245_D,NOT clk,'0',NOT ,'1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;direction_245_D <= NOT ((NOT N_PZ_1310 AND NOT N_PZ_1309));
+</td></tr><tr><td>
+</td></tr><tr><td>
+iocs16 <= NOT (((NOT iowr AND cs AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (cs AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND NOT iord)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+iq_o_syn <= (master_enable2 AND NOT iq_i_syn);
+</td></tr><tr><td>
+FDCPE_led_kvr: FDCPE port map (led_kvr,NOT I2/led_kvr,clk,'0','0','1');
+</td></tr><tr><td>
+FDCPE_led_lpt: FDCPE port map (led_lpt,NOT data_isa_latched(3),I2/write_lpt_en,'0',NOT ,'1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+led_master_enable <= (master_enable2 AND master_enable1);
+</td></tr><tr><td>
+</td></tr><tr><td>
+led_pwr_good_tps <= pwr_good_tps;
+</td></tr><tr><td>
+FDCPE_led_rad: FDCPE port map (led_rad,led_rad_D,clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;led_rad_D <= NOT ((NOT master_enable AND led_rad_sig));
+</td></tr><tr><td>
+FTCPE_led_rad_sig: FTCPE port map (led_rad_sig,'1',bale,'0','0','1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+led_wdt <= wdt_sig_stari;
+</td></tr><tr><td>
+FDCPE_load_buffer: FDCPE port map (load_buffer,load_buffer_D,NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;load_buffer_D <= ((I2/curstate_FSM_FFd1 AND I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd3)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT I2/curstate_FSM_FFd1 AND I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd4 AND NOT I2/curstate_FSM_FFd6 AND I2/curstate_FSM_FFd5));
+</td></tr><tr><td>
+FDCPE_master_enable1: FDCPE port map (master_enable1,master_enable1_D,clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;master_enable1_D <= NOT (((xp_present_in)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset AND ms_in AND NOT wdt_out_stari)));
+</td></tr><tr><td>
+FDCPE_master_enable2: FDCPE port map (master_enable2,master_enable2_D,clk,'0',NOT ,'1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;master_enable2_D <= NOT (((NOT ms_in AND NOT master_enable2_previous)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT ms_in)));
+</td></tr><tr><td>
+FDCPE_master_enable2_previous: FDCPE port map (master_enable2_previous,master_enable2,clk,'0',NOT ,'1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+master_enable <= (master_enable2 AND master_enable1);
+</td></tr><tr><td>
+LDCP_mode_register0: LDCP port map (mode_register(0),data_isa(0).PIN,,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mode_register_G(0) <= (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_2876);
+</td></tr><tr><td>
+LDCP_mode_register1: LDCP port map (mode_register(1),data_isa(1).PIN,,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mode_register_G(1) <= (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_2876);
+</td></tr><tr><td>
+LDCP_mode_register2: LDCP port map (mode_register(2),data_isa(2).PIN,,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mode_register_G(2) <= (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_2876);
+</td></tr><tr><td>
+LDCP_mode_register3: LDCP port map (mode_register(3),data_isa(3).PIN,,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mode_register_G(3) <= (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_2876);
+</td></tr><tr><td>
+LDCP_mode_register4: LDCP port map (mode_register(4),data_isa(4).PIN,,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mode_register_G(4) <= (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_2876);
+</td></tr><tr><td>
+LDCP_mode_register5: LDCP port map (mode_register(5),data_isa(5).PIN,,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mode_register_G(5) <= (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_2876);
+</td></tr><tr><td>
+LDCP_mode_register6: LDCP port map (mode_register(6),data_isa(6).PIN,,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mode_register_G(6) <= (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_2876);
+</td></tr><tr><td>
+LDCP_mode_register7: LDCP port map (mode_register(7),data_isa(7).PIN,,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mode_register_G(7) <= (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_2876);
+</td></tr><tr><td>
+</td></tr><tr><td>
+mrst <= NOT ((rst_dof_dsbl AND NOT reset_CPU.PIN));
+</td></tr><tr><td>
+FDCPE_ms_in: FDCPE port map (ms_in,xp_address(6),clk,'0','0','1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+nvram_address_I(0) <= address_isa(0);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address(0) <= nvram_address_I(0) when nvram_address_OE(0) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address_OE(0) <= N_PZ_1377;
+</td></tr><tr><td>
+</td></tr><tr><td>
+nvram_address_I(1) <= address_isa(1);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address(1) <= nvram_address_I(1) when nvram_address_OE(1) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address_OE(1) <= N_PZ_1377;
+</td></tr><tr><td>
+</td></tr><tr><td>
+nvram_address_I(2) <= address_isa(2);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address(2) <= nvram_address_I(2) when nvram_address_OE(2) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address_OE(2) <= N_PZ_1377;
+</td></tr><tr><td>
+</td></tr><tr><td>
+nvram_address_I(3) <= address_isa(3);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address(3) <= nvram_address_I(3) when nvram_address_OE(3) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address_OE(3) <= N_PZ_1377;
+</td></tr><tr><td>
+</td></tr><tr><td>
+nvram_address_I(4) <= address_isa(4);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address(4) <= nvram_address_I(4) when nvram_address_OE(4) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address_OE(4) <= N_PZ_1377;
+</td></tr><tr><td>
+</td></tr><tr><td>
+nvram_address_I(5) <= address_isa(5);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address(5) <= nvram_address_I(5) when nvram_address_OE(5) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address_OE(5) <= N_PZ_1377;
+</td></tr><tr><td>
+</td></tr><tr><td>
+nvram_address_I(6) <= address_isa(6);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address(6) <= nvram_address_I(6) when nvram_address_OE(6) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address_OE(6) <= N_PZ_1377;
+</td></tr><tr><td>
+</td></tr><tr><td>
+nvram_address_I(7) <= address_isa(7);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address(7) <= nvram_address_I(7) when nvram_address_OE(7) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address_OE(7) <= N_PZ_1377;
+</td></tr><tr><td>
+</td></tr><tr><td>
+nvram_address_I(8) <= address_isa(8);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address(8) <= nvram_address_I(8) when nvram_address_OE(8) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address_OE(8) <= N_PZ_1377;
+</td></tr><tr><td>
+</td></tr><tr><td>
+nvram_address_I(9) <= address_isa(9);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address(9) <= nvram_address_I(9) when nvram_address_OE(9) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address_OE(9) <= N_PZ_1377;
+</td></tr><tr><td>
+</td></tr><tr><td>
+nvram_address_I(10) <= address_isa(10);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address(10) <= nvram_address_I(10) when nvram_address_OE(10) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address_OE(10) <= N_PZ_1377;
+</td></tr><tr><td>
+</td></tr><tr><td>
+nvram_address_I(11) <= address_isa(11);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address(11) <= nvram_address_I(11) when nvram_address_OE(11) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address_OE(11) <= N_PZ_1377;
+</td></tr><tr><td>
+</td></tr><tr><td>
+nvram_address_I(12) <= address_isa(12);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address(12) <= nvram_address_I(12) when nvram_address_OE(12) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address_OE(12) <= N_PZ_1377;
+</td></tr><tr><td>
+</td></tr><tr><td>
+nvram_address_I(13) <= address_isa(13);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address(13) <= nvram_address_I(13) when nvram_address_OE(13) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address_OE(13) <= N_PZ_1377;
+</td></tr><tr><td>
+</td></tr><tr><td>
+nvram_address_I(14) <= address_isa(14);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address(14) <= nvram_address_I(14) when nvram_address_OE(14) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address_OE(14) <= N_PZ_1377;
+</td></tr><tr><td>
+</td></tr><tr><td>
+nvram_address_I(15) <= NOT (((NOT address_isa(15) AND N_PZ_877)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT N_PZ_877 AND NOT page_register(0))));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address(15) <= nvram_address_I(15) when nvram_address_OE(15) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address_OE(15) <= N_PZ_1377;
+</td></tr><tr><td>
+</td></tr><tr><td>
+nvram_address_I(16) <= NOT (((NOT address_isa(16) AND N_PZ_877)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT N_PZ_877 AND NOT page_register(1))));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address(16) <= nvram_address_I(16) when nvram_address_OE(16) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address_OE(16) <= N_PZ_1377;
+</td></tr><tr><td>
+</td></tr><tr><td>
+nvram_address_I(17) <= NOT (((NOT address_isa(17) AND N_PZ_877)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT N_PZ_877 AND NOT page_register(2))));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address(17) <= nvram_address_I(17) when nvram_address_OE(17) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address_OE(17) <= N_PZ_1377;
+</td></tr><tr><td>
+</td></tr><tr><td>
+nvram_address_I(18) <= NOT (((NOT address_isa(18) AND N_PZ_877)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT N_PZ_877 AND NOT page_register(3))));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address(18) <= nvram_address_I(18) when nvram_address_OE(18) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address_OE(18) <= N_PZ_1377;
+</td></tr><tr><td>
+</td></tr><tr><td>
+nvram_address_I(19) <= NOT (((NOT address_isa(19) AND N_PZ_877)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT N_PZ_877 AND NOT page_register(4))));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address(19) <= nvram_address_I(19) when nvram_address_OE(19) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address_OE(19) <= N_PZ_1377;
+</td></tr><tr><td>
+LDCP_nvram_address20: LDCP port map (nvram_address_I(20),nvram_address(20),NOT N_PZ_877,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address(20) <= (NOT nvram_ce AND nvram_cs AND page_register(5));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address(20) <= nvram_address_I(20) when nvram_address_OE(20) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_address_OE(20) <= NOT I6/Mtrien_nvram_address(20);
+</td></tr><tr><td>
+</td></tr><tr><td>
+nvram_ce <= NOT (((NOT aen AND NOT reset AND address_isa(19) AND address_isa(23) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(22) AND address_isa(20) AND address_isa(21) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(18) AND address_isa(16) AND address_isa(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(15) AND mode_register(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT reset AND address_isa(19) AND address_isa(23) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(22) AND address_isa(20) AND address_isa(21) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(18) AND address_isa(16) AND address_isa(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(15) AND mode_register(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT reset AND address_isa(19) AND address_isa(23) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(22) AND address_isa(20) AND address_isa(21) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(18) AND address_isa(16) AND address_isa(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(15) AND NOT N_PZ_2834)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT reset AND address_isa(19) AND NOT address_isa(23) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(22) AND NOT address_isa(20) AND NOT address_isa(21) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(18) AND address_isa(16) AND NOT address_isa(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(15) AND NOT mode_register(3) AND NOT mode_register(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	mode_register(2) AND mode_register(0) AND mode_register(1) AND N_PZ_2834)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT reset AND address_isa(19) AND NOT address_isa(23) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(22) AND NOT address_isa(20) AND NOT address_isa(21) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(18) AND address_isa(16) AND NOT address_isa(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(15) AND NOT mode_register(3) AND NOT mode_register(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	mode_register(2) AND NOT mode_register(0) AND mode_register(1) AND N_PZ_2834)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT reset AND address_isa(19) AND NOT address_isa(23) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(22) AND NOT address_isa(20) AND NOT address_isa(21) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(18) AND NOT address_isa(16) AND NOT address_isa(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(15) AND NOT mode_register(3) AND NOT mode_register(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	mode_register(2) AND mode_register(0) AND NOT mode_register(1) AND N_PZ_2834)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT reset AND address_isa(19) AND NOT address_isa(23) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(22) AND NOT address_isa(20) AND NOT address_isa(21) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(18) AND NOT address_isa(16) AND NOT address_isa(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(15) AND NOT mode_register(3) AND NOT mode_register(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	mode_register(2) AND NOT mode_register(0) AND NOT mode_register(1) AND N_PZ_2834)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT reset AND address_isa(19) AND NOT address_isa(23) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(22) AND NOT address_isa(20) AND NOT address_isa(21) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(18) AND address_isa(16) AND address_isa(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(15) AND NOT mode_register(3) AND NOT mode_register(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT mode_register(2) AND mode_register(0) AND mode_register(1) AND N_PZ_2834)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT reset AND address_isa(19) AND NOT address_isa(23) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(22) AND NOT address_isa(20) AND NOT address_isa(21) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(18) AND address_isa(16) AND address_isa(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(15) AND NOT mode_register(3) AND NOT mode_register(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT mode_register(2) AND NOT mode_register(0) AND mode_register(1) AND N_PZ_2834)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT reset AND address_isa(19) AND NOT address_isa(23) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(22) AND NOT address_isa(20) AND NOT address_isa(21) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(18) AND NOT address_isa(16) AND address_isa(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(15) AND NOT mode_register(3) AND NOT mode_register(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT mode_register(2) AND mode_register(0) AND NOT mode_register(1) AND N_PZ_2834)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT reset AND address_isa(19) AND NOT address_isa(23) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(22) AND NOT address_isa(20) AND NOT address_isa(21) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(18) AND NOT address_isa(16) AND address_isa(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(15) AND NOT mode_register(3) AND NOT mode_register(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT mode_register(2) AND NOT mode_register(0) AND NOT mode_register(1) AND N_PZ_2834)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+nvram_cs <= NOT (((NOT aen AND base_addr_jp(1) AND NOT reset AND NOT address_isa(19) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(23) AND NOT address_isa(22) AND NOT address_isa(20) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(21) AND NOT address_isa(18) AND NOT address_isa(16) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(17) AND NOT address_isa(15) AND address_isa(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(11) AND NOT address_isa(7) AND address_isa(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(14) AND NOT address_isa(13) AND NOT address_isa(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(9) AND address_isa(4) AND NOT address_isa(12) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT base_addr_jp(1) AND NOT reset AND NOT address_isa(19) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(23) AND NOT address_isa(22) AND NOT address_isa(20) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(21) AND NOT address_isa(18) AND NOT address_isa(16) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(17) AND NOT address_isa(15) AND address_isa(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(11) AND NOT address_isa(7) AND address_isa(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(14) AND NOT address_isa(13) AND NOT address_isa(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT address_isa(9) AND address_isa(4) AND NOT address_isa(12) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	address_isa(5))));
+</td></tr><tr><td>
+FDCPE_nvram_data0: FDCPE port map (nvram_data_I(0),data_isa(0).PIN,clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_data(0) <= nvram_data_I(0) when nvram_data_OE(0) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_data_OE(0) <= NOT I6/Mtrien_nvram_data;
+</td></tr><tr><td>
+FDCPE_nvram_data1: FDCPE port map (nvram_data_I(1),data_isa(1).PIN,clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_data(1) <= nvram_data_I(1) when nvram_data_OE(1) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_data_OE(1) <= NOT I6/Mtrien_nvram_data;
+</td></tr><tr><td>
+FDCPE_nvram_data2: FDCPE port map (nvram_data_I(2),data_isa(2).PIN,clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_data(2) <= nvram_data_I(2) when nvram_data_OE(2) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_data_OE(2) <= NOT I6/Mtrien_nvram_data;
+</td></tr><tr><td>
+FDCPE_nvram_data3: FDCPE port map (nvram_data_I(3),data_isa(3).PIN,clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_data(3) <= nvram_data_I(3) when nvram_data_OE(3) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_data_OE(3) <= NOT I6/Mtrien_nvram_data;
+</td></tr><tr><td>
+FDCPE_nvram_data4: FDCPE port map (nvram_data_I(4),data_isa(4).PIN,clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_data(4) <= nvram_data_I(4) when nvram_data_OE(4) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_data_OE(4) <= NOT I6/Mtrien_nvram_data;
+</td></tr><tr><td>
+FDCPE_nvram_data5: FDCPE port map (nvram_data_I(5),data_isa(5).PIN,clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_data(5) <= nvram_data_I(5) when nvram_data_OE(5) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_data_OE(5) <= NOT I6/Mtrien_nvram_data;
+</td></tr><tr><td>
+FDCPE_nvram_data6: FDCPE port map (nvram_data_I(6),data_isa(6).PIN,clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_data(6) <= nvram_data_I(6) when nvram_data_OE(6) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_data_OE(6) <= NOT I6/Mtrien_nvram_data;
+</td></tr><tr><td>
+FDCPE_nvram_data7: FDCPE port map (nvram_data_I(7),data_isa(7).PIN,clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_data(7) <= nvram_data_I(7) when nvram_data_OE(7) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nvram_data_OE(7) <= NOT I6/Mtrien_nvram_data;
+</td></tr><tr><td>
+</td></tr><tr><td>
+nvram_oe_BUFR <= NOT (((NOT iord AND nvram_ce AND NOT nvram_cs)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT smemr AND NOT nvram_ce AND nvram_cs)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+nvram_oe <= nvram_oe_BUFR;
+</td></tr><tr><td>
+</td></tr><tr><td>
+nvram_we_BUFR <= NOT (((NOT iowr AND N_PZ_1377 AND N_PZ_877)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_1377 AND NOT N_PZ_877 AND NOT smemw)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+nvram_we <= nvram_we_BUFR;
+</td></tr><tr><td>
+LDCP_page_register0: LDCP port map (page_register(0),data_isa(0).PIN,,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;page_register_G(0) <= (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_2876);
+</td></tr><tr><td>
+LDCP_page_register1: LDCP port map (page_register(1),data_isa(1).PIN,,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;page_register_G(1) <= (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_2876);
+</td></tr><tr><td>
+LDCP_page_register2: LDCP port map (page_register(2),data_isa(2).PIN,,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;page_register_G(2) <= (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_2876);
+</td></tr><tr><td>
+LDCP_page_register3: LDCP port map (page_register(3),data_isa(3).PIN,,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;page_register_G(3) <= (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_2876);
+</td></tr><tr><td>
+LDCP_page_register4: LDCP port map (page_register(4),data_isa(4).PIN,,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;page_register_G(4) <= (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_2876);
+</td></tr><tr><td>
+LDCP_page_register5: LDCP port map (page_register(5),data_isa(5).PIN,,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;page_register_G(5) <= (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_2876);
+</td></tr><tr><td>
+LDCP_page_register6: LDCP port map (page_register(6),data_isa(6).PIN,,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;page_register_G(6) <= (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_2876);
+</td></tr><tr><td>
+LDCP_page_register7: LDCP port map (page_register(7),data_isa(7).PIN,,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;page_register_G(7) <= (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_2876);
+</td></tr><tr><td>
+</td></tr><tr><td>
+read_id1_register <= ((NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT base_addr_jp(0) AND NOT base_addr_jp(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND base_addr_jp(0) AND NOT base_addr_jp(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND NOT adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT base_addr_jp(0) AND base_addr_jp(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND NOT adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND base_addr_jp(0) AND base_addr_jp(1)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+read_id2_register <= ((NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT base_addr_jp(0) AND NOT base_addr_jp(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND base_addr_jp(0) AND NOT base_addr_jp(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND NOT adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT base_addr_jp(0) AND base_addr_jp(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND NOT adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND base_addr_jp(0) AND base_addr_jp(1)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+read_jumper_register <= ((NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT base_addr_jp(0) AND NOT base_addr_jp(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND base_addr_jp(0) AND NOT base_addr_jp(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND NOT adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT base_addr_jp(0) AND base_addr_jp(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND NOT adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND base_addr_jp(0) AND base_addr_jp(1)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+read_led_register <= ((NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT base_addr_jp(0) AND NOT base_addr_jp(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND base_addr_jp(0) AND NOT base_addr_jp(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND NOT adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT base_addr_jp(0) AND base_addr_jp(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND NOT adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND base_addr_jp(0) AND base_addr_jp(1)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+read_mode_register <= ((NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT base_addr_jp(0) AND NOT base_addr_jp(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND base_addr_jp(0) AND NOT base_addr_jp(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND NOT adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT base_addr_jp(0) AND base_addr_jp(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND NOT adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND base_addr_jp(0) AND base_addr_jp(1)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+read_page_register <= ((NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT base_addr_jp(0) AND NOT base_addr_jp(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND base_addr_jp(0) AND NOT base_addr_jp(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND NOT adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND NOT base_addr_jp(0) AND base_addr_jp(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT aen AND NOT ale AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 AND NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 AND NOT adr_latched(5) AND adr_latched(6) AND adr_latched(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND NOT iord AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 AND base_addr_jp(0) AND base_addr_jp(1)));
+</td></tr><tr><td>
+FDCPE_reg_rd: FDCPE port map (reg_rd,reg_rd_D,clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg_rd_D <= (NOT aen AND cs AND NOT iord);
+</td></tr><tr><td>
+FDCPE_reg_wr: FDCPE port map (reg_wr,reg_wr_D,clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg_wr_D <= (NOT iowr AND NOT aen AND cs);
+</td></tr><tr><td>
+</td></tr><tr><td>
+reset_CPU_I <= '0';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reset_CPU <= reset_CPU_I when reset_CPU_OE = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reset_CPU_OE <= NOT reset_CPU_not0001;
+</td></tr><tr><td>
+</td></tr><tr><td>
+reset_CPU_not0001 <= ((NOT wdt_out_stari AND rst_taster AND nvram_rst)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (rst_taster AND nvram_rst AND NOT wdt_enable));
+</td></tr><tr><td>
+</td></tr><tr><td>
+test2 <= (NOT Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 AND NOT adr_latched(3) AND reg_rd AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000);
+</td></tr><tr><td>
+FDCPE_wdt_enable: FDCPE port map (wdt_enable,wdt_enable_D,clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wdt_enable_D <= ((data_isa_latched(0) AND write_wdt_en)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (wdt_enable AND NOT write_wdt_en));
+</td></tr><tr><td>
+FDCPE_wdt_trg: FDCPE port map (wdt_trg,wdt_trg_D,NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wdt_trg_D <= NOT ((NOT I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd3 AND NOT I2/curstate_FSM_FFd4 AND NOT I2/curstate_FSM_FFd6 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd5));
+</td></tr><tr><td>
+FDCPE_write_wdt_en: FDCPE port map (write_wdt_en,write_wdt_en_D,NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;write_wdt_en_D <= (NOT I2/curstate_FSM_FFd1 AND NOT I2/curstate_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I2/curstate_FSM_FFd4 AND NOT I2/curstate_FSM_FFd6 AND I2/curstate_FSM_FFd5);
+</td></tr><tr><td>
+FDCPE_xp_present_in: FDCPE port map (xp_present_in,xp_address(7),clk,'0','0','1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

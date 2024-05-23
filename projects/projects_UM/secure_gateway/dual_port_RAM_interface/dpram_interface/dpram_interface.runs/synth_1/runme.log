@@ -1,0 +1,26 @@
+
+*** Running vivado
+    with args -log data_transfer.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source data_transfer.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.2.2 (64-bit)
+  **** SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+  **** IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+  **** SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source data_transfer.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/Korisnik/IMP/projects/secure_gateway/dual_port_RAM_interface/dpram_interface/dpram_interface.srcs/utils_1/imports/synth_1/address_latch.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Korisnik/IMP/projects/secure_gateway/dual_port_RAM_interface/dpram_interface/dpram_interface.srcs/utils_1/imports/synth_1/address_latch.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top data_transfer -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23268

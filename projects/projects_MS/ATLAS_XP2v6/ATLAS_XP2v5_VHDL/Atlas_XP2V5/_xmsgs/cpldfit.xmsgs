@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Cpld" num="0" delta="new" >Unable to retrieve the path to the iSE Project Repository. Will use the default filename of &apos;<arg fmt="%s" index="1">fsm_xp_top.ise</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;7&gt;_MLTSRCEDGE\$WA1</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;6&gt;_MLTSRCEDGE\$WA1</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;5&gt;_MLTSRCEDGE\$WA1</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;4&gt;_MLTSRCEDGE\$WA1</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;3&gt;_MLTSRCEDGE\$WA1</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;2&gt;_MLTSRCEDGE\$WA1</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;1&gt;_MLTSRCEDGE\$WA1</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;0&gt;_MLTSRCEDGE\$WA1</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;8&gt;_MLTSRCEDGE\$WA1</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;7&gt;_MLTSRCEDGE\$WA0</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;6&gt;_MLTSRCEDGE\$WA0</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;5&gt;_MLTSRCEDGE\$WA0</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;4&gt;_MLTSRCEDGE\$WA0</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;3&gt;_MLTSRCEDGE\$WA0</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;2&gt;_MLTSRCEDGE\$WA0</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;1&gt;_MLTSRCEDGE\$WA0</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;0&gt;_MLTSRCEDGE\$WA0</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;7&gt;_MLTSRCEDGE\$WA10</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;6&gt;_MLTSRCEDGE\$WA10</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;7&gt;_MLTSRCEDGE\$WA3</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;7&gt;_MLTSRCEDGE\$WA4</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;6&gt;_MLTSRCEDGE\$WA3</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;6&gt;_MLTSRCEDGE\$WA4</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;5&gt;_MLTSRCEDGE\$WA3</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;5&gt;_MLTSRCEDGE\$WA4</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;4&gt;_MLTSRCEDGE\$WA3</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;4&gt;_MLTSRCEDGE\$WA4</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;3&gt;_MLTSRCEDGE\$WA3</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;3&gt;_MLTSRCEDGE\$WA4</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;2&gt;_MLTSRCEDGE\$WA3</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;2&gt;_MLTSRCEDGE\$WA4</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;1&gt;_MLTSRCEDGE\$WA3</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;1&gt;_MLTSRCEDGE\$WA4</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;0&gt;_MLTSRCEDGE\$WA3</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;0&gt;_MLTSRCEDGE\$WA4</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;0&gt;_MLTSRCEDGE\$WA8</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;2&gt;_MLTSRCEDGE\$WA2</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;1&gt;_MLTSRCEDGE\$WA2</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;9&gt;_MLTSRCEDGE\$WA1</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;8&gt;_MLTSRCEDGE\$WA2</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;7&gt;_MLTSRCEDGE\$WA9</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;6&gt;_MLTSRCEDGE\$WA9</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;5&gt;_MLTSRCEDGE\$WA9</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;4&gt;_MLTSRCEDGE\$WA9</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;3&gt;_MLTSRCEDGE\$WA9</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;2&gt;_MLTSRCEDGE\$WA9</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;1&gt;_MLTSRCEDGE\$WA9</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;15&gt;_MLTSRCEDGE\$WA1</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;14&gt;_MLTSRCEDGE\$WA1</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;13&gt;_MLTSRCEDGE\$WA1</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;12&gt;_MLTSRCEDGE\$WA1</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;11&gt;_MLTSRCEDGE\$WA1</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;10&gt;_MLTSRCEDGE\$WA1</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;0&gt;_MLTSRCEDGE\$WA9</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;0&gt;_MLTSRCEDGE\$WA10</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;10&gt;_MLTSRCEDGE\$WA2</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;11&gt;_MLTSRCEDGE\$WA2</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;12&gt;_MLTSRCEDGE\$WA2</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;13&gt;_MLTSRCEDGE\$WA2</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;14&gt;_MLTSRCEDGE\$WA2</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;15&gt;_MLTSRCEDGE\$WA2</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;1&gt;_MLTSRCEDGE\$WA10</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;2&gt;_MLTSRCEDGE\$WA10</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;3&gt;_MLTSRCEDGE\$WA10</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;4&gt;_MLTSRCEDGE\$WA10</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;5&gt;_MLTSRCEDGE\$WA10</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;8&gt;_MLTSRCEDGE\$WA3</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;9&gt;_MLTSRCEDGE\$WA2</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;0&gt;_MLTSRCEDGE\$WA7</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;1&gt;_MLTSRCEDGE\$WA7</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;2&gt;_MLTSRCEDGE\$WA7</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;3&gt;_MLTSRCEDGE\$WA7</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;4&gt;_MLTSRCEDGE\$WA7</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;5&gt;_MLTSRCEDGE\$WA7</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;6&gt;_MLTSRCEDGE\$WA7</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;7&gt;_MLTSRCEDGE\$WA7</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;0&gt;_MLTSRCEDGE\$WA6</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;1&gt;_MLTSRCEDGE\$WA6</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;2&gt;_MLTSRCEDGE\$WA6</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;3&gt;_MLTSRCEDGE\$WA6</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;4&gt;_MLTSRCEDGE\$WA6</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;5&gt;_MLTSRCEDGE\$WA6</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;6&gt;_MLTSRCEDGE\$WA6</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;7&gt;_MLTSRCEDGE\$WA6</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;0&gt;_MLTSRCEDGE\$WA2</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;3&gt;_MLTSRCEDGE\$WA2</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;4&gt;_MLTSRCEDGE\$WA2</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;5&gt;_MLTSRCEDGE\$WA2</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;6&gt;_MLTSRCEDGE\$WA2</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;7&gt;_MLTSRCEDGE\$WA2</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;0&gt;_MLTSRCEDGE\$WA5</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;1&gt;_MLTSRCEDGE\$WA5</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;2&gt;_MLTSRCEDGE\$WA5</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;3&gt;_MLTSRCEDGE\$WA5</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;4&gt;_MLTSRCEDGE\$WA5</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;5&gt;_MLTSRCEDGE\$WA5</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;6&gt;_MLTSRCEDGE\$WA5</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;7&gt;_MLTSRCEDGE\$WA5</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;0&gt;_MLTSRCEDGE\$WA12</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;10&gt;_MLTSRCEDGE\$WA0</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;11&gt;_MLTSRCEDGE\$WA0</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;12&gt;_MLTSRCEDGE\$WA0</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;13&gt;_MLTSRCEDGE\$WA0</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;14&gt;_MLTSRCEDGE\$WA0</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;15&gt;_MLTSRCEDGE\$WA0</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;1&gt;_MLTSRCEDGE\$WA12</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;2&gt;_MLTSRCEDGE\$WA12</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;3&gt;_MLTSRCEDGE\$WA12</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;4&gt;_MLTSRCEDGE\$WA12</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;5&gt;_MLTSRCEDGE\$WA12</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;6&gt;_MLTSRCEDGE\$WA12</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;7&gt;_MLTSRCEDGE\$WA12</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;8&gt;_MLTSRCEDGE\$WA0</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;9&gt;_MLTSRCEDGE\$WA0</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;0&gt;_MLTSRCEDGE\$WA11</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;10&gt;_MLTSRCEDGE\$WA3</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;11&gt;_MLTSRCEDGE\$WA3</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;12&gt;_MLTSRCEDGE\$WA3</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;13&gt;_MLTSRCEDGE\$WA3</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;14&gt;_MLTSRCEDGE\$WA3</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;15&gt;_MLTSRCEDGE\$WA3</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;1&gt;_MLTSRCEDGE\$WA11</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;2&gt;_MLTSRCEDGE\$WA11</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;3&gt;_MLTSRCEDGE\$WA11</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;4&gt;_MLTSRCEDGE\$WA11</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;5&gt;_MLTSRCEDGE\$WA11</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;6&gt;_MLTSRCEDGE\$WA11</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;7&gt;_MLTSRCEDGE\$WA11</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;8&gt;_MLTSRCEDGE\$WA4</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;9&gt;_MLTSRCEDGE\$WA3</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;1&gt;_MLTSRCEDGE\$WA8</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;2&gt;_MLTSRCEDGE\$WA8</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;3&gt;_MLTSRCEDGE\$WA8</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;4&gt;_MLTSRCEDGE\$WA8</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;5&gt;_MLTSRCEDGE\$WA8</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;6&gt;_MLTSRCEDGE\$WA8</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="warning" file="Cpld" num="987" delta="new" >An internal tristate buffer &apos;<arg fmt="%s" index="1">data_isa&lt;7&gt;_MLTSRCEDGE\$WA8</arg>&apos; is detected.  The logic is being translated to a mux implementation.
+</msg>
+
+<msg type="info" file="Cpld" num="994" delta="old" >Exhaustive fitting is trying <arg fmt="%s" index="1">pterm limit</arg>: <arg fmt="%d" index="2">28</arg> and <arg fmt="%s" index="3">input limit</arg>: <arg fmt="%d" index="4">31</arg>
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Unable to map all desired signals into function block, FB<arg fmt="%s" index="1">5</arg>. Buffering output signal <arg fmt="%s" index="2">data_isa&lt;0&gt;</arg> to allow all signals assigned to this function block to be placed.
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Unable to map all desired signals into function block, FB<arg fmt="%s" index="1">5</arg>. Buffering output signal <arg fmt="%s" index="2">data_isa&lt;3&gt;</arg> to allow all signals assigned to this function block to be placed.
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Unable to map all desired signals into function block, FB<arg fmt="%s" index="1">5</arg>. Buffering output signal <arg fmt="%s" index="2">data_isa&lt;1&gt;</arg> to allow all signals assigned to this function block to be placed.
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Unable to map all desired signals into function block, FB<arg fmt="%s" index="1">5</arg>. Buffering output signal <arg fmt="%s" index="2">data_isa&lt;7&gt;</arg> to allow all signals assigned to this function block to be placed.
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Unable to map all desired signals into function block, FB<arg fmt="%s" index="1">5</arg>. Buffering output signal <arg fmt="%s" index="2">data_isa&lt;6&gt;</arg> to allow all signals assigned to this function block to be placed.
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Unable to map all desired signals into function block, FB<arg fmt="%s" index="1">5</arg>. Buffering output signal <arg fmt="%s" index="2">data_isa&lt;4&gt;</arg> to allow all signals assigned to this function block to be placed.
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Unable to map all desired signals into function block, FB<arg fmt="%s" index="1">12</arg>. Buffering output signal <arg fmt="%s" index="2">nvram_we</arg> to allow all signals assigned to this function block to be placed.
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Unable to map all desired signals into function block, FB<arg fmt="%s" index="1">12</arg>. Buffering output signal <arg fmt="%s" index="2">nvram_oe</arg> to allow all signals assigned to this function block to be placed.
+</msg>
+
+</messages>
+

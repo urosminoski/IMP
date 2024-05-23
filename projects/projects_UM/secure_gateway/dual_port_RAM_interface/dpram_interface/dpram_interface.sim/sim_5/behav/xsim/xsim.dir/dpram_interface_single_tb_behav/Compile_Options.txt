@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "dpram_interface_single_tb_behav" "xil_defaultlib.dpram_interface_single_tb" -log "elaborate.log" 

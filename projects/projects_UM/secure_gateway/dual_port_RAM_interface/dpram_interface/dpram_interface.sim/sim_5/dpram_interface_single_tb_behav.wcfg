@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="dpram_interface_single_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="dpram_interface_single_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="50.001 ns"></ZoomEndTime>
+      <Cursor1Time time="50.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="116"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="30" />
+   <wvobject fp_name="/dpram_interface_single_tb/ADDR_ISA" type="array">
+      <obj_property name="ElementShortName">ADDR_ISA[23:0]</obj_property>
+      <obj_property name="ObjectShortName">ADDR_ISA[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/ADDR_RAM" type="array">
+      <obj_property name="ElementShortName">ADDR_RAM[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ADDR_RAM[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/IORD_n" type="logic">
+      <obj_property name="ElementShortName">IORD_n</obj_property>
+      <obj_property name="ObjectShortName">IORD_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/IOWR_n" type="logic">
+      <obj_property name="ElementShortName">IOWR_n</obj_property>
+      <obj_property name="ObjectShortName">IOWR_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/MEMRD_n" type="logic">
+      <obj_property name="ElementShortName">MEMRD_n</obj_property>
+      <obj_property name="ObjectShortName">MEMRD_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/MEMWR_n" type="logic">
+      <obj_property name="ElementShortName">MEMWR_n</obj_property>
+      <obj_property name="ObjectShortName">MEMWR_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/SBHE_n" type="logic">
+      <obj_property name="ElementShortName">SBHE_n</obj_property>
+      <obj_property name="ObjectShortName">SBHE_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/ALE" type="logic">
+      <obj_property name="ElementShortName">ALE</obj_property>
+      <obj_property name="ObjectShortName">ALE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/RESET" type="logic">
+      <obj_property name="ElementShortName">RESET</obj_property>
+      <obj_property name="ObjectShortName">RESET</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/IOCS16_n" type="logic">
+      <obj_property name="ElementShortName">IOCS16_n</obj_property>
+      <obj_property name="ObjectShortName">IOCS16_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/MEMCS16_n" type="logic">
+      <obj_property name="ElementShortName">MEMCS16_n</obj_property>
+      <obj_property name="ObjectShortName">MEMCS16_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/RW" type="logic">
+      <obj_property name="ElementShortName">RW</obj_property>
+      <obj_property name="ObjectShortName">RW</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/UB_n" type="logic">
+      <obj_property name="ElementShortName">UB_n</obj_property>
+      <obj_property name="ObjectShortName">UB_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/LB_n" type="logic">
+      <obj_property name="ElementShortName">LB_n</obj_property>
+      <obj_property name="ObjectShortName">LB_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/SEM_n" type="logic">
+      <obj_property name="ElementShortName">SEM_n</obj_property>
+      <obj_property name="ObjectShortName">SEM_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/CE0_n" type="logic">
+      <obj_property name="ElementShortName">CE0_n</obj_property>
+      <obj_property name="ObjectShortName">CE0_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/CE1" type="logic">
+      <obj_property name="ElementShortName">CE1</obj_property>
+      <obj_property name="ObjectShortName">CE1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/OE_n" type="logic">
+      <obj_property name="ElementShortName">OE_n</obj_property>
+      <obj_property name="ObjectShortName">OE_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/BUSY_n" type="logic">
+      <obj_property name="ElementShortName">BUSY_n</obj_property>
+      <obj_property name="ObjectShortName">BUSY_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/INT_RAM" type="logic">
+      <obj_property name="ElementShortName">INT_RAM</obj_property>
+      <obj_property name="ObjectShortName">INT_RAM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/INT_ISA" type="logic">
+      <obj_property name="ElementShortName">INT_ISA</obj_property>
+      <obj_property name="ObjectShortName">INT_ISA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/INT_BUSY" type="logic">
+      <obj_property name="ElementShortName">INT_BUSY</obj_property>
+      <obj_property name="ObjectShortName">INT_BUSY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/C_ISA_ADDR_SIZE" type="other">
+      <obj_property name="ElementShortName">C_ISA_ADDR_SIZE</obj_property>
+      <obj_property name="ObjectShortName">C_ISA_ADDR_SIZE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/C_RAM_ADDR_SIZE" type="other">
+      <obj_property name="ElementShortName">C_RAM_ADDR_SIZE</obj_property>
+      <obj_property name="ObjectShortName">C_RAM_ADDR_SIZE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/C_DATA_SIZE" type="other">
+      <obj_property name="ElementShortName">C_DATA_SIZE</obj_property>
+      <obj_property name="ObjectShortName">C_DATA_SIZE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/C_BASE_ADDR" type="array">
+      <obj_property name="ElementShortName">C_BASE_ADDR[23:0]</obj_property>
+      <obj_property name="ObjectShortName">C_BASE_ADDR[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/C_MAILBOX_START" type="array">
+      <obj_property name="ElementShortName">C_MAILBOX_START[15:0]</obj_property>
+      <obj_property name="ObjectShortName">C_MAILBOX_START[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/C_MAILBOX_END" type="array">
+      <obj_property name="ElementShortName">C_MAILBOX_END[15:0]</obj_property>
+      <obj_property name="ObjectShortName">C_MAILBOX_END[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/C_SEM_START" type="array">
+      <obj_property name="ElementShortName">C_SEM_START[15:0]</obj_property>
+      <obj_property name="ObjectShortName">C_SEM_START[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dpram_interface_single_tb/C_SEM_END" type="array">
+      <obj_property name="ElementShortName">C_SEM_END[15:0]</obj_property>
+      <obj_property name="ObjectShortName">C_SEM_END[15:0]</obj_property>
+   </wvobject>
+</wave_config>

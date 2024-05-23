@@ -1,0 +1,29 @@
+set -tmpdir "../../../ATLAS_XP2V3v1.2_test/ATLAS_XP2V3v1.2/xst/projnav.tmp"
+set -xsthdpdir "../../../ATLAS_XP2V3v1.2_test/ATLAS_XP2V3v1.2/xst"
+run
+-ifn fsm_xp_top.prj
+-ifmt mixed
+-ofn fsm_xp_top
+-ofmt NGC
+-p xpla3
+-top fsm_xp_top
+-opt_mode Area
+-opt_level 2
+-iuc NO
+-keep_hierarchy Yes
+-netlist_hierarchy As_Optimized
+-rtlview Yes
+-hierarchy_separator /
+-bus_delimiter <>
+-case Maintain
+-verilog2001 YES
+-fsm_extract YES -fsm_encoding Compact
+-safe_implementation No
+-mux_extract Yes
+-resource_sharing YES
+-iobuf YES
+-pld_mp YES
+-pld_xp YES
+-pld_ce YES
+-wysiwyg NO
+-equivalent_register_removal YES

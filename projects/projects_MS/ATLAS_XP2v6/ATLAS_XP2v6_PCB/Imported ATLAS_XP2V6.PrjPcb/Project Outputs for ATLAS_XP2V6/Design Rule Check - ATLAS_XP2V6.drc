@@ -1,0 +1,591 @@
+Protel Design System Design Rule Check
+PCB File : D:\MILOS\Projects\ATLAS_XP2v6\ATLAS_XP2v6_PCB\Imported ATLAS_XP2V6.PrjPcb\ATLAS_XP2V6.PcbDoc
+Date     : 16-Apr-19
+Time     : 1:28:43 PM
+
+Processing Rule : Clearance Constraint (Gap=10mil) (IsVia),(IsSMTPin)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (IsVia),(IsVia)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (All),(All)
+   Violation between Clearance Constraint: (3.633mil < 10mil) Between Pad C50-1(4395.792mil,5824.245mil) on Secondary Component Side And Text "C50" (4364.159mil,5806.695mil) on Secondary Component Side 
+   Violation between Clearance Constraint: (3.633mil < 10mil) Between Pad C50-2(4395.792mil,5734.245mil) on Secondary Component Side And Text "C50" (4364.159mil,5806.695mil) on Secondary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Pad JP1-2(1481.25mil,2418.75mil) on Multi-Layer And Text "JP2" (1524.196mil,2349.3mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Pad R8-2(1330mil,1468.75mil) on Primary Component Side And Text "U17" (1322.619mil,1448.11mil) on Primary Component Side 
+   Violation between Clearance Constraint: (6.933mil < 10mil) Between Pad RN13-1(5742.578mil,7241.817mil) on Primary Component Side And Text "RN13" (5718.75mil,7268.75mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Pad RN2-1(5404.38mil,1615.823mil) on Primary Component Side And Text "RN2" (5434mil,1656mil) on Primary Component Side 
+   Violation between Clearance Constraint: (8.068mil < 10mil) Between Pad RN4-6(4379.911mil,3161.402mil) on Primary Component Side And Text "RN4" (4331.413mil,3189.469mil) on Primary Component Side 
+   Violation between Clearance Constraint: (8.068mil < 10mil) Between Pad RN4-7(4329.911mil,3161.402mil) on Primary Component Side And Text "RN4" (4331.413mil,3189.469mil) on Primary Component Side 
+   Violation between Clearance Constraint: (9.8mil < 10mil) Between Pad RN5-6(4771.502mil,3161.402mil) on Primary Component Side And Text "RN5" (4718.75mil,3191.202mil) on Primary Component Side 
+   Violation between Clearance Constraint: (9.8mil < 10mil) Between Pad RN5-7(4721.502mil,3161.402mil) on Primary Component Side And Text "RN5" (4718.75mil,3191.202mil) on Primary Component Side 
+   Violation between Clearance Constraint: (8.598mil < 10mil) Between Pad RN6-6(5425.052mil,3161.402mil) on Primary Component Side And Text "RN6" (5390mil,3190mil) on Primary Component Side 
+   Violation between Clearance Constraint: (8.598mil < 10mil) Between Pad RN6-7(5375.052mil,3161.402mil) on Primary Component Side And Text "RN6" (5390mil,3190mil) on Primary Component Side 
+   Violation between Clearance Constraint: (6.562mil < 10mil) Between Pad RN7-6(5093.759mil,3161.402mil) on Primary Component Side And Text "RN7" (5031.25mil,3187.963mil) on Primary Component Side 
+   Violation between Clearance Constraint: (6.562mil < 10mil) Between Pad RN7-7(5043.759mil,3161.402mil) on Primary Component Side And Text "RN7" (5031.25mil,3187.963mil) on Primary Component Side 
+   Violation between Clearance Constraint: (5.598mil < 10mil) Between Pad RN8-6(5720.151mil,3161.402mil) on Primary Component Side And Text "RN8" (5674mil,3187mil) on Primary Component Side 
+   Violation between Clearance Constraint: (5.598mil < 10mil) Between Pad RN8-7(5670.151mil,3161.402mil) on Primary Component Side And Text "RN8" (5674mil,3187mil) on Primary Component Side 
+   Violation between Clearance Constraint: (0.462mil < 10mil) Between Pad U20-3(1375.98mil,1703.97mil) on Multi-Layer And Text "C10" (1347mil,1624mil) on Primary Component Side 
+   Violation between Clearance Constraint: (1.064mil < 10mil) Between Pad U20-4(1375.98mil,1603.97mil) on Multi-Layer And Text "C10" (1347mil,1624mil) on Primary Component Side 
+   Violation between Clearance Constraint: (1.082mil < 10mil) Between Polygon Region (0 hole(s)) Power Plane And Region (7 hole(s)) Power Plane 
+   Violation between Clearance Constraint: (1.082mil < 10mil) Between Polygon Region (0 hole(s)) Power Plane And Region (7 hole(s)) Power Plane 
+   Violation between Clearance Constraint: (1.082mil < 10mil) Between Polygon Region (0 hole(s)) Power Plane And Region (7 hole(s)) Power Plane 
+   Violation between Clearance Constraint: (1.172mil < 10mil) Between Polygon Region (0 hole(s)) Power Plane And Region (7 hole(s)) Power Plane 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "C10" (1347mil,1624mil) on Primary Component Side And Track (1323mil,1586.417mil)(1323mil,1935.5mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "C11" (833mil,1765mil) on Primary Component Side And Track (863.25mil,1793.75mil)(863.25mil,1907mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "C11" (833mil,1765mil) on Primary Component Side And Track (863.25mil,1793.75mil)(925.75mil,1731.25mil) on Primary Component Side 
+   Violation between Clearance Constraint: (9.008mil < 10mil) Between Text "C12" (1166mil,2016mil) on Primary Component Side And Track (1225mil,2031.25mil)(1288.75mil,2031.25mil) on Primary Component Side 
+   Violation between Clearance Constraint: (9.691mil < 10mil) Between Text "C12" (1166mil,2016mil) on Primary Component Side And Via (1174.074mil,1968.765mil) from Primary Component Side to Secondary Component Side 
+   Violation between Clearance Constraint: (9.008mil < 10mil) Between Text "C12" (1166mil,2016mil) on Primary Component Side And Via (1225mil,2031.25mil) from Primary Component Side to Secondary Component Side 
+   Violation between Clearance Constraint: (6.106mil < 10mil) Between Text "C50" (4364.159mil,5806.695mil) on Secondary Component Side And Track (4261.746mil,5729.395mil)(4312.252mil,5729.395mil) on Secondary Component Side 
+   Violation between Clearance Constraint: (6.106mil < 10mil) Between Text "C50" (4364.159mil,5806.695mil) on Secondary Component Side And Track (4312.252mil,5728.636mil)(4312.252mil,5729.395mil) on Secondary Component Side 
+   Violation between Clearance Constraint: (0.284mil < 10mil) Between Text "C50" (4364.159mil,5806.695mil) on Secondary Component Side And Track (4312.252mil,5728.636mil)(4318.313mil,5728.636mil) on Secondary Component Side 
+   Violation between Clearance Constraint: (9.784mil < 10mil) Between Text "C50" (4364.159mil,5806.695mil) on Secondary Component Side And Track (4312.5mil,5719.983mil)(4318.313mil,5728.636mil) on Secondary Component Side 
+   Violation between Clearance Constraint: (0.284mil < 10mil) Between Text "C50" (4364.159mil,5806.695mil) on Secondary Component Side And Via (4318.313mil,5728.636mil) from Primary Component Side to Secondary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "J14" (5306mil,7391mil) on Primary Component Side And Track (5162.832mil,7212.832mil)(5312.5mil,7362.5mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "J14" (5306mil,7391mil) on Primary Component Side And Track (5312.5mil,7362.5mil)(5312.5mil,7879mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "J14" (5306mil,7391mil) on Primary Component Side And Track (5312.5mil,7362.5mil)(5716mil,7362.5mil) on Primary Component Side 
+   Violation between Clearance Constraint: (4.452mil < 10mil) Between Text "JP2" (1524.196mil,2349.3mil) on Primary Component Side And Track (1481.25mil,2304.979mil)(1481.25mil,2418.75mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "R11" (500mil,2268.75mil) on Primary Component Side And Track (385mil,2452.75mil)(543.75mil,2294mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "R11" (500mil,2268.75mil) on Primary Component Side And Track (543.75mil,2030.351mil)(543.75mil,2294mil) on Primary Component Side 
+   Violation between Clearance Constraint: (9.899mil < 10mil) Between Text "R11" (500mil,2268.75mil) on Primary Component Side And Via (507.245mil,2240.851mil) from Primary Component Side to Secondary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "R13" (729.659mil,1519.464mil) on Primary Component Side And Track (693.75mil,1543.75mil)(818.75mil,1418.75mil) on Primary Component Side 
+   Violation between Clearance Constraint: (6.505mil < 10mil) Between Text "R19" (493.75mil,1675mil) on Primary Component Side And Via (506.25mil,1725mil) from Primary Component Side to Secondary Component Side 
+   Violation between Clearance Constraint: (6.505mil < 10mil) Between Text "R20" (493.75mil,1775mil) on Primary Component Side And Via (506.25mil,1825mil) from Primary Component Side to Secondary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "R22" (493.75mil,1987.5mil) on Primary Component Side And Track (443.566mil,1930.167mil)(543.75mil,2030.351mil) on Primary Component Side 
+   Violation between Clearance Constraint: (8.857mil < 10mil) Between Text "R22" (493.75mil,1987.5mil) on Primary Component Side And Track (543.75mil,2030.351mil)(543.75mil,2294mil) on Primary Component Side 
+   Violation between Clearance Constraint: (5.478mil < 10mil) Between Text "R22" (493.75mil,1987.5mil) on Primary Component Side And Via (500.496mil,2036.472mil) from Primary Component Side to Secondary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "R23" (500mil,2168.75mil) on Primary Component Side And Track (543.75mil,2030.351mil)(543.75mil,2294mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "RN10" (5506.25mil,5800mil) on Primary Component Side And Track (5506.25mil,5618.75mil)(5506.25mil,6031.25mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "RN10" (5506.25mil,5800mil) on Primary Component Side And Track (5537.5mil,5618.75mil)(5537.5mil,6031.25mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "RN10" (5506.25mil,5800mil) on Primary Component Side And Track (5562.5mil,5612.5mil)(5562.5mil,6043.75mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "RN10" (5506.25mil,5800mil) on Primary Component Side And Track (5587.5mil,5612.5mil)(5587.5mil,6387.5mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "RN12" (5406.25mil,8081.25mil) on Primary Component Side And Track (5218.75mil,8093.75mil)(5662.5mil,8093.75mil) on Primary Component Side 
+   Violation between Clearance Constraint: (8.172mil < 10mil) Between Text "RN13" (5718.75mil,7268.75mil) on Primary Component Side And Track (5692.436mil,7283.847mil)(5692.578mil,7283.844mil) on Primary Component Side 
+   Violation between Clearance Constraint: (8.172mil < 10mil) Between Text "RN13" (5718.75mil,7268.75mil) on Primary Component Side And Track (5692.578mil,7241.817mil)(5692.578mil,7283.844mil) on Primary Component Side 
+   Violation between Clearance Constraint: (8.933mil < 10mil) Between Text "RN13" (5718.75mil,7268.75mil) on Primary Component Side And Track (5692.578mil,7241.817mil)(5742.578mil,7241.817mil) on Primary Component Side 
+   Violation between Clearance Constraint: (9.068mil < 10mil) Between Text "RN13" (5718.75mil,7268.75mil) on Primary Component Side And Track (5818.75mil,5656.25mil)(5818.75mil,8125mil) on Primary Component Side 
+   Violation between Clearance Constraint: (8.314mil < 10mil) Between Text "RN13" (5718.75mil,7268.75mil) on Primary Component Side And Via (5692.436mil,7283.847mil) from Primary Component Side to Secondary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "RN2" (5434mil,1656mil) on Primary Component Side And Track (5404.38mil,1569.277mil)(5404.38mil,1615.823mil) on Primary Component Side 
+   Violation between Clearance Constraint: (7.331mil < 10mil) Between Text "RN3" (4042.347mil,3192.707mil) on Primary Component Side And Track (3991.599mil,3191.599mil)(4110.57mil,3310.57mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "RN3" (4042.347mil,3192.707mil) on Primary Component Side And Track (4041.599mil,3161.402mil)(4041.599mil,3197.849mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "RN3" (4042.347mil,3192.707mil) on Primary Component Side And Track (4041.599mil,3197.849mil)(4153.754mil,3310.004mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "RN3" (4042.347mil,3192.707mil) on Primary Component Side And Track (4091.599mil,3161.402mil)(4091.599mil,3191.599mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "RN3" (4042.347mil,3192.707mil) on Primary Component Side And Track (4091.599mil,3191.599mil)(4192.57mil,3292.57mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "RN4" (4331.413mil,3189.469mil) on Primary Component Side And Track (4329.911mil,3161.402mil)(4329.911mil,3351.339mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "RN4" (4331.413mil,3189.469mil) on Primary Component Side And Track (4379.911mil,3161.402mil)(4379.911mil,3345.089mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "RN5" (4718.75mil,3191.202mil) on Primary Component Side And Track (4721.502mil,3161.402mil)(4721.502mil,3353.498mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "RN5" (4718.75mil,3191.202mil) on Primary Component Side And Track (4771.502mil,3161.402mil)(4771.502mil,3347.248mil) on Primary Component Side 
+   Violation between Clearance Constraint: (6.5mil < 10mil) Between Text "RN6" (5390mil,3190mil) on Primary Component Side And Track (5375mil,3161.402mil)(5375mil,3236.055mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "RN6" (5390mil,3190mil) on Primary Component Side And Track (5425mil,3161.402mil)(5425mil,3234.375mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "RN7" (5031.25mil,3187.963mil) on Primary Component Side And Track (4727mil,3535.5mil)(5043.75mil,3218.75mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "RN7" (5031.25mil,3187.963mil) on Primary Component Side And Track (4756.25mil,3556.25mil)(5093.75mil,3218.75mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "RN7" (5031.25mil,3187.963mil) on Primary Component Side And Track (5043.75mil,3161.402mil)(5043.75mil,3218.75mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "RN7" (5031.25mil,3187.963mil) on Primary Component Side And Track (5093.75mil,3161.402mil)(5093.75mil,3218.75mil) on Primary Component Side 
+   Violation between Clearance Constraint: (3.162mil < 10mil) Between Text "RN8" (5674mil,3187mil) on Primary Component Side And Track (5293.75mil,3549mil)(5670.151mil,3172.599mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "RN8" (5674mil,3187mil) on Primary Component Side And Track (5318.75mil,3573.25mil)(5720.151mil,3171.849mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "RN8" (5674mil,3187mil) on Primary Component Side And Track (5350mil,3591.724mil)(5770.151mil,3171.573mil) on Primary Component Side 
+   Violation between Clearance Constraint: (5.933mil < 10mil) Between Text "RN8" (5674mil,3187mil) on Primary Component Side And Track (5670.151mil,3161.402mil)(5670.151mil,3172.599mil) on Primary Component Side 
+   Violation between Clearance Constraint: (6.651mil < 10mil) Between Text "RN8" (5674mil,3187mil) on Primary Component Side And Track (5720.151mil,3161.402mil)(5720.151mil,3171.849mil) on Primary Component Side 
+   Violation between Clearance Constraint: (9.832mil < 10mil) Between Text "U1" (1200mil,1518.75mil) on Primary Component Side And Track (1156.25mil,1552.75mil)(1156.25mil,1581.25mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "U1" (1200mil,1518.75mil) on Primary Component Side And Track (1156.25mil,1552.75mil)(1181mil,1528mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "U1" (1200mil,1518.75mil) on Primary Component Side And Track (1181mil,1528mil)(1333mil,1528mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "U17" (1322.619mil,1448.11mil) on Primary Component Side And Track (1280mil,1418.75mil)(1330mil,1468.75mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "U17" (1322.619mil,1448.11mil) on Primary Component Side And Track (1330mil,1468.75mil)(1330mil,1469.51mil) on Primary Component Side 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Text "U17" (1322.619mil,1448.11mil) on Primary Component Side And Track (1330mil,1469.51mil)(1439.478mil,1469.51mil) on Primary Component Side 
+Rule Violations :84
+
+Processing Rule : Clearance Constraint (Gap=12mil) (InNet('VICOR_+IN') OR InNet('+24VDC_DIODE') OR InNet('VICOR_-IN') OR InNet('+24VDC_SW') OR InNet('GND_24VDC') OR InNet('+24VDC') OR InNet('+24VDC_CMCHK') OR InNet('GND_24V_CMCHK') AND IsVia),(IsSMTPin)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=12mil) (InNet('VICOR_+IN') OR InNet('+24VDC_DIODE') OR InNet('VICOR_-IN') OR InNet('+24VDC_SW') OR InNet('GND_24VDC') OR InNet('+24VDC') OR InNet('+24VDC_CMCHK') OR InNet('GND_24V_CMCHK')),(All)
+   Violation between Clearance Constraint: (0.566mil < 12mil) Between Arc (375mil,393mil) on Ground Plane And Pad U45-2(375mil,392.52mil) on Multi-Layer 
+   Violation between Clearance Constraint: (Collision < 12mil) Between Pad S1-1(1016.458mil,978.753mil) on Multi-Layer And Text "S1" (966.458mil,947.503mil) on Primary Component Side 
+   Violation between Clearance Constraint: (5.888mil < 12mil) Between Polygon Region (2 hole(s)) Power Plane And Region (7 hole(s)) Power Plane 
+   Violation between Clearance Constraint: (1.082mil < 12mil) Between Polygon Region (8 hole(s)) Power Plane And Region (7 hole(s)) Power Plane 
+Rule Violations :4
+
+Processing Rule : Clearance Constraint (Gap=12mil) (( InNet('VICOR_+IN') OR InNet('+24VDC_DIODE') OR InNet('VICOR_-IN') OR InNet('+24VDC_SW') OR InNet('GND_24VDC') OR InNet('+24VDC') OR InNet('+24VDC_CMCHK') OR InNet('GND_24V_CMCHK') ) And IsVia),(IsVia)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+   Violation between Short-Circuit Constraint: Between Pad JP1-2(1481.25mil,2418.75mil) on Multi-Layer And Text "JP2" (1524.196mil,2349.3mil) on Primary Component Side Location : [X = 32725.771mil][Y = 31593.096mil]
+   Violation between Short-Circuit Constraint: Between Pad R8-2(1330mil,1468.75mil) on Primary Component Side And Text "U17" (1322.619mil,1448.11mil) on Primary Component Side Location : [X = 32564.809mil][Y = 30648.357mil]
+   Violation between Short-Circuit Constraint: Between Pad RN2-1(5404.38mil,1615.823mil) on Primary Component Side And Text "RN2" (5434mil,1656mil) on Primary Component Side Location : [X = 36629.38mil][Y = 30816.164mil]
+   Violation between Short-Circuit Constraint: Between Pad S1-1(1016.458mil,978.753mil) on Multi-Layer And Text "S1" (966.458mil,947.503mil) on Primary Component Side Location : [X = 32178.711mil][Y = 30149.389mil]
+   Violation between Short-Circuit Constraint: Between Text "C10" (1347mil,1624mil) on Primary Component Side And Track (1323mil,1586.417mil)(1323mil,1935.5mil) on Primary Component Side Location : [X = 32548.531mil][Y = 30842.033mil]
+   Violation between Short-Circuit Constraint: Between Text "C11" (833mil,1765mil) on Primary Component Side And Track (863.25mil,1793.75mil)(863.25mil,1907mil) on Primary Component Side Location : [X = 32088.25mil][Y = 30978.318mil]
+   Violation between Short-Circuit Constraint: Between Text "C11" (833mil,1765mil) on Primary Component Side And Track (863.25mil,1793.75mil)(925.75mil,1731.25mil) on Primary Component Side Location : [X = 32096.916mil][Y = 30965.712mil]
+   Violation between Short-Circuit Constraint: Between Text "J14" (5306mil,7391mil) on Primary Component Side And Track (5162.832mil,7212.832mil)(5312.5mil,7362.5mil) on Primary Component Side Location : [X = 36531.787mil][Y = 36552.141mil]
+   Violation between Short-Circuit Constraint: Between Text "J14" (5306mil,7391mil) on Primary Component Side And Track (5312.5mil,7362.5mil)(5312.5mil,7879mil) on Primary Component Side Location : [X = 36532.946mil][Y = 36565.753mil]
+   Violation between Short-Circuit Constraint: Between Text "J14" (5306mil,7391mil) on Primary Component Side And Track (5312.5mil,7362.5mil)(5716mil,7362.5mil) on Primary Component Side Location : [X = 36532.947mil][Y = 36552.141mil]
+   Violation between Short-Circuit Constraint: Between Text "R11" (500mil,2268.75mil) on Primary Component Side And Track (385mil,2452.75mil)(543.75mil,2294mil) on Primary Component Side Location : [X = 31765.966mil][Y = 31480.318mil]
+   Violation between Short-Circuit Constraint: Between Text "R11" (500mil,2268.75mil) on Primary Component Side And Track (543.75mil,2030.351mil)(543.75mil,2294mil) on Primary Component Side Location : [X = 31768.75mil][Y = 31468.997mil]
+   Violation between Short-Circuit Constraint: Between Text "R13" (729.659mil,1519.464mil) on Primary Component Side And Track (693.75mil,1543.75mil)(818.75mil,1418.75mil) on Primary Component Side Location : [X = 31952.812mil][Y = 30705.118mil]
+   Violation between Short-Circuit Constraint: Between Text "R22" (493.75mil,1987.5mil) on Primary Component Side And Track (443.566mil,1930.167mil)(543.75mil,2030.351mil) on Primary Component Side Location : [X = 31739.037mil][Y = 31187.747mil]
+   Violation between Short-Circuit Constraint: Between Text "R23" (500mil,2168.75mil) on Primary Component Side And Track (543.75mil,2030.351mil)(543.75mil,2294mil) on Primary Component Side Location : [X = 31768.75mil][Y = 31368.997mil]
+   Violation between Short-Circuit Constraint: Between Text "RN10" (5506.25mil,5800mil) on Primary Component Side And Track (5506.25mil,5618.75mil)(5506.25mil,6031.25mil) on Primary Component Side Location : [X = 36732.554mil][Y = 35000.247mil]
+   Violation between Short-Circuit Constraint: Between Text "RN10" (5506.25mil,5800mil) on Primary Component Side And Track (5537.5mil,5618.75mil)(5537.5mil,6031.25mil) on Primary Component Side Location : [X = 36762.5mil][Y = 35000.247mil]
+   Violation between Short-Circuit Constraint: Between Text "RN10" (5506.25mil,5800mil) on Primary Component Side And Track (5562.5mil,5612.5mil)(5562.5mil,6043.75mil) on Primary Component Side Location : [X = 36787.5mil][Y = 35000.247mil]
+   Violation between Short-Circuit Constraint: Between Text "RN10" (5506.25mil,5800mil) on Primary Component Side And Track (5587.5mil,5612.5mil)(5587.5mil,6387.5mil) on Primary Component Side Location : [X = 36811.787mil][Y = 35000.247mil]
+   Violation between Short-Circuit Constraint: Between Text "RN12" (5406.25mil,8081.25mil) on Primary Component Side And Track (5218.75mil,8093.75mil)(5662.5mil,8093.75mil) on Primary Component Side Location : [X = 36672.466mil][Y = 37281.25mil]
+   Violation between Short-Circuit Constraint: Between Text "RN2" (5434mil,1656mil) on Primary Component Side And Track (5404.38mil,1569.277mil)(5404.38mil,1615.823mil) on Primary Component Side Location : [X = 36629.38mil][Y = 30816.7mil]
+   Violation between Short-Circuit Constraint: Between Text "RN3" (4042.347mil,3192.707mil) on Primary Component Side And Track (4041.599mil,3161.402mil)(4041.599mil,3197.849mil) on Primary Component Side Location : [X = 35268.277mil][Y = 32384.082mil]
+   Violation between Short-Circuit Constraint: Between Text "RN3" (4042.347mil,3192.707mil) on Primary Component Side And Track (4041.599mil,3197.849mil)(4153.754mil,3310.004mil) on Primary Component Side Location : [X = 35281.115mil][Y = 32394.222mil]
+   Violation between Short-Circuit Constraint: Between Text "RN3" (4042.347mil,3192.707mil) on Primary Component Side And Track (4091.599mil,3161.402mil)(4091.599mil,3191.599mil) on Primary Component Side Location : [X = 35316.599mil][Y = 32380.957mil]
+   Violation between Short-Circuit Constraint: Between Text "RN3" (4042.347mil,3192.707mil) on Primary Component Side And Track (4091.599mil,3191.599mil)(4192.57mil,3292.57mil) on Primary Component Side Location : [X = 35322.538mil][Y = 32390.861mil]
+   Violation between Short-Circuit Constraint: Between Text "RN4" (4331.413mil,3189.469mil) on Primary Component Side And Track (4329.911mil,3161.402mil)(4329.911mil,3351.339mil) on Primary Component Side Location : [X = 35556.966mil][Y = 32389.716mil]
+   Violation between Short-Circuit Constraint: Between Text "RN4" (4331.413mil,3189.469mil) on Primary Component Side And Track (4379.911mil,3161.402mil)(4379.911mil,3345.089mil) on Primary Component Side Location : [X = 35604.911mil][Y = 32389.716mil]
+   Violation between Short-Circuit Constraint: Between Text "RN5" (4718.75mil,3191.202mil) on Primary Component Side And Track (4721.502mil,3161.402mil)(4721.502mil,3353.498mil) on Primary Component Side Location : [X = 35946.502mil][Y = 32391.449mil]
+   Violation between Short-Circuit Constraint: Between Text "RN5" (4718.75mil,3191.202mil) on Primary Component Side And Track (4771.502mil,3161.402mil)(4771.502mil,3347.248mil) on Primary Component Side Location : [X = 35996.502mil][Y = 32391.449mil]
+   Violation between Short-Circuit Constraint: Between Text "RN6" (5390mil,3190mil) on Primary Component Side And Track (5425mil,3161.402mil)(5425mil,3234.375mil) on Primary Component Side Location : [X = 36650mil][Y = 32390.247mil]
+   Violation between Short-Circuit Constraint: Between Text "RN7" (5031.25mil,3187.963mil) on Primary Component Side And Track (4727mil,3535.5mil)(5043.75mil,3218.75mil) on Primary Component Side Location : [X = 36268.472mil][Y = 32402.3mil]
+   Violation between Short-Circuit Constraint: Between Text "RN7" (5031.25mil,3187.963mil) on Primary Component Side And Track (4756.25mil,3556.25mil)(5093.75mil,3218.75mil) on Primary Component Side Location : [X = 36318.049mil][Y = 32402.3mil]
+   Violation between Short-Circuit Constraint: Between Text "RN7" (5031.25mil,3187.963mil) on Primary Component Side And Track (5043.75mil,3161.402mil)(5043.75mil,3218.75mil) on Primary Component Side Location : [X = 36268.75mil][Y = 32388.211mil]
+   Violation between Short-Circuit Constraint: Between Text "RN7" (5031.25mil,3187.963mil) on Primary Component Side And Track (5093.75mil,3161.402mil)(5093.75mil,3218.75mil) on Primary Component Side Location : [X = 36318.064mil][Y = 32388.211mil]
+   Violation between Short-Circuit Constraint: Between Text "RN8" (5674mil,3187mil) on Primary Component Side And Track (5318.75mil,3573.25mil)(5720.151mil,3171.849mil) on Primary Component Side Location : [X = 36918.465mil][Y = 32387.247mil]
+   Violation between Short-Circuit Constraint: Between Text "RN8" (5674mil,3187mil) on Primary Component Side And Track (5350mil,3591.724mil)(5770.151mil,3171.573mil) on Primary Component Side Location : [X = 36954.517mil][Y = 32391.775mil]
+   Violation between Short-Circuit Constraint: Between Text "U1" (1200mil,1518.75mil) on Primary Component Side And Track (1156.25mil,1552.75mil)(1181mil,1528mil) on Primary Component Side Location : [X = 32404.031mil][Y = 30721.398mil]
+   Violation between Short-Circuit Constraint: Between Text "U1" (1200mil,1518.75mil) on Primary Component Side And Track (1181mil,1528mil)(1333mil,1528mil) on Primary Component Side Location : [X = 32414.222mil][Y = 30715.5mil]
+   Violation between Short-Circuit Constraint: Between Text "U17" (1322.619mil,1448.11mil) on Primary Component Side And Track (1280mil,1418.75mil)(1330mil,1468.75mil) on Primary Component Side Location : [X = 32552.613mil][Y = 30649.898mil]
+   Violation between Short-Circuit Constraint: Between Text "U17" (1322.619mil,1448.11mil) on Primary Component Side And Track (1330mil,1468.75mil)(1330mil,1469.51mil) on Primary Component Side Location : [X = 32555mil][Y = 30656.63mil]
+   Violation between Short-Circuit Constraint: Between Text "U17" (1322.619mil,1448.11mil) on Primary Component Side And Track (1330mil,1469.51mil)(1439.478mil,1469.51mil) on Primary Component Side Location : [X = 32579.87mil][Y = 30657.01mil]
+Rule Violations :41
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Isolated copper: Split Plane  (VCC_+5V) on Power Plane. Dead copper detected. Copper area is : 106.358 sq. mils
+   Violation between Isolated copper: Split Plane  (VCC_+5V) on Power Plane. Dead copper detected. Copper area is : 119.465 sq. mils
+Rule Violations :2
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=12mil) (Max=60mil) (Preferred=12mil) (InNet('VICOR_+IN') OR InNet('VICOR_-IN') OR InNet('GND_24VDC') OR InNet('+24VDC') OR InNet('+24VDC_CMCHK') OR InNet('GND_24V_CMCHK'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=10mil) (Max=60mil) (Preferred=12mil) (All)
+Rule Violations :0
+
+Processing Rule : SMD To Corner (Distance=12mil) (InNet('VICOR_+IN') OR InNet('+24VDC_DIODE') OR InNet('VICOR_-IN') OR InNet('+24VDC_SW') OR InNet('GND_24VDC') OR InNet('+24VDC') OR InNet('+24VDC_CMCHK') OR InNet('GND_24V_CMCHK'))
+Rule Violations :0
+
+Processing Rule : SMD To Corner (Distance=10mil) (All)
+   Violation between SMD To Corner Constraint: (6.399mil < 10mil) Between Pad C102-1(1769.989mil,1867.051mil) on Primary Component Side And Track (1768.989mil,1880.442mil)(1768.989mil,1903.45mil) on Primary Component Side Actual Distance = 6.399mil
+   Violation between SMD To Corner Constraint: (3.599mil < 10mil) Between Pad C2-2(4242.455mil,8922.464mil) on Primary Component Side And Track (4266.955mil,8902.964mil)(4275mil,8894.919mil) on Primary Component Side Actual Distance = 3.599mil
+   Violation between SMD To Corner Constraint: (8.395mil < 10mil) Between Pad C38-1(4171.746mil,5729.395mil) on Secondary Component Side And Track (4171.746mil,5696mil)(4171.746mil,5729.395mil) on Secondary Component Side Actual Distance = 8.395mil
+   Violation between SMD To Corner Constraint: (5.315mil < 10mil) Between Pad M2-4(2679.134mil,2619.095mil) on Primary Component Side And Track (2689.275mil,2600mil)(2689.275mil,2619.095mil) on Primary Component Side Actual Distance = 5.315mil
+   Violation between SMD To Corner Constraint: (7.5mil < 10mil) Between Pad R31-1(5487.5mil,8487.5mil) on Primary Component Side And Track (5450mil,8487.5mil)(5487.5mil,8487.5mil) on Primary Component Side Actual Distance = 7.5mil
+   Violation between SMD To Corner Constraint: (7.5mil < 10mil) Between Pad R32-1(5762.5mil,8843.75mil) on Primary Component Side And Track (5725mil,8843.75mil)(5762.5mil,8843.75mil) on Primary Component Side Actual Distance = 7.5mil
+   Violation between SMD To Corner Constraint: (4.316mil < 10mil) Between Pad RN11-8(2960.802mil,5778.485mil) on Primary Component Side And Track (2943.75mil,5795.537mil)(2960.802mil,5778.485mil) on Primary Component Side Actual Distance = 4.316mil
+   Violation between SMD To Corner Constraint: (8.067mil < 10mil) Between Pad RN13-5(5592.578mil,7118.817mil) on Primary Component Side And Track (5593.75mil,7093.75mil)(5593.75mil,7119.75mil) on Primary Component Side Actual Distance = 8.067mil
+   Violation between SMD To Corner Constraint: (6.765mil < 10mil) Between Pad S2-2(5368.75mil,6912.5mil) on Primary Component Side And Track (5318.75mil,6912.5mil)(5368.75mil,6912.5mil) on Primary Component Side Actual Distance = 6.765mil
+   Violation between SMD To Corner Constraint: (1.217mil < 10mil) Between Pad U11-102(5238.45mil,5817.8mil) on Primary Component Side And Track (5238.45mil,5817.8mil)(5275.12mil,5817.8mil) on Primary Component Side Actual Distance = 1.217mil
+   Violation between SMD To Corner Constraint: (1.217mil < 10mil) Between Pad U11-108(5089.35mil,5947.2mil) on Primary Component Side And Track (5089.35mil,5947.2mil)(5089.35mil,5983.87mil) on Primary Component Side Actual Distance = 1.217mil
+   Violation between SMD To Corner Constraint: (8.387mil < 10mil) Between Pad U11-109(5069.65mil,5947.2mil) on Primary Component Side And Track (5069.65mil,5947.2mil)(5069.65mil,5991.04mil) on Primary Component Side Actual Distance = 8.387mil
+   Violation between SMD To Corner Constraint: (2.044mil < 10mil) Between Pad U11-113(4990.85mil,5947.2mil) on Primary Component Side And Track (4990.85mil,5947.2mil)(4990.85mil,5984.697mil) on Primary Component Side Actual Distance = 2.044mil
+   Violation between SMD To Corner Constraint: (6.597mil < 10mil) Between Pad U11-144(4380.15mil,5947.2mil) on Primary Component Side And Track (4380.15mil,5905.15mil)(4380.15mil,5947.2mil) on Primary Component Side Actual Distance = 6.597mil
+   Violation between SMD To Corner Constraint: (6.347mil < 10mil) Between Pad U11-151(4242.25mil,5947.2mil) on Primary Component Side And Track (4242.25mil,5947.2mil)(4242.25mil,5989mil) on Primary Component Side Actual Distance = 6.347mil
+   Violation between SMD To Corner Constraint: (1.217mil < 10mil) Between Pad U11-154(4183.15mil,5947.2mil) on Primary Component Side And Track (4183.15mil,5947.2mil)(4183.15mil,5983.87mil) on Primary Component Side Actual Distance = 1.217mil
+   Violation between SMD To Corner Constraint: (3.227mil < 10mil) Between Pad U11-22(4557.45mil,4762.5mil) on Primary Component Side And Track (4557.45mil,4723.819mil)(4557.45mil,4762.5mil) on Primary Component Side Actual Distance = 3.227mil
+   Violation between SMD To Corner Constraint: (1.217mil < 10mil) Between Pad U11-55(5238.45mil,4891.9mil) on Primary Component Side And Track (5238.45mil,4891.9mil)(5275.12mil,4891.9mil) on Primary Component Side Actual Distance = 1.217mil
+   Violation between SMD To Corner Constraint: (7.347mil < 10mil) Between Pad U11-71(5238.45mil,5207.1mil) on Primary Component Side And Track (5238.45mil,5207.1mil)(5281.25mil,5207.1mil) on Primary Component Side Actual Distance = 7.347mil
+   Violation between SMD To Corner Constraint: (7.347mil < 10mil) Between Pad U11-73(5238.45mil,5246.5mil) on Primary Component Side And Track (5238.45mil,5246.5mil)(5281.25mil,5246.5mil) on Primary Component Side Actual Distance = 7.347mil
+   Violation between SMD To Corner Constraint: (5.561mil < 10mil) Between Pad U11-75(5238.45mil,5285.9mil) on Primary Component Side And Track (5197.436mil,5285.9mil)(5238.45mil,5285.9mil) on Primary Component Side Actual Distance = 5.561mil
+   Violation between SMD To Corner Constraint: (4.239mil < 10mil) Between Pad U11-83(5238.45mil,5443.5mil) on Primary Component Side And Track (5198.758mil,5443.5mil)(5238.45mil,5443.5mil) on Primary Component Side Actual Distance = 4.239mil
+   Violation between SMD To Corner Constraint: (2.755mil < 10mil) Between Pad U1-4(1156.25mil,1731.25mil) on Primary Component Side And Track (1106.25mil,1731.25mil)(1156.25mil,1731.25mil) on Primary Component Side Actual Distance = 2.755mil
+   Violation between SMD To Corner Constraint: (5.833mil < 10mil) Between Pad U14-10(2782.083mil,2494.267mil) on Primary Component Side And Track (2782.083mil,2468.75mil)(2782.083mil,2494.267mil) on Primary Component Side Actual Distance = 5.833mil
+   Violation between SMD To Corner Constraint: (4.8mil < 10mil) Between Pad U14-12(2731.283mil,2494.267mil) on Primary Component Side And Track (2731.283mil,2494.267mil)(2731.283mil,2518.75mil) on Primary Component Side Actual Distance = 4.8mil
+   Violation between SMD To Corner Constraint: (5.833mil < 10mil) Between Pad U14-13(2704.917mil,2494.267mil) on Primary Component Side And Track (2704.917mil,2468.75mil)(2704.917mil,2494.267mil) on Primary Component Side Actual Distance = 5.833mil
+   Violation between SMD To Corner Constraint: (4.317mil < 10mil) Between Pad U14-2(2705.3mil,2242.75mil) on Primary Component Side And Track (2705.3mil,2218.75mil)(2705.3mil,2242.75mil) on Primary Component Side Actual Distance = 4.317mil
+   Violation between SMD To Corner Constraint: (2.755mil < 10mil) Between Pad U1-7(1156.25mil,1881.25mil) on Primary Component Side And Track (1106.25mil,1881.25mil)(1156.25mil,1881.25mil) on Primary Component Side Actual Distance = 2.755mil
+   Violation between SMD To Corner Constraint: (5.749mil < 10mil) Between Pad U2-3(4571.25mil,8500mil) on Primary Component Side And Track (4539.685mil,8531.565mil)(4571.25mil,8500mil) on Primary Component Side Actual Distance = 5.749mil
+   Violation between SMD To Corner Constraint: (2.755mil < 10mil) Between Pad US2-4(5168.75mil,8462.5mil) on Primary Component Side And Track (5168.75mil,8462.5mil)(5218.75mil,8462.5mil) on Primary Component Side Actual Distance = 2.755mil
+   Violation between SMD To Corner Constraint: (6.258mil < 10mil) Between Pad US2-7(5364.75mil,8562.5mil) on Primary Component Side And Track (5364.75mil,8562.5mil)(5418.253mil,8562.5mil) on Primary Component Side Actual Distance = 6.258mil
+Rule Violations :31
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=3.937mil) (Conductor Width=9.842mil) (Air Gap=7.874mil) (Entries=4) (HasFootprint('MOV10D201K'))
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=3.937mil) (Conductor Width=9.842mil) (Air Gap=7.874mil) (Entries=4) (HasFootprint('MOV10D470K'))
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=10.591mil) (Conductor Width=9.842mil) (Air Gap=7.874mil) (Entries=4) (HasFootprint('MOV10D470KA'))
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=3.937mil) (Conductor Width=9.842mil) (Air Gap=7.874mil) (Entries=4) (HasFootprint('MOV10D201K'))
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=100mil) (All)
+   Violation between Hole Size Constraint: (116mil > 100mil) Pad J16-HOLE1(6178.5mil,3718.5mil) on Multi-Layer Actual Hole Size = 116mil
+   Violation between Hole Size Constraint: (116mil > 100mil) Pad J16-HOLE2(6178.5mil,218.5mil) on Multi-Layer Actual Hole Size = 116mil
+   Violation between Hole Size Constraint: (116mil > 100mil) Pad J17-HOLE1(6178.5mil,8968.5mil) on Multi-Layer Actual Hole Size = 116mil
+   Violation between Hole Size Constraint: (116mil > 100mil) Pad J17-HOLE2(6178.5mil,5468.5mil) on Multi-Layer Actual Hole Size = 116mil
+   Violation between Hole Size Constraint: (160mil > 100mil) Pad J1-MTH1(62.894mil,3400mil) on Multi-Layer Actual Hole Size = 160mil
+   Violation between Hole Size Constraint: (160mil > 100mil) Pad J1-MTH2(662.5mil,3400mil) on Multi-Layer Actual Hole Size = 160mil
+   Violation between Hole Size Constraint: (160mil > 100mil) Pad J1-MTH3(3812.5mil,3400.787mil) on Multi-Layer Actual Hole Size = 160mil
+   Violation between Hole Size Constraint: (160mil > 100mil) Pad J1-MTH4(762.5mil,6775mil) on Multi-Layer Actual Hole Size = 160mil
+   Violation between Hole Size Constraint: (160mil > 100mil) Pad J1-MTH5(3662.5mil,6775mil) on Multi-Layer Actual Hole Size = 160mil
+   Violation between Hole Size Constraint: (160mil > 100mil) Pad J1-MTH6(3810.532mil,8681.89mil) on Multi-Layer Actual Hole Size = 160mil
+   Violation between Hole Size Constraint: (160mil > 100mil) Pad J1-MTH7(62.894mil,8681.89mil) on Multi-Layer Actual Hole Size = 160mil
+   Violation between Hole Size Constraint: (128mil > 100mil) Pad J3-MTH1(212.5mil,2900mil) on Multi-Layer Actual Hole Size = 128mil
+   Violation between Hole Size Constraint: (128mil > 100mil) Pad J3-MTH2(212.5mil,2450mil) on Multi-Layer Actual Hole Size = 128mil
+   Violation between Hole Size Constraint: (120mil > 100mil) Pad U4-1(140.55mil,218.5mil) on Multi-Layer Actual Hole Size = 120mil
+   Violation between Hole Size Constraint: (120mil > 100mil) Pad U5-1(140.55mil,8968.5mil) on Multi-Layer Actual Hole Size = 120mil
+Rule Violations :15
+
+Processing Rule : Hole To Hole Clearance (Gap=6mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=10mil) (All),(All)
+   Violation between Minimum Solder Mask Sliver Constraint: (9mil < 10mil) Between Pad C14-2(4270mil,5169.329mil) on Secondary Component Side And Via (4332mil,5169mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [9mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (9.321mil < 10mil) Between Pad C15-2(4274.679mil,5259.835mil) on Secondary Component Side And Via (4337mil,5260mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [9.321mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (3.923mil < 10mil) Between Pad C16-2(4272.641mil,4951.631mil) on Secondary Component Side And Via (4267.636mil,5008.554mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [3.923mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (7.301mil < 10mil) Between Pad C17-2(4633.408mil,4940.579mil) on Secondary Component Side And Via (4633.945mil,5000.881mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [7.301mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (7.152mil < 10mil) Between Pad C18-2(4276.143mil,5531.467mil) on Secondary Component Side And Via (4336.295mil,5532.069mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [7.152mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.476mil < 10mil) Between Pad C19-2(4262.46mil,5637.241mil) on Secondary Component Side And Via (4317.936mil,5637.416mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [2.476mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (9.398mil < 10mil) Between Pad C20-2(4486.34mil,5733.335mil) on Secondary Component Side And Via (4486.848mil,5670.937mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [9.398mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (7.672mil < 10mil) Between Pad C22-2(5161.756mil,5790.669mil) on Secondary Component Side And Via (5161.659mil,5729.997mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [7.672mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (6.248mil < 10mil) Between Pad C23-2(5016.021mil,5371.981mil) on Secondary Component Side And Via (4956.773mil,5371.407mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [6.248mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (5.554mil < 10mil) Between Pad C24-2(5000.554mil,5191.961mil) on Secondary Component Side And Via (4942mil,5192mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [5.554mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (8.266mil < 10mil) Between Pad C26-2(5015.566mil,5552.621mil) on Secondary Component Side And Via (4954.3mil,5552.971mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [8.266mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (4.523mil < 10mil) Between Pad C27-2(4170.718mil,4951.631mil) on Secondary Component Side And Via (4170.735mil,5009.154mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [4.523mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.617mil < 10mil) Between Pad C28-2(5031.419mil,5007.301mil) on Secondary Component Side And Via (4975.802mil,5007.12mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [2.617mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (8.275mil < 10mil) Between Pad C30-2(5001.275mil,5281.386mil) on Secondary Component Side And Via (4940mil,5282mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [8.275mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (6.738mil < 10mil) Between Pad C31-2(5030.964mil,5101.488mil) on Secondary Component Side And Via (4971.226mil,5101.647mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [6.738mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (4.509mil < 10mil) Between Pad C32-2(5016.021mil,5462.074mil) on Secondary Component Side And Via (4958.512mil,5462.119mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [4.509mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (8.999mil < 10mil) Between Pad C33-2(5015.999mil,5642.139mil) on Secondary Component Side And Via (4954mil,5643mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [8.999mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.204mil < 10mil) Between Pad C34-2(5052.553mil,5786.119mil) on Secondary Component Side And Via (5051.875mil,5730.916mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [2.204mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (7.772mil < 10mil) Between Pad C37-2(4275.233mil,5441.375mil) on Secondary Component Side And Via (4336.005mil,5441.646mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [7.772mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (3.567mil < 10mil) Between Pad C38-2(4261.746mil,5729.395mil) on Secondary Component Side And Via (4318.313mil,5728.636mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [3.567mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (9.411mil < 10mil) Between Pad C50-2(4395.792mil,5734.245mil) on Secondary Component Side And Via (4396.737mil,5671.833mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [9.411mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-10(4321.05mil,4762.5mil) on Primary Component Side And Pad U11-11(4340.75mil,4762.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-100(5238.45mil,5778.4mil) on Primary Component Side And Pad U11-101(5238.45mil,5798.1mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-100(5238.45mil,5778.4mil) on Primary Component Side And Pad U11-99(5238.45mil,5758.7mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-101(5238.45mil,5798.1mil) on Primary Component Side And Pad U11-102(5238.45mil,5817.8mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-102(5238.45mil,5817.8mil) on Primary Component Side And Pad U11-103(5238.45mil,5837.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-103(5238.45mil,5837.5mil) on Primary Component Side And Pad U11-104(5238.45mil,5857.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-105(5148.45mil,5947.2mil) on Primary Component Side And Pad U11-106(5128.75mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-106(5128.75mil,5947.2mil) on Primary Component Side And Pad U11-107(5109.05mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-107(5109.05mil,5947.2mil) on Primary Component Side And Pad U11-108(5089.35mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-108(5089.35mil,5947.2mil) on Primary Component Side And Pad U11-109(5069.65mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-109(5069.65mil,5947.2mil) on Primary Component Side And Pad U11-110(5049.95mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-110(5049.95mil,5947.2mil) on Primary Component Side And Pad U11-111(5030.25mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-111(5030.25mil,5947.2mil) on Primary Component Side And Pad U11-112(5010.55mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-112(5010.55mil,5947.2mil) on Primary Component Side And Pad U11-113(4990.85mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-113(4990.85mil,5947.2mil) on Primary Component Side And Pad U11-114(4971.15mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-114(4971.15mil,5947.2mil) on Primary Component Side And Pad U11-115(4951.45mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-115(4951.45mil,5947.2mil) on Primary Component Side And Pad U11-116(4931.75mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-116(4931.75mil,5947.2mil) on Primary Component Side And Pad U11-117(4912.05mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-117(4912.05mil,5947.2mil) on Primary Component Side And Pad U11-118(4892.35mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-118(4892.35mil,5947.2mil) on Primary Component Side And Pad U11-119(4872.65mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-119(4872.65mil,5947.2mil) on Primary Component Side And Pad U11-120(4852.95mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-12(4360.45mil,4762.5mil) on Primary Component Side And Pad U11-13(4380.15mil,4762.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-120(4852.95mil,5947.2mil) on Primary Component Side And Pad U11-121(4833.25mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-121(4833.25mil,5947.2mil) on Primary Component Side And Pad U11-122(4813.55mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-122(4813.55mil,5947.2mil) on Primary Component Side And Pad U11-123(4793.85mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-123(4793.85mil,5947.2mil) on Primary Component Side And Pad U11-124(4774.15mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-124(4774.15mil,5947.2mil) on Primary Component Side And Pad U11-125(4754.45mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-125(4754.45mil,5947.2mil) on Primary Component Side And Pad U11-126(4734.75mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-126(4734.75mil,5947.2mil) on Primary Component Side And Pad U11-127(4715.05mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-127(4715.05mil,5947.2mil) on Primary Component Side And Pad U11-128(4695.35mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-128(4695.35mil,5947.2mil) on Primary Component Side And Pad U11-129(4675.65mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-129(4675.65mil,5947.2mil) on Primary Component Side And Pad U11-130(4655.95mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-130(4655.95mil,5947.2mil) on Primary Component Side And Pad U11-131(4636.25mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-131(4636.25mil,5947.2mil) on Primary Component Side And Pad U11-132(4616.55mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-132(4616.55mil,5947.2mil) on Primary Component Side And Pad U11-133(4596.85mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-133(4596.85mil,5947.2mil) on Primary Component Side And Pad U11-134(4577.15mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-134(4577.15mil,5947.2mil) on Primary Component Side And Pad U11-135(4557.45mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-135(4557.45mil,5947.2mil) on Primary Component Side And Pad U11-136(4537.75mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-136(4537.75mil,5947.2mil) on Primary Component Side And Pad U11-137(4518.05mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-137(4518.05mil,5947.2mil) on Primary Component Side And Pad U11-138(4498.35mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-138(4498.35mil,5947.2mil) on Primary Component Side And Pad U11-139(4478.65mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-139(4478.65mil,5947.2mil) on Primary Component Side And Pad U11-140(4458.95mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-14(4399.85mil,4762.5mil) on Primary Component Side And Pad U11-15(4419.55mil,4762.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-140(4458.95mil,5947.2mil) on Primary Component Side And Pad U11-141(4439.25mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-141(4439.25mil,5947.2mil) on Primary Component Side And Pad U11-142(4419.55mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-142(4419.55mil,5947.2mil) on Primary Component Side And Pad U11-143(4399.85mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-143(4399.85mil,5947.2mil) on Primary Component Side And Pad U11-144(4380.15mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-144(4380.15mil,5947.2mil) on Primary Component Side And Pad U11-145(4360.45mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-145(4360.45mil,5947.2mil) on Primary Component Side And Pad U11-146(4340.75mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-146(4340.75mil,5947.2mil) on Primary Component Side And Pad U11-147(4321.05mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-147(4321.05mil,5947.2mil) on Primary Component Side And Pad U11-148(4301.35mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-148(4301.35mil,5947.2mil) on Primary Component Side And Pad U11-149(4281.65mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-149(4281.65mil,5947.2mil) on Primary Component Side And Pad U11-150(4261.95mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-150(4261.95mil,5947.2mil) on Primary Component Side And Pad U11-151(4242.25mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-151(4242.25mil,5947.2mil) on Primary Component Side And Pad U11-152(4222.55mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-152(4222.55mil,5947.2mil) on Primary Component Side And Pad U11-153(4202.85mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-153(4202.85mil,5947.2mil) on Primary Component Side And Pad U11-154(4183.15mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-154(4183.15mil,5947.2mil) on Primary Component Side And Pad U11-155(4163.45mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-155(4163.45mil,5947.2mil) on Primary Component Side And Pad U11-156(4143.75mil,5947.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-157(4053.75mil,5857.2mil) on Primary Component Side And Pad U11-158(4053.75mil,5837.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-158(4053.75mil,5837.5mil) on Primary Component Side And Pad U11-159(4053.75mil,5817.8mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-159(4053.75mil,5817.8mil) on Primary Component Side And Pad U11-160(4053.75mil,5798.1mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-16(4439.25mil,4762.5mil) on Primary Component Side And Pad U11-17(4458.95mil,4762.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-160(4053.75mil,5798.1mil) on Primary Component Side And Pad U11-161(4053.75mil,5778.4mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-161(4053.75mil,5778.4mil) on Primary Component Side And Pad U11-162(4053.75mil,5758.7mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-162(4053.75mil,5758.7mil) on Primary Component Side And Pad U11-163(4053.75mil,5739mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-163(4053.75mil,5739mil) on Primary Component Side And Pad U11-164(4053.75mil,5719.3mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-164(4053.75mil,5719.3mil) on Primary Component Side And Pad U11-165(4053.75mil,5699.6mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-165(4053.75mil,5699.6mil) on Primary Component Side And Pad U11-166(4053.75mil,5679.9mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-166(4053.75mil,5679.9mil) on Primary Component Side And Pad U11-167(4053.75mil,5660.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-167(4053.75mil,5660.2mil) on Primary Component Side And Pad U11-168(4053.75mil,5640.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-168(4053.75mil,5640.5mil) on Primary Component Side And Pad U11-169(4053.75mil,5620.8mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-169(4053.75mil,5620.8mil) on Primary Component Side And Pad U11-170(4053.75mil,5601.1mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-170(4053.75mil,5601.1mil) on Primary Component Side And Pad U11-171(4053.75mil,5581.4mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-171(4053.75mil,5581.4mil) on Primary Component Side And Pad U11-172(4053.75mil,5561.7mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-172(4053.75mil,5561.7mil) on Primary Component Side And Pad U11-173(4053.75mil,5542mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-173(4053.75mil,5542mil) on Primary Component Side And Pad U11-174(4053.75mil,5522.3mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-174(4053.75mil,5522.3mil) on Primary Component Side And Pad U11-175(4053.75mil,5502.6mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-175(4053.75mil,5502.6mil) on Primary Component Side And Pad U11-176(4053.75mil,5482.9mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-176(4053.75mil,5482.9mil) on Primary Component Side And Pad U11-177(4053.75mil,5463.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-177(4053.75mil,5463.2mil) on Primary Component Side And Pad U11-178(4053.75mil,5443.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-178(4053.75mil,5443.5mil) on Primary Component Side And Pad U11-179(4053.75mil,5423.8mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-179(4053.75mil,5423.8mil) on Primary Component Side And Pad U11-180(4053.75mil,5404.1mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-18(4478.65mil,4762.5mil) on Primary Component Side And Pad U11-19(4498.35mil,4762.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-180(4053.75mil,5404.1mil) on Primary Component Side And Pad U11-181(4053.75mil,5384.4mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-181(4053.75mil,5384.4mil) on Primary Component Side And Pad U11-182(4053.75mil,5364.7mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-182(4053.75mil,5364.7mil) on Primary Component Side And Pad U11-183(4053.75mil,5345mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-183(4053.75mil,5345mil) on Primary Component Side And Pad U11-184(4053.75mil,5325.3mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-184(4053.75mil,5325.3mil) on Primary Component Side And Pad U11-185(4053.75mil,5305.6mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-185(4053.75mil,5305.6mil) on Primary Component Side And Pad U11-186(4053.75mil,5285.9mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-186(4053.75mil,5285.9mil) on Primary Component Side And Pad U11-187(4053.75mil,5266.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-187(4053.75mil,5266.2mil) on Primary Component Side And Pad U11-188(4053.75mil,5246.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-188(4053.75mil,5246.5mil) on Primary Component Side And Pad U11-189(4053.75mil,5226.8mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-189(4053.75mil,5226.8mil) on Primary Component Side And Pad U11-190(4053.75mil,5207.1mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-190(4053.75mil,5207.1mil) on Primary Component Side And Pad U11-191(4053.75mil,5187.4mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-191(4053.75mil,5187.4mil) on Primary Component Side And Pad U11-192(4053.75mil,5167.7mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-192(4053.75mil,5167.7mil) on Primary Component Side And Pad U11-193(4053.75mil,5148mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-193(4053.75mil,5148mil) on Primary Component Side And Pad U11-194(4053.75mil,5128.3mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-194(4053.75mil,5128.3mil) on Primary Component Side And Pad U11-195(4053.75mil,5108.6mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-195(4053.75mil,5108.6mil) on Primary Component Side And Pad U11-196(4053.75mil,5088.9mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-196(4053.75mil,5088.9mil) on Primary Component Side And Pad U11-197(4053.75mil,5069.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-197(4053.75mil,5069.2mil) on Primary Component Side And Pad U11-198(4053.75mil,5049.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-198(4053.75mil,5049.5mil) on Primary Component Side And Pad U11-199(4053.75mil,5029.8mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-199(4053.75mil,5029.8mil) on Primary Component Side And Pad U11-200(4053.75mil,5010.1mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-2(4163.45mil,4762.5mil) on Primary Component Side And Pad U11-3(4183.15mil,4762.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-20(4518.05mil,4762.5mil) on Primary Component Side And Pad U11-21(4537.75mil,4762.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-200(4053.75mil,5010.1mil) on Primary Component Side And Pad U11-201(4053.75mil,4990.4mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-201(4053.75mil,4990.4mil) on Primary Component Side And Pad U11-202(4053.75mil,4970.7mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-202(4053.75mil,4970.7mil) on Primary Component Side And Pad U11-203(4053.75mil,4951mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-203(4053.75mil,4951mil) on Primary Component Side And Pad U11-204(4053.75mil,4931.3mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-204(4053.75mil,4931.3mil) on Primary Component Side And Pad U11-205(4053.75mil,4911.6mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-205(4053.75mil,4911.6mil) on Primary Component Side And Pad U11-206(4053.75mil,4891.9mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-206(4053.75mil,4891.9mil) on Primary Component Side And Pad U11-207(4053.75mil,4872.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-207(4053.75mil,4872.2mil) on Primary Component Side And Pad U11-208(4053.75mil,4852.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-22(4557.45mil,4762.5mil) on Primary Component Side And Pad U11-23(4577.15mil,4762.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-24(4596.85mil,4762.5mil) on Primary Component Side And Pad U11-25(4616.55mil,4762.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-26(4636.25mil,4762.5mil) on Primary Component Side And Pad U11-27(4655.95mil,4762.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-28(4675.65mil,4762.5mil) on Primary Component Side And Pad U11-29(4695.35mil,4762.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-30(4715.05mil,4762.5mil) on Primary Component Side And Pad U11-31(4734.75mil,4762.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-32(4754.45mil,4762.5mil) on Primary Component Side And Pad U11-33(4774.15mil,4762.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-34(4793.85mil,4762.5mil) on Primary Component Side And Pad U11-35(4813.55mil,4762.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-36(4833.25mil,4762.5mil) on Primary Component Side And Pad U11-37(4852.95mil,4762.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-38(4872.65mil,4762.5mil) on Primary Component Side And Pad U11-39(4892.35mil,4762.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-4(4202.85mil,4762.5mil) on Primary Component Side And Pad U11-5(4222.55mil,4762.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-40(4912.05mil,4762.5mil) on Primary Component Side And Pad U11-41(4931.75mil,4762.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-42(4951.45mil,4762.5mil) on Primary Component Side And Pad U11-43(4971.15mil,4762.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-44(4990.85mil,4762.5mil) on Primary Component Side And Pad U11-45(5010.55mil,4762.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-46(5030.25mil,4762.5mil) on Primary Component Side And Pad U11-47(5049.95mil,4762.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-48(5069.65mil,4762.5mil) on Primary Component Side And Pad U11-49(5089.35mil,4762.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-50(5109.05mil,4762.5mil) on Primary Component Side And Pad U11-51(5128.75mil,4762.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-53(5238.45mil,4852.5mil) on Primary Component Side And Pad U11-54(5238.45mil,4872.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-54(5238.45mil,4872.2mil) on Primary Component Side And Pad U11-55(5238.45mil,4891.9mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-55(5238.45mil,4891.9mil) on Primary Component Side And Pad U11-56(5238.45mil,4911.6mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-56(5238.45mil,4911.6mil) on Primary Component Side And Pad U11-57(5238.45mil,4931.3mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-57(5238.45mil,4931.3mil) on Primary Component Side And Pad U11-58(5238.45mil,4951mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-58(5238.45mil,4951mil) on Primary Component Side And Pad U11-59(5238.45mil,4970.7mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-59(5238.45mil,4970.7mil) on Primary Component Side And Pad U11-60(5238.45mil,4990.4mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-6(4242.25mil,4762.5mil) on Primary Component Side And Pad U11-7(4261.95mil,4762.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-60(5238.45mil,4990.4mil) on Primary Component Side And Pad U11-61(5238.45mil,5010.1mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-61(5238.45mil,5010.1mil) on Primary Component Side And Pad U11-62(5238.45mil,5029.8mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-62(5238.45mil,5029.8mil) on Primary Component Side And Pad U11-63(5238.45mil,5049.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-63(5238.45mil,5049.5mil) on Primary Component Side And Pad U11-64(5238.45mil,5069.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-64(5238.45mil,5069.2mil) on Primary Component Side And Pad U11-65(5238.45mil,5088.9mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-65(5238.45mil,5088.9mil) on Primary Component Side And Pad U11-66(5238.45mil,5108.6mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-66(5238.45mil,5108.6mil) on Primary Component Side And Pad U11-67(5238.45mil,5128.3mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-67(5238.45mil,5128.3mil) on Primary Component Side And Pad U11-68(5238.45mil,5148mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-68(5238.45mil,5148mil) on Primary Component Side And Pad U11-69(5238.45mil,5167.7mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-69(5238.45mil,5167.7mil) on Primary Component Side And Pad U11-70(5238.45mil,5187.4mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-70(5238.45mil,5187.4mil) on Primary Component Side And Pad U11-71(5238.45mil,5207.1mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-71(5238.45mil,5207.1mil) on Primary Component Side And Pad U11-72(5238.45mil,5226.8mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-72(5238.45mil,5226.8mil) on Primary Component Side And Pad U11-73(5238.45mil,5246.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-73(5238.45mil,5246.5mil) on Primary Component Side And Pad U11-74(5238.45mil,5266.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-74(5238.45mil,5266.2mil) on Primary Component Side And Pad U11-75(5238.45mil,5285.9mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-75(5238.45mil,5285.9mil) on Primary Component Side And Pad U11-76(5238.45mil,5305.6mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-76(5238.45mil,5305.6mil) on Primary Component Side And Pad U11-77(5238.45mil,5325.3mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-77(5238.45mil,5325.3mil) on Primary Component Side And Pad U11-78(5238.45mil,5345mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-78(5238.45mil,5345mil) on Primary Component Side And Pad U11-79(5238.45mil,5364.7mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-79(5238.45mil,5364.7mil) on Primary Component Side And Pad U11-80(5238.45mil,5384.4mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-8(4281.65mil,4762.5mil) on Primary Component Side And Pad U11-9(4301.35mil,4762.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-80(5238.45mil,5384.4mil) on Primary Component Side And Pad U11-81(5238.45mil,5404.1mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-81(5238.45mil,5404.1mil) on Primary Component Side And Pad U11-82(5238.45mil,5423.8mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-82(5238.45mil,5423.8mil) on Primary Component Side And Pad U11-83(5238.45mil,5443.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-83(5238.45mil,5443.5mil) on Primary Component Side And Pad U11-84(5238.45mil,5463.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-84(5238.45mil,5463.2mil) on Primary Component Side And Pad U11-85(5238.45mil,5482.9mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-85(5238.45mil,5482.9mil) on Primary Component Side And Pad U11-86(5238.45mil,5502.6mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-86(5238.45mil,5502.6mil) on Primary Component Side And Pad U11-87(5238.45mil,5522.3mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-87(5238.45mil,5522.3mil) on Primary Component Side And Pad U11-88(5238.45mil,5542mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-88(5238.45mil,5542mil) on Primary Component Side And Pad U11-89(5238.45mil,5561.7mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-89(5238.45mil,5561.7mil) on Primary Component Side And Pad U11-90(5238.45mil,5581.4mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-90(5238.45mil,5581.4mil) on Primary Component Side And Pad U11-91(5238.45mil,5601.1mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-91(5238.45mil,5601.1mil) on Primary Component Side And Pad U11-92(5238.45mil,5620.8mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-92(5238.45mil,5620.8mil) on Primary Component Side And Pad U11-93(5238.45mil,5640.5mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-93(5238.45mil,5640.5mil) on Primary Component Side And Pad U11-94(5238.45mil,5660.2mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-94(5238.45mil,5660.2mil) on Primary Component Side And Pad U11-95(5238.45mil,5679.9mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-95(5238.45mil,5679.9mil) on Primary Component Side And Pad U11-96(5238.45mil,5699.6mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-96(5238.45mil,5699.6mil) on Primary Component Side And Pad U11-97(5238.45mil,5719.3mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-97(5238.45mil,5719.3mil) on Primary Component Side And Pad U11-98(5238.45mil,5739mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.7mil < 10mil) Between Pad U11-98(5238.45mil,5739mil) on Primary Component Side And Pad U11-99(5238.45mil,5758.7mil) on Primary Component Side [Solder Mask Top] Mask Sliver [0.7mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (7.75mil < 10mil) Between Pad U14-1(2679.717mil,2242.75mil) on Primary Component Side And Pad U14-2(2705.3mil,2242.75mil) on Primary Component Side [Solder Mask Top] Mask Sliver [7.75mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (7.767mil < 10mil) Between Pad U14-10(2782.083mil,2494.267mil) on Primary Component Side And Pad U14-11(2756.483mil,2494.267mil) on Primary Component Side [Solder Mask Top] Mask Sliver [7.767mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (7.75mil < 10mil) Between Pad U14-10(2782.083mil,2494.267mil) on Primary Component Side And Pad U14-9(2807.667mil,2494.267mil) on Primary Component Side [Solder Mask Top] Mask Sliver [7.75mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (7.367mil < 10mil) Between Pad U14-11(2756.483mil,2494.267mil) on Primary Component Side And Pad U14-12(2731.283mil,2494.267mil) on Primary Component Side [Solder Mask Top] Mask Sliver [7.367mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (8.533mil < 10mil) Between Pad U14-12(2731.283mil,2494.267mil) on Primary Component Side And Pad U14-13(2704.917mil,2494.267mil) on Primary Component Side [Solder Mask Top] Mask Sliver [8.533mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (7.367mil < 10mil) Between Pad U14-13(2704.917mil,2494.267mil) on Primary Component Side And Pad U14-14(2679.717mil,2494.267mil) on Primary Component Side [Solder Mask Top] Mask Sliver [7.367mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (7.767mil < 10mil) Between Pad U14-2(2705.3mil,2242.75mil) on Primary Component Side And Pad U14-3(2730.9mil,2242.75mil) on Primary Component Side [Solder Mask Top] Mask Sliver [7.767mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (7.75mil < 10mil) Between Pad U14-3(2730.9mil,2242.75mil) on Primary Component Side And Pad U14-4(2756.483mil,2242.75mil) on Primary Component Side [Solder Mask Top] Mask Sliver [7.75mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (8.55mil < 10mil) Between Pad U14-4(2756.483mil,2242.75mil) on Primary Component Side And Pad U14-5(2782.867mil,2242.75mil) on Primary Component Side [Solder Mask Top] Mask Sliver [8.55mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (6.55mil < 10mil) Between Pad U14-5(2782.867mil,2242.75mil) on Primary Component Side And Pad U14-6(2807.25mil,2242.75mil) on Primary Component Side [Solder Mask Top] Mask Sliver [6.55mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (8.167mil < 10mil) Between Pad U14-6(2807.25mil,2242.75mil) on Primary Component Side And Pad U14-7(2833.25mil,2242.75mil) on Primary Component Side [Solder Mask Top] Mask Sliver [8.167mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (7.75mil < 10mil) Between Pad U14-8(2833.25mil,2494.267mil) on Primary Component Side And Pad U14-9(2807.667mil,2494.267mil) on Primary Component Side [Solder Mask Top] Mask Sliver [7.75mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (9.4mil < 10mil) Between Pad U16-1(5922.756mil,5293.652mil) on Primary Component Side And Pad U16-2(5922.756mil,5256.252mil) on Primary Component Side [Solder Mask Top] Mask Sliver [9.4mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (9.4mil < 10mil) Between Pad U16-2(5922.756mil,5256.252mil) on Primary Component Side And Pad U16-3(5922.756mil,5218.852mil) on Primary Component Side [Solder Mask Top] Mask Sliver [9.4mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (3.95mil < 10mil) Between Pad U3-9(5007.09mil,2500mil) on Multi-Layer And Via (4880.998mil,2485.263mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [3.95mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (4.609mil < 10mil) Between Pad U3-9(5007.09mil,2500mil) on Multi-Layer And Via (4883.393mil,2531.352mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [4.609mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.818mil < 10mil) Between Pad U3-9(5007.09mil,2500mil) on Multi-Layer And Via (4895.663mil,2441.569mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [2.818mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (8.335mil < 10mil) Between Pad U3-9(5007.09mil,2500mil) on Multi-Layer And Via (4900.152mil,2576.244mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [8.335mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.661mil < 10mil) Between Pad U3-9(5007.09mil,2500mil) on Multi-Layer And Via (4920.802mil,2408.648mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [2.661mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (6.065mil < 10mil) Between Pad U3-9(5007.09mil,2500mil) on Multi-Layer And Via (4935.467mil,2607.369mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [6.066mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (3.875mil < 10mil) Between Pad U3-9(5007.09mil,2500mil) on Multi-Layer And Via (4961.205mil,2381.713mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [3.875mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (5.856mil < 10mil) Between Pad U3-9(5007.09mil,2500mil) on Multi-Layer And Via (4979.76mil,2625.924mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [5.856mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.024mil < 10mil) Between Pad U3-9(5007.09mil,2500mil) on Multi-Layer And Via (5008.042mil,2374.979mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [2.024mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (5.922mil < 10mil) Between Pad U3-9(5007.09mil,2500mil) on Multi-Layer And Via (5024.652mil,2627.72mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [5.922mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (4.824mil < 10mil) Between Pad U3-9(5007.09mil,2500mil) on Multi-Layer And Via (5056.974mil,2382.312mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [4.824mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (8.728mil < 10mil) Between Pad U3-9(5007.09mil,2500mil) on Multi-Layer And Via (5066.551mil,2617.544mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [8.728mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.69mil < 10mil) Between Pad U3-9(5007.09mil,2500mil) on Multi-Layer And Via (5095.282mil,2410.444mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [2.69mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (4.378mil < 10mil) Between Pad U3-9(5007.09mil,2500mil) on Multi-Layer And Via (5100.669mil,2586.419mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [4.378mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (4.055mil < 10mil) Between Pad U3-9(5007.09mil,2500mil) on Multi-Layer And Via (5122.815mil,2447.554mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [4.055mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (5.208mil < 10mil) Between Pad U3-9(5007.09mil,2500mil) on Multi-Layer And Via (5126.407mil,2546.915mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [5.208mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (3.69mil < 10mil) Between Pad U3-9(5007.09mil,2500mil) on Multi-Layer And Via (5133.589mil,2493.045mil) from Primary Component Side to Secondary Component Side [Solder Mask Bottom] Mask Sliver [3.69mil]
+Rule Violations :230
+
+Processing Rule : Silk To Solder Mask (Clearance=10mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Parallel Segment Constraint (Gap=200mil ) (Limit=1000mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Parallel Segment Constraint (Gap=200mil ) (Limit=1000mil) (All),(All)
+   Violation between Parallel Segment Constraint: (2894.62mil > 1000mil) Between Net NVRAM_DATA6 And Net NVRAM_DATA7 Gap < 200mil; Actual Parallel Span = 2894.62mil
+   Violation between Parallel Segment Constraint: (1046.12mil > 1000mil) Between Net NVRAM_OE And Net NVRAM_WE Gap < 200mil; Actual Parallel Span = 1046.12mil
+   Violation between Parallel Segment Constraint: (1105.582mil > 1000mil) Between Net PPM_NOVI And Net TCK Gap < 200mil; Actual Parallel Span = 1105.582mil
+   Violation between Parallel Segment Constraint: (3848.019mil > 1000mil) Between Net PWR_GOOD_TPS And Net RESERVE1 Gap < 200mil; Actual Parallel Span = 3848.019mil
+   Violation between Parallel Segment Constraint: (1349.499mil > 1000mil) Between Net PWR_GOOD_TPS And Net WDT_SIG_STARI Gap < 200mil; Actual Parallel Span = 1349.499mil
+   Violation between Parallel Segment Constraint: (1676.411mil > 1000mil) Between Net RESERVE1 And Net WDT_SIG_STARI Gap < 200mil; Actual Parallel Span = 1676.411mil
+   Violation between Parallel Segment Constraint: (1565.027mil > 1000mil) Between Net RST_DOF_EN And Net TDI Gap < 200mil; Actual Parallel Span = 1565.027mil
+   Violation between Parallel Segment Constraint: (1335.219mil > 1000mil) Between Net RST_DOF_EN And Net TDO Gap < 200mil; Actual Parallel Span = 1335.219mil
+   Violation between Parallel Segment Constraint: (3579.963mil > 1000mil) Between Net SA1 And Net SA2 Gap < 200mil; Actual Parallel Span = 3579.963mil
+   Violation between Parallel Segment Constraint: (2419.118mil > 1000mil) Between Net SA1 And Net SA3 Gap < 200mil; Actual Parallel Span = 2419.118mil
+   Violation between Parallel Segment Constraint: (2331.618mil > 1000mil) Between Net SA1 And Net SA4 Gap < 200mil; Actual Parallel Span = 2331.618mil
+   Violation between Parallel Segment Constraint: (2231.618mil > 1000mil) Between Net SA1 And Net SA5 Gap < 200mil; Actual Parallel Span = 2231.618mil
+   Violation between Parallel Segment Constraint: (2137.868mil > 1000mil) Between Net SA1 And Net SA6 Gap < 200mil; Actual Parallel Span = 2137.868mil
+   Violation between Parallel Segment Constraint: (1100.552mil > 1000mil) Between Net SA1 And Net SA7 Gap < 200mil; Actual Parallel Span = 1100.552mil
+   Violation between Parallel Segment Constraint: (1075.552mil > 1000mil) Between Net SA1 And Net SA8 Gap < 200mil; Actual Parallel Span = 1075.552mil
+   Violation between Parallel Segment Constraint: (2299.694mil > 1000mil) Between Net SA1 And Net WDT_SIG_STARI Gap < 200mil; Actual Parallel Span = 2299.694mil
+   Violation between Parallel Segment Constraint: (2006.023mil > 1000mil) Between Net SA10 And Net SA15 Gap < 200mil; Actual Parallel Span = 2006.023mil
+   Violation between Parallel Segment Constraint: (1127.177mil > 1000mil) Between Net SA10 And Net SA3 Gap < 200mil; Actual Parallel Span = 1127.177mil
+   Violation between Parallel Segment Constraint: (2046.581mil > 1000mil) Between Net SA10 And Net SA4 Gap < 200mil; Actual Parallel Span = 2046.581mil
+   Violation between Parallel Segment Constraint: (2118.313mil > 1000mil) Between Net SA10 And Net SA5 Gap < 200mil; Actual Parallel Span = 2118.313mil
+   Violation between Parallel Segment Constraint: (2188.215mil > 1000mil) Between Net SA10 And Net SA6 Gap < 200mil; Actual Parallel Span = 2188.215mil
+   Violation between Parallel Segment Constraint: (2873.174mil > 1000mil) Between Net SA10 And Net SA7 Gap < 200mil; Actual Parallel Span = 2873.174mil
+   Violation between Parallel Segment Constraint: (3069.592mil > 1000mil) Between Net SA10 And Net SA8 Gap < 200mil; Actual Parallel Span = 3069.592mil
+   Violation between Parallel Segment Constraint: (3164.722mil > 1000mil) Between Net SA10 And Net SA9 Gap < 200mil; Actual Parallel Span = 3164.722mil
+   Violation between Parallel Segment Constraint: (3038.086mil > 1000mil) Between Net SA11 And Net SA12 Gap < 200mil; Actual Parallel Span = 3038.086mil
+   Violation between Parallel Segment Constraint: (2875.456mil > 1000mil) Between Net SA11 And Net SA13 Gap < 200mil; Actual Parallel Span = 2875.456mil
+   Violation between Parallel Segment Constraint: (2600.429mil > 1000mil) Between Net SA11 And Net SA14 Gap < 200mil; Actual Parallel Span = 2600.429mil
+   Violation between Parallel Segment Constraint: (2079.586mil > 1000mil) Between Net SA11 And Net SA15 Gap < 200mil; Actual Parallel Span = 2079.586mil
+   Violation between Parallel Segment Constraint: (1140.071mil > 1000mil) Between Net SA11 And Net SA4 Gap < 200mil; Actual Parallel Span = 1140.071mil
+   Violation between Parallel Segment Constraint: (2016.482mil > 1000mil) Between Net SA11 And Net SA5 Gap < 200mil; Actual Parallel Span = 2016.482mil
+   Violation between Parallel Segment Constraint: (2086.384mil > 1000mil) Between Net SA11 And Net SA6 Gap < 200mil; Actual Parallel Span = 2086.384mil
+   Violation between Parallel Segment Constraint: (2148.205mil > 1000mil) Between Net SA11 And Net SA7 Gap < 200mil; Actual Parallel Span = 2148.205mil
+   Violation between Parallel Segment Constraint: (2216.277mil > 1000mil) Between Net SA11 And Net SA8 Gap < 200mil; Actual Parallel Span = 2216.277mil
+   Violation between Parallel Segment Constraint: (2992.18mil > 1000mil) Between Net SA11 And Net SA9 Gap < 200mil; Actual Parallel Span = 2992.18mil
+   Violation between Parallel Segment Constraint: (2969.545mil > 1000mil) Between Net SA12 And Net SA13 Gap < 200mil; Actual Parallel Span = 2969.545mil
+   Violation between Parallel Segment Constraint: (2800.769mil > 1000mil) Between Net SA12 And Net SA14 Gap < 200mil; Actual Parallel Span = 2800.769mil
+   Violation between Parallel Segment Constraint: (2531.648mil > 1000mil) Between Net SA12 And Net SA15 Gap < 200mil; Actual Parallel Span = 2531.648mil
+   Violation between Parallel Segment Constraint: (1159.214mil > 1000mil) Between Net SA12 And Net SA5 Gap < 200mil; Actual Parallel Span = 1159.214mil
+   Violation between Parallel Segment Constraint: (1815.858mil > 1000mil) Between Net SA12 And Net SA6 Gap < 200mil; Actual Parallel Span = 1815.858mil
+   Violation between Parallel Segment Constraint: (2054.455mil > 1000mil) Between Net SA12 And Net SA7 Gap < 200mil; Actual Parallel Span = 2054.455mil
+   Violation between Parallel Segment Constraint: (2122.527mil > 1000mil) Between Net SA12 And Net SA8 Gap < 200mil; Actual Parallel Span = 2122.527mil
+   Violation between Parallel Segment Constraint: (2727.72mil > 1000mil) Between Net SA12 And Net SA9 Gap < 200mil; Actual Parallel Span = 2727.72mil
+   Violation between Parallel Segment Constraint: (2897.685mil > 1000mil) Between Net SA13 And Net SA14 Gap < 200mil; Actual Parallel Span = 2897.685mil
+   Violation between Parallel Segment Constraint: (2734.814mil > 1000mil) Between Net SA13 And Net SA15 Gap < 200mil; Actual Parallel Span = 2734.814mil
+   Violation between Parallel Segment Constraint: (1017.4mil > 1000mil) Between Net SA13 And Net SA5 Gap < 200mil; Actual Parallel Span = 1017.4mil
+   Violation between Parallel Segment Constraint: (1178.358mil > 1000mil) Between Net SA13 And Net SA6 Gap < 200mil; Actual Parallel Span = 1178.358mil
+   Violation between Parallel Segment Constraint: (1781.34mil > 1000mil) Between Net SA13 And Net SA7 Gap < 200mil; Actual Parallel Span = 1781.34mil
+   Violation between Parallel Segment Constraint: (2035.027mil > 1000mil) Between Net SA13 And Net SA8 Gap < 200mil; Actual Parallel Span = 2035.027mil
+   Violation between Parallel Segment Constraint: (2105.47mil > 1000mil) Between Net SA13 And Net SA9 Gap < 200mil; Actual Parallel Span = 2105.47mil
+   Violation between Parallel Segment Constraint: (2833.718mil > 1000mil) Between Net SA14 And Net SA15 Gap < 200mil; Actual Parallel Span = 2833.718mil
+   Violation between Parallel Segment Constraint: (1034.95mil > 1000mil) Between Net SA14 And Net SA6 Gap < 200mil; Actual Parallel Span = 1034.95mil
+   Violation between Parallel Segment Constraint: (1193.59mil > 1000mil) Between Net SA14 And Net SA7 Gap < 200mil; Actual Parallel Span = 1193.59mil
+   Violation between Parallel Segment Constraint: (1746.572mil > 1000mil) Between Net SA14 And Net SA8 Gap < 200mil; Actual Parallel Span = 1746.572mil
+   Violation between Parallel Segment Constraint: (2011.47mil > 1000mil) Between Net SA14 And Net SA9 Gap < 200mil; Actual Parallel Span = 2011.47mil
+   Violation between Parallel Segment Constraint: (1045.25mil > 1000mil) Between Net SA15 And Net SA7 Gap < 200mil; Actual Parallel Span = 1045.25mil
+   Violation between Parallel Segment Constraint: (1214.072mil > 1000mil) Between Net SA15 And Net SA8 Gap < 200mil; Actual Parallel Span = 1214.072mil
+   Violation between Parallel Segment Constraint: (1731.927mil > 1000mil) Between Net SA15 And Net SA9 Gap < 200mil; Actual Parallel Span = 1731.927mil
+   Violation between Parallel Segment Constraint: (3641.603mil > 1000mil) Between Net SA2 And Net SA3 Gap < 200mil; Actual Parallel Span = 3641.603mil
+   Violation between Parallel Segment Constraint: (3475.897mil > 1000mil) Between Net SA2 And Net SA4 Gap < 200mil; Actual Parallel Span = 3475.897mil
+   Violation between Parallel Segment Constraint: (2358.76mil > 1000mil) Between Net SA2 And Net SA5 Gap < 200mil; Actual Parallel Span = 2358.76mil
+   Violation between Parallel Segment Constraint: (2257.514mil > 1000mil) Between Net SA2 And Net SA6 Gap < 200mil; Actual Parallel Span = 2257.514mil
+   Violation between Parallel Segment Constraint: (2166.938mil > 1000mil) Between Net SA2 And Net SA7 Gap < 200mil; Actual Parallel Span = 2166.938mil
+   Violation between Parallel Segment Constraint: (2080.782mil > 1000mil) Between Net SA2 And Net SA8 Gap < 200mil; Actual Parallel Span = 2080.782mil
+   Violation between Parallel Segment Constraint: (1101.099mil > 1000mil) Between Net SA2 And Net SA9 Gap < 200mil; Actual Parallel Span = 1101.099mil
+   Violation between Parallel Segment Constraint: (2247.541mil > 1000mil) Between Net SA2 And Net WDT_SIG_STARI Gap < 200mil; Actual Parallel Span = 2247.541mil
+   Violation between Parallel Segment Constraint: (3573.02mil > 1000mil) Between Net SA3 And Net SA4 Gap < 200mil; Actual Parallel Span = 3573.02mil
+   Violation between Parallel Segment Constraint: (3397.402mil > 1000mil) Between Net SA3 And Net SA5 Gap < 200mil; Actual Parallel Span = 3397.402mil
+   Violation between Parallel Segment Constraint: (2328.121mil > 1000mil) Between Net SA3 And Net SA6 Gap < 200mil; Actual Parallel Span = 2328.121mil
+   Violation between Parallel Segment Constraint: (2237.545mil > 1000mil) Between Net SA3 And Net SA7 Gap < 200mil; Actual Parallel Span = 2237.545mil
+   Violation between Parallel Segment Constraint: (2151.388mil > 1000mil) Between Net SA3 And Net SA8 Gap < 200mil; Actual Parallel Span = 2151.388mil
+   Violation between Parallel Segment Constraint: (2049.868mil > 1000mil) Between Net SA3 And Net SA9 Gap < 200mil; Actual Parallel Span = 2049.868mil
+   Violation between Parallel Segment Constraint: (2153.791mil > 1000mil) Between Net SA3 And Net WDT_SIG_STARI Gap < 200mil; Actual Parallel Span = 2153.791mil
+   Violation between Parallel Segment Constraint: (3496.896mil > 1000mil) Between Net SA4 And Net SA5 Gap < 200mil; Actual Parallel Span = 3496.896mil
+   Violation between Parallel Segment Constraint: (3323.11mil > 1000mil) Between Net SA4 And Net SA6 Gap < 200mil; Actual Parallel Span = 3323.11mil
+   Violation between Parallel Segment Constraint: (2310.522mil > 1000mil) Between Net SA4 And Net SA7 Gap < 200mil; Actual Parallel Span = 2310.522mil
+   Violation between Parallel Segment Constraint: (2224.366mil > 1000mil) Between Net SA4 And Net SA8 Gap < 200mil; Actual Parallel Span = 2224.366mil
+   Violation between Parallel Segment Constraint: (2122.846mil > 1000mil) Between Net SA4 And Net SA9 Gap < 200mil; Actual Parallel Span = 2122.846mil
+   Violation between Parallel Segment Constraint: (3428.854mil > 1000mil) Between Net SA5 And Net SA6 Gap < 200mil; Actual Parallel Span = 3428.854mil
+   Violation between Parallel Segment Constraint: (3267.568mil > 1000mil) Between Net SA5 And Net SA7 Gap < 200mil; Actual Parallel Span = 3267.568mil
+   Violation between Parallel Segment Constraint: (2299.174mil > 1000mil) Between Net SA5 And Net SA8 Gap < 200mil; Actual Parallel Span = 2299.174mil
+   Violation between Parallel Segment Constraint: (2197.654mil > 1000mil) Between Net SA5 And Net SA9 Gap < 200mil; Actual Parallel Span = 2197.654mil
+   Violation between Parallel Segment Constraint: (3370.138mil > 1000mil) Between Net SA6 And Net SA7 Gap < 200mil; Actual Parallel Span = 3370.138mil
+   Violation between Parallel Segment Constraint: (3207.508mil > 1000mil) Between Net SA6 And Net SA8 Gap < 200mil; Actual Parallel Span = 3207.508mil
+   Violation between Parallel Segment Constraint: (2269.465mil > 1000mil) Between Net SA6 And Net SA9 Gap < 200mil; Actual Parallel Span = 2269.465mil
+   Violation between Parallel Segment Constraint: (3300.265mil > 1000mil) Between Net SA7 And Net SA8 Gap < 200mil; Actual Parallel Span = 3300.265mil
+   Violation between Parallel Segment Constraint: (3133.796mil > 1000mil) Between Net SA7 And Net SA9 Gap < 200mil; Actual Parallel Span = 3133.796mil
+   Violation between Parallel Segment Constraint: (3222.621mil > 1000mil) Between Net SA8 And Net SA9 Gap < 200mil; Actual Parallel Span = 3222.621mil
+   Violation between Parallel Segment Constraint: (4045.561mil > 1000mil) Between Net SMEMR And Net SMEMW Gap < 200mil; Actual Parallel Span = 4045.561mil
+   Violation between Parallel Segment Constraint: (1165.238mil > 1000mil) Between Net TCK And Net WDT_SIG_STARI Gap < 200mil; Actual Parallel Span = 1165.238mil
+   Violation between Parallel Segment Constraint: (1121.403mil > 1000mil) Between Net TDI And Net TDO Gap < 200mil; Actual Parallel Span = 1121.403mil
+   Violation between Parallel Segment Constraint: (5768.275mil > 1000mil) Between Net WDT_OUT_STARI And Net WDT_TRG Gap < 200mil; Actual Parallel Span = 5768.275mil
+Rule Violations :91
+
+Processing Rule : Length Constraint (Min=0mil) (Max=50000mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 498
+Waived Violations : 0
+Time Elapsed        : 00:00:04

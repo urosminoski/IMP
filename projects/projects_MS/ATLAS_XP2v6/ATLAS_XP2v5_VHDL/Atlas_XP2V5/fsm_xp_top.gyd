@@ -1,0 +1,231 @@
+Pin Freeze File:  version P.20131013
+
+3256XL208 XCR3256XL-12-PQ208
+address_isa<0> S:PIN3
+address_isa<1> S:PIN4
+address_isa<2> S:PIN6
+address_isa<3> S:PIN7
+address_isa<4> S:PIN8
+address_isa<5> S:PIN9
+address_isa<6> S:PIN10
+address_isa<7> S:PIN11
+address_isa<8> S:PIN12
+address_isa<9> S:PIN13
+address_isa<10> S:PIN15
+address_isa<11> S:PIN16
+address_isa<12> S:PIN17
+address_isa<13> S:PIN18
+address_isa<14> S:PIN19
+address_isa<15> S:PIN20
+address_isa<16> S:PIN198
+address_isa<17> S:PIN199
+address_isa<18> S:PIN201
+address_isa<19> S:PIN202
+address_isa<20> S:PIN203
+address_isa<21> S:PIN204
+address_isa<22> S:PIN205
+address_isa<23> S:PIN206
+aen S:PIN148
+ale S:PIN108
+base_addr_jp<0> S:PIN21
+base_addr_jp<1> S:PIN22
+clk S:PIN181
+cw6 S:PIN147
+cw7 S:PIN142
+iord S:PIN150
+iowr S:PIN151
+iq_i_syn S:PIN66
+nvram_rst S:PIN140
+power_supply_24V S:PIN177
+pwr_good_tps S:PIN149
+reset S:PIN144
+rst_dof_dsbl S:PIN173
+rst_taster S:PIN114
+smemr S:PIN138
+smemw S:PIN139
+wdt_out_stari S:PIN56
+wdt_sig_stari S:PIN68
+xp_address<0> S:PIN79
+xp_address<1> S:PIN80
+xp_address<2> S:PIN81
+xp_address<3> S:PIN84
+xp_address<4> S:PIN86
+xp_address<5> S:PIN87
+xp_address<6> S:PIN88
+xp_address<7> S:PIN89
+address_max<0> S:PIN153
+address_max<1> S:PIN154
+address_max<2> S:PIN159
+address_max<3> S:PIN160
+address_max<4> S:PIN161
+address_max<5> S:PIN162
+address_max<6> S:PIN163
+address_max<7> S:PIN164
+bale S:PIN168
+brd S:PIN169
+bwr S:PIN170
+cs S:PIN146
+data_isa<0> S:PIN28
+data_isa<1> S:PIN29
+data_isa<2> S:PIN31
+data_isa<3> S:PIN33
+data_isa<4> S:PIN34
+data_isa<5> S:PIN35
+data_isa<6> S:PIN36
+data_isa<7> S:PIN37
+data_isa<8> S:PIN38
+data_isa<9> S:PIN69
+data_isa<10> S:PIN70
+data_isa<11> S:PIN71
+data_isa<12> S:PIN73
+data_isa<13> S:PIN76
+data_isa<14> S:PIN77
+data_isa<15> S:PIN78
+data_max<0> S:PIN39
+data_max<1> S:PIN40
+data_max<2> S:PIN42
+data_max<3> S:PIN43
+data_max<4> S:PIN44
+data_max<5> S:PIN45
+data_max<6> S:PIN46
+data_max<7> S:PIN47
+data_max<8> S:PIN48
+data_max<9> S:PIN49
+data_max<10> S:PIN59
+data_max<11> S:PIN60
+data_max<12> S:PIN61
+data_max<13> S:PIN62
+data_max<14> S:PIN64
+data_max<15> S:PIN65
+data_out_enable S:PIN172
+direction_245 S:PIN167
+iocs16 S:PIN145
+iq_o_syn S:PIN67
+led_kvr S:PIN131
+led_lpt S:PIN132
+led_master_enable S:PIN109
+led_pwr_good_tps S:PIN118
+led_rad S:PIN130
+led_wdt S:PIN117
+load_buffer S:PIN175
+master_enable S:PIN113
+mrst S:PIN141
+nvram_address<0> S:PIN129
+nvram_address<1> S:PIN128
+nvram_address<2> S:PIN126
+nvram_address<3> S:PIN124
+nvram_address<4> S:PIN123
+nvram_address<5> S:PIN122
+nvram_address<6> S:PIN121
+nvram_address<7> S:PIN120
+nvram_address<8> S:PIN119
+nvram_address<9> S:PIN102
+nvram_address<10> S:PIN101
+nvram_address<11> S:PIN100
+nvram_address<12> S:PIN99
+nvram_address<13> S:PIN98
+nvram_address<14> S:PIN97
+nvram_address<15> S:PIN96
+nvram_address<16> S:PIN95
+nvram_address<17> S:PIN93
+nvram_address<18> S:PIN92
+nvram_address<19> S:PIN91
+nvram_address<20> S:PIN90
+nvram_ce S:PIN133
+nvram_cs S:PIN135
+nvram_data<0> S:PIN188
+nvram_data<1> S:PIN190
+nvram_data<2> S:PIN192
+nvram_data<3> S:PIN193
+nvram_data<4> S:PIN194
+nvram_data<5> S:PIN195
+nvram_data<6> S:PIN196
+nvram_data<7> S:PIN197
+nvram_oe S:PIN136
+nvram_we S:PIN137
+reset_CPU S:PIN111
+test2 S:PIN115
+wdt_trg S:PIN55
+write_wdt_en S:PIN171
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 Mcompar_id1_register_sel_cmp_eq0000_or0001_xor0000 adr_latched<3> Mcompar_id1_register_sel_cmp_eq0000_or0002_xor0000 adr_latched<5>
+		 adr_latched<6>
+PARTITION FB1_7 I2/load_data I2/led_kvr I2/curstate_FSM_FFd5 I2/curstate_FSM_FFd6
+		 I2/curstate_FSM_FFd1 Mcompar_id1_register_sel_cmp_eq0000_or0003_xor0001 adr_latched<8> Mcompar_id1_register_sel_cmp_eq0000_or0004_xor0001
+		 Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0000 Mcompar_id1_register_sel_cmp_eq0000_or0005_xor0001
+PARTITION FB2_1 Mcompar_id2_register_sel_cmp_eq0000_or0000_xor0001 Mcompar_page_register_sel_cmp_eq0000_or0000_xor0000 Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0001 Mcompar_id1_register_sel_cmp_eq0000_or0011_xor0000
+		 Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0001 I2/curstate_FSM_FFd2 N_PZ_1473 N_PZ_1574
+		 I2/curstate_FSM_FFd3 I2/curstate_FSM_FFd4 master_enable2_previous Mcompar_id1_register_sel_cmp_eq0000_or0010_xor0000
+		 Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0001 Mcompar_id1_register_sel_cmp_eq0000_or0009_xor0000 Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0001 Mcompar_id1_register_sel_cmp_eq0000_or0008_xor0000
+		
+PARTITION FB3_1 Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0000 Mcompar_id1_register_sel_cmp_eq0000_or0006_xor0001 Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0000 Mcompar_id1_register_sel_cmp_eq0000_or0007_xor0001
+		
+PARTITION FB3_6 data_isa<1>_BUFR data_isa<7>_BUFR data_isa<3>_BUFR N_PZ_2896
+		 N89 master_enable2
+PARTITION FB3_15 reg_rd nvram_oe_BUFR
+PARTITION FB4_1 nvram_data<7> nvram_data<6> nvram_data<5> nvram_data<4>
+		 nvram_data<3> mode_register<6> mode_register<5> mode_register<4>
+		 mode_register<3> mode_register<2> mode_register<1> nvram_data<2>
+		 nvram_data<1> mode_register<0> nvram_data<0> mode_register<7>
+		
+PARTITION FB5_1 data_isa_latched<0> data_isa_latched<1>
+PARTITION FB5_4 data_isa_latched<2> data_isa_latched<3>
+PARTITION FB5_12 data_isa_latched<4> data_isa_latched<5> data_isa_latched<6> data_isa_latched<7>
+		 data_isa_latched<8>
+PARTITION FB6_1 data_isa_latched<15> data_isa_latched<14> data_isa_latched<13> data_isa_latched<12>
+		 data_isa_latched<11>
+PARTITION FB6_10 data_isa<6>_BUFR data_isa<0>_BUFR data_isa_latched<10> data_isa_latched<9>
+		
+PARTITION FB6_15 iq_o_syn
+
+PARTITION FB7_1 data_max<0> data_max<1> data_max<2> data_max<3>
+		 data_max<4> address_max_fsm<4> address_max_fsm<3> address_max_fsm<2>
+		 address_max_fsm<1> address_max_fsm<0> wdt_enable data_max<5>
+		 data_max<6> data_max<7> data_max<8> data_max<9>
+		
+PARTITION FB8_1 data_max<15> data_max<14> data_max<13> data_max<12>
+		 data_max<11> reg_wr N_PZ_1472 N_PZ_1309
+		 N_PZ_1310 I2/write_lpt_en I2/load_address data_max<10>
+		 I6/Mtrien_nvram_address<20> nvram_we_BUFR I6/Mtrien_nvram_data wdt_trg
+		
+PARTITION FB9_1 address_max<0> address_max<1> address_max<2> address_max<3>
+		 address_max<4> led_rad_sig reset_CPU_not0001 master_enable1
+		 address_max_fsm<7> address_max_fsm<6> address_max_fsm<5> address_max<5>
+		 address_max<6> address_max<7> N_PZ_2834 direction_245
+		
+PARTITION FB10_4 page_register<1> page_register<0> read_page_register read_mode_register
+		 read_led_register read_jumper_register read_id2_register read_id1_register
+		 cs iocs16 N_PZ_2876 N_PZ_1066
+		 mrst
+PARTITION FB11_1 bale brd bwr write_wdt_en
+		 data_out_enable data_isa<4>_BUFR page_register<7> page_register<6>
+		 page_register<5> page_register<4> page_register<3>
+PARTITION FB11_13 load_buffer page_register<2>
+
+PARTITION FB12_4 nvram_we nvram_oe
+PARTITION FB12_10 N_PZ_877 N_PZ_1377 nvram_cs nvram_ce
+		 led_lpt led_kvr led_rad
+PARTITION FB13_1 data_max_reg_in<5> data_max_reg_in<4> data_max_reg_in<3> data_max_reg_in<2>
+		 data_max_reg_in<1> data_max_reg_in<14> data_max_reg_in<13> data_max_reg_in<12>
+		 data_max_reg_in<11> data_max_reg_in<10> data_max_reg_in<0> data_max_reg_in<15>
+		 ms_in xp_present_in nvram_address<20> nvram_address<19>
+		
+PARTITION FB14_1 nvram_address<0> nvram_address<1> data_max_reg_in<6> nvram_address<2>
+		 nvram_address<3>
+PARTITION FB14_9 data_max_reg_in<9> data_max_reg_in<8> data_max_reg_in<7> nvram_address<4>
+		 nvram_address<5> nvram_address<6> nvram_address<7> nvram_address<8>
+		
+PARTITION FB15_1 nvram_address<18> nvram_address<17> nvram_address<16> nvram_address<15>
+		 nvram_address<14>
+PARTITION FB15_12 nvram_address<13> nvram_address<12> nvram_address<11> nvram_address<10>
+		 nvram_address<9>
+PARTITION FB16_1 led_pwr_good_tps led_wdt test2
+PARTITION FB16_5 master_enable
+PARTITION FB16_13 reset_CPU
+PARTITION FB16_15 led_master_enable
+
+

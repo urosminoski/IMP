@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../dpram_interface.srcs/sources_1/new/data_transfer.vhd" \
+"../../../../dpram_interface.srcs/sim_4/new/data_transfer_tb.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,561 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ../../../ATLAS_XP2V3v1.2_test/ATLAS_XP2V3v1.2/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to ../../../ATLAS_XP2V3v1.2_test/ATLAS_XP2V3v1.2/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: fsm_xp_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "fsm_xp_top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "fsm_xp_top"
+Output Format                      : NGC
+Target Device                      : CoolRunner XPLA3 CPLDs
+
+---- Source Options
+Top Module Name                    : fsm_xp_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Compact
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Area
+Optimization Effort                : 2
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+Setting FSM Encoding Algorithm to : OPT
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/adr_latch is now defined in a different file.  It was defined in "F:/MILOS/Projects/ATLAS_XP2V3v1.2_debug/ATLAS_XP2V3v1.2/adr_latch.vhd", and is now defined in "D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/Atlas_XP2V5/adr_latch.vhd".
+WARNING:HDLParsers:3607 - Unit work/adr_latch/Behavioral is now defined in a different file.  It was defined in "F:/MILOS/Projects/ATLAS_XP2V3v1.2_debug/ATLAS_XP2V3v1.2/adr_latch.vhd", and is now defined in "D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/Atlas_XP2V5/adr_latch.vhd".
+WARNING:HDLParsers:3607 - Unit work/data_latch is now defined in a different file.  It was defined in "F:/MILOS/Projects/ATLAS_XP2V3v1.2_debug/ATLAS_XP2V3v1.2/data_latch.vhd", and is now defined in "D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/Atlas_XP2V5/data_latch.vhd".
+WARNING:HDLParsers:3607 - Unit work/data_latch/Behavioral is now defined in a different file.  It was defined in "F:/MILOS/Projects/ATLAS_XP2V3v1.2_debug/ATLAS_XP2V3v1.2/data_latch.vhd", and is now defined in "D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/Atlas_XP2V5/data_latch.vhd".
+WARNING:HDLParsers:3607 - Unit work/fsm_xp is now defined in a different file.  It was defined in "F:/MILOS/Projects/ATLAS_XP2V3v1.2_debug/ATLAS_XP2V3v1.2/fsm_xp.vhd", and is now defined in "D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/Atlas_XP2V5/fsm_xp.vhd".
+WARNING:HDLParsers:3607 - Unit work/fsm_xp/Behavioral is now defined in a different file.  It was defined in "F:/MILOS/Projects/ATLAS_XP2V3v1.2_debug/ATLAS_XP2V3v1.2/fsm_xp.vhd", and is now defined in "D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/Atlas_XP2V5/fsm_xp.vhd".
+WARNING:HDLParsers:3607 - Unit work/nvram_rtc is now defined in a different file.  It was defined in "F:/MILOS/Projects/ATLAS_XP2V3v1.2_debug/ATLAS_XP2V3v1.2/nvram_rtc.vhd", and is now defined in "D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/Atlas_XP2V5/nvram_rtc.vhd".
+WARNING:HDLParsers:3607 - Unit work/nvram_rtc/Behavioral is now defined in a different file.  It was defined in "F:/MILOS/Projects/ATLAS_XP2V3v1.2_debug/ATLAS_XP2V3v1.2/nvram_rtc.vhd", and is now defined in "D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/Atlas_XP2V5/nvram_rtc.vhd".
+Compiling vhdl file "D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/Atlas_XP2V5/adr_latch.vhd" in Library work.
+Architecture behavioral of Entity adr_latch is up to date.
+Compiling vhdl file "D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/Atlas_XP2V5/fsm_xp.vhd" in Library work.
+Architecture behavioral of Entity fsm_xp is up to date.
+Compiling vhdl file "D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/Atlas_XP2V5/data_latch.vhd" in Library work.
+Architecture behavioral of Entity data_latch is up to date.
+Compiling vhdl file "D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/Atlas_XP2V5/nvram_rtc.vhd" in Library work.
+Architecture behavioral of Entity nvram_rtc is up to date.
+Compiling vhdl file "D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/Atlas_XP2V5/fsm_xp_top.vhd" in Library work.
+Entity <fsm_xp_top> compiled.
+Entity <fsm_xp_top> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <fsm_xp_top> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <adr_latch> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <fsm_xp> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <data_latch> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <nvram_rtc> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <fsm_xp_top> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/Atlas_XP2V5/fsm_xp_top.vhd" line 508: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <data_isa_latched>
+WARNING:Xst:819 - "D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/Atlas_XP2V5/fsm_xp_top.vhd" line 666: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <power_supply_24V>
+WARNING:Xst:819 - "D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/Atlas_XP2V5/fsm_xp_top.vhd" line 704: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <reg_306h>
+INFO:Xst:1561 - "D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/Atlas_XP2V5/fsm_xp_top.vhd" line 869: Mux is complete : default of case is discarded
+INFO:Xst:2679 - Register <data_isa<15>> in unit <fsm_xp_top> has a constant value of Z during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data_isa<14>> in unit <fsm_xp_top> has a constant value of Z during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data_isa<13>> in unit <fsm_xp_top> has a constant value of Z during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data_isa<12>> in unit <fsm_xp_top> has a constant value of Z during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data_isa<11>> in unit <fsm_xp_top> has a constant value of Z during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data_isa<10>> in unit <fsm_xp_top> has a constant value of Z during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data_isa<9>> in unit <fsm_xp_top> has a constant value of Z during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data_isa<8>> in unit <fsm_xp_top> has a constant value of Z during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <xp_address_reg<15>> in unit <fsm_xp_top> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <xp_address_reg<14>> in unit <fsm_xp_top> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <xp_address_reg<13>> in unit <fsm_xp_top> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <xp_address_reg<12>> in unit <fsm_xp_top> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <xp_address_reg<11>> in unit <fsm_xp_top> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <xp_address_reg<10>> in unit <fsm_xp_top> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <xp_address_reg<9>> in unit <fsm_xp_top> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <xp_address_reg<8>> in unit <fsm_xp_top> has a constant value of 1 during circuit operation. The register is replaced by logic.
+Entity <fsm_xp_top> analyzed. Unit <fsm_xp_top> generated.
+
+Analyzing Entity <adr_latch> in library <work> (Architecture <behavioral>).
+Entity <adr_latch> analyzed. Unit <adr_latch> generated.
+
+Analyzing Entity <fsm_xp> in library <work> (Architecture <behavioral>).
+Entity <fsm_xp> analyzed. Unit <fsm_xp> generated.
+
+Analyzing Entity <data_latch> in library <work> (Architecture <behavioral>).
+Entity <data_latch> analyzed. Unit <data_latch> generated.
+
+Analyzing Entity <nvram_rtc> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/Atlas_XP2V5/nvram_rtc.vhd" line 101: Mux is complete : default of case is discarded
+WARNING:Xst:819 - "D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/Atlas_XP2V5/nvram_rtc.vhd" line 158: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <base_address_rtc_registers>
+Entity <nvram_rtc> analyzed. Unit <nvram_rtc> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2561 - Always blocking tristate driving signal <data_isa> in unit <fsm_xp_top> is removed.
+INFO:Xst:2561 - Always blocking tristate driving signal <data_isa> in unit <fsm_xp_top> is removed.
+INFO:Xst:2561 - Always blocking tristate driving signal <data_isa> in unit <fsm_xp_top> is removed.
+INFO:Xst:2561 - Always blocking tristate driving signal <data_isa> in unit <fsm_xp_top> is removed.
+INFO:Xst:2561 - Always blocking tristate driving signal <data_isa> in unit <fsm_xp_top> is removed.
+INFO:Xst:2561 - Always blocking tristate driving signal <data_isa> in unit <fsm_xp_top> is removed.
+INFO:Xst:2561 - Always blocking tristate driving signal <data_isa> in unit <fsm_xp_top> is removed.
+INFO:Xst:2561 - Always blocking tristate driving signal <data_isa> in unit <fsm_xp_top> is removed.
+INFO:Xst:2561 - Always blocking tristate driving signal <data_isa> in unit <fsm_xp_top> is removed.
+INFO:Xst:2561 - Always blocking tristate driving signal <data_isa> in unit <fsm_xp_top> is removed.
+INFO:Xst:2561 - Always blocking tristate driving signal <data_isa> in unit <fsm_xp_top> is removed.
+INFO:Xst:2561 - Always blocking tristate driving signal <data_isa> in unit <fsm_xp_top> is removed.
+INFO:Xst:2561 - Always blocking tristate driving signal <data_isa> in unit <fsm_xp_top> is removed.
+INFO:Xst:2561 - Always blocking tristate driving signal <data_isa> in unit <fsm_xp_top> is removed.
+INFO:Xst:2561 - Always blocking tristate driving signal <data_isa> in unit <fsm_xp_top> is removed.
+
+Synthesizing Unit <adr_latch>.
+    Related source file is "D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/Atlas_XP2V5/adr_latch.vhd".
+    Found 24-bit register for signal <adr_latched>.
+Unit <adr_latch> synthesized.
+
+
+Synthesizing Unit <fsm_xp>.
+    Related source file is "D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/Atlas_XP2V5/fsm_xp.vhd".
+INFO:Xst:1799 - State rd_30fh is never reached in FSM <curstate>.
+    Found finite state machine <FSM_0> for signal <curstate>.
+    -----------------------------------------------------------------------
+    | States             | 48                                             |
+    | Transitions        | 71                                             |
+    | Inputs             | 13                                             |
+    | Outputs            | 48                                             |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | wait_idle                                      |
+    | Encoding           | compact                                        |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+WARNING:Xst:737 - Found 1-bit latch for signal <load_address_pre>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <bale_pre>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <write_lpt_en_pre>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <load_buffer_pre>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out_enable_pre>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <bwr_pre>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <write_wdt_en_pre>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <load_data_pre>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <wdt_trg_pre>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <brd_pre>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 1-bit register for signal <brd>.
+    Found 1-bit register for signal <led_kvr>.
+    Found 1-bit register for signal <bwr>.
+    Found 1-bit register for signal <wdt_trg>.
+    Found 1-bit register for signal <data_out_enable>.
+    Found 1-bit register for signal <load_address>.
+    Found 1-bit register for signal <bale>.
+    Found 1-bit register for signal <write_lpt_en>.
+    Found 1-bit register for signal <load_data>.
+    Found 1-bit register for signal <load_buffer>.
+    Found 1-bit register for signal <write_wdt_en>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  11 D-type flip-flop(s).
+Unit <fsm_xp> synthesized.
+
+
+Synthesizing Unit <data_latch>.
+    Related source file is "D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/Atlas_XP2V5/data_latch.vhd".
+    Found 16-bit register for signal <data_isa_latched>.
+Unit <data_latch> synthesized.
+
+
+Synthesizing Unit <nvram_rtc>.
+    Related source file is "D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/Atlas_XP2V5/nvram_rtc.vhd".
+WARNING:Xst:647 - Input <base_address_rtc_registers<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <nvram_rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <page_register<7:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <nvram_data_out_gate_en> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <nvram_data_out_gate_delay> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <nvram_data_out_gate> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <base_address_ram_sig<14:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:736 - Found 1-bit latch for signal <Mtridata_nvram_address<20>> created at line 175. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:736 - Found 1-bit latch for signal <Mtrien_nvram_address<20>> created at line 175. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 8-bit tristate buffer for signal <data_nvram2cpu>.
+    Found 8-bit tristate buffer for signal <nvram_data>.
+    Found 21-bit tristate buffer for signal <nvram_address>.
+    Found 8-bit register for signal <Mtridata_nvram_data> created at line 204.
+    Found 1-bit register for signal <Mtrien_nvram_data> created at line 204.
+    Found 9-bit comparator equal for signal <nvram_ce_sig$cmp_eq0000> created at line 143.
+    Found 20-bit comparator equal for signal <nvram_cs_sig$cmp_eq0000> created at line 160.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  37 Tristate(s).
+Unit <nvram_rtc> synthesized.
+
+
+Synthesizing Unit <fsm_xp_top>.
+    Related source file is "D:/MILOS/Projects/ATLAS_XP2v5/ATLAS_XP2v5_VHDL/Atlas_XP2V5/fsm_xp_top.vhd".
+WARNING:Xst:1306 - Output <nvram_irq_cpu> is never assigned.
+WARNING:Xst:647 - Input <nvram_irq> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <xp_address_reg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <wdt_trigger> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <wdt_timeout> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <wdt_out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <wdt_first_neg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <wdt_first> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <test_sig1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <test_nvram_sig> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <test3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <temp> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <rst_register> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <read_rst_register> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <read_data_at_adr> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <read_304h_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <mmv2_enable> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <master_enable_previous_value> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <data_nvram2cpu> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 8-bit latch for signal <address_max_fsm>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mode_register>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <page_register>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 4x48-bit ROM for signal <base_addr_jp$rom0000>.
+    Found 16-bit tristate buffer for signal <data_isa>.
+    Found 8-bit tristate buffer for signal <address_max>.
+    Found 16-bit tristate buffer for signal <data_max>.
+    Found 1-bit tristate buffer for signal <bale>.
+    Found 1-bit tristate buffer for signal <bwr>.
+    Found 1-bit tristate buffer for signal <brd>.
+    Found 1-bit register for signal <led_kvr>.
+    Found 1-bit register for signal <led_rad>.
+    Found 1-bit register for signal <led_lpt>.
+    Found 1-bit tristate buffer for signal <reset_CPU>.
+    Found 16-bit register for signal <data_max_reg>.
+    Found 16-bit register for signal <data_max_reg_in>.
+    Found 24-bit comparator equal for signal <id1_register_sel$cmp_eq0000> created at line 891.
+    Found 24-bit adder for signal <id2_register_sel$addsub0000> created at line 902.
+    Found 24-bit comparator equal for signal <id2_register_sel$cmp_eq0000> created at line 902.
+    Found 24-bit adder for signal <jumper_register_sel$addsub0000> created at line 932.
+    Found 24-bit comparator equal for signal <jumper_register_sel$cmp_eq0000> created at line 932.
+    Found 1-bit register for signal <led_rad_sig>.
+    Found 24-bit adder for signal <led_register_sel$addsub0000> created at line 909.
+    Found 24-bit comparator equal for signal <led_register_sel$cmp_eq0000> created at line 909.
+    Found 1-bit register for signal <master_enable1>.
+    Found 1-bit register for signal <master_enable2>.
+    Found 1-bit register for signal <master_enable2_previous>.
+    Found 24-bit adder for signal <mode_register_sel$addsub0000> created at line 923.
+    Found 24-bit comparator equal for signal <mode_register_sel$cmp_eq0000> created at line 923.
+    Found 1-bit register for signal <ms_in>.
+    Found 8-bit register for signal <Mtridata_address_max> created at line 498.
+    Found 24-bit adder for signal <page_register_sel$addsub0000> created at line 916.
+    Found 24-bit comparator equal for signal <page_register_sel$cmp_eq0000> created at line 916.
+    Found 8-bit tristate buffer for signal <reg_306h<15:8>>.
+    Found 1-bit register for signal <reg_rd>.
+    Found 1-bit register for signal <reg_wr>.
+    Found 1-bit register for signal <wdt_enable>.
+    Found 1-bit register for signal <xp_present_in>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  11 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+	inferred 165 Tristate(s).
+Unit <fsm_xp_top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 4x48-bit ROM                                          : 1
+# Adders/Subtractors                                   : 5
+ 24-bit adder                                          : 5
+# Registers                                            : 30
+ 1-bit register                                        : 24
+ 16-bit register                                       : 3
+ 24-bit register                                       : 1
+ 8-bit register                                        : 2
+# Latches                                              : 15
+ 1-bit latch                                           : 12
+ 8-bit latch                                           : 3
+# Comparators                                          : 8
+ 20-bit comparator equal                               : 1
+ 24-bit comparator equal                               : 6
+ 9-bit comparator equal                                : 1
+# Tristates                                            : 106
+ 1-bit tristate buffer                                 : 98
+ 16-bit tristate buffer                                : 5
+ 8-bit tristate buffer                                 : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Optimizing FSM <I2/curstate/FSM> on signal <curstate[1:6]> with compact encoding.
+------------------------
+ State      | Encoding
+------------------------
+ wait_idle  | 100000
+ idle       | 000000
+ wr_300h    | 100001
+ wr_300h_1  | 010011
+ wr_300h_2  | 000001
+ wr_300h_3  | 110001
+ wr_300h_4  | 010001
+ wr_300h_5  | 100100
+ wr_300h_6  | 000100
+ wr_300h_7  | 100111
+ wr_300h_8  | 000111
+ wr_300h_9  | 000101
+ wr_300h_10 | 100101
+ wr_300h_11 | 110100
+ wr_300h_12 | 010100
+ wr_300h_13 | 110111
+ wr_300h_14 | 010111
+ wr_300h_15 | 010101
+ wr_300h_16 | 110101
+ wr_300h_17 | 101000
+ wr_300h_18 | 001000
+ wr_300h_19 | 100011
+ rd_308h    | 010000
+ rd_308h_1  | 001011
+ rd_308h_2  | 001101
+ rd_308h_3  | 101101
+ rd_308h_4  | 101100
+ rd_308h_5  | 001100
+ rd_308h_6  | 001111
+ rd_308h_7  | 101111
+ rd_308h_8  | 011001
+ rd_308h_9  | 111001
+ rd_308h_rd | 010110
+ rd_300h    | 100010
+ rd_309h    | 001010
+ rd_303h    | 000010
+ rd_304h    | 110010
+ rd_306h    | 010010
+ rd_307h    | 101010
+ rd_30fh    | unreached
+ wr_301h    | 000011
+ wr_301h_1  | 101001
+ wr_301h_2  | 100110
+ wr_305h    | 110000
+ wr_305h_1  | 001001
+ wr_305h_2  | 000110
+ wr_306h    | 110011
+ wr_306h_1  | 101011
+ wr_306h_2  | 110110
+------------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 1
+ 4x48-bit ROM                                          : 1
+# Adders/Subtractors                                   : 5
+ 24-bit adder                                          : 5
+# Registers                                            : 23
+ Flip-Flops                                            : 23
+# Latches                                              : 15
+ 1-bit latch                                           : 12
+ 8-bit latch                                           : 3
+# Comparators                                          : 8
+ 20-bit comparator equal                               : 1
+ 24-bit comparator equal                               : 6
+ 9-bit comparator equal                                : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1348 - Unit nvram_rtc is merged (output interface has tristates)
+WARNING:Xst:2183 - Unit fsm_xp_top: the following tristate(s) are NOT replaced by logic (Please refer to Answer Record 20048 for more information): data_isa<0>_MLTSRCEDGE, data_isa<10>_MLTSRCEDGE, data_isa<11>_MLTSRCEDGE, data_isa<12>_MLTSRCEDGE, data_isa<13>_MLTSRCEDGE, data_isa<14>_MLTSRCEDGE, data_isa<15>_MLTSRCEDGE, data_isa<1>_MLTSRCEDGE, data_isa<2>_MLTSRCEDGE, data_isa<3>_MLTSRCEDGE, data_isa<4>_MLTSRCEDGE, data_isa<5>_MLTSRCEDGE, data_isa<6>_MLTSRCEDGE, data_isa<7>_MLTSRCEDGE, data_isa<8>_MLTSRCEDGE, data_isa<9>_MLTSRCEDGE.
+
+Optimizing unit <fsm_xp_top> ...
+  implementation constraint: IOB=auto	 : Mtridata_address_max<7>
+  implementation constraint: IOB=auto	 : Mtridata_address_max<6>
+  implementation constraint: IOB=auto	 : Mtridata_address_max<5>
+  implementation constraint: IOB=auto	 : Mtridata_address_max<4>
+  implementation constraint: IOB=auto	 : Mtridata_address_max<3>
+  implementation constraint: IOB=auto	 : Mtridata_address_max<2>
+  implementation constraint: IOB=auto	 : Mtridata_address_max<1>
+  implementation constraint: IOB=auto	 : Mtridata_address_max<0>
+  implementation constraint: IOB=auto	 : I6/Mtridata_nvram_data<0>
+  implementation constraint: IOB=auto	 : I6/Mtridata_nvram_data<1>
+  implementation constraint: IOB=auto	 : I6/Mtridata_nvram_data<2>
+  implementation constraint: IOB=auto	 : I6/Mtridata_nvram_data<3>
+  implementation constraint: IOB=auto	 : I6/Mtridata_nvram_data<4>
+  implementation constraint: IOB=auto	 : I6/Mtridata_nvram_data<5>
+  implementation constraint: IOB=auto	 : I6/Mtridata_nvram_data<6>
+  implementation constraint: IOB=auto	 : I6/Mtridata_nvram_data<7>
+  implementation constraint: IOB=auto	 : I6/Mtrien_nvram_data
+  implementation constraint: IOB=auto	 : I6/Mtridata_nvram_address<20>
+  implementation constraint: INIT=s	 : master_enable2
+  implementation constraint: INIT=s	 : led_lpt
+  implementation constraint: INIT=s	 : master_enable2_previous
+  implementation constraint: INIT=r	 : I2/curstate_FSM_FFd5
+  implementation constraint: INIT=r	 : I2/curstate_FSM_FFd4
+  implementation constraint: INIT=r	 : I2/curstate_FSM_FFd6
+  implementation constraint: INIT=s	 : I2/curstate_FSM_FFd1
+  implementation constraint: INIT=r	 : I2/curstate_FSM_FFd2
+  implementation constraint: INIT=r	 : I2/curstate_FSM_FFd3
+
+Optimizing unit <adr_latch> ...
+
+Optimizing unit <data_latch> ...
+WARNING:Xst:1294 - Latch <I2/load_address_pre> is equivalent to a wire in block <fsm_xp_top>.
+WARNING:Xst:1294 - Latch <I2/bale_pre> is equivalent to a wire in block <fsm_xp_top>.
+WARNING:Xst:1294 - Latch <I2/write_lpt_en_pre> is equivalent to a wire in block <fsm_xp_top>.
+WARNING:Xst:1294 - Latch <I2/load_buffer_pre> is equivalent to a wire in block <fsm_xp_top>.
+WARNING:Xst:1294 - Latch <I2/data_out_enable_pre> is equivalent to a wire in block <fsm_xp_top>.
+WARNING:Xst:1294 - Latch <I2/bwr_pre> is equivalent to a wire in block <fsm_xp_top>.
+WARNING:Xst:1294 - Latch <I2/write_wdt_en_pre> is equivalent to a wire in block <fsm_xp_top>.
+WARNING:Xst:1294 - Latch <I2/load_data_pre> is equivalent to a wire in block <fsm_xp_top>.
+WARNING:Xst:1294 - Latch <I2/wdt_trg_pre> is equivalent to a wire in block <fsm_xp_top>.
+WARNING:Xst:1294 - Latch <I2/brd_pre> is equivalent to a wire in block <fsm_xp_top>.
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : fsm_xp_top.ngr
+Top Level Output File Name         : fsm_xp_top
+Output Format                      : NGC
+Optimization Goal                  : Area
+Keep Hierarchy                     : Yes
+Target Technology                  : CoolRunner XPLA3 CPLDs
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 148
+
+Cell Usage :
+# BELS                             : 894
+#      AND2                        : 195
+#      AND3                        : 109
+#      AND4                        : 6
+#      GND                         : 1
+#      INV                         : 427
+#      OR2                         : 128
+#      OR3                         : 3
+#      VCC                         : 1
+#      XOR2                        : 24
+# FlipFlops/Latches                : 144
+#      FD                          : 95
+#      FDC                         : 6
+#      FDCE                        : 17
+#      LD                          : 26
+# Tri-States                       : 137
+#      BUFE                        : 137
+# IO Buffers                       : 146
+#      IBUF                        : 52
+#      IOBUFE                      : 49
+#      OBUF                        : 21
+#      OBUFE                       : 24
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.65 secs
+ 
+--> 
+
+Total memory usage is 273780 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   65 (   0 filtered)
+Number of infos    :   45 (   0 filtered)
+

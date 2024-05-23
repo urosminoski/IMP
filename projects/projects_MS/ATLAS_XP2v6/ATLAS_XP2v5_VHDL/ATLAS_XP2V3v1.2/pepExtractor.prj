@@ -1,5 +1,0 @@
-work	"../adr_latch.vhd"
-work	"../data_latch.vhd"
-work	"../fsm_xp.vhd"
-work	"../fsm_xp_top.vhd"
-work	"../nvram_rtc.vhd"
